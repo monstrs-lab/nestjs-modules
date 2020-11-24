@@ -25,12 +25,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@monstrs/nestjs-external-renderer",
         "reference": "workspace:packages/external-renderer"
+      },
+      {
+        "name": "@monstrs/nestjs-kratos",
+        "reference": "workspace:packages/kratos"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@monstrs/nestjs-external-renderer", ["workspace:packages/external-renderer"]],
+      ["@monstrs/nestjs-kratos", ["workspace:packages/kratos"]],
       ["nestjs-modules", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -1569,6 +1574,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@monstrs/nestjs-kratos", [
+        ["workspace:packages/kratos", {
+          "packageLocation": "./packages/kratos/",
+          "packageDependencies": [
+            ["@monstrs/nestjs-kratos", "workspace:packages/kratos"],
+            ["@monstrs/mctl-cli", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:0.2.67"],
+            ["@nestjs/common", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.5.5"],
+            ["@nestjs/core", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.5.5"],
+            ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.5.5"],
+            ["@oryd/kratos-client", "npm:0.5.4-alpha.1"],
+            ["@types/node", "npm:14.14.9"],
+            ["get-port", "npm:5.1.1"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["rxjs", "npm:6.6.3"],
+            ["supertest", "npm:6.0.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@monstrs/prettier-plugin-import-align", [
         ["virtual:00623fddf55e2ba3c41f6cf458956899f6d1b44d09ab55d1db90ad417cd3e7265f583582eef6f797b09885b63b5003d4c8d939446c3be6bcc31930624e17c015#npm:0.2.6", {
           "packageLocation": "./.yarn/$$virtual/@monstrs-prettier-plugin-import-align-virtual-879131aaf3/0/cache/@monstrs-prettier-plugin-import-align-npm-0.2.6-66a6dd5f9d-cca7aac119.zip/node_modules/@monstrs/prettier-plugin-import-align/",
@@ -1971,6 +1995,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@octokit/types", "npm:5.5.0"],
             ["@types/node", "npm:14.14.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@oryd/kratos-client", [
+        ["npm:0.5.4-alpha.1", {
+          "packageLocation": "./.yarn/cache/@oryd-kratos-client-npm-0.5.4-alpha.1-2f3bd8f39d-1e23dda13a.zip/node_modules/@oryd/kratos-client/",
+          "packageDependencies": [
+            ["@oryd/kratos-client", "npm:0.5.4-alpha.1"],
+            ["axios", "npm:0.19.2"]
           ],
           "linkType": "HARD",
         }]
@@ -4044,6 +4078,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["axios", [
+        ["npm:0.19.2", {
+          "packageLocation": "./.yarn/cache/axios-npm-0.19.2-e4e8599895-bad346deea.zip/node_modules/axios/",
+          "packageDependencies": [
+            ["axios", "npm:0.19.2"],
+            ["follow-redirects", "npm:1.5.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:0.21.0", {
           "packageLocation": "./.yarn/cache/axios-npm-0.21.0-9223cb0552-4b08ecab39.zip/node_modules/axios/",
           "packageDependencies": [
@@ -5384,6 +5426,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/debug-virtual-6cfa7ae8cd/0/cache/debug-npm-2.6.9-7d4cb597dc-559f44f98c.zip/node_modules/debug/",
           "packageDependencies": [
             ["debug", "virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9"],
+            ["ms", "npm:2.0.0"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:bde6f435769d1a96c3f371d2e8a88314847816fb841f758b3628da60329c36f988ca42f6984dc53bb31dd306522878e1e5d568caeca7af42e4f19b238d6261b3#npm:3.1.0", {
+          "packageLocation": "./.yarn/$$virtual/debug-virtual-f2284580f9/0/cache/debug-npm-3.1.0-9f0accb99b-1295acd5e0.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:bde6f435769d1a96c3f371d2e8a88314847816fb841f758b3628da60329c36f988ca42f6984dc53bb31dd306522878e1e5d568caeca7af42e4f19b238d6261b3#npm:3.1.0"],
             ["ms", "npm:2.0.0"],
             ["supports-color", null]
           ],
@@ -6900,6 +6954,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/follow-redirects-npm-1.13.0-ae26ae301a-f220828d3f.zip/node_modules/follow-redirects/",
           "packageDependencies": [
             ["follow-redirects", "npm:1.13.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.5.10", {
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.5.10-bde6f43576-6e58e02c31.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "npm:1.5.10"],
+            ["debug", "virtual:bde6f435769d1a96c3f371d2e8a88314847816fb841f758b3628da60329c36f988ca42f6984dc53bb31dd306522878e1e5d568caeca7af42e4f19b238d6261b3#npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]

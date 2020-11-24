@@ -1,8 +1,9 @@
 import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
 
 export interface KratosModuleOptions {
-  browser: string
   public: string
+  browser: string
+  global?: boolean
 }
 
 export interface KratosOptionsFactory {
@@ -14,4 +15,5 @@ export interface KratosModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'
   useClass?: Type<KratosOptionsFactory>
   useFactory?: (...args: any[]) => Promise<KratosModuleOptions> | KratosModuleOptions
   inject?: any[]
+  global?: boolean
 }

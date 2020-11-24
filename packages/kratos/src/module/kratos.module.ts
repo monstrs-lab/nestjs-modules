@@ -16,7 +16,7 @@ export class KratosModule {
     const providers = createKratosProvider()
 
     return {
-      global: true,
+      global: options?.global ?? true,
       module: KratosModule,
       providers: [...optionsProviders, ...providers, ...exportsProviders],
       exports: exportsProviders,
@@ -28,7 +28,7 @@ export class KratosModule {
     const providers = createKratosProvider()
 
     return {
-      global: true,
+      global: options?.global ?? true,
       module: KratosModule,
       imports: options.imports || [],
       providers: [...this.createAsyncProviders(options), ...providers, ...exportsProviders],

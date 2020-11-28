@@ -1,5 +1,5 @@
 {
-  "name": "@monstrs/nestjs-kratos",
+  "name": "@monstrs/nestjs-grpc-http-proxy",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
@@ -11,16 +11,15 @@
     "prepublishOnly": "yarn run build",
     "build": "mctl library build"
   },
-  "dependencies": {
-    "@oryd/kratos-client": "0.5.4-alpha.1"
-  },
   "devDependencies": {
     "@monstrs/mctl-cli": "0.2.69",
     "@nestjs/common": "^7.5.5",
     "@nestjs/core": "^7.5.5",
+    "@nestjs/microservices": "^7.5.5",
     "@nestjs/testing": "^7.5.5",
-    "@types/node": "^14.14.10",
+    "@types/lodash.get": "^4",
     "get-port": "^5.1.1",
+    "protobufjs": "^6.10.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3",
     "supertest": "^6.0.1"
@@ -28,11 +27,17 @@
   "peerDependencies": {
     "@nestjs/common": "^7.5.0",
     "@nestjs/core": "^7.5.0",
+    "@nestjs/microservices": "^7.5.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3"
   },
   "publishConfig": {
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "grpc": "^1.24.4",
+    "lodash.get": "^4.4.2"
   }
 }

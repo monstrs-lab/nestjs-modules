@@ -10,7 +10,7 @@ import { Test }                              from '@nestjs/testing'
 import { EXTERNAL_RENDERER_MODULE_OPTIONS }  from '../../src'
 import { ExternalRendererIntegrationModule } from '../src'
 
-describe('kratos flow redirection', () => {
+describe('external renderer', () => {
   let app: INestApplication
   let url: string
 

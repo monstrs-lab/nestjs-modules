@@ -58,9 +58,10 @@ describe('grpc http proxy', () => {
   it(`get schema`, async () => {
     const response = await request(url).get('/grpc-proxy/schema').expect(200)
 
-    const [schema] = response.body
+    const [test] = response.body.files
 
-    expect(schema.name).toBe('test.proto')
+    expect(test.name).toBe('test.proto')
+    expect(test.source).toBeDefined()
   })
 
   it(`call method`, async () => {
@@ -75,7 +76,7 @@ describe('grpc http proxy', () => {
         },
       })
       .set('Accept', 'application/json')
-      .expect(201)
+      .expect(200)
 
     expect(response.body.id).toBe('test')
   })

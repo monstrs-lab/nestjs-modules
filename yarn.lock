@@ -1269,6 +1269,7 @@ __metadata:
     "@nestjs/microservices": ^7.5.5
     "@nestjs/testing": ^7.5.5
     "@types/lodash.get": ^4
+    class-transformer: ^0.3.1
     get-port: ^5.1.1
     grpc: ^1.24.4
     lodash.get: ^4.4.2
@@ -3831,7 +3832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-transformer@npm:*":
+"class-transformer@npm:*, class-transformer@npm:^0.3.1":
   version: 0.3.1
   resolution: "class-transformer@npm:0.3.1"
   checksum: 3ae3ef2510d2822766a97d31eb7ca550dabda56cbfe70968f295420531667ca95b4d84cddfe2dc302abc41c8e26d667d43235b0f4759eee09a007741cc307bc8

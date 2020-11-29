@@ -1572,6 +1572,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/microservices", "virtual:f4a2d7edd85589186b918e758e50cdee18cd1bcd1f179c525398c17b64bec388f8963e6370f4091e0a02d005bd7fa5fcf649f67bc77920415e9dbf5e51594f37#npm:7.5.5"],
             ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.5.5"],
             ["@types/lodash.get", "npm:4.4.6"],
+            ["class-transformer", "npm:0.3.1"],
             ["get-port", "npm:5.1.1"],
             ["grpc", "npm:1.24.4"],
             ["lodash.get", "npm:4.4.2"],

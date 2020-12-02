@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.12.7",
-    "@monstrs/mctl-cli": "0.2.70",
+    "@monstrs/mctl-cli": "0.2.71",
     "@types/jest": "^26.0.16",
     "@types/node": "^14.14.10",
     "@yarnpkg/pnpify": "^2.4.0",

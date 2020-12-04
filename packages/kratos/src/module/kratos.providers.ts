@@ -3,6 +3,7 @@ import { APP_FILTER }               from '@nestjs/core'
 import { Configuration, PublicApi } from '@oryd/kratos-client'
 
 import { KratosExceptionFilter }    from '../filters'
+import { WhoamiPipe }               from '../pipes'
 import { KratosModuleOptions }      from './kratos-module-options.interface'
 import { KRATOS_MODULE_OPTIONS }    from './kratos.constants'
 
@@ -32,5 +33,6 @@ export const createKratosExportsProvider = (): Provider[] => {
         new PublicApi(new Configuration({ basePath: config.public })),
       inject: [KRATOS_MODULE_OPTIONS],
     },
+    WhoamiPipe,
   ]
 }

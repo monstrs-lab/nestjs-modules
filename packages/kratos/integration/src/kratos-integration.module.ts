@@ -3,6 +3,7 @@ import { Module }                from '@nestjs/common'
 import { KratosModule }          from '../../src'
 import { RedirectController }    from './redirect.controller'
 import { SelfServiceController } from './self-service.controller'
+import { SessionController }     from './session.controller'
 
 @Module({
   imports: [
@@ -11,6 +12,6 @@ import { SelfServiceController } from './self-service.controller'
       public: 'http://localhost:3000',
     }),
   ],
-  controllers: [RedirectController, SelfServiceController],
+  controllers: [RedirectController, SelfServiceController, SessionController],
 })
 export class KratosIntegrationModule {}

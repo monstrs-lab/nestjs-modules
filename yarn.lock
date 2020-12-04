@@ -1296,7 +1296,9 @@ __metadata:
     "@nestjs/core": ^7.5.5
     "@nestjs/testing": ^7.5.5
     "@oryd/kratos-client": 0.5.4-alpha.1
+    "@types/express": ^4
     "@types/node": ^14.14.10
+    express: ^4.17.1
     get-port: ^5.1.1
     reflect-metadata: 0.1.13
     rxjs: 6.6.3
@@ -1783,6 +1785,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/body-parser@npm:*":
+  version: 1.19.0
+  resolution: "@types/body-parser@npm:1.19.0"
+  dependencies:
+    "@types/connect": "*"
+    "@types/node": "*"
+  checksum: 4576f3fde5980c1219cadbc7c523bdb1cefc3713300e18bf47ff37bb9b8176342a1dc7519008311fd8fc11413cf188a83931b9b59051aa1c2f095c1e10459369
+  languageName: node
+  linkType: hard
+
 "@types/bytebuffer@npm:^5.0.40":
   version: 5.0.42
   resolution: "@types/bytebuffer@npm:5.0.42"
@@ -1802,6 +1814,15 @@ __metadata:
     "@types/node": "*"
     "@types/responselike": "*"
   checksum: 3dae802a0808573986c56b92bf16cd031a5b648b6c893d20c7ef6bfda3fc72a2107c7978697d2b27b14febc597162d6959985eeb5befc307a9f9f3c5081d4905
+  languageName: node
+  linkType: hard
+
+"@types/connect@npm:*":
+  version: 3.4.33
+  resolution: "@types/connect@npm:3.4.33"
+  dependencies:
+    "@types/node": "*"
+  checksum: 6414495b5995fcb8274feb8b1f113c0685160ea7781e75c638325c6e7a0c226d0c554fa622fe3d278470358c99f68a5994fe49e1b104736f76f3fb3b509e375f
   languageName: node
   linkType: hard
 
@@ -1836,6 +1857,29 @@ __metadata:
   version: 0.0.45
   resolution: "@types/estree@npm:0.0.45"
   checksum: 9d339cbcf29a96a32e9d40efc21009c2342e93c4f653294dd1ef081ae474bca9e54707e5d4a1cff90b9e3566e8bdd71ac31e0c3d24bc2ff1d3d5aa75058b3937
+  languageName: node
+  linkType: hard
+
+"@types/express-serve-static-core@npm:*":
+  version: 4.17.14
+  resolution: "@types/express-serve-static-core@npm:4.17.14"
+  dependencies:
+    "@types/node": "*"
+    "@types/qs": "*"
+    "@types/range-parser": "*"
+  checksum: 196b9ed48476a2026e5d44723db86ee6b644bf50999879c710332ab0d5fee4b486476d24f4765bde9d3a9cac25e5a8bf7889c9a2273b7d0e71d7ca317a591668
+  languageName: node
+  linkType: hard
+
+"@types/express@npm:^4":
+  version: 4.17.9
+  resolution: "@types/express@npm:4.17.9"
+  dependencies:
+    "@types/body-parser": "*"
+    "@types/express-serve-static-core": "*"
+    "@types/qs": "*"
+    "@types/serve-static": "*"
+  checksum: 80cd74784e9b40495b683b6b285be58bd7515f3b86923a72483fb8a6dec15ef159e651c460a215e9ad4e9620deec7345020fe33535c4eb12d81152b74b0278d0
   languageName: node
   linkType: hard
 
@@ -1956,6 +2000,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mime@npm:*":
+  version: 2.0.3
+  resolution: "@types/mime@npm:2.0.3"
+  checksum: 6df548a912494f8579d548cd883be0425f30eaa2922283335c405e270600f49045a06d766460c0f0edabb41dff570c614d174d3c52215de3bddd11f190ec9ae9
+  languageName: node
+  linkType: hard
+
 "@types/minimatch@npm:*":
   version: 3.0.3
   resolution: "@types/minimatch@npm:3.0.3"
@@ -2012,6 +2063,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/qs@npm:*":
+  version: 6.9.5
+  resolution: "@types/qs@npm:6.9.5"
+  checksum: afe4721a802a4b5fa874a7d6d9fd33c9e812bb0ef90dabb050e8072be4ab2e5e817c0feacb9b4e0771d875de99f4d9738217976aeb8d36b81ccd82ded5e9fdc0
+  languageName: node
+  linkType: hard
+
+"@types/range-parser@npm:*":
+  version: 1.2.3
+  resolution: "@types/range-parser@npm:1.2.3"
+  checksum: 092fabae0ecbd728d3e4debc938cd043e97cb9f210cfec1c56ff6065c6e91666f376eb586591825d6757a058fd1a1dc4831d34e04ecfbb0800f35b8d86d38635
+  languageName: node
+  linkType: hard
+
 "@types/responselike@npm:*, @types/responselike@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/responselike@npm:1.0.0"
@@ -2025,6 +2090,16 @@ __metadata:
   version: 7.3.4
   resolution: "@types/semver@npm:7.3.4"
   checksum: 7e8588aa55ecb344eda6954674b83a3c568d97d478e70e4617bd3ab22902590ac416ccf2cea48b58fb2f0fbd80f9ad1896332c9b3c3189ffd24e4350ff22094a
+  languageName: node
+  linkType: hard
+
+"@types/serve-static@npm:*":
+  version: 1.13.8
+  resolution: "@types/serve-static@npm:1.13.8"
+  dependencies:
+    "@types/mime": "*"
+    "@types/node": "*"
+  checksum: 39db4c0f0f1c459588609496f92c2cb084b7feca8b9f96ac5032e371f8a0f4923c32dc9b7fd005b8bb6d10aad5d9118238da4869647672441571ff20bcbe4ea4
   languageName: node
   linkType: hard
 
@@ -5536,7 +5611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:4.17.1":
+"express@npm:4.17.1, express@npm:^4.17.1":
   version: 4.17.1
   resolution: "express@npm:4.17.1"
   dependencies:

@@ -8,9 +8,7 @@ import { KratosRedirectInterceptor }       from './kratos-redirect.interceptor'
 
 describe('KratosRedirectInterceptor', () => {
   it('skip not kratos errors', async () => {
-    const redirectTo = '/redirect/to'
-
-    const target = new KratosRedirectInterceptor(redirectTo)
+    const target = new KratosRedirectInterceptor('login')
 
     const handler: CallHandler = {
       handle: () => throwError(new Error()),
@@ -22,9 +20,7 @@ describe('KratosRedirectInterceptor', () => {
   })
 
   it('self service request 410 status error', async () => {
-    const redirectTo = '/redirect/to'
-
-    const target = new KratosRedirectInterceptor(redirectTo)
+    const target = new KratosRedirectInterceptor('login')
 
     const handler: CallHandler = {
       handle: () => {
@@ -44,9 +40,7 @@ describe('KratosRedirectInterceptor', () => {
   })
 
   it('self service request 404 status error', async () => {
-    const redirectTo = '/redirect/to'
-
-    const target = new KratosRedirectInterceptor(redirectTo)
+    const target = new KratosRedirectInterceptor('login')
 
     const handler: CallHandler = {
       handle: () => {
@@ -66,9 +60,7 @@ describe('KratosRedirectInterceptor', () => {
   })
 
   it('self service request 403 status error', async () => {
-    const redirectTo = '/redirect/to'
-
-    const target = new KratosRedirectInterceptor(redirectTo)
+    const target = new KratosRedirectInterceptor('login')
 
     const handler: CallHandler = {
       handle: () => {
@@ -88,9 +80,7 @@ describe('KratosRedirectInterceptor', () => {
   })
 
   it('self service flow required error', async () => {
-    const redirectTo = '/redirect/to'
-
-    const target = new KratosRedirectInterceptor(redirectTo)
+    const target = new KratosRedirectInterceptor('login')
 
     const handler: CallHandler = {
       handle: () => throwError(new KratosFlowRequiredException()),

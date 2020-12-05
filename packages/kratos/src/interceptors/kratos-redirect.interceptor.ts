@@ -7,10 +7,11 @@ import { catchError }                      from 'rxjs/operators'
 
 import { KratosRedirectRequiredException } from '../exceptions'
 import { KratosFlowRequiredException }     from '../exceptions'
+import { KratosBrowserUrlFlow }            from '../urls'
 
 @Injectable()
 export class KratosRedirectInterceptor implements NestInterceptor {
-  constructor(private readonly redirectTo: string) {}
+  constructor(private readonly redirectTo: KratosBrowserUrlFlow) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     return next.handle().pipe(

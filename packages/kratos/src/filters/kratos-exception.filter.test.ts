@@ -3,13 +3,16 @@ import { HttpArgumentsHost }               from '@nestjs/common/interfaces/featu
 
 import { KratosRedirectRequiredException } from '../exceptions'
 import { KratosExceptionFilter }           from './kratos-expection.filter'
+import { KratosBrowserUrls }               from '../urls'
 
 describe('KratosExceptionFilter', () => {
   it('redirect on KratosFlowRequiredException', async () => {
-    const filter = new KratosExceptionFilter({
-      browser: 'http://localhost:3000',
-      public: 'http://localhost:3000',
-    })
+    const filter = new KratosExceptionFilter(
+      new KratosBrowserUrls({
+        browser: 'http://localhost:3000',
+        public: 'http://localhost:3000',
+      })
+    )
 
     const response = {
       redirect: jest.fn(),
@@ -23,8 +26,8 @@ describe('KratosExceptionFilter', () => {
       switchToHttp: () => argumentHost as HttpArgumentsHost,
     }
 
-    filter.catch(new KratosRedirectRequiredException('/test'), host as ArgumentsHost)
+    filter.catch(new KratosRedirectRequiredException('login'), host as ArgumentsHost)
 
-    expect(response.redirect).toBeCalledWith('http://localhost:3000/test')
+    expect(response.redirect).toBeCalledWith('http://localhost:3000/self-service/login/browser')
   })
 })

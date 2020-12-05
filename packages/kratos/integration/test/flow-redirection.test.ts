@@ -42,24 +42,24 @@ describe('kratos flow redirection', () => {
   it(`redirect 403`, async () => {
     const response = await request(url).get('/redirect/403').expect(302)
 
-    expect(response.get('location')).toEqual(expect.stringContaining('/redirected'))
+    expect(response.get('location')).toEqual(expect.stringContaining('/self-service/login/browser'))
   })
 
   it(`redirect 404`, async () => {
     const response = await request(url).get('/redirect/404').expect(302)
 
-    expect(response.get('location')).toEqual(expect.stringContaining('/redirected'))
+    expect(response.get('location')).toEqual(expect.stringContaining('/self-service/login/browser'))
   })
 
   it(`redirect 410`, async () => {
     const response = await request(url).get('/redirect/410').expect(302)
 
-    expect(response.get('location')).toEqual(expect.stringContaining('/redirected'))
+    expect(response.get('location')).toEqual(expect.stringContaining('/self-service/login/browser'))
   })
 
   it(`redirect empty flow`, async () => {
     const response = await request(url).get('/redirect/flow').expect(302)
 
-    expect(response.get('location')).toEqual(expect.stringContaining('/redirected'))
+    expect(response.get('location')).toEqual(expect.stringContaining('/self-service/login/browser'))
   })
 })

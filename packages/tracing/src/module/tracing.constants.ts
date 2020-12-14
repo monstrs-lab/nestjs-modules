@@ -1,0 +1,3 @@
+export const TRACING_MODULE_OPTIONS = 'TRACING_MODULE_OPTIONS'
+export const TRACING_TRACER_NAME = 'nestjs'
+export const TRACING_TRACER_VERSION = '0.0.1'

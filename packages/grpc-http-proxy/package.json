@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-grpc-http-proxy",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,11 +12,11 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.71",
-    "@nestjs/common": "^7.5.5",
-    "@nestjs/core": "^7.5.5",
-    "@nestjs/microservices": "^7.5.5",
-    "@nestjs/testing": "^7.5.5",
+    "@monstrs/mctl-cli": "0.2.80",
+    "@nestjs/common": "^7.6.1",
+    "@nestjs/core": "^7.6.1",
+    "@nestjs/microservices": "^7.6.1",
+    "@nestjs/testing": "^7.6.1",
     "@types/lodash.get": "^4.4.6",
     "get-port": "^5.1.1",
     "protobufjs": "^6.10.2",

@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-external-renderer",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -19,7 +19,7 @@
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",
-    "@types/node": "^14.14.12",
+    "@types/node": "^14.14.14",
     "get-port": "^5.1.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3",

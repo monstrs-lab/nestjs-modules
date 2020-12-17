@@ -1,6 +1,6 @@
 {
-  "name": "@monstrs/nestjs-tracing",
-  "version": "0.0.9",
+  "name": "@monstrs/nestjs-logger",
+  "version": "0.2.3",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,9 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@opentelemetry/api": "^0.13.0",
-    "@opentelemetry/node": "^0.13.0",
-    "@opentelemetry/tracing": "^0.13.0"
+    "@monstrs/logger": "^0.0.3"
   },
   "devDependencies": {
     "@monstrs/mctl-cli": "0.2.80",
@@ -25,7 +23,8 @@
     "get-port": "^5.1.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3",
-    "supertest": "^6.0.1"
+    "supertest": "^6.0.1",
+    "typeorm": "*"
   },
   "peerDependencies": {
     "@nestjs/common": "^7.5.0",

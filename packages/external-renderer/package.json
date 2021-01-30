@@ -15,7 +15,7 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.80",
+    "@monstrs/mctl-cli": "0.2.86",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",

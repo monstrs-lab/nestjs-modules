@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.80",
+    "@monstrs/mctl-cli": "0.2.86",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/microservices": "^7.6.1",
@@ -36,7 +36,7 @@
     "typings": "dist/index.d.ts"
   },
   "dependencies": {
-    "@grpc/proto-loader": "^0.5.5",
+    "@grpc/proto-loader": "^0.5.6",
     "class-transformer": "^0.3.1",
     "grpc": "^1.24.4",
     "lodash.get": "^4.4.2"

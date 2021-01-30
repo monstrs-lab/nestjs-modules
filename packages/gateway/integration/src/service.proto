@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package tech.monstrs;
+
+service ExampleService {
+  rpc getMovies (MovieRequest) returns (MoviesResult) {}
+}
+
+message Movie {
+  string name = 1;
+  int32 year = 2;
+  float rating = 3;
+}
+
+message MovieRequest {
+  Movie movie = 1;
+}
+
+message MoviesResult {
+  repeated Movie result = 1;
+}

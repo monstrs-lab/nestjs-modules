@@ -9,9 +9,10 @@ export class KratosExceptionFilter implements ExceptionFilter {
 
   catch(exception: KratosRedirectRequiredException, host: ArgumentsHost) {
     const ctx = host.switchToHttp()
+    const request = ctx.getRequest()
     const response = ctx.getResponse()
 
-    const url = this.urls.get(exception.redirectTo)
+    const url = this.urls.get(exception.redirectTo, { returnTo: request.query.return_to })
 
     response.redirect(url)
   }

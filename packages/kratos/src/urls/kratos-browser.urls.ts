@@ -13,6 +13,10 @@ export type KratosBrowserUrlFlow =
   | 'verification'
   | 'logout'
 
+export interface KratosBrowserUrlParams {
+  returnTo?: string
+}
+
 @Injectable()
 export class KratosBrowserUrls {
   private login: string
@@ -48,7 +52,15 @@ export class KratosBrowserUrls {
     return new URL(path.join(rootUrl.pathname, target), rootUrl.origin).toString()
   }
 
-  get(flow: KratosBrowserUrlFlow) {
-    return this[flow]
+  get(flow: KratosBrowserUrlFlow, params?: KratosBrowserUrlParams) {
+    if (!(params && params.returnTo)) {
+      return this[flow]
+    }
+
+    const url = new URL(this[flow])
+
+    url.searchParams.append('return_to', params.returnTo)
+
+    return url.toString()
   }
 }

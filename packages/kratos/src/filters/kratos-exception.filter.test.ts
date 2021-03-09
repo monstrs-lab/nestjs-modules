@@ -20,6 +20,9 @@ describe('KratosExceptionFilter', () => {
 
     const argumentHost = {
       getResponse: () => response as any,
+      getRequest: () => ({
+        query: {},
+      }),
     }
 
     const host = {
@@ -29,5 +32,37 @@ describe('KratosExceptionFilter', () => {
     filter.catch(new KratosRedirectRequiredException('login'), host as ArgumentsHost)
 
     expect(response.redirect).toBeCalledWith('http://localhost:3000/self-service/login/browser')
+  })
+
+  it('redirect on KratosFlowRequiredException with return_to query', async () => {
+    const filter = new KratosExceptionFilter(
+      new KratosBrowserUrls({
+        browser: 'http://localhost:3000',
+        public: 'http://localhost:3000',
+      })
+    )
+
+    const response = {
+      redirect: jest.fn(),
+    }
+
+    const argumentHost = {
+      getResponse: () => response as any,
+      getRequest: () => ({
+        query: {
+          return_to: 'http://localhost:3000',
+        },
+      }),
+    }
+
+    const host = {
+      switchToHttp: () => argumentHost as HttpArgumentsHost,
+    }
+
+    filter.catch(new KratosRedirectRequiredException('login'), host as ArgumentsHost)
+
+    expect(response.redirect).toBeCalledWith(
+      'http://localhost:3000/self-service/login/browser?return_to=http%3A%2F%2Flocalhost%3A3000'
+    )
   })
 })

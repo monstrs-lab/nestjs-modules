@@ -63,4 +63,16 @@ export class KratosBrowserUrls {
 
     return url.toString()
   }
+
+  createInterceptingUrl(interceptorPath: string, proto?: string, host?: string, returnTo?: string) {
+    if (proto !== 'https' || !host || !returnTo) {
+      return undefined
+    }
+
+    const url = new URL(interceptorPath, `${proto}://${host}`)
+
+    url.searchParams.append('return_to', returnTo)
+
+    return url.toString()
+  }
 }

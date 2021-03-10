@@ -21,6 +21,7 @@ describe('KratosExceptionFilter', () => {
     const argumentHost = {
       getResponse: () => response as any,
       getRequest: () => ({
+        header: () => undefined,
         query: {},
       }),
     }
@@ -34,7 +35,7 @@ describe('KratosExceptionFilter', () => {
     expect(response.redirect).toBeCalledWith('http://localhost:3000/self-service/login/browser')
   })
 
-  it('redirect on KratosFlowRequiredException with return_to query', async () => {
+  it('redirect on KratosFlowRequiredException with return_to interception', async () => {
     const filter = new KratosExceptionFilter(
       new KratosBrowserUrls({
         browser: 'http://localhost:3000',
@@ -49,8 +50,20 @@ describe('KratosExceptionFilter', () => {
     const argumentHost = {
       getResponse: () => response as any,
       getRequest: () => ({
+        path: '/',
         query: {
           return_to: 'http://localhost:3000',
+        },
+        header: (name) => {
+          if (name === 'x-forwarded-proto') {
+            return 'https'
+          }
+
+          if (name === 'host') {
+            return 'localhost'
+          }
+
+          return undefined
         },
       }),
     }
@@ -62,7 +75,7 @@ describe('KratosExceptionFilter', () => {
     filter.catch(new KratosRedirectRequiredException('login'), host as ArgumentsHost)
 
     expect(response.redirect).toBeCalledWith(
-      'http://localhost:3000/self-service/login/browser?return_to=http%3A%2F%2Flocalhost%3A3000'
+      'http://localhost:3000/self-service/login/browser?return_to=https%3A%2F%2Flocalhost%2Fcomplete%3Freturn_to%3Dhttp%253A%252F%252Flocalhost%253A3000'
     )
   })
 })

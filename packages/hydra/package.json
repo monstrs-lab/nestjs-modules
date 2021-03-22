@@ -1,6 +1,6 @@
 {
-  "name": "@monstrs/nestjs-external-renderer",
-  "version": "0.0.14",
+  "name": "@monstrs/nestjs-hydra",
+  "version": "0.0.13",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,14 +12,16 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "@oryd/hydra-client": "1.9.0-alpha.3"
   },
   "devDependencies": {
     "@monstrs/mctl-cli": "0.2.86",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",
+    "@types/express": "^4.17.9",
     "@types/node": "^14.14.14",
+    "express": "^4.17.1",
     "get-port": "^5.1.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3",

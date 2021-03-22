@@ -1692,6 +1692,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-hydra@workspace:packages/hydra":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-hydra@workspace:packages/hydra"
+  dependencies:
+    "@monstrs/mctl-cli": 0.2.86
+    "@nestjs/common": ^7.6.1
+    "@nestjs/core": ^7.6.1
+    "@nestjs/testing": ^7.6.1
+    "@oryd/hydra-client": 1.9.0-alpha.3
+    "@types/express": ^4.17.9
+    "@types/node": ^14.14.14
+    express: ^4.17.1
+    get-port: ^5.1.1
+    reflect-metadata: 0.1.13
+    rxjs: 6.6.3
+    supertest: ^6.0.1
+  peerDependencies:
+    "@nestjs/common": ^7.5.0
+    "@nestjs/core": ^7.5.0
+    reflect-metadata: ^0.1.12
+    rxjs: ^6.3.3
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/nestjs-kratos@workspace:packages/kratos":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kratos@workspace:packages/kratos"
@@ -1739,7 +1763,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-metrics@workspace:0.0.11, @monstrs/nestjs-metrics@workspace:packages/metrics":
+"@monstrs/nestjs-metrics@workspace:0.0.13, @monstrs/nestjs-metrics@workspace:packages/metrics":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
@@ -1767,8 +1791,8 @@ __metadata:
   resolution: "@monstrs/nestjs-telemetry@workspace:packages/telemetry"
   dependencies:
     "@monstrs/mctl-cli": 0.2.86
-    "@monstrs/nestjs-metrics": "workspace:0.0.11"
-    "@monstrs/nestjs-tracing": "workspace:0.0.11"
+    "@monstrs/nestjs-metrics": "workspace:0.0.13"
+    "@monstrs/nestjs-tracing": "workspace:0.0.13"
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
     "@nestjs/testing": ^7.6.1
@@ -1785,7 +1809,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-tracing@workspace:0.0.11, @monstrs/nestjs-tracing@workspace:packages/tracing":
+"@monstrs/nestjs-tracing@workspace:0.0.13, @monstrs/nestjs-tracing@workspace:packages/tracing":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:
@@ -2275,6 +2299,15 @@ __metadata:
     "@opentelemetry/resources": ^0.13.0
     "@opentelemetry/semantic-conventions": ^0.13.0
   checksum: 7668154e380357e174691640efc4187a1aee8777e7bb16dee017f4a18f5d15bc03258d1a1dde53246073837d126804ef2649321e9cb4eb72f8c07c238b8cec30
+  languageName: node
+  linkType: hard
+
+"@oryd/hydra-client@npm:1.9.0-alpha.3":
+  version: 1.9.0-alpha.3
+  resolution: "@oryd/hydra-client@npm:1.9.0-alpha.3"
+  dependencies:
+    axios: ^0.19.2
+  checksum: e4dbfa1cd8f12b0ee749980be2d2fd2e6273fc2d20c47d443baaed5a3bf9b38e35841c2966dd33b60e8fd4d262731e3e13ea207b8c161958da4ee4108621d970
   languageName: node
   linkType: hard
 

@@ -35,6 +35,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/grpc-http-proxy"
       },
       {
+        "name": "@monstrs/nestjs-hydra",
+        "reference": "workspace:packages/hydra"
+      },
+      {
         "name": "@monstrs/nestjs-kratos",
         "reference": "workspace:packages/kratos"
       },
@@ -61,6 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@monstrs/nestjs-external-renderer", ["workspace:packages/external-renderer"]],
       ["@monstrs/nestjs-gateway", ["workspace:packages/gateway"]],
       ["@monstrs/nestjs-grpc-http-proxy", ["workspace:packages/grpc-http-proxy"]],
+      ["@monstrs/nestjs-hydra", ["workspace:packages/hydra"]],
       ["@monstrs/nestjs-kratos", ["workspace:packages/kratos"]],
       ["@monstrs/nestjs-logger", ["workspace:packages/logger"]],
       ["@monstrs/nestjs-metrics", ["virtual:717a2c5af8499cc812ad73b648c037811762c423cee963bfef8847e9240debc506bdf945823b60310089fafff457f38c6993429813453bb1423c4e1202f49764#workspace:packages/metrics", "workspace:packages/metrics"]],
@@ -2330,6 +2335,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@monstrs/nestjs-hydra", [
+        ["workspace:packages/hydra", {
+          "packageLocation": "./packages/hydra/",
+          "packageDependencies": [
+            ["@monstrs/nestjs-hydra", "workspace:packages/hydra"],
+            ["@monstrs/mctl-cli", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:0.2.86"],
+            ["@nestjs/common", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
+            ["@nestjs/core", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
+            ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
+            ["@oryd/hydra-client", "npm:1.9.0-alpha.3"],
+            ["@types/express", "npm:4.17.9"],
+            ["@types/node", "npm:14.14.14"],
+            ["express", "npm:4.17.1"],
+            ["get-port", "npm:5.1.1"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["rxjs", "npm:6.6.3"],
+            ["supertest", "npm:6.0.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@monstrs/nestjs-kratos", [
         ["workspace:packages/kratos", {
           "packageLocation": "./packages/kratos/",
@@ -3470,6 +3496,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/core", "npm:0.13.0"],
             ["@opentelemetry/resources", "npm:0.13.0"],
             ["@opentelemetry/semantic-conventions", "npm:0.13.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@oryd/hydra-client", [
+        ["npm:1.9.0-alpha.3", {
+          "packageLocation": "./.yarn/cache/@oryd-hydra-client-npm-1.9.0-alpha.3-ec1cce6fd3-e4dbfa1cd8.zip/node_modules/@oryd/hydra-client/",
+          "packageDependencies": [
+            ["@oryd/hydra-client", "npm:1.9.0-alpha.3"],
+            ["axios", "npm:0.19.2"]
           ],
           "linkType": "HARD",
         }]

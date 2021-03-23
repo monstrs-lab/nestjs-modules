@@ -1,11 +1,11 @@
-import { LoginFlow, RecoveryFlow }        from '@oryd/kratos-client'
-import { RegistrationFlow, SettingsFlow } from '@oryd/kratos-client'
-import { VerificationFlow }               from '@oryd/kratos-client'
-import { RegistrationFlowMethodConfig }   from '@oryd/kratos-client'
-import { LoginFlowMethodConfig }          from '@oryd/kratos-client'
-import { RecoveryFlowMethodConfig }       from '@oryd/kratos-client'
-import { SettingsFlowMethodConfig }       from '@oryd/kratos-client'
-import { VerificationFlowMethodConfig }   from '@oryd/kratos-client'
+import { LoginFlow, RecoveryFlow }        from '@ory/kratos-client'
+import { RegistrationFlow, SettingsFlow } from '@ory/kratos-client'
+import { VerificationFlow }               from '@ory/kratos-client'
+import { RegistrationFlowMethodConfig }   from '@ory/kratos-client'
+import { LoginFlowMethodConfig }          from '@ory/kratos-client'
+import { RecoveryFlowMethodConfig }       from '@ory/kratos-client'
+import { SettingsFlowMethodConfig }       from '@ory/kratos-client'
+import { VerificationFlowMethodConfig }   from '@ory/kratos-client'
 
 export type MethodConfigFlow =
   | LoginFlow

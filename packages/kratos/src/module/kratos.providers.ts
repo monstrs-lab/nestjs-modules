@@ -1,6 +1,6 @@
 import { Provider }                 from '@nestjs/common'
 import { APP_FILTER }               from '@nestjs/core'
-import { Configuration, PublicApi } from '@oryd/kratos-client'
+import { Configuration, PublicApi } from '@ory/kratos-client'
 
 import { KratosExceptionFilter }    from '../filters'
 import { WhoamiPipe }               from '../pipes'

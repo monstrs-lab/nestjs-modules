@@ -82,7 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@babel/types", "npm:7.12.12"],
+            ["@babel/types", "npm:7.13.12"],
             ["@monstrs/mctl-cli", "virtual:371015ddcff70c480ce0819023bdce12201863ac3766ba4076edfd41781e86f99172819c71437d4457722058c3942e26f174c204f9fe55ecfc3235414326d5d9#npm:0.2.86"],
             ["@types/jest", "npm:26.0.19"],
             ["@types/node", "npm:14.14.14"],
@@ -701,21 +701,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@babel/types", [
-        ["npm:7.12.12", {
-          "packageLocation": "./.yarn/cache/@babel-types-npm-7.12.12-091a83fdd2-928554396c.zip/node_modules/@babel/types/",
-          "packageDependencies": [
-            ["@babel/types", "npm:7.12.12"],
-            ["@babel/helper-validator-identifier", "npm:7.12.11"],
-            ["lodash", "npm:4.17.20"],
-            ["to-fast-properties", "npm:2.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.12.7", {
           "packageLocation": "./.yarn/cache/@babel-types-npm-7.12.7-e698f7394b-1536350797.zip/node_modules/@babel/types/",
           "packageDependencies": [
             ["@babel/types", "npm:7.12.7"],
             ["@babel/helper-validator-identifier", "npm:7.10.4"],
+            ["lodash", "npm:4.17.20"],
+            ["to-fast-properties", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.13.12", {
+          "packageLocation": "./.yarn/cache/@babel-types-npm-7.13.12-779872e686-154392625e.zip/node_modules/@babel/types/",
+          "packageDependencies": [
+            ["@babel/types", "npm:7.13.12"],
+            ["@babel/helper-validator-identifier", "npm:7.12.11"],
             ["lodash", "npm:4.17.20"],
             ["to-fast-properties", "npm:2.0.0"]
           ],
@@ -2344,7 +2344,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
             ["@nestjs/core", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
             ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
-            ["@oryd/hydra-client", "npm:1.9.0-alpha.3"],
+            ["@ory/hydra-client", "npm:1.9.2"],
             ["@types/express", "npm:4.17.9"],
             ["@types/node", "npm:14.14.14"],
             ["express", "npm:4.17.1"],
@@ -2365,7 +2365,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
             ["@nestjs/core", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
             ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.1"],
-            ["@oryd/kratos-client", "npm:0.5.4-alpha.1"],
+            ["@ory/kratos-client", "npm:0.5.5-alpha.2"],
             ["@types/express", "npm:4.17.9"],
             ["@types/node", "npm:14.14.14"],
             ["express", "npm:4.17.1"],
@@ -3500,21 +3500,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["@oryd/hydra-client", [
-        ["npm:1.9.0-alpha.3", {
-          "packageLocation": "./.yarn/cache/@oryd-hydra-client-npm-1.9.0-alpha.3-ec1cce6fd3-e4dbfa1cd8.zip/node_modules/@oryd/hydra-client/",
+      ["@ory/hydra-client", [
+        ["npm:1.9.2", {
+          "packageLocation": "./.yarn/cache/@ory-hydra-client-npm-1.9.2-290891c4a0-66a90ee471.zip/node_modules/@ory/hydra-client/",
           "packageDependencies": [
-            ["@oryd/hydra-client", "npm:1.9.0-alpha.3"],
+            ["@ory/hydra-client", "npm:1.9.2"],
             ["axios", "npm:0.19.2"]
           ],
           "linkType": "HARD",
         }]
       ]],
-      ["@oryd/kratos-client", [
-        ["npm:0.5.4-alpha.1", {
-          "packageLocation": "./.yarn/cache/@oryd-kratos-client-npm-0.5.4-alpha.1-2f3bd8f39d-1e23dda13a.zip/node_modules/@oryd/kratos-client/",
+      ["@ory/kratos-client", [
+        ["npm:0.5.5-alpha.2", {
+          "packageLocation": "./.yarn/cache/@ory-kratos-client-npm-0.5.5-alpha.2-c43815a224-e6fcb2b19e.zip/node_modules/@ory/kratos-client/",
           "packageDependencies": [
-            ["@oryd/kratos-client", "npm:0.5.4-alpha.1"],
+            ["@ory/kratos-client", "npm:0.5.5-alpha.2"],
             ["axios", "npm:0.19.2"]
           ],
           "linkType": "HARD",
@@ -13023,7 +13023,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["nestjs-modules", "workspace:."],
-            ["@babel/types", "npm:7.12.12"],
+            ["@babel/types", "npm:7.13.12"],
             ["@monstrs/mctl-cli", "virtual:371015ddcff70c480ce0819023bdce12201863ac3766ba4076edfd41781e86f99172819c71437d4457722058c3942e26f174c204f9fe55ecfc3235414326d5d9#npm:0.2.86"],
             ["@types/jest", "npm:26.0.19"],
             ["@types/node", "npm:14.14.14"],

@@ -1,4 +1,4 @@
-import { LoginRequest } from '@oryd/hydra-client'
+import { LoginRequest } from '@ory/hydra-client'
 
 export const extractLoginRequestState = (body: LoginRequest) => {
   if (!body.request_url) {

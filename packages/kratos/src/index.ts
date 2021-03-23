@@ -1,4 +1,4 @@
-export * from '@oryd/kratos-client'
+export * from '@ory/kratos-client'
 
 export * from './interceptors'
 export * from './decorators'

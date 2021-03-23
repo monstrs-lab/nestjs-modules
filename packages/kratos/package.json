@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-kratos",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,7 +12,7 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@oryd/kratos-client": "0.5.4-alpha.1"
+    "@ory/kratos-client": "0.5.5-alpha.2"
   },
   "devDependencies": {
     "@monstrs/mctl-cli": "0.2.86",

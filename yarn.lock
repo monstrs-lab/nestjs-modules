@@ -449,14 +449,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.12.12":
-  version: 7.12.12
-  resolution: "@babel/types@npm:7.12.12"
+"@babel/types@npm:^7.13.12":
+  version: 7.13.12
+  resolution: "@babel/types@npm:7.13.12"
   dependencies:
     "@babel/helper-validator-identifier": ^7.12.11
     lodash: ^4.17.19
     to-fast-properties: ^2.0.0
-  checksum: 928554396cb6b367e00cb6d41aee4ea0228872e8cda221d81abe786462799ecc63993f3c16845b30cd68e673269704f8007f4edc105a32c6d7e03e68a670a676
+  checksum: 154392625ea7b7c550be1ebf624b9cfed394d11bf8b7cb39b0ec874a84313d26dc708cca62b18de9901bce19a9a187f0d4834e8cf365ad2fc9357c96c13923f7
   languageName: node
   linkType: hard
 
@@ -1700,7 +1700,7 @@ __metadata:
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
     "@nestjs/testing": ^7.6.1
-    "@oryd/hydra-client": 1.9.0-alpha.3
+    "@ory/hydra-client": 1.9.2
     "@types/express": ^4.17.9
     "@types/node": ^14.14.14
     express: ^4.17.1
@@ -1724,7 +1724,7 @@ __metadata:
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
     "@nestjs/testing": ^7.6.1
-    "@oryd/kratos-client": 0.5.4-alpha.1
+    "@ory/kratos-client": 0.5.5-alpha.2
     "@types/express": ^4.17.9
     "@types/node": ^14.14.14
     express: ^4.17.1
@@ -1763,7 +1763,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-metrics@workspace:0.0.13, @monstrs/nestjs-metrics@workspace:packages/metrics":
+"@monstrs/nestjs-metrics@workspace:0.0.14, @monstrs/nestjs-metrics@workspace:packages/metrics":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
@@ -1791,8 +1791,8 @@ __metadata:
   resolution: "@monstrs/nestjs-telemetry@workspace:packages/telemetry"
   dependencies:
     "@monstrs/mctl-cli": 0.2.86
-    "@monstrs/nestjs-metrics": "workspace:0.0.13"
-    "@monstrs/nestjs-tracing": "workspace:0.0.13"
+    "@monstrs/nestjs-metrics": "workspace:0.0.14"
+    "@monstrs/nestjs-tracing": "workspace:0.0.14"
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
     "@nestjs/testing": ^7.6.1
@@ -1809,7 +1809,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-tracing@workspace:0.0.13, @monstrs/nestjs-tracing@workspace:packages/tracing":
+"@monstrs/nestjs-tracing@workspace:0.0.14, @monstrs/nestjs-tracing@workspace:packages/tracing":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:
@@ -2302,21 +2302,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oryd/hydra-client@npm:1.9.0-alpha.3":
-  version: 1.9.0-alpha.3
-  resolution: "@oryd/hydra-client@npm:1.9.0-alpha.3"
+"@ory/hydra-client@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@ory/hydra-client@npm:1.9.2"
   dependencies:
     axios: ^0.19.2
-  checksum: e4dbfa1cd8f12b0ee749980be2d2fd2e6273fc2d20c47d443baaed5a3bf9b38e35841c2966dd33b60e8fd4d262731e3e13ea207b8c161958da4ee4108621d970
+  checksum: 66a90ee47122e18198360498578bacefe9c65ec8f8589c40e09fe74f3cd7b3127493da5cd7345d7801825db004c2db0b9e40e98118f007c686d353b41f4260c8
   languageName: node
   linkType: hard
 
-"@oryd/kratos-client@npm:0.5.4-alpha.1":
-  version: 0.5.4-alpha.1
-  resolution: "@oryd/kratos-client@npm:0.5.4-alpha.1"
+"@ory/kratos-client@npm:0.5.5-alpha.2":
+  version: 0.5.5-alpha.2
+  resolution: "@ory/kratos-client@npm:0.5.5-alpha.2"
   dependencies:
     axios: ^0.19.2
-  checksum: 1e23dda13a7943046cb15bd77cb6d65d08fa4b18c4da1ca8bbdbac555ddf4b0e5b6638e292e3c39b2fd66545d410c00a09d167046877eeaf6e388059ed2c1d92
+  checksum: e6fcb2b19e05a629e2b03fa964371dceea795ab2995432c0405b04c03ae1843eaa7cccc81fd5e77ba097b768323a94c97c101794e0e053c1c5b109a93e731cd2
   languageName: node
   linkType: hard
 
@@ -10272,7 +10272,7 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "nestjs-modules@workspace:."
   dependencies:
-    "@babel/types": ^7.12.12
+    "@babel/types": ^7.13.12
     "@monstrs/mctl-cli": 0.2.86
     "@types/jest": ^26.0.19
     "@types/node": ^14.14.14

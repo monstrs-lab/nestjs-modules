@@ -3,6 +3,7 @@ import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
 export interface KratosModuleOptions {
   public: string
   browser: string
+  admin?: string
   global?: boolean
 }
 

@@ -1763,7 +1763,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-metrics@workspace:0.0.15, @monstrs/nestjs-metrics@workspace:packages/metrics":
+"@monstrs/nestjs-metrics@workspace:0.0.17, @monstrs/nestjs-metrics@workspace:packages/metrics":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
@@ -1791,8 +1791,8 @@ __metadata:
   resolution: "@monstrs/nestjs-telemetry@workspace:packages/telemetry"
   dependencies:
     "@monstrs/mctl-cli": 0.2.86
-    "@monstrs/nestjs-metrics": "workspace:0.0.15"
-    "@monstrs/nestjs-tracing": "workspace:0.0.15"
+    "@monstrs/nestjs-metrics": "workspace:0.0.17"
+    "@monstrs/nestjs-tracing": "workspace:0.0.17"
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
     "@nestjs/testing": ^7.6.1
@@ -1809,7 +1809,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-tracing@workspace:0.0.15, @monstrs/nestjs-tracing@workspace:packages/tracing":
+"@monstrs/nestjs-tracing@workspace:0.0.17, @monstrs/nestjs-tracing@workspace:packages/tracing":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:

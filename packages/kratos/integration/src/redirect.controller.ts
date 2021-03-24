@@ -3,11 +3,11 @@ import { UseInterceptors }           from '@nestjs/common'
 
 import { KratosRedirectInterceptor } from '../../src'
 import { Flow }                      from '../../src'
-import { PublicApi }                 from '../../src'
+import { KratosPublicApi }           from '../../src'
 
 @Controller('redirect')
 export class RedirectController {
-  constructor(private readonly kratos: PublicApi) {}
+  constructor(private readonly kratos: KratosPublicApi) {}
 
   @Get('403')
   @UseInterceptors(new KratosRedirectInterceptor('login'))

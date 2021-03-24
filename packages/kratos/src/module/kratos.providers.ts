@@ -1,8 +1,8 @@
 import { Provider }              from '@nestjs/common'
 import { APP_FILTER }            from '@nestjs/core'
-import { Configuration }         from '@ory/kratos-client'
-import { PublicApi }             from '@ory/kratos-client'
-import { AdminApi }              from '@ory/kratos-client'
+import { Configuration }         from '../client'
+import { KratosPublicApi }       from '../client'
+import { KratosAdminApi }        from '../client'
 
 import { KratosExceptionFilter } from '../filters'
 import { WhoamiPipe }            from '../pipes'
@@ -31,15 +31,17 @@ export const createKratosProvider = (): Provider[] => {
 export const createKratosExportsProvider = (): Provider[] => {
   return [
     {
-      provide: PublicApi,
+      provide: KratosPublicApi,
       useFactory: (config: KratosModuleOptions) =>
-        new PublicApi(new Configuration({ basePath: config.public })),
+        new KratosPublicApi(new Configuration({ basePath: config.public })),
       inject: [KRATOS_MODULE_OPTIONS],
     },
     {
-      provide: AdminApi,
+      provide: KratosAdminApi,
       useFactory: (config: KratosModuleOptions) =>
-        new AdminApi(new Configuration({ basePath: config.admin || 'http://kratos-admin:4434' })),
+        new KratosAdminApi(
+          new Configuration({ basePath: config.admin || 'http://kratos-admin:4434' })
+        ),
       inject: [KRATOS_MODULE_OPTIONS],
     },
     KratosBrowserUrls,

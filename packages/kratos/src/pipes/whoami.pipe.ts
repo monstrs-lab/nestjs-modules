@@ -1,11 +1,12 @@
 import { PipeTransform }    from '@nestjs/common'
 import { Injectable }       from '@nestjs/common'
 import { ArgumentMetadata } from '@nestjs/common'
-import { PublicApi }        from '@ory/kratos-client'
+
+import { KratosPublicApi }  from '../client'
 
 @Injectable()
 export class WhoamiPipe implements PipeTransform {
-  constructor(private readonly kratos: PublicApi) {}
+  constructor(private readonly kratos: KratosPublicApi) {}
 
   public async transform(value: string[], metadata: ArgumentMetadata) {
     try {

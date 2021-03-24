@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-external-renderer",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [

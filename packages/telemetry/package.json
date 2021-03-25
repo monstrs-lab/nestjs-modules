@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-telemetry",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,11 +12,11 @@
     "build": "mctl library build"
   },
   "dependencies": {
-    "@monstrs/nestjs-metrics": "workspace:0.0.17",
-    "@monstrs/nestjs-tracing": "workspace:0.0.17"
+    "@monstrs/nestjs-metrics": "workspace:0.0.18",
+    "@monstrs/nestjs-tracing": "workspace:0.0.18"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.86",
+    "@monstrs/mctl-cli": "0.2.92",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",

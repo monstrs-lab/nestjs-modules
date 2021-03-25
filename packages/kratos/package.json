@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-kratos",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -15,7 +15,7 @@
     "@ory/kratos-client": "0.5.5-alpha.2"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.86",
+    "@monstrs/mctl-cli": "0.2.92",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",

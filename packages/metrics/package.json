@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-metrics",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -16,7 +16,7 @@
     "@opentelemetry/metrics": "^0.13.0"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.86",
+    "@monstrs/mctl-cli": "0.2.92",
     "@nestjs/common": "^7.6.1",
     "@nestjs/core": "^7.6.1",
     "@nestjs/testing": "^7.6.1",

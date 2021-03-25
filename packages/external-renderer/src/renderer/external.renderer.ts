@@ -22,12 +22,19 @@ export class ExternalRenderer implements OnModuleInit {
       instance.set('view', ExpressExternalRendererView)
       instance.set('views', this.options.url)
 
-      this.adapterHost.httpAdapter.render = (response, view, options) => {
-        return response.render(view, {
-          data: options,
-          headers: response.req.headers,
-          query: response.req.query,
-        })
+      const { render } = instance.response
+
+      // eslint-disable-next-line func-names
+      instance.response.render = function (view, options, callback) {
+        return render.apply(this, [
+          view,
+          {
+            data: options,
+            headers: this.req.header,
+            query: this.req.query,
+          },
+          callback,
+        ])
       }
     } else {
       throw new Error('Only express engine available')

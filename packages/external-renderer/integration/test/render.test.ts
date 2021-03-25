@@ -43,4 +43,16 @@ describe('external renderer', () => {
 
     expect(response.text).toBe('content')
   })
+
+  it(`return param`, async () => {
+    const response = await request(url).get('/exec/params').expect(200)
+
+    expect(response.text).toBe('value')
+  })
+
+  it(`return param res`, async () => {
+    const response = await request(url).get('/exec/res-render-params').expect(200)
+
+    expect(response.text).toBe('value')
+  })
 })

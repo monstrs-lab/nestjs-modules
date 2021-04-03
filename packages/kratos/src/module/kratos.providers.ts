@@ -10,41 +10,35 @@ import { KratosBrowserUrls }     from '../urls'
 import { KratosModuleOptions }   from './kratos-module-options.interface'
 import { KRATOS_MODULE_OPTIONS } from './kratos.constants'
 
-export const createKratosOptionsProvider = (options: KratosModuleOptions): Provider[] => {
-  return [
-    {
-      provide: KRATOS_MODULE_OPTIONS,
-      useValue: options,
-    },
-  ]
-}
+export const createKratosOptionsProvider = (options: KratosModuleOptions): Provider[] => [
+  {
+    provide: KRATOS_MODULE_OPTIONS,
+    useValue: options,
+  },
+]
 
-export const createKratosProvider = (): Provider[] => {
-  return [
-    {
-      provide: APP_FILTER,
-      useClass: KratosExceptionFilter,
-    },
-  ]
-}
+export const createKratosProvider = (): Provider[] => [
+  {
+    provide: APP_FILTER,
+    useClass: KratosExceptionFilter,
+  },
+]
 
-export const createKratosExportsProvider = (): Provider[] => {
-  return [
-    {
-      provide: KratosPublicApi,
-      useFactory: (config: KratosModuleOptions) =>
-        new KratosPublicApi(new Configuration({ basePath: config.public })),
-      inject: [KRATOS_MODULE_OPTIONS],
-    },
-    {
-      provide: KratosAdminApi,
-      useFactory: (config: KratosModuleOptions) =>
-        new KratosAdminApi(
-          new Configuration({ basePath: config.admin || 'http://kratos-admin:4434' })
-        ),
-      inject: [KRATOS_MODULE_OPTIONS],
-    },
-    KratosBrowserUrls,
-    WhoamiPipe,
-  ]
-}
+export const createKratosExportsProvider = (): Provider[] => [
+  {
+    provide: KratosPublicApi,
+    useFactory: (config: KratosModuleOptions) =>
+      new KratosPublicApi(new Configuration({ basePath: config.public })),
+    inject: [KRATOS_MODULE_OPTIONS],
+  },
+  {
+    provide: KratosAdminApi,
+    useFactory: (config: KratosModuleOptions) =>
+      new KratosAdminApi(
+        new Configuration({ basePath: config.admin || 'http://kratos-admin:4434' })
+      ),
+    inject: [KRATOS_MODULE_OPTIONS],
+  },
+  KratosBrowserUrls,
+  WhoamiPipe,
+]

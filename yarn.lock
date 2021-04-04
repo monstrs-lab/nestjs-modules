@@ -1700,6 +1700,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-github-app@workspace:packages/github-app"
   dependencies:
+    "@monstrs/logger": ^0.0.4
     "@monstrs/mctl-cli": 0.2.92
     "@nestjs/common": ^7.6.1
     "@nestjs/core": ^7.6.1
@@ -1716,7 +1717,6 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^7.5.0
     "@nestjs/core": ^7.5.0
-    "@octokit/app": ^11.3.0
     reflect-metadata: ^0.1.12
     rxjs: ^6.3.3
   languageName: unknown

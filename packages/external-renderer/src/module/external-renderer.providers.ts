@@ -6,19 +6,13 @@ import { EXTERNAL_RENDERER_MODULE_OPTIONS } from './external-renderer.constants'
 
 export const createExternalRendererOptionsProvider = (
   options: ExternalRendererModuleOptions
-): Provider[] => {
-  return [
-    {
-      provide: EXTERNAL_RENDERER_MODULE_OPTIONS,
-      useValue: options,
-    },
-  ]
-}
+): Provider[] => [
+  {
+    provide: EXTERNAL_RENDERER_MODULE_OPTIONS,
+    useValue: options,
+  },
+]
 
-export const createExternalRendererProvider = (): Provider[] => {
-  return [ExternalRenderer]
-}
+export const createExternalRendererProvider = (): Provider[] => [ExternalRenderer]
 
-export const createExternalRendererExportsProvider = (): Provider[] => {
-  return []
-}
+export const createExternalRendererExportsProvider = (): Provider[] => []

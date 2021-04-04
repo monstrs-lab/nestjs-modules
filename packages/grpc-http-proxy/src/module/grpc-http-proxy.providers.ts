@@ -6,19 +6,13 @@ import { ProtoRegistry }                  from '../proto'
 
 export const createGrpcHttpProxyOptionsProvider = (
   options: GrpcHttpProxyModuleOptions
-): Provider[] => {
-  return [
-    {
-      provide: GRPC_HTTP_PROXY_MODULE_OPTIONS,
-      useValue: options,
-    },
-  ]
-}
+): Provider[] => [
+  {
+    provide: GRPC_HTTP_PROXY_MODULE_OPTIONS,
+    useValue: options,
+  },
+]
 
-export const createGrpcHttpProxyProvider = (): Provider[] => {
-  return [ProtoRegistry]
-}
+export const createGrpcHttpProxyProvider = (): Provider[] => [ProtoRegistry]
 
-export const createGrpcHttpProxyExportsProvider = (): Provider[] => {
-  return []
-}
+export const createGrpcHttpProxyExportsProvider = (): Provider[] => []

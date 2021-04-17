@@ -1359,7 +1359,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-external-renderer@workspace:packages/external-renderer"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1387,7 +1386,6 @@ __metadata:
     "@graphql-mesh/runtime": ^0.10.22
     "@graphql-mesh/types": ^0.29.2
     "@monstrs/logger": ^0.0.4
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -1416,7 +1414,6 @@ __metadata:
   resolution: "@monstrs/nestjs-github-app@workspace:packages/github-app"
   dependencies:
     "@monstrs/logger": ^0.0.4
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1442,7 +1439,6 @@ __metadata:
   resolution: "@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy"
   dependencies:
     "@grpc/proto-loader": ^0.5.6
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -1469,7 +1465,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-hydra@workspace:packages/hydra"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1493,7 +1488,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kratos@workspace:packages/kratos"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1518,7 +1512,6 @@ __metadata:
   resolution: "@monstrs/nestjs-logger@workspace:packages/logger"
   dependencies:
     "@monstrs/logger": ^0.0.4
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1540,7 +1533,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1563,7 +1555,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-telemetry@workspace:packages/telemetry"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@monstrs/nestjs-metrics": "workspace:0.0.19"
     "@monstrs/nestjs-tracing": "workspace:0.0.19"
     "@nestjs/common": ^7.6.15
@@ -1586,7 +1577,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15

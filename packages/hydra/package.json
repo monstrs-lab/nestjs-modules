@@ -7,15 +7,14 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -r -f dist",
-    "prepublishOnly": "yarn run build",
-    "build": "mctl library build"
+    "build": "yarn app library build",
+    "postpack": "rm -rf dist",
+    "prepack": "yarn run build"
   },
   "dependencies": {
     "@ory/hydra-client": "1.9.2"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.101",
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
     "@nestjs/testing": "^7.6.15",

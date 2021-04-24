@@ -19,7 +19,7 @@
     "@nestjs/core": "^7.6.15",
     "@nestjs/microservices": "^7.6.15",
     "@nestjs/testing": "^7.6.15",
-    "@types/long": "^4",
+    "@types/long": "^4.0.1",
     "get-port": "^5.1.1",
     "long": "^4.0.0",
     "protobufjs": "^6.10.2",
@@ -35,9 +35,9 @@
     "rxjs": "^6.3.3"
   },
   "dependencies": {
-    "@grpc/proto-loader": "^0.5.6",
-    "google-protobuf": "^3.15.1",
-    "grpc": "^1.24.4"
+    "@grpc/proto-loader": "^0.6.1",
+    "google-protobuf": "^3.15.8",
+    "grpc": "^1.24.7"
   },
   "publishConfig": {
     "main": "dist/index.js",

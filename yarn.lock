@@ -1461,6 +1461,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection"
+  dependencies:
+    "@grpc/proto-loader": ^0.5.6
+    "@nestjs/common": ^7.6.15
+    "@nestjs/core": ^7.6.15
+    "@nestjs/microservices": ^7.6.15
+    "@nestjs/testing": ^7.6.15
+    "@types/long": ^4
+    get-port: ^5.1.1
+    google-protobuf: ^3.15.1
+    grpc: ^1.24.4
+    long: ^4.0.0
+    protobufjs: ^6.10.2
+    reflect-metadata: 0.1.13
+    rxjs: 6.6.7
+    supertest: ^6.1.3
+  peerDependencies:
+    "@nestjs/common": ^7.5.0
+    "@nestjs/core": ^7.5.0
+    "@nestjs/microservices": ^7.5.0
+    reflect-metadata: ^0.1.12
+    rxjs: ^6.3.3
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/nestjs-hydra@workspace:packages/hydra":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-hydra@workspace:packages/hydra"
@@ -2619,7 +2646,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/long@npm:*, @types/long@npm:^4.0.1":
+"@types/long@npm:*, @types/long@npm:^4, @types/long@npm:^4.0.1":
   version: 4.0.1
   resolution: "@types/long@npm:4.0.1"
   checksum: ed2a125330dbf2b425b2e58b1e1151a37106ceeec973f9f191fba0bda83ed00fae6d858254022e8b6e7165fec5f0c3872b7cb5f425c753383fed54699fb63b38
@@ -7205,6 +7232,13 @@ fsevents@^2.1.2:
   version: 3.14.0
   resolution: "google-protobuf@npm:3.14.0"
   checksum: 4bdc34a78522e57abc7ddc80be8fd4e8c2fe40ba50fbfbe0825615d35b451086586b7ce75cca4b820381df3aeb54f2997fced5e8718952936b806d470538159c
+  languageName: node
+  linkType: hard
+
+"google-protobuf@npm:^3.15.1":
+  version: 3.15.8
+  resolution: "google-protobuf@npm:3.15.8"
+  checksum: 5b97393a6f5f3649d3ca3dca38b32ac3b7b44cdd6cd597d19a2ae2e4c74d150904c99971992872e8cde1a2a99b2ae16ae82276be640a2ffa3600e66689e23eb3
   languageName: node
   linkType: hard
 

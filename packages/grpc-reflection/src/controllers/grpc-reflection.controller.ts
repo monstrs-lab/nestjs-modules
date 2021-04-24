@@ -26,18 +26,16 @@ export class GrpcReflectionController {
       }
 
       if (reflectionRequest.fileContainingSymbol) {
-        const methodDefinition = this.registry.getMethodDefinitionFromServicesByFileContainingSymbol(
+        const fileDescriptorProto = this.registry.getFileDescriptorProtoByFileContainingSymbol(
           reflectionRequest.fileContainingSymbol
         )
 
-        if (methodDefinition) {
-          const { fileDescriptorProtos } = methodDefinition.requestType
-
+        if (fileDescriptorProto) {
           response.next({
             validHost: '',
             originalRequest: reflectionRequest,
             fileDescriptorResponse: {
-              fileDescriptorProto: fileDescriptorProtos,
+              fileDescriptorProto: [fileDescriptorProto],
             },
           })
         } else {

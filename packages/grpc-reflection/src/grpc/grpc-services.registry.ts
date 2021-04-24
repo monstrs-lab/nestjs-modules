@@ -1,6 +1,5 @@
 import { Injectable }          from '@nestjs/common'
 import { ServiceDefinition }   from '@grpc/proto-loader'
-import { MethodDefinition }    from '@grpc/proto-loader'
 import { FileDescriptorProto } from 'google-protobuf/google/protobuf/descriptor_pb'
 
 @Injectable()
@@ -25,34 +24,26 @@ export class GrpcServicesRegistry {
     }
   }
 
-  getIfFileDescriptorContainsFileContainingSymbol(
-    fileDescriptor: FileDescriptorProto,
-    fileContainingSymbol: string
-  ) {
-    const packageName = fileDescriptor.getPackage()
+  getFileDescriptorProtoByFileContainingSymbol(fileContainingSymbol) {
+    return this.services.reduce<FileDescriptorProto | undefined>((fileDescriptorProto, service) => {
+      if (fileDescriptorProto) {
+        return fileDescriptorProto
+      }
 
-    return fileContainingSymbol.includes(packageName)
-  }
+      return Object.values(service).reduce<FileDescriptorProto | undefined>(
+        (descriptor, method) => {
+          if (descriptor) {
+            return descriptor
+          }
 
-  getMethodDefinitionFromServicesByFileContainingSymbol(fileContainingSymbol) {
-    return this.services.reduce<MethodDefinition<any, any> | undefined>(
-      (methodDefinition, service) => {
-        if (typeof methodDefinition !== 'undefined') {
-          return methodDefinition
-        }
+          return method.requestType.fileDescriptorProtos.find((fdp) => {
+            const fileDescriptor = FileDescriptorProto.deserializeBinary(fdp)
 
-        return Object.values(service).find((method) => {
-          const isFileContainingSymbolInService =
-            method.requestType.fileDescriptorProtos.findIndex((fileDescriptorProto) => {
-              const fdp = FileDescriptorProto.deserializeBinary(fileDescriptorProto)
-
-              return this.getIfFileDescriptorContainsFileContainingSymbol(fdp, fileContainingSymbol)
-            }) !== -1
-
-          return isFileContainingSymbolInService
-        })
-      },
-      undefined
-    )
+            return fileContainingSymbol.includes(fileDescriptor.getPackage())
+          })
+        },
+        undefined
+      )
+    }, undefined)
   }
 }

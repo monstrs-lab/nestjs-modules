@@ -18,13 +18,31 @@ export class ProtoClient {
     })
 
     return new Promise((resolve, reject) => {
-      this.client[method](request, metadata, (error: ServiceError, response) => {
-        if (error) {
-          reject(error)
-        } else {
+      if (this.client[method].requestStream) {
+        const call = this.client[method](metadata)
+
+        call.write(request)
+
+        let response
+
+        call.on('data', (data) => {
+          response = data
+
+          call.end()
+        })
+
+        call.on('end', () => {
           resolve(response)
-        }
-      })
+        })
+      } else {
+        this.client[method](request, metadata, (error: ServiceError, response) => {
+          if (error) {
+            reject(error)
+          } else {
+            resolve(response)
+          }
+        })
+      }
     })
   }
 }

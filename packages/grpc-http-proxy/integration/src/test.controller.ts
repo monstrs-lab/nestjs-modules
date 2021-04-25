@@ -1,12 +1,30 @@
-import { Controller } from '@nestjs/common'
-import { GrpcMethod } from '@nestjs/microservices'
+import { Controller }       from '@nestjs/common'
+import { GrpcMethod }       from '@nestjs/microservices'
+import { GrpcStreamMethod } from '@nestjs/microservices'
+import { Subject }          from 'rxjs'
 
 @Controller()
 export class TestController {
-  @GrpcMethod('TestService', 'test')
+  @GrpcMethod('TestService', 'Test')
   test({ id }) {
     return {
       id,
     }
+  }
+
+  @GrpcStreamMethod('TestService', 'TestStream')
+  testStream(request) {
+    const response = new Subject()
+
+    request.subscribe({
+      complete: () => response.complete(),
+      next: ({ id }) => {
+        response.next({
+          id,
+        })
+      },
+    })
+
+    return response.asObservable()
   }
 }

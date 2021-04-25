@@ -55,25 +55,23 @@ describe('grpc http proxy', () => {
     await app.close()
   })
 
-  it(`get schema`, async () => {
-    const response = await request(url).get('/grpc-proxy/schema').expect(200)
-
-    const [test] = response.body.files
-
-    expect(test.name).toBe('test.proto')
-    expect(test.source).toBeDefined()
-  })
-
   it(`call method`, async () => {
     const response = await request(url)
-      .post('/grpc-proxy/call')
+      .post('/grpc-proxy/test.TestService/Test')
       .send({
-        file: 'test.proto',
-        service: 'test.TestService',
-        method: 'test',
-        request: {
-          id: 'test',
-        },
+        id: 'test',
+      })
+      .set('Accept', 'application/json')
+      .expect(200)
+
+    expect(response.body.id).toBe('test')
+  })
+
+  it(`call stream method`, async () => {
+    const response = await request(url)
+      .post('/grpc-proxy/test.TestService/TestStream')
+      .send({
+        id: 'test',
       })
       .set('Accept', 'application/json')
       .expect(200)

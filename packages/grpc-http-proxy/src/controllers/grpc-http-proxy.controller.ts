@@ -3,6 +3,8 @@ import { Body }          from '@nestjs/common'
 import { Post }          from '@nestjs/common'
 import { HttpCode }      from '@nestjs/common'
 import { Param }         from '@nestjs/common'
+import { Header }        from '@nestjs/common'
+import BJSON             from 'buffer-json'
 
 import { ProtoRegistry } from '../proto'
 
@@ -12,7 +14,10 @@ export class GrpcHttpProxyController {
 
   @HttpCode(200)
   @Post('/:service/:method')
-  call(@Param('service') service, @Param('method') method, @Body() body) {
-    return this.protoRegistry.getClient(service).call(method, body, {})
+  @Header('Content-Type', 'application/json')
+  async call(@Param('service') service, @Param('method') method, @Body() body) {
+    const data = await this.protoRegistry.getClient(service).call(method, body, {})
+
+    return BJSON.stringify(data)
   }
 }

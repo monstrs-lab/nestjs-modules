@@ -574,6 +574,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@examples/grpc-http-proxy@workspace:examples/grpc-http-proxy":
+  version: 0.0.0-use.local
+  resolution: "@examples/grpc-http-proxy@workspace:examples/grpc-http-proxy"
+  dependencies:
+    "@grpc/proto-loader": ^0.6.1
+    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.19"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.1"
+    "@nestjs/common": ^7.6.15
+    "@nestjs/core": ^7.6.15
+    "@nestjs/microservices": ^7.6.15
+    "@nestjs/testing": ^7.6.15
+    "@types/long": ^4.0.1
+    google-protobuf: ^3.15.8
+    grpc: ^1.24.7
+    long: ^4.0.0
+    protobufjs: ^6.10.2
+    reflect-metadata: 0.1.13
+    rxjs: 6.6.7
+  languageName: unknown
+  linkType: soft
+
 "@examples/grpc-reflection@workspace:examples/grpc-reflection":
   version: 0.0.0-use.local
   resolution: "@examples/grpc-reflection@workspace:examples/grpc-reflection"
@@ -1460,7 +1481,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy":
+"@monstrs/nestjs-grpc-http-proxy@workspace:0.0.19, @monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy"
   dependencies:
@@ -1470,6 +1491,7 @@ __metadata:
     "@nestjs/microservices": ^7.6.15
     "@nestjs/testing": ^7.6.15
     "@types/lodash.get": ^4.4.6
+    buffer-json: ^2.0.0
     class-transformer: ^0.4.0
     get-port: ^5.1.1
     grpc: ^1.24.7
@@ -4329,6 +4351,13 @@ __metadata:
   version: 1.1.1
   resolution: "buffer-from@npm:1.1.1"
   checksum: 540ceb79c4f5bfcadaabbc18324fa84c50dc52905084be7c03596a339cf5a88513bee6831ce9b36ddd046fab09257a7c80686e129d0559a0cfd141da196ad956
+  languageName: node
+  linkType: hard
+
+"buffer-json@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "buffer-json@npm:2.0.0"
+  checksum: 14ae192479f36ad645ee638e37925516cf4019e4a68fb7061bd6105ce6b08e5d79926edabb1c9bfff490ca9348db1d625797bbd6c709c74679ef8fd81c87fcc6
   languageName: node
   linkType: hard
 

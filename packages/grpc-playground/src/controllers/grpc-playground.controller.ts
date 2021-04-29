@@ -1,27 +1,33 @@
-import { Controller } from '@nestjs/common'
-import { Param }      from '@nestjs/common'
-import { Res }        from '@nestjs/common'
-import { Get }        from '@nestjs/common'
-import fetch          from 'node-fetch'
+import { Controller }                     from '@nestjs/common'
+import { Inject }                         from '@nestjs/common'
+import { Param }                          from '@nestjs/common'
+import { Res }                            from '@nestjs/common'
+import { Get }                            from '@nestjs/common'
+import fetch                              from 'node-fetch'
 
-const getJsdelivrUrl = (pathname: string) =>
-  `https://cdn.jsdelivr.net/npm/@monstrs/grpc-playground-app/dist/${pathname}`
+import { GRPC_PLAYGROUND_MODULE_OPTIONS } from '../module'
+import { GrpcPlaygroundModuleOptions }    from '../module'
 
 @Controller()
 export class GrpcPlaygroundController {
+  constructor(
+    @Inject(GRPC_PLAYGROUND_MODULE_OPTIONS) private readonly options: GrpcPlaygroundModuleOptions
+  ) {}
+
+  getJsdelivrUrl(pathname: string) {
+    return `https://cdn.jsdelivr.net/npm/@monstrs/grpc-playground-app@${this.options.version}/dist/${pathname}`
+  }
+
   @Get()
   async index() {
-    const response = await fetch(getJsdelivrUrl('index.html'))
+    const response = await fetch(this.getJsdelivrUrl('index.html'))
     const content = await response.text()
 
-    return content.replace(
-      /\/_next\//g,
-      'https://cdn.jsdelivr.net/npm/@monstrs/grpc-playground-app/dist/_next/'
-    )
+    return content.replace(/\/_next/g, this.getJsdelivrUrl('_next'))
   }
 
   @Get('/_next/static/chunks/:chunk')
   async chunks(@Res() res, @Param('chunk') chunk: string) {
-    res.redirect(getJsdelivrUrl(`_next/static/chunks/${chunk}`))
+    res.redirect(this.getJsdelivrUrl(`_next/static/chunks/${chunk}`))
   }
 }

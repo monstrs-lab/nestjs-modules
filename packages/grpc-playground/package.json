@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-grpc-playground",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.20",
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.2",
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.3",
     "node-fetch": "^2.6.1"
   }
 }

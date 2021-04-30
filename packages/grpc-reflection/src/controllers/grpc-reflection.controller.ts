@@ -4,8 +4,8 @@ import { Observable }               from 'rxjs'
 import { Subject }                  from 'rxjs'
 import { status }                   from 'grpc'
 
-import { ServerReflectionRequest }  from '../../proto'
-import { ServerReflectionResponse } from '../../proto'
+import { ServerReflectionRequest }  from '../grpc'
+import { ServerReflectionResponse } from '../grpc'
 import { GrpcServicesRegistry }     from '../grpc'
 
 @Controller()

@@ -11,8 +11,8 @@ import { Transport }                       from '@nestjs/microservices'
 import { FileDescriptorProto }             from 'google-protobuf/google/protobuf/descriptor_pb'
 import { ReplaySubject }                   from 'rxjs'
 
-import { ServerReflectionClient }          from '../../proto'
-import { ServerReflectionRequest }         from '../../proto'
+import { ServerReflectionClient }          from '../../src'
+import { ServerReflectionRequest }         from '../../src'
 import { GrpcReflectionIntegrationModule } from '../src'
 import { serverOptions }                   from '../src'
 

@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-logger",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [

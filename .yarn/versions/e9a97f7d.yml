@@ -1,0 +1,4 @@
+releases:
+  "@monstrs/nestjs-grpc-http-proxy": patch
+  "@monstrs/nestjs-grpc-playground": patch
+  "@monstrs/nestjs-grpc-reflection": patch

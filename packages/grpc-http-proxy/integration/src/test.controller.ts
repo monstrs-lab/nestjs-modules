@@ -12,6 +12,11 @@ export class TestController {
     }
   }
 
+  @GrpcMethod('TestService', 'TestError')
+  testError({ id }) {
+    throw new Error(id)
+  }
+
   @GrpcStreamMethod('TestService', 'TestStream')
   testStream(request) {
     const response = new Subject()

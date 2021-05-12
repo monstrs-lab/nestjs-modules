@@ -1559,6 +1559,7 @@ __metadata:
   resolution: "@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection"
   dependencies:
     "@grpc/proto-loader": ^0.6.1
+    "@monstrs/types-import-proto": ^0.0.1
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -1746,6 +1747,13 @@ __metadata:
     "@monstrs/webpack-source-map": 0.0.4
     stack-utils: ^2.0.3
   checksum: 96f9b5b236d7dfc6ee01ffcf8a80601fa39c40e29b965d0a8d3d7aea0d46d42af6a9e4b9a163612304c5093c7113356a22783553a6f06fc6bfef0f46b27578c7
+  languageName: node
+  linkType: hard
+
+"@monstrs/types-import-proto@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@monstrs/types-import-proto@npm:0.0.1"
+  checksum: d8aa36d448f28bb178a4490e69e07e92cf707f6e7207936ff3238bc1006aeebde663c5f81cadb826e5f7a8b5bfb7ddd441837f2662d0c2cc0daec50a968f6c08
   languageName: node
   linkType: hard
 

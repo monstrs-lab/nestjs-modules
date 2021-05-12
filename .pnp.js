@@ -2247,6 +2247,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-reflection", "virtual:1b645f34e708f7901d1bd6b5b2d1038edc84294a49890304b13123db78ac85a009762dcf36af72cc3f76303827188f19bee713c279b8ca82cc7dee72e3732570#workspace:packages/grpc-reflection"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/types-import-proto", "npm:0.0.1"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:1b645f34e708f7901d1bd6b5b2d1038edc84294a49890304b13123db78ac85a009762dcf36af72cc3f76303827188f19bee713c279b8ca82cc7dee72e3732570#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:1b645f34e708f7901d1bd6b5b2d1038edc84294a49890304b13123db78ac85a009762dcf36af72cc3f76303827188f19bee713c279b8ca82cc7dee72e3732570#npm:7.6.15"],
@@ -2285,6 +2286,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-reflection", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#workspace:packages/grpc-reflection"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/types-import-proto", "npm:0.0.1"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
@@ -2323,6 +2325,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-reflection", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#workspace:packages/grpc-reflection"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/types-import-proto", "npm:0.0.1"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
@@ -2361,6 +2364,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-reflection", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#workspace:packages/grpc-reflection"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/types-import-proto", "npm:0.0.1"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
@@ -2399,6 +2403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-reflection", "workspace:packages/grpc-reflection"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/types-import-proto", "npm:0.0.1"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:12afd57a4283d05d55b4a09e7e8c15a2c676e06b79e3b9a3fed424a486c66d420b10fd33fd0acccce1ce8d5694a4a73c3680f8149265518b0def1f2d5dfb12b8#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:12afd57a4283d05d55b4a09e7e8c15a2c676e06b79e3b9a3fed424a486c66d420b10fd33fd0acccce1ce8d5694a4a73c3680f8149265518b0def1f2d5dfb12b8#npm:7.6.15"],
@@ -2654,6 +2659,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/stack-trace", "npm:0.0.4"],
             ["@monstrs/webpack-source-map", "npm:0.0.4"],
             ["stack-utils", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@monstrs/types-import-proto", [
+        ["npm:0.0.1", {
+          "packageLocation": "./.yarn/cache/@monstrs-types-import-proto-npm-0.0.1-839ead19ea-d8aa36d448.zip/node_modules/@monstrs/types-import-proto/",
+          "packageDependencies": [
+            ["@monstrs/types-import-proto", "npm:0.0.1"]
           ],
           "linkType": "HARD",
         }]

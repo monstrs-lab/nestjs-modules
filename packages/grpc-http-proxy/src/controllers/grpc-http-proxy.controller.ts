@@ -16,8 +16,12 @@ export class GrpcHttpProxyController {
   @Post('/:service/:method')
   @Header('Content-Type', 'application/json')
   async call(@Param('service') service, @Param('method') method, @Body() body) {
-    const data = await this.protoRegistry.getClient(service).call(method, body, {})
+    try {
+      const data = await this.protoRegistry.getClient(service).call(method, body, {})
 
-    return BJSON.stringify(data)
+      return BJSON.stringify(data)
+    } catch (error) {
+      return BJSON.stringify(error)
+    }
   }
 }

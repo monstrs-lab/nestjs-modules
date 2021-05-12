@@ -67,6 +67,18 @@ describe('grpc http proxy', () => {
     expect(response.body.id).toBe('test')
   })
 
+  it(`call error method`, async () => {
+    const response = await request(url)
+      .post('/grpc-proxy/test.TestService/TestError')
+      .send({
+        id: 'test',
+      })
+      .set('Accept', 'application/json')
+      .expect(200)
+
+    expect(response.body.code).toBe(2)
+  })
+
   it(`call stream method`, async () => {
     const response = await request(url)
       .post('/grpc-proxy/test.TestService/TestStream')

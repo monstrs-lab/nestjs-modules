@@ -4,6 +4,7 @@ package test;
 
 service TestService {
   rpc Test (ExecTestRequest) returns (ExecTestResponse) {}
+  rpc TestError (ExecTestRequest) returns (ExecTestResponse) {}
   rpc TestStream (stream ExecTestRequest) returns (stream ExecTestResponse) {}
 }
 

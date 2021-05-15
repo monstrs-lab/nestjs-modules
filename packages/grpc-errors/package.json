@@ -1,0 +1,42 @@
+{
+  "name": "@monstrs/nestjs-grpc-errors",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn app library build",
+    "postpack": "rm -rf dist",
+    "prepack": "yarn run build"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.6.15",
+    "@nestjs/core": "^7.6.15",
+    "@nestjs/microservices": "^7.6.15",
+    "@nestjs/testing": "^7.6.15",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "get-port": "^5.1.1",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.6.7",
+    "supertest": "^6.1.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^7.5.0",
+    "@nestjs/core": "^7.5.0",
+    "@nestjs/microservices": "^7.5.0",
+    "class-validator": "^0.13",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.3"
+  },
+  "dependencies": {
+    "@monstrs/grpc-error-status": "^0.0.2",
+    "grpc": "^1.24.7"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

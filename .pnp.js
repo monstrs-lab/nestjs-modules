@@ -1814,6 +1814,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@monstrs/grpc-error-status", [
+        ["npm:0.0.2", {
+          "packageLocation": "./.yarn/cache/@monstrs-grpc-error-status-npm-0.0.2-4236ce0452-2b486287eb.zip/node_modules/@monstrs/grpc-error-status/",
+          "packageDependencies": [
+            ["@monstrs/grpc-error-status", "npm:0.0.2"],
+            ["google-protobuf", "npm:3.17.0"],
+            ["grpc", "npm:1.24.7"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@monstrs/logger", [
         ["npm:0.0.4", {
           "packageLocation": "./.yarn/cache/@monstrs-logger-npm-0.0.4-2eac5b59a4-0b96a78d37.zip/node_modules/@monstrs/logger/",
@@ -2051,6 +2062,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-http-proxy", "virtual:6cad625973c524f423bbc7f702a9db53f728a371eb3f4ed7493eaa5fd51440ea04b2167a23b05b5070620c99f61bdd5937132942f085a1bd5b37e0b164cd680e#workspace:packages/grpc-http-proxy"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/grpc-error-status", "npm:0.0.2"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
@@ -2090,6 +2102,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-http-proxy", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#workspace:packages/grpc-http-proxy"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/grpc-error-status", "npm:0.0.2"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
@@ -2129,6 +2142,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-http-proxy", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#workspace:packages/grpc-http-proxy"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/grpc-error-status", "npm:0.0.2"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
@@ -2168,6 +2182,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/nestjs-grpc-http-proxy", "workspace:packages/grpc-http-proxy"],
             ["@grpc/proto-loader", "npm:0.6.1"],
+            ["@monstrs/grpc-error-status", "npm:0.0.2"],
             ["@nestjs/common", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
             ["@nestjs/core", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
@@ -10438,6 +10453,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/google-protobuf-npm-3.15.8-75df975b6c-5b97393a6f.zip/node_modules/google-protobuf/",
           "packageDependencies": [
             ["google-protobuf", "npm:3.15.8"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.17.0", {
+          "packageLocation": "./.yarn/cache/google-protobuf-npm-3.17.0-23cd7ae90b-c92264b74d.zip/node_modules/google-protobuf/",
+          "packageDependencies": [
+            ["google-protobuf", "npm:3.17.0"]
           ],
           "linkType": "HARD",
         }]

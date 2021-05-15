@@ -1,6 +1,7 @@
 import { Controller }       from '@nestjs/common'
 import { GrpcMethod }       from '@nestjs/microservices'
 import { GrpcStreamMethod } from '@nestjs/microservices'
+import { RpcException }     from '@nestjs/microservices'
 import { Subject }          from 'rxjs'
 
 @Controller()
@@ -14,7 +15,7 @@ export class TestController {
 
   @GrpcMethod('TestService', 'TestError')
   testError({ id }) {
-    throw new Error(id)
+    throw new RpcException(new Error(id))
   }
 
   @GrpcStreamMethod('TestService', 'TestStream')

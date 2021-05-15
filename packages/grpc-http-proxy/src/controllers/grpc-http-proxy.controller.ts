@@ -4,6 +4,7 @@ import { Post }          from '@nestjs/common'
 import { HttpCode }      from '@nestjs/common'
 import { Param }         from '@nestjs/common'
 import { Header }        from '@nestjs/common'
+import { ErrorStatus }   from '@monstrs/grpc-error-status'
 import BJSON             from 'buffer-json'
 
 import { ProtoRegistry } from '../proto'
@@ -21,7 +22,7 @@ export class GrpcHttpProxyController {
 
       return BJSON.stringify(data)
     } catch (error) {
-      return BJSON.stringify(error)
+      return BJSON.stringify(ErrorStatus.fromServiceError(error).toObject())
     }
   }
 }

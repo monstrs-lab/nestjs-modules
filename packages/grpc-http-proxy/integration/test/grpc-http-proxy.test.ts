@@ -77,6 +77,7 @@ describe('grpc http proxy', () => {
       .expect(200)
 
     expect(response.body.code).toBe(2)
+    expect(response.body.details).toBeDefined()
   })
 
   it(`call stream method`, async () => {

@@ -1284,6 +1284,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/grpc-error-status@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@monstrs/grpc-error-status@npm:0.0.2"
+  dependencies:
+    google-protobuf: ^3.17.0
+    grpc: ^1.24.7
+  checksum: 2b486287eb00806bb010b7f533ed98235ccb494dcbf40b65bf287f0b5a16bead2dbba9f42abe21eccc2c74ce2d65c3b80bcd13f74c9133138c8d29bdabb2ad66
+  languageName: node
+  linkType: hard
+
 "@monstrs/logger@npm:^0.0.4":
   version: 0.0.4
   resolution: "@monstrs/logger@npm:0.0.4"
@@ -1507,6 +1517,7 @@ __metadata:
   resolution: "@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy"
   dependencies:
     "@grpc/proto-loader": ^0.6.1
+    "@monstrs/grpc-error-status": ^0.0.2
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -7278,6 +7289,13 @@ fsevents@^2.1.2:
   version: 3.15.8
   resolution: "google-protobuf@npm:3.15.8"
   checksum: 5b97393a6f5f3649d3ca3dca38b32ac3b7b44cdd6cd597d19a2ae2e4c74d150904c99971992872e8cde1a2a99b2ae16ae82276be640a2ffa3600e66689e23eb3
+  languageName: node
+  linkType: hard
+
+"google-protobuf@npm:^3.17.0":
+  version: 3.17.0
+  resolution: "google-protobuf@npm:3.17.0"
+  checksum: c92264b74d57b4934030ecdee8f5a6e590c3826c4702d2b3f285ef340746c9504a7d3a409847a9723ce4a2b6c36daea01943cfa32ce91c24274506b169678f4a
   languageName: node
   linkType: hard
 

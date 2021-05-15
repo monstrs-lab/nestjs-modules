@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.6.1",
+    "@monstrs/grpc-error-status": "^0.0.2",
     "buffer-json": "^2.0.0",
     "class-transformer": "^0.4.0",
     "grpc": "^1.24.7",

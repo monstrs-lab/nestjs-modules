@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.6.1",
-    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.23",
+    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.24",
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.4",
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",

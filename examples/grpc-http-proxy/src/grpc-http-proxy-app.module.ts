@@ -9,7 +9,7 @@ import { EchoModule }           from './echo'
 @Module({
   imports: [
     GrpcReflectionModule.register(serverOptions.options),
-    GrpcHttpProxyModule.register(serverOptions.options),
+    GrpcHttpProxyModule.register({ options: serverOptions.options }),
     EchoModule,
   ],
 })

@@ -2098,6 +2098,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
             ["@nestjs/testing", "virtual:51dcb3fe3f47cfb6224dcab5ae8c7e50b5682560d9d6abdf449cb9fd665402b311244dcf35352838e6165320fb5bb25ae45a36f802c2a93ab14064614bee36b9#npm:7.6.15"],
+            ["@types/cookie", "npm:0.4.0"],
             ["@types/express", "npm:4.17.11"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/lodash.get", "npm:4.4.6"],
@@ -2106,8 +2107,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__microservices", null],
             ["@types/reflect-metadata", null],
             ["@types/rxjs", null],
+            ["@types/uuid", "npm:8.3.0"],
             ["buffer-json", "npm:2.0.0"],
             ["class-transformer", "npm:0.4.0"],
+            ["cookie", "npm:0.4.1"],
             ["express", "npm:4.17.1"],
             ["get-port", "npm:5.1.1"],
             ["grpc", "npm:1.24.7"],
@@ -2116,7 +2119,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["protobufjs", "npm:6.10.2"],
             ["reflect-metadata", "npm:0.1.13"],
             ["rxjs", "npm:6.6.7"],
-            ["supertest", "npm:6.1.3"]
+            ["supertest", "npm:6.1.3"],
+            ["uuid", "npm:8.3.2"]
           ],
           "packagePeers": [
             "@nestjs/common",
@@ -2142,6 +2146,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/testing", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
+            ["@types/cookie", "npm:0.4.0"],
             ["@types/express", "npm:4.17.11"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/lodash.get", "npm:4.4.6"],
@@ -2150,8 +2155,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__microservices", null],
             ["@types/reflect-metadata", null],
             ["@types/rxjs", null],
+            ["@types/uuid", "npm:8.3.0"],
             ["buffer-json", "npm:2.0.0"],
             ["class-transformer", "npm:0.4.0"],
+            ["cookie", "npm:0.4.1"],
             ["express", "npm:4.17.1"],
             ["get-port", "npm:5.1.1"],
             ["grpc", "npm:1.24.7"],
@@ -2160,7 +2167,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["protobufjs", "npm:6.10.2"],
             ["reflect-metadata", "npm:0.1.13"],
             ["rxjs", "npm:6.6.7"],
-            ["supertest", "npm:6.1.3"]
+            ["supertest", "npm:6.1.3"],
+            ["uuid", "npm:8.3.2"]
           ],
           "packagePeers": [
             "@nestjs/common",
@@ -2186,6 +2194,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
             ["@nestjs/testing", "virtual:b8e549ae0ab0fd3082934deda19e84592b9205bbde272dd38bef3260f2fbc4388ca5e74fbba4580c56ac815d36cf3b8e235f8a276724ba00cc04120ff3bc589d#npm:7.6.15"],
+            ["@types/cookie", "npm:0.4.0"],
             ["@types/express", "npm:4.17.11"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/lodash.get", "npm:4.4.6"],
@@ -2194,8 +2203,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__microservices", null],
             ["@types/reflect-metadata", null],
             ["@types/rxjs", null],
+            ["@types/uuid", "npm:8.3.0"],
             ["buffer-json", "npm:2.0.0"],
             ["class-transformer", "npm:0.4.0"],
+            ["cookie", "npm:0.4.1"],
             ["express", "npm:4.17.1"],
             ["get-port", "npm:5.1.1"],
             ["grpc", "npm:1.24.7"],
@@ -2204,7 +2215,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["protobufjs", "npm:6.10.2"],
             ["reflect-metadata", "npm:0.1.13"],
             ["rxjs", "npm:6.6.7"],
-            ["supertest", "npm:6.1.3"]
+            ["supertest", "npm:6.1.3"],
+            ["uuid", "npm:8.3.2"]
           ],
           "packagePeers": [
             "@nestjs/common",
@@ -2230,11 +2242,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
             ["@nestjs/testing", "virtual:7cf1820b6ee4434102c43e8d267b0481fe415d6c8b7ab6e5edaf08e954815c2f49d8c36828418dd2de93d8d63b8458ea22153c097480ce162fff4e585c2666c2#npm:7.6.15"],
+            ["@types/cookie", "npm:0.4.0"],
             ["@types/express", "npm:4.17.11"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/lodash.get", "npm:4.4.6"],
+            ["@types/uuid", "npm:8.3.0"],
             ["buffer-json", "npm:2.0.0"],
             ["class-transformer", "npm:0.4.0"],
+            ["cookie", "npm:0.4.1"],
             ["express", "npm:4.17.1"],
             ["get-port", "npm:5.1.1"],
             ["grpc", "npm:1.24.7"],
@@ -2243,7 +2258,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["protobufjs", "npm:6.10.2"],
             ["reflect-metadata", "npm:0.1.13"],
             ["rxjs", "npm:6.6.7"],
-            ["supertest", "npm:6.1.3"]
+            ["supertest", "npm:6.1.3"],
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -5132,6 +5148,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/cookie", [
+        ["npm:0.4.0", {
+          "packageLocation": "./.yarn/cache/@types-cookie-npm-0.4.0-2e6e63f5fe-be9ef4172b.zip/node_modules/@types/cookie/",
+          "packageDependencies": [
+            ["@types/cookie", "npm:0.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/emscripten", [
         ["npm:1.39.4", {
           "packageLocation": "./.yarn/cache/@types-emscripten-npm-1.39.4-4d03380faa-b848421e25.zip/node_modules/@types/emscripten/",
@@ -5514,6 +5539,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-treeify-npm-1.0.0-b5e04e9cd3-f7b82d91a4.zip/node_modules/@types/treeify/",
           "packageDependencies": [
             ["@types/treeify", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/uuid", [
+        ["npm:8.3.0", {
+          "packageLocation": "./.yarn/cache/@types-uuid-npm-8.3.0-60b441a3d7-620985aed8.zip/node_modules/@types/uuid/",
+          "packageDependencies": [
+            ["@types/uuid", "npm:8.3.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8452,6 +8486,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cookie-npm-0.4.0-4b3d629e45-7aaef4b642.zip/node_modules/cookie/",
           "packageDependencies": [
             ["cookie", "npm:0.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.4.1", {
+          "packageLocation": "./.yarn/cache/cookie-npm-0.4.1-cc5e2ebb42-b8e0928e3e.zip/node_modules/cookie/",
+          "packageDependencies": [
+            ["cookie", "npm:0.4.1"]
           ],
           "linkType": "HARD",
         }]

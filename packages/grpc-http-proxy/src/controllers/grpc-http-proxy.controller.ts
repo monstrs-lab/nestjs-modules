@@ -5,6 +5,7 @@ import { HttpCode }              from '@nestjs/common'
 import { Param }                 from '@nestjs/common'
 import { Header }                from '@nestjs/common'
 import { Req }                   from '@nestjs/common'
+import { Res }                   from '@nestjs/common'
 import { ErrorStatus }           from '@monstrs/grpc-error-status'
 import BJSON                     from 'buffer-json'
 
@@ -21,15 +22,21 @@ export class GrpcHttpProxyController {
   @HttpCode(200)
   @Post('/:service/:method')
   @Header('Content-Type', 'application/json')
-  async call(@Param('service') service, @Param('method') method, @Body() body, @Req() req) {
+  async call(
+    @Param('service') service,
+    @Param('method') method,
+    @Body() body,
+    @Req() req,
+    @Res() res
+  ) {
     try {
-      const authorization = await this.authenticator.authenticate(req)
+      const authorization = await this.authenticator.authenticate(req, res)
 
       const data = await this.protoRegistry.getClient(service).call(method, body, { authorization })
 
-      return BJSON.stringify(data)
+      res.send(BJSON.stringify(data))
     } catch (error) {
-      return BJSON.stringify(ErrorStatus.fromServiceError(error).toObject())
+      res.send(BJSON.stringify(ErrorStatus.fromServiceError(error).toObject()))
     }
   }
 }

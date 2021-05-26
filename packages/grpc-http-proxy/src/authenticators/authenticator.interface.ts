@@ -1,5 +1,6 @@
-import { Request } from 'express'
+import { Request }  from 'express'
+import { Response } from 'express'
 
 export interface Authenticator {
-  execute(req: Request): Promise<string | null>
+  execute(req: Request, res: Response): Promise<string | null>
 }

@@ -1,5 +1,9 @@
 import { sign }           from 'jsonwebtoken'
 import { promises as fs } from 'fs'
+import { Request }        from 'express'
+import { Response }       from 'express'
+import { v4 as uuid }     from 'uuid'
+import cookie             from 'cookie'
 
 import { Authenticator }  from './authenticator.interface'
 
@@ -10,11 +14,24 @@ export class PrivateKeyAuthenticator implements Authenticator {
     }
   }
 
-  async execute() {
+  async execute(req: Request, res: Response) {
     if (this.privateKey) {
+      const cookies = cookie.parse(req.headers.cookie || '')
+      const subject = cookies.subject || uuid()
+
+      if (!cookies.subject) {
+        res.setHeader(
+          'Set-Cookie',
+          cookie.serialize('subject', String(subject), {
+            httpOnly: true,
+            maxAge: 60 * 60 * 24 * 7,
+          })
+        )
+      }
+
       const privateKey = await fs.readFile(this.privateKey, 'utf-8')
 
-      const token = sign({ sub: 'test' }, privateKey, { algorithm: 'RS256' })
+      const token = sign({ sub: subject }, privateKey, { algorithm: 'RS256' })
 
       return `Bearer ${token}`
     }

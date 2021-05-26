@@ -1,7 +1,12 @@
 import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
 import { GrpcOptions }          from '@nestjs/microservices'
 
-export type GrpcHttpProxyModuleOptions = GrpcOptions['options']
+import { Authenticator }        from '../authenticators'
+
+export interface GrpcHttpProxyModuleOptions {
+  options: GrpcOptions['options']
+  authenticator?: Authenticator
+}
 
 export interface GrpcHttpProxyOptionsFactory {
   createGrpcHttpProxyOptions(): Promise<GrpcHttpProxyModuleOptions> | GrpcHttpProxyModuleOptions

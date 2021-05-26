@@ -33,4 +33,13 @@ export class TestController {
 
     return response.asObservable()
   }
+
+  @GrpcMethod('TestService', 'TestAuth')
+  auth(_, metadata) {
+    const authorization = metadata.get('authorization')?.[0]
+
+    return {
+      id: authorization,
+    }
+  }
 }

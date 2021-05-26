@@ -10,6 +10,7 @@ import { Test }                           from '@nestjs/testing'
 
 import { GRPC_HTTP_PROXY_MODULE_OPTIONS } from '../../src'
 import { GrpcHttpProxyIntegrationModule } from '../src'
+import { NopeAuthenticator }              from '../src'
 import { serverOptions }                  from '../src'
 
 describe('grpc http proxy', () => {
@@ -26,8 +27,11 @@ describe('grpc http proxy', () => {
     })
       .overrideProvider(GRPC_HTTP_PROXY_MODULE_OPTIONS)
       .useValue({
-        ...serverOptions.options,
-        url: `0.0.0.0:${servicePort}`,
+        options: {
+          ...serverOptions.options,
+          url: `0.0.0.0:${servicePort}`,
+        },
+        authenticator: new NopeAuthenticator(),
       })
       .compile()
 
@@ -90,5 +94,17 @@ describe('grpc http proxy', () => {
       .expect(200)
 
     expect(response.body.id).toBe('test')
+  })
+
+  it(`call auth method`, async () => {
+    const response = await request(url)
+      .post('/grpc-proxy/test.TestService/TestAuth')
+      .send({
+        id: 'test',
+      })
+      .set('Accept', 'application/json')
+      .expect(200)
+
+    expect(response.body.id).toBe('nope')
   })
 })

@@ -19,13 +19,13 @@ export class ProtoRegistry implements OnApplicationBootstrap {
   ) {}
 
   async onApplicationBootstrap() {
-    const protoPaths = Array.isArray(this.options.protoPath)
-      ? this.options.protoPath
-      : [this.options.protoPath]
+    const protoPaths = Array.isArray(this.options.options.protoPath)
+      ? this.options.options.protoPath
+      : [this.options.options.protoPath]
 
     this.definitions = await Promise.all(
       protoPaths.map(async (protoPath) => {
-        const packageDefinition = await load(protoPath, this.options.loader)
+        const packageDefinition = await load(protoPath, this.options.options.loader)
 
         return loadPackageDefinition(packageDefinition)
       })
@@ -51,6 +51,6 @@ export class ProtoRegistry implements OnApplicationBootstrap {
       throw new Error('GRPC service not found')
     }
 
-    return ProtoClient.create(this.options.url, client)
+    return ProtoClient.create(this.options.options.url, client)
   }
 }

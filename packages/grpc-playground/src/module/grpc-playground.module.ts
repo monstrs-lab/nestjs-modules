@@ -14,7 +14,10 @@ export class GrpcPlaygroundModule {
       module: GrpcPlaygroundModule,
       imports: [
         GrpcReflectionModule.register(options.options),
-        GrpcHttpProxyModule.register(options.options),
+        GrpcHttpProxyModule.register({
+          authenticator: options.authenticator,
+          options: options.options,
+        }),
       ],
       providers: [
         {

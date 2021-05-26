@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.6.1",
-    "@monstrs/nestjs-grpc-playground": "workspace:0.0.5",
+    "@monstrs/nestjs-grpc-playground": "workspace:0.0.6",
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.4",
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",

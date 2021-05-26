@@ -14,6 +14,9 @@ export interface SourceOptions {
 
 export interface GatewayModuleOptions {
   path?: string
+  playground?: boolean
+  introspection?: boolean
+  cors?: any | boolean
   pubsub?: MeshPubSub
   cache?: KeyValueCache
   merger?: MergerFn

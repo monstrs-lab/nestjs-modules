@@ -1,4 +1,5 @@
 import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
+import { PlaygroundConfig }     from 'apollo-server-express'
 import { MeshPubSub }           from '@graphql-mesh/types'
 import { KeyValueCache }        from '@graphql-mesh/types'
 import { MergerFn }             from '@graphql-mesh/types'
@@ -14,7 +15,7 @@ export interface SourceOptions {
 
 export interface GatewayModuleOptions {
   path?: string
-  playground?: boolean
+  playground?: PlaygroundConfig
   introspection?: boolean
   cors?: any | boolean
   pubsub?: MeshPubSub

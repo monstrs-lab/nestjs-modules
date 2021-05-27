@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@monstrs/grpc-error-status": "^0.0.2",
-    "grpc": "^1.24.7"
+    "grpc": "^1.24.10"
   },
   "publishConfig": {
     "main": "dist/index.js",

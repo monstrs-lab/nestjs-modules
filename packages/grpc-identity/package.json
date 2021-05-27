@@ -16,10 +16,10 @@
     "@nestjs/core": "^7.6.15",
     "@nestjs/microservices": "^7.6.15",
     "@nestjs/testing": "^7.6.15",
-    "@types/jsonwebtoken": "^8",
-    "@types/jwk-to-pem": "^2",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/jwk-to-pem": "^2.0.0",
     "get-port": "^5.1.1",
-    "protobufjs": "^6.10.2",
+    "protobufjs": "^6.11.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.7"
   },
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@monstrs/grpc-error-status": "^0.0.2",
-    "grpc": "^1.24.7",
+    "grpc": "^1.24.10",
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^2.0.3"
   }

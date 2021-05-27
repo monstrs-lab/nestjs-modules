@@ -40,6 +40,9 @@ describe('gateway', () => {
               },
               serviceName: 'ExampleService',
               packageName: 'tech.monstrs',
+              metaData: {
+                authorization: ['req', 'headers', 'authorization'],
+              },
             },
           },
         ],
@@ -95,6 +98,25 @@ describe('gateway', () => {
                 name: 'Mission: Impossible Rogue Nation',
               },
             ],
+          },
+        },
+      })
+  })
+
+  it(`get movies`, async () => {
+    await request(url)
+      .post('/')
+      .set('Accept', 'application/json')
+      .set('Authorization', 'test')
+      .send({
+        operationName: 'Metadata',
+        variables: {},
+        query: 'query Metadata {\n  GetMetadata {\n    authorization  }\n}\n',
+      })
+      .expect(200, {
+        data: {
+          GetMetadata: {
+            authorization: 'test',
           },
         },
       })

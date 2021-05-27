@@ -4,7 +4,7 @@ import { GrpcMethod } from '@nestjs/microservices'
 @Controller()
 export class MoviesController {
   @GrpcMethod('ExampleService', 'getMovies')
-  getMovies() {
+  getMovies(_, metadata) {
     return {
       result: [
         {
@@ -14,5 +14,10 @@ export class MoviesController {
         },
       ],
     }
+  }
+
+  @GrpcMethod('ExampleService', 'GetMetadata')
+  getMetadata(_, metadata) {
+    return metadata.getMap()
   }
 }

@@ -9,7 +9,7 @@
     "dev": "yarn app service dev"
   },
   "dependencies": {
-    "@grpc/proto-loader": "^0.6.1",
+    "@grpc/proto-loader": "^0.6.2",
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.4",
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
@@ -17,9 +17,9 @@
     "@nestjs/testing": "^7.6.15",
     "@types/long": "^4.0.1",
     "google-protobuf": "^3.15.8",
-    "grpc": "^1.24.7",
+    "grpc": "^1.24.10",
     "long": "^4.0.0",
-    "protobufjs": "^6.10.2",
+    "protobufjs": "^6.11.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.7"
   },

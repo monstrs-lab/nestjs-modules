@@ -33,9 +33,9 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
 
       const apolloServer = new ApolloServer({
         schema,
-        introspection: introspection === undefined ? playground : introspection,
-        playground,
+        introspection: introspection === undefined ? Boolean(playground) : introspection,
         context: contextBuilder,
+        playground,
       })
 
       apolloServer.applyMiddleware({

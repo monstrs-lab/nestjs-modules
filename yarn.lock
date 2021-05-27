@@ -1528,13 +1528,10 @@ __metadata:
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
     "@nestjs/testing": ^7.6.15
-    "@types/express": ^4.17.12
     "@types/node": ^14.17.1
     apollo-server-express: ^2.24.1
-    express: ^4.17.1
     get-port: ^5.1.1
     graphql: ^15.5.0
-    graphql-helix: ^1.2.3
     graphql-subscriptions: ^1.1.0
     reflect-metadata: 0.1.13
     rxjs: 6.6.7
@@ -1542,7 +1539,6 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^7.5.0
     "@nestjs/core": ^7.5.0
-    "@nestjs/microservices": ^7.5.0
     graphql: ^15.5.0
     reflect-metadata: ^0.1.12
     rxjs: ^6.3.3
@@ -7810,15 +7806,6 @@ fsevents@^2.1.2:
   peerDependencies:
     graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: 4d3b808a16e5343a42ca972ea35ec265c5fd030bbbb441d664570d0d75abb3a40d16a02905647a8b77c78f1231f0a435c73a76bcb9c83b2ae690d8a0baa42e5a
-  languageName: node
-  linkType: hard
-
-"graphql-helix@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "graphql-helix@npm:1.2.3"
-  peerDependencies:
-    graphql: ^15.3.0
-  checksum: d92c198978fde60a9b4dda7d87d761ec90a719aae45d561b0296c8dc606240dd932c2847b40c582f6e48a3a25735366108c378bb51410388361548c794f3c75e
   languageName: node
   linkType: hard
 

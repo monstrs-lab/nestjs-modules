@@ -9,6 +9,7 @@ import { EventEmitter }           from 'events'
 import { MeshPubSub }             from '@graphql-mesh/types'
 import { GetMeshOptions }         from '@graphql-mesh/runtime'
 import GrpcHandler                from '@graphql-mesh/grpc'
+import { MeshTransform }          from '@graphql-mesh/types'
 
 import { GATEWAY_MODULE_OPTIONS } from '../module'
 import { GatewayModuleOptions }   from '../module'
@@ -23,12 +24,15 @@ export class GraphQLMeshConfig {
 
   private pubsub
 
+  private transforms: MeshTransform[]
+
   constructor(
     @Inject(GATEWAY_MODULE_OPTIONS)
     private readonly options: GatewayModuleOptions
   ) {
     this.cache = options.cache || new InMemoryLRUCache()
     this.merger = options.merger || StitchingMerger
+    this.transforms = options.transforms || []
 
     if (options.pubsub) {
       this.pubsub = options.pubsub
@@ -47,7 +51,7 @@ export class GraphQLMeshConfig {
       cache: this.cache,
       pubsub: this.pubsub,
       merger: this.merger,
-      transforms: [],
+      transforms: this.transforms,
       additionalTypeDefs: undefined,
       additionalResolvers: {},
     }
@@ -57,7 +61,7 @@ export class GraphQLMeshConfig {
     return (this.options.sources || []).map((source) => ({
       name: source.name,
       handler: this.createHandler(source),
-      transforms: [],
+      transforms: source.transforms,
     }))
   }
 

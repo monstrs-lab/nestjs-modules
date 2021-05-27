@@ -19,7 +19,6 @@
     "@graphql-mesh/types": "^0.42.0",
     "@monstrs/logger": "^0.0.6",
     "apollo-server-express": "^2.24.1",
-    "graphql-helix": "^1.2.3",
     "graphql-subscriptions": "^1.1.0"
   },
   "devDependencies": {
@@ -27,9 +26,7 @@
     "@nestjs/core": "^7.6.15",
     "@nestjs/microservices": "^7.6.15",
     "@nestjs/testing": "^7.6.15",
-    "@types/express": "^4.17.12",
     "@types/node": "^14.17.1",
-    "express": "^4.17.1",
     "get-port": "^5.1.1",
     "graphql": "^15.5.0",
     "reflect-metadata": "0.1.13",
@@ -39,7 +36,6 @@
   "peerDependencies": {
     "@nestjs/common": "^7.5.0",
     "@nestjs/core": "^7.5.0",
-    "@nestjs/microservices": "^7.5.0",
     "graphql": "^15.5.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3"

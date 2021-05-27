@@ -2188,13 +2188,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:7.6.15"],
             ["@nestjs/microservices", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:7.6.15"],
             ["@nestjs/testing", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:7.6.15"],
-            ["@types/express", "npm:4.17.12"],
             ["@types/node", "npm:14.14.37"],
             ["apollo-server-express", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:2.24.1"],
-            ["express", "npm:4.17.1"],
             ["get-port", "npm:5.1.1"],
             ["graphql", "npm:15.5.0"],
-            ["graphql-helix", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:1.2.3"],
             ["graphql-subscriptions", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:1.2.1"],
             ["reflect-metadata", "npm:0.1.13"],
             ["rxjs", "npm:6.6.7"],
@@ -11670,28 +11667,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/graphql", null],
             ["apollo-server-env", "npm:3.1.0"],
             ["apollo-server-types", "virtual:4284fcdd826b9ed9dab87c81f0f01c0080e0189a4ccd1925932d25f6785d29d7afde35f1f4ebd2c7d9bc46bef0eb8d4b58ade78f44f84ace1daeb62fe5472ba0#npm:0.8.0"],
-            ["graphql", "npm:15.5.0"]
-          ],
-          "packagePeers": [
-            "@types/graphql",
-            "graphql"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["graphql-helix", [
-        ["npm:1.2.3", {
-          "packageLocation": "./.yarn/cache/graphql-helix-npm-1.2.3-febfb0357e-d92c198978.zip/node_modules/graphql-helix/",
-          "packageDependencies": [
-            ["graphql-helix", "npm:1.2.3"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:1.2.3", {
-          "packageLocation": "./.yarn/$$virtual/graphql-helix-virtual-1224be43c7/0/cache/graphql-helix-npm-1.2.3-febfb0357e-d92c198978.zip/node_modules/graphql-helix/",
-          "packageDependencies": [
-            ["graphql-helix", "virtual:148cd44261eb6db73c7417035f2f4324e57857293128629a040f16cf4ad88192ab40cf7380adc32b48cf63547a9d18859b8cca07e71aea48d3b9d7b410c7949f#npm:1.2.3"],
-            ["@types/graphql", null],
             ["graphql", "npm:15.5.0"]
           ],
           "packagePeers": [

@@ -121,4 +121,24 @@ describe('gateway', () => {
         },
       })
   })
+
+  it('handle error', async () => {
+    const response = await request(url)
+      .post('/')
+      .set('Accept', 'application/json')
+      .set('Authorization', 'test')
+      .send({
+        operationName: 'Error',
+        variables: {},
+        query: 'query Error {\n  GetError {\n    result  }\n}\n',
+      })
+
+    expect(response.body.errors[0].extensions.exception).toEqual(
+      expect.objectContaining({
+        status: 'INVALID_ARGUMENT',
+        code: 3,
+        message: 'Test',
+      })
+    )
+  })
 })

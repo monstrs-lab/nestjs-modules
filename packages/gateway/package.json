@@ -17,6 +17,7 @@
     "@graphql-mesh/merger-stitching": "^0.9.8",
     "@graphql-mesh/runtime": "^0.16.6",
     "@graphql-mesh/types": "^0.42.0",
+    "@monstrs/grpc-error-status": "^0.0.3",
     "@monstrs/logger": "^0.0.6",
     "apollo-server-express": "^2.24.1",
     "graphql-subscriptions": "^1.1.0"

@@ -35,7 +35,7 @@
     "typings": "dist/index.d.ts"
   },
   "dependencies": {
-    "@monstrs/grpc-error-status": "^0.0.2",
+    "@monstrs/grpc-error-status": "^0.0.3",
     "grpc": "^1.24.10",
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^2.0.3"

@@ -32,7 +32,7 @@
     "rxjs": "^6.3.3"
   },
   "dependencies": {
-    "@monstrs/grpc-error-status": "^0.0.2",
+    "@monstrs/grpc-error-status": "^0.0.3",
     "grpc": "^1.24.10"
   },
   "publishConfig": {

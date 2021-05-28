@@ -2,7 +2,7 @@
   "name": "nestjs-modules",
   "private": true,
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.109",
+    "@monstrs/mctl-cli": "0.2.111",
     "@types/jest": "^26.0.23",
     "@types/node": "^14.17.1",
     "husky": "6.0.0",

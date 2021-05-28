@@ -9,6 +9,7 @@ import { ApolloServer }           from 'apollo-server-express'
 import { GATEWAY_MODULE_OPTIONS } from '../module'
 import { GatewayModuleOptions }   from '../module'
 import { GraphQLMeshConfig }      from './graphql-mesh.config'
+import { formatError }            from './format.error'
 
 @Injectable()
 export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
@@ -36,6 +37,7 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
         introspection: introspection === undefined ? Boolean(playground) : introspection,
         context: contextBuilder,
         playground,
+        formatError,
       })
 
       apolloServer.applyMiddleware({

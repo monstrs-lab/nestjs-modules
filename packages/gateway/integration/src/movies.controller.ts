@@ -1,5 +1,7 @@
-import { Controller } from '@nestjs/common'
-import { GrpcMethod } from '@nestjs/microservices'
+import { Controller }   from '@nestjs/common'
+import { GrpcMethod }   from '@nestjs/microservices'
+import { RpcException } from '@nestjs/microservices'
+import { ErrorStatus }  from '@monstrs/grpc-error-status'
 
 @Controller()
 export class MoviesController {
@@ -19,5 +21,10 @@ export class MoviesController {
   @GrpcMethod('ExampleService', 'GetMetadata')
   getMetadata(_, metadata) {
     return metadata.getMap()
+  }
+
+  @GrpcMethod('ExampleService', 'GetError')
+  getError() {
+    throw new RpcException(new ErrorStatus(3, 'Test').toServiceError())
   }
 }

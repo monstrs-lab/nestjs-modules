@@ -5,6 +5,7 @@ package tech.monstrs;
 service ExampleService {
   rpc getMovies (MovieRequest) returns (MoviesResult) {}
   rpc GetMetadata (GetMetadataRequest) returns (GetMetadataResponse) {}
+  rpc GetError (GetErrorRequest) returns (GetErrorResponse) {} 
 }
 
 message Movie {
@@ -27,4 +28,12 @@ message GetMetadataRequest {
 
 message GetMetadataResponse {
   string authorization = 1;
+}
+
+message GetErrorRequest {
+
+}
+
+message GetErrorResponse {
+  string result = 1;
 }

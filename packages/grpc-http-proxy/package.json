@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.6.2",
-    "@monstrs/grpc-error-status": "^0.0.2",
+    "@monstrs/grpc-error-status": "^0.0.3",
     "buffer-json": "^2.0.0",
     "class-transformer": "^0.4.0",
     "cookie": "^0.4.1",

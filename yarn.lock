@@ -594,7 +594,7 @@ __metadata:
   dependencies:
     "@grpc/proto-loader": ^0.6.2
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.26"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.6"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -614,8 +614,8 @@ __metadata:
   resolution: "@examples/grpc-playground@workspace:examples/grpc-playground"
   dependencies:
     "@grpc/proto-loader": ^0.6.2
-    "@monstrs/nestjs-grpc-playground": "workspace:0.0.10"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.6"
+    "@monstrs/nestjs-grpc-playground": "workspace:0.0.11"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -635,7 +635,7 @@ __metadata:
   resolution: "@examples/grpc-reflection@workspace:examples/grpc-reflection"
   dependencies:
     "@grpc/proto-loader": ^0.6.2
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.6"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -1661,12 +1661,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-playground@workspace:0.0.10, @monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground":
+"@monstrs/nestjs-grpc-playground@workspace:0.0.11, @monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground"
   dependencies:
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.26"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.6"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/microservices": ^7.6.15
@@ -1685,7 +1685,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-reflection@workspace:0.0.6, @monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection":
+"@monstrs/nestjs-grpc-reflection@workspace:0.0.7, @monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection"
   dependencies:

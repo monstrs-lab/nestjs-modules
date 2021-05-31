@@ -23,8 +23,9 @@ export class PrivateKeyAuthenticator implements Authenticator {
         res.setHeader(
           'Set-Cookie',
           cookie.serialize('subject', String(subject), {
-            httpOnly: true,
             maxAge: 60 * 60 * 24 * 7,
+            httpOnly: true,
+            path: '/',
           })
         )
       }

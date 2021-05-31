@@ -36,11 +36,15 @@ export class GrpcServicesRegistry {
             return descriptor
           }
 
-          return method.requestType.fileDescriptorProtos.find((fdp) => {
-            const fileDescriptor = FileDescriptorProto.deserializeBinary(fdp)
+          if (method.path.includes(fileContainingSymbol)) {
+            return method.requestType.fileDescriptorProtos.find((fdp) => {
+              const fileDescriptor = FileDescriptorProto.deserializeBinary(fdp)
 
-            return fileContainingSymbol.includes(fileDescriptor.getPackage())
-          })
+              return fileContainingSymbol.includes(fileDescriptor.getPackage())
+            })
+          }
+
+          return undefined
         },
         undefined
       )

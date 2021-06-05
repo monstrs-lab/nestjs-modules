@@ -1852,7 +1852,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-typeorm-seeding@workspace:packages/typeorm-seeding"
   dependencies:
-    "@monstrs/typeorm-seeding": ^0.0.2
+    "@monstrs/typeorm-seeding": ^0.0.3
     "@nestjs/common": ^7.6.15
     "@nestjs/core": ^7.6.15
     "@nestjs/testing": ^7.6.15
@@ -1904,13 +1904,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/typeorm-seeding@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@monstrs/typeorm-seeding@npm:0.0.2"
+"@monstrs/typeorm-seeding@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@monstrs/typeorm-seeding@npm:0.0.3"
   dependencies:
     faker: ^5.5.3
     typeorm: ^0.2
-  checksum: 96c69af75aab3f205be7326a435990de4e6dba3c9dadb4a1f1b2b1fcd07843383b1b97408af79598d715740155a9cf38dd6f32fb7cf512895810d1de2c86019d
+  checksum: 9eafc1032fac6a403ec37038a6cf3016d2be792ac4fe06065b83c75b037d4abd0899c1a6e081f8c4fdbc05ed1472823d90ad151fc2101ee6e75f43d7acf9ba61
   languageName: node
   linkType: hard
 

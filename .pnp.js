@@ -2869,7 +2869,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/typeorm-seeding/",
           "packageDependencies": [
             ["@monstrs/nestjs-typeorm-seeding", "workspace:packages/typeorm-seeding"],
-            ["@monstrs/typeorm-seeding", "npm:0.0.2"],
+            ["@monstrs/typeorm-seeding", "npm:0.0.3"],
             ["@nestjs/common", "virtual:77887786a24289fa840c9acd370d634accbe79bcf317ecf5401844ffff73b8a593879dd9cce463873637e6414a631dfdb1a2473704bf332d823bcfffac8c2469#npm:7.6.15"],
             ["@nestjs/core", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.15"],
             ["@nestjs/testing", "virtual:b95fea9d456770bab78359190c3ca35b411554a194cd86690515e8a12fcf4f0c32c5c87c2219eaf88e4119d923807cdb40ec8e1d989f6fd9ebf999d7b9a39379#npm:7.6.15"],
@@ -2947,10 +2947,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@monstrs/typeorm-seeding", [
-        ["npm:0.0.2", {
-          "packageLocation": "./.yarn/cache/@monstrs-typeorm-seeding-npm-0.0.2-cc2ef0bf2a-96c69af75a.zip/node_modules/@monstrs/typeorm-seeding/",
+        ["npm:0.0.3", {
+          "packageLocation": "./.yarn/cache/@monstrs-typeorm-seeding-npm-0.0.3-18d2bab2fe-9eafc1032f.zip/node_modules/@monstrs/typeorm-seeding/",
           "packageDependencies": [
-            ["@monstrs/typeorm-seeding", "npm:0.0.2"],
+            ["@monstrs/typeorm-seeding", "npm:0.0.3"],
             ["faker", "npm:5.5.3"],
             ["typeorm", "npm:0.2.34"]
           ],

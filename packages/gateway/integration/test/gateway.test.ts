@@ -44,6 +44,23 @@ describe('gateway', () => {
                 authorization: ['req', 'headers', 'authorization'],
               },
             },
+            transforms: {
+              rename: {
+                mode: 'bare',
+                renames: [
+                  {
+                    from: {
+                      type: 'Query',
+                      field: 'GetMustRename',
+                    },
+                    to: {
+                      type: 'Query',
+                      field: 'Renamed',
+                    },
+                  },
+                ],
+              },
+            },
           },
         ],
       })
@@ -140,5 +157,24 @@ describe('gateway', () => {
         message: 'Test',
       })
     )
+  })
+
+  it(`rename transform`, async () => {
+    await request(url)
+      .post('/')
+      .set('Accept', 'application/json')
+      .set('Authorization', 'test')
+      .send({
+        operationName: 'Rename',
+        variables: {},
+        query: 'query Rename {\n  Renamed {\n  result }\n}\n',
+      })
+      .expect(200, {
+        data: {
+          Renamed: {
+            result: 'success',
+          },
+        },
+      })
   })
 })

@@ -27,4 +27,11 @@ export class MoviesController {
   getError() {
     throw new RpcException(new ErrorStatus(3, 'Test').toServiceError())
   }
+
+  @GrpcMethod('ExampleService', 'GetMustRename')
+  getRenamed() {
+    return {
+      result: 'success',
+    }
+  }
 }

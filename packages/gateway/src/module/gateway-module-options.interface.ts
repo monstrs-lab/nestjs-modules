@@ -4,15 +4,26 @@ import { MeshPubSub }           from '@graphql-mesh/types'
 import { KeyValueCache }        from '@graphql-mesh/types'
 import { MergerFn }             from '@graphql-mesh/types'
 import { YamlConfig }           from '@graphql-mesh/types'
-import { MeshTransform }        from '@graphql-mesh/types'
 
 import { GatewaySourceType }    from '../enums'
+
+export interface SourceTransformsOptions {
+  rename?: YamlConfig.Transform['rename']
+  encapsulate?: YamlConfig.Transform['encapsulate']
+  prefix?: YamlConfig.Transform['prefix']
+  cache?: YamlConfig.Transform['cache']
+  snapshot?: YamlConfig.Transform['snapshot']
+  mock?: YamlConfig.Transform['mock']
+  resolversComposition?: YamlConfig.Transform['resolver-composition']
+  namingConvention?: YamlConfig.Transform['naming-convention']
+  filterSchema?: YamlConfig.Transform['filter-schema']
+}
 
 export interface SourceOptions {
   name: string
   type: GatewaySourceType
   handler: YamlConfig.GrpcHandler
-  transforms?: MeshTransform[]
+  transforms?: SourceTransformsOptions
 }
 
 export interface GatewayModuleOptions {
@@ -24,7 +35,7 @@ export interface GatewayModuleOptions {
   cache?: KeyValueCache
   merger?: MergerFn
   sources?: SourceOptions[]
-  transforms?: MeshTransform[]
+  transforms?: SourceTransformsOptions
 }
 
 export interface GatewayOptionsFactory {

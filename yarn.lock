@@ -1012,7 +1012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:7.10.0, @graphql-tools/utils@npm:^7.0.0, @graphql-tools/utils@npm:^7.1.2, @graphql-tools/utils@npm:^7.7.0, @graphql-tools/utils@npm:^7.7.1, @graphql-tools/utils@npm:^7.8.1, @graphql-tools/utils@npm:^7.9.1":
+"@graphql-tools/utils@npm:7.10.0, @graphql-tools/utils@npm:^7.0.0, @graphql-tools/utils@npm:^7.1.2, @graphql-tools/utils@npm:^7.10.0, @graphql-tools/utils@npm:^7.7.0, @graphql-tools/utils@npm:^7.7.1, @graphql-tools/utils@npm:^7.8.1, @graphql-tools/utils@npm:^7.9.1":
   version: 7.10.0
   resolution: "@graphql-tools/utils@npm:7.10.0"
   dependencies:
@@ -1687,6 +1687,7 @@ __metadata:
     "@graphql-mesh/transform-resolvers-composition": ^0.9.9
     "@graphql-mesh/transform-snapshot": ^0.10.0
     "@graphql-mesh/types": ^0.42.0
+    "@graphql-tools/utils": ^7.10.0
     "@monstrs/grpc-error-status": ^0.0.3
     "@monstrs/logger": ^0.0.6
     "@nestjs/common": ^7.6.15

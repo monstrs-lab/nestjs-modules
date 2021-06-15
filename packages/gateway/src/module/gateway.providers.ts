@@ -1,9 +1,12 @@
-import { Provider }               from '@nestjs/common'
+import { Provider }                from '@nestjs/common'
 
-import { GatewayModuleOptions }   from './gateway-module-options.interface'
-import { GATEWAY_MODULE_OPTIONS } from './gateway.constants'
-import { GraphQLMeshConfig }      from '../mesh'
-import { GraphQLMeshHandler }     from '../mesh'
+import { GatewayModuleOptions }    from './gateway-module-options.interface'
+import { GATEWAY_MODULE_OPTIONS }  from './gateway.constants'
+import { GraphQLMeshHandler }      from '../mesh'
+import { GraphQLMeshConfig }       from '../mesh'
+import { GraphQLMesh }             from '../mesh'
+
+import { GraphQLMeshSchemaDumper } from '../mesh'
 
 export const createGatewayOptionsProvider = (options: GatewayModuleOptions): Provider[] => [
   {
@@ -12,6 +15,11 @@ export const createGatewayOptionsProvider = (options: GatewayModuleOptions): Pro
   },
 ]
 
-export const createGatewayProvider = (): Provider[] => [GraphQLMeshConfig, GraphQLMeshHandler]
+export const createGatewayProvider = (): Provider[] => [
+  GraphQLMeshConfig,
+  GraphQLMeshHandler,
+  GraphQLMesh,
+  GraphQLMeshSchemaDumper,
+]
 
 export const createGatewayExportsProvider = (): Provider[] => []

@@ -26,6 +26,7 @@
     "@graphql-mesh/transform-resolvers-composition": "^0.9.9",
     "@graphql-mesh/transform-snapshot": "^0.10.0",
     "@graphql-mesh/types": "^0.42.0",
+    "@graphql-tools/utils": "^7.10.0",
     "@monstrs/grpc-error-status": "^0.0.3",
     "@monstrs/logger": "^0.0.6",
     "apollo-server-express": "^2.24.1",

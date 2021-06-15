@@ -3,12 +3,11 @@ import { OnModuleInit }           from '@nestjs/common'
 import { OnModuleDestroy }        from '@nestjs/common'
 import { Injectable }             from '@nestjs/common'
 import { HttpAdapterHost }        from '@nestjs/core'
-import { getMesh }                from '@graphql-mesh/runtime'
 import { ApolloServer }           from 'apollo-server-express'
 
 import { GATEWAY_MODULE_OPTIONS } from '../module'
 import { GatewayModuleOptions }   from '../module'
-import { GraphQLMeshConfig }      from './graphql-mesh.config'
+import { GraphQLMesh }            from './graphql.mesh'
 import { formatError }            from './format.error'
 
 @Injectable()
@@ -17,15 +16,13 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
 
   constructor(
     private readonly adapterHost: HttpAdapterHost,
-    private readonly config: GraphQLMeshConfig,
+    private readonly mesh: GraphQLMesh,
     @Inject(GATEWAY_MODULE_OPTIONS)
     private readonly options: GatewayModuleOptions
   ) {}
 
   async onModuleInit() {
-    const meshConfig = this.config.create()
-
-    const { schema, contextBuilder } = await getMesh(meshConfig)
+    const { schema, contextBuilder } = await this.mesh.getInstance()
 
     if (this.adapterHost.httpAdapter.getType() === 'express') {
       const app = this.adapterHost.httpAdapter.getInstance()

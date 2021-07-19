@@ -592,16 +592,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/grpc-http-proxy@workspace:examples/grpc-http-proxy"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
-    "@grpc/proto-loader": ^0.6.2
+    "@grpc/grpc-js": ^1.3.5
+    "@grpc/proto-loader": ^0.6.4
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.27"
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/long": ^4.0.1
-    google-protobuf: ^3.15.8
+    google-protobuf: ^3.17.3
     long: ^4.0.0
     protobufjs: ^6.11.2
     reflect-metadata: 0.1.13
@@ -613,16 +613,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/grpc-playground@workspace:examples/grpc-playground"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
-    "@grpc/proto-loader": ^0.6.2
+    "@grpc/grpc-js": ^1.3.5
+    "@grpc/proto-loader": ^0.6.4
     "@monstrs/nestjs-grpc-playground": "workspace:0.0.13"
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/long": ^4.0.1
-    google-protobuf: ^3.15.8
+    google-protobuf: ^3.17.3
     long: ^4.0.0
     protobufjs: ^6.11.2
     reflect-metadata: 0.1.13
@@ -634,15 +634,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/grpc-reflection@workspace:examples/grpc-reflection"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
-    "@grpc/proto-loader": ^0.6.2
+    "@grpc/grpc-js": ^1.3.5
+    "@grpc/proto-loader": ^0.6.4
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/long": ^4.0.1
-    google-protobuf: ^3.15.8
+    google-protobuf: ^3.17.3
     long: ^4.0.0
     protobufjs: ^6.11.2
     reflect-metadata: 0.1.13
@@ -1071,7 +1071,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/proto-loader@npm:*, @grpc/proto-loader@npm:0.6.2, @grpc/proto-loader@npm:^0.6.2":
+"@grpc/grpc-js@npm:^1.3.5":
+  version: 1.3.5
+  resolution: "@grpc/grpc-js@npm:1.3.5"
+  dependencies:
+    "@types/node": ">=12.12.47"
+  checksum: df6784315df7710a50b3e2aa6622eeb2aadfdacd4ef65122d7cc1a64d32cfa1bb8709d8866ebde1dff42fc073cae1c62a159e0fd76cb777c2d512dec74daea8f
+  languageName: node
+  linkType: hard
+
+"@grpc/proto-loader@npm:*, @grpc/proto-loader@npm:0.6.2":
   version: 0.6.2
   resolution: "@grpc/proto-loader@npm:0.6.2"
   dependencies:
@@ -1083,6 +1092,21 @@ __metadata:
   bin:
     proto-loader-gen-types: build/bin/proto-loader-gen-types.js
   checksum: 7564ec1c3f675be9d1093dfa3aebe1730a57c2a180de1968f0c965a828d089726aa2dc26215003a7764b9c089e9f94b3917869b64064d42e7334122508498560
+  languageName: node
+  linkType: hard
+
+"@grpc/proto-loader@npm:^0.6.4":
+  version: 0.6.4
+  resolution: "@grpc/proto-loader@npm:0.6.4"
+  dependencies:
+    "@types/long": ^4.0.1
+    lodash.camelcase: ^4.3.0
+    long: ^4.0.0
+    protobufjs: ^6.10.0
+    yargs: ^16.1.1
+  bin:
+    proto-loader-gen-types: build/bin/proto-loader-gen-types.js
+  checksum: 20c23f215cc3cbc25f16a6f90e5e25617419003c430c8e06608c26b53e108b23716387a43ea2a43f37b1135a31be35be97357922d68beb682ac5afed919eebf9
   languageName: node
   linkType: hard
 
@@ -1631,9 +1655,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-external-renderer@workspace:packages/external-renderer"
   dependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/node": ^14.17.1
     get-port: ^5.1.1
     node-fetch: ^2.6.1
@@ -1669,10 +1693,10 @@ __metadata:
     "@graphql-tools/utils": ^7.10.0
     "@monstrs/grpc-error-status": ^0.0.4
     "@monstrs/logger": ^0.0.6
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/node": ^14.17.1
     apollo-server-express: ^2.24.1
     get-port: ^5.1.1
@@ -1695,9 +1719,9 @@ __metadata:
   resolution: "@monstrs/nestjs-github-app@workspace:packages/github-app"
   dependencies:
     "@monstrs/logger": ^0.0.6
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@octokit/app": ^11.3.0
     "@octokit/core": ^3.3.2
     "@octokit/webhooks": ^9.0.0-beta.3
@@ -1719,12 +1743,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-errors@workspace:packages/grpc-errors"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
+    "@grpc/grpc-js": ^1.3.5
     "@monstrs/grpc-error-status": ^0.0.4
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     class-transformer: ^0.4.0
     class-validator: ^0.13.1
     get-port: ^5.1.1
@@ -1745,13 +1769,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
-    "@grpc/proto-loader": ^0.6.2
+    "@grpc/grpc-js": ^1.3.5
+    "@grpc/proto-loader": ^0.6.4
     "@monstrs/grpc-error-status": ^0.0.4
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/cookie": ^0.4.1
     "@types/express": ^4.17.13
     "@types/jsonwebtoken": ^8.5.4
@@ -1782,12 +1806,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-identity@workspace:packages/grpc-identity"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
+    "@grpc/grpc-js": ^1.3.5
     "@monstrs/grpc-error-status": ^0.0.4
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/jsonwebtoken": ^8.5.4
     "@types/jwk-to-pem": ^2.0.1
     get-port: ^5.1.1
@@ -1811,10 +1835,10 @@ __metadata:
   dependencies:
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.27"
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     get-port: ^5.1.1
     node-fetch: ^2.6.1
     reflect-metadata: 0.1.13
@@ -1833,22 +1857,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection"
   dependencies:
-    "@grpc/grpc-js": ^1.3.4
-    "@grpc/proto-loader": ^0.6.2
+    "@grpc/grpc-js": ^1.3.5
+    "@grpc/proto-loader": ^0.6.4
     "@monstrs/types-import-proto": ^0.0.1
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/microservices": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/microservices": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/long": ^4.0.1
     get-port: ^5.1.1
-    google-protobuf: ^3.15.8
+    google-protobuf: ^3.17.3
     long: ^4.0.0
     protobufjs: ^6.11.2
     reflect-metadata: 0.1.13
     rxjs: 7.2.0
     supertest: ^6.1.3
-    ts-proto: ^1.82.0
+    ts-proto: ^1.82.2
   peerDependencies:
     "@nestjs/common": ^8.0.0
     "@nestjs/core": ^8.0.0
@@ -1862,9 +1886,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-hydra@workspace:packages/hydra"
   dependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@ory/hydra-client": 1.9.2
     "@types/express": ^4.17.13
     "@types/node": ^14.17.1
@@ -1885,9 +1909,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kratos@workspace:packages/kratos"
   dependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@ory/kratos-client": 0.5.5-alpha.4
     "@types/express": ^4.17.13
     "@types/node": ^14.17.1
@@ -1909,9 +1933,9 @@ __metadata:
   resolution: "@monstrs/nestjs-logger@workspace:packages/logger"
   dependencies:
     "@monstrs/logger": ^0.0.6
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/node": ^14.17.1
     get-port: ^5.1.1
     reflect-metadata: 0.1.13
@@ -1930,9 +1954,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@opentelemetry/api": ^0.13.0
     "@opentelemetry/metrics": ^0.13.0
     "@types/node": ^14.17.1
@@ -1954,9 +1978,9 @@ __metadata:
   dependencies:
     "@monstrs/nestjs-metrics": "workspace:0.0.21"
     "@monstrs/nestjs-tracing": "workspace:0.0.21"
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@types/node": ^14.17.1
     get-port: ^5.1.1
     reflect-metadata: 0.1.13
@@ -1974,9 +1998,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
     "@opentelemetry/api": ^0.13.0
     "@opentelemetry/node": ^0.13.0
     "@opentelemetry/tracing": ^0.13.0
@@ -1998,10 +2022,10 @@ __metadata:
   resolution: "@monstrs/nestjs-typeorm-seeding@workspace:packages/typeorm-seeding"
   dependencies:
     "@monstrs/typeorm-seeding": ^0.0.3
-    "@nestjs/common": ^8.0.0
-    "@nestjs/core": ^8.0.0
-    "@nestjs/testing": ^8.0.0
-    "@nestjs/typeorm": ^8.0.0
+    "@nestjs/common": ^8.0.4
+    "@nestjs/core": ^8.0.4
+    "@nestjs/testing": ^8.0.4
+    "@nestjs/typeorm": ^8.0.1
     "@types/node": ^14.17.1
     "@types/sql.js": ^1.4.2
     reflect-metadata: 0.1.13
@@ -2130,9 +2154,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/common@npm:8.0.0"
+"@nestjs/common@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "@nestjs/common@npm:8.0.4"
   dependencies:
     axios: 0.21.1
     iterare: 1.2.1
@@ -2151,16 +2175,16 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: a85724a671dada5a144ad5e5dcecda4463ae434e5381b2f9d23cdf3c90d53d1e91e1987a7992bcb817a9341611f34829f38d00f9ded3f3f50f4c63fd0e07cbf6
+  checksum: cbe5738e88fab6dd2e4ca3c4dfb3e8833057de6bcf2d340ae46f2be45f23efb1226d007c7bc3dcd0f3b837301a58d2ea1ddf614a85636cd78867de7b4549e950
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/core@npm:8.0.0"
+"@nestjs/core@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "@nestjs/core@npm:8.0.4"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
-    fast-safe-stringify: 2.0.7
+    fast-safe-stringify: 2.0.8
     iterare: 1.2.1
     object-hash: 2.2.0
     path-to-regexp: 3.2.0
@@ -2180,13 +2204,13 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 274fc4d399fb006875df6969ebc07d8db8cb445dc8c7ade3329237363e5dd767bd7876664fdec1c666fcdcb57ce00c708a42b9ca373845f8a27c5ce124c4051a
+  checksum: b7926bb587ff7b7dccc9dfaaeea8012a87ed44c95080448b244e4b794eb25fbdfcc5b3ae742c1d13f4570e06c4ee1836d9e91d5eb6ae80d1001e9e388086a1aa
   languageName: node
   linkType: hard
 
-"@nestjs/microservices@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/microservices@npm:8.0.0"
+"@nestjs/microservices@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "@nestjs/microservices@npm:8.0.4"
   dependencies:
     iterare: 1.2.1
     json-socket: 0.3.0
@@ -2224,7 +2248,7 @@ __metadata:
       optional: true
     redis:
       optional: true
-  checksum: 5c1e787afd2bf22ee6178a545dbf54e87359136ec996556a9ed242873afe7a9878e1573b2059696ccd6b2bc501aad428f5aa22eb9924eadf9c1ee19a57318f35
+  checksum: e6bf73af53a9aab142d07cd8247a70a21e4d7eb419bf11f943122adcd7d5431a4bdb6eb85d82c545deb22d65af4ea8b37361b905aee9974b2a8bdef7a6caf415
   languageName: node
   linkType: hard
 
@@ -2244,9 +2268,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/testing@npm:8.0.0"
+"@nestjs/testing@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "@nestjs/testing@npm:8.0.4"
   dependencies:
     optional: 0.1.4
     tslib: 2.3.0
@@ -2260,13 +2284,13 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: ec4d99f582b24907fa9cc67a2f71f8957506e7d5e9d8cea15d08de01592c083a5eb9a34a19975e6a8fd77e5a170fcf38c5ad3d8de6c8b3caf066412320a30c9b
+  checksum: 96ab73e9508db58be7c4278ee487e4056f5633e562b3696ca4fbda88b4034389c46b5dcb606ca3989179b1073bb0880e9564cf3f1b8697db74f2233c7a2cdcfe
   languageName: node
   linkType: hard
 
-"@nestjs/typeorm@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/typeorm@npm:8.0.0"
+"@nestjs/typeorm@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@nestjs/typeorm@npm:8.0.1"
   dependencies:
     uuid: 8.3.2
   peerDependencies:
@@ -2275,7 +2299,7 @@ __metadata:
     reflect-metadata: ^0.1.13
     rxjs: ^7.2.0
     typeorm: ^0.2.34
-  checksum: 014cfbf224715722f4200c39a0eb34ebcde2bdb2ed55242cc7fc9e87c1ffe4d48a02edf0443108c9a0b589f790a1506ce9fc0a4da3d4abed9fb8c7def5bd93c4
+  checksum: 7616adde92492375acd9669691aa02cf502c20b4a05461c7e78b895aa621dd5a0bcd05b78de57561e4b9fc1b2301b1ab1be22ce8c23b4970584a26919c3d00e2
   languageName: node
   linkType: hard
 
@@ -7267,7 +7291,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-safe-stringify@npm:2.0.7, fast-safe-stringify@npm:^2.0.7":
+"fast-safe-stringify@npm:2.0.8":
+  version: 2.0.8
+  resolution: "fast-safe-stringify@npm:2.0.8"
+  checksum: be8a07f342817e80c37286509355f91170bd89be9c1df9512ba0c5a61ce20ccf9bdae42ccf65e1fa3834734c78fc524121f709303ebbb97d22df3cb03ff9d7a5
+  languageName: node
+  linkType: hard
+
+"fast-safe-stringify@npm:^2.0.7":
   version: 2.0.7
   resolution: "fast-safe-stringify@npm:2.0.7"
   checksum: e0055e231d1fe0f97863dcfb45f5f285d59e3d23210e1e8a31348829e4a584e04ffe49f5944a0ba2f21d753b67b0ecb6f0ffc49ecd8c7f6f531cbcd45a5f606b
@@ -7894,7 +7925,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"google-protobuf@npm:^3.12.2, google-protobuf@npm:^3.15.8, google-protobuf@npm:^3.17.3":
+"google-protobuf@npm:^3.12.2, google-protobuf@npm:^3.17.3":
   version: 3.17.3
   resolution: "google-protobuf@npm:3.17.3"
   checksum: efe264f3cf854a78f7197c4d8c84eabd1ce8c4ef2806cb3e0bb7f2b5e18f559739ab31adfefbd99e81312c3683f482400fa370896a8b0cc66adfedb114256420
@@ -13646,9 +13677,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-proto@npm:^1.82.0":
-  version: 1.82.0
-  resolution: "ts-proto@npm:1.82.0"
+"ts-proto@npm:^1.82.2":
+  version: 1.82.2
+  resolution: "ts-proto@npm:1.82.2"
   dependencies:
     "@types/object-hash": ^1.3.0
     dataloader: ^1.4.0
@@ -13658,7 +13689,7 @@ resolve@^2.0.0-next.3:
     ts-proto-descriptors: ^1.2.1
   bin:
     protoc-gen-ts_proto: protoc-gen-ts_proto
-  checksum: 9919a9a7f4457caa437126b36f2e668e33b4517fcf6c7f81f8955d59cf41e16a94459aec593c1e88701e2db441c035559178ac475a1774f8d242646e3d449949
+  checksum: 6c7eabd19b129c4a1aac564a44daacbf707df7d644dcbba69f51e203e35a48e2045a9aa0e347ce5fcfb8a15a56546f85e1a5b45d8c3a37d074773e4a0a6c1bb5
   languageName: node
   linkType: hard
 

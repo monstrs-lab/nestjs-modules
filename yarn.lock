@@ -594,8 +594,8 @@ __metadata:
   dependencies:
     "@grpc/grpc-js": ^1.3.5
     "@grpc/proto-loader": ^0.6.4
-    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.27"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
+    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.28"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.8"
     "@nestjs/common": ^8.0.4
     "@nestjs/core": ^8.0.4
     "@nestjs/microservices": ^8.0.4
@@ -615,8 +615,8 @@ __metadata:
   dependencies:
     "@grpc/grpc-js": ^1.3.5
     "@grpc/proto-loader": ^0.6.4
-    "@monstrs/nestjs-grpc-playground": "workspace:0.0.13"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
+    "@monstrs/nestjs-grpc-playground": "workspace:0.0.14"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.8"
     "@nestjs/common": ^8.0.4
     "@nestjs/core": ^8.0.4
     "@nestjs/microservices": ^8.0.4
@@ -636,7 +636,7 @@ __metadata:
   dependencies:
     "@grpc/grpc-js": ^1.3.5
     "@grpc/proto-loader": ^0.6.4
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.8"
     "@nestjs/common": ^8.0.4
     "@nestjs/core": ^8.0.4
     "@nestjs/microservices": ^8.0.4
@@ -1765,7 +1765,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-http-proxy@workspace:0.0.27, @monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy":
+"@monstrs/nestjs-grpc-http-proxy@workspace:0.0.28, @monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-http-proxy@workspace:packages/grpc-http-proxy"
   dependencies:
@@ -1829,12 +1829,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-playground@workspace:0.0.13, @monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground":
+"@monstrs/nestjs-grpc-playground@workspace:0.0.14, @monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-playground@workspace:packages/grpc-playground"
   dependencies:
-    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.27"
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.7"
+    "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.28"
+    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.8"
     "@nestjs/common": ^8.0.4
     "@nestjs/core": ^8.0.4
     "@nestjs/microservices": ^8.0.4
@@ -1853,7 +1853,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-grpc-reflection@workspace:0.0.7, @monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection":
+"@monstrs/nestjs-grpc-reflection@workspace:0.0.8, @monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-grpc-reflection@workspace:packages/grpc-reflection"
   dependencies:
@@ -1950,7 +1950,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-metrics@workspace:0.0.21, @monstrs/nestjs-metrics@workspace:packages/metrics":
+"@monstrs/nestjs-metrics@workspace:0.0.22, @monstrs/nestjs-metrics@workspace:packages/metrics":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-metrics@workspace:packages/metrics"
   dependencies:
@@ -1976,8 +1976,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-telemetry@workspace:packages/telemetry"
   dependencies:
-    "@monstrs/nestjs-metrics": "workspace:0.0.21"
-    "@monstrs/nestjs-tracing": "workspace:0.0.21"
+    "@monstrs/nestjs-metrics": "workspace:0.0.22"
+    "@monstrs/nestjs-tracing": "workspace:0.0.22"
     "@nestjs/common": ^8.0.4
     "@nestjs/core": ^8.0.4
     "@nestjs/testing": ^8.0.4
@@ -1994,7 +1994,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-tracing@workspace:0.0.21, @monstrs/nestjs-tracing@workspace:packages/tracing":
+"@monstrs/nestjs-tracing@workspace:0.0.22, @monstrs/nestjs-tracing@workspace:packages/tracing":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-tracing@workspace:packages/tracing"
   dependencies:

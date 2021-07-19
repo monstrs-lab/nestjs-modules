@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-telemetry",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,8 +12,8 @@
     "prepack": "yarn run build"
   },
   "dependencies": {
-    "@monstrs/nestjs-metrics": "workspace:0.0.21",
-    "@monstrs/nestjs-tracing": "workspace:0.0.21"
+    "@monstrs/nestjs-metrics": "workspace:0.0.22",
+    "@monstrs/nestjs-tracing": "workspace:0.0.22"
   },
   "devDependencies": {
     "@nestjs/common": "^8.0.4",

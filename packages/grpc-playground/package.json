@@ -12,10 +12,10 @@
     "prepack": "yarn run build"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.4",
-    "@nestjs/core": "^8.0.4",
-    "@nestjs/microservices": "^8.0.4",
-    "@nestjs/testing": "^8.0.4",
+    "@nestjs/common": "^8.0.5",
+    "@nestjs/core": "^8.0.5",
+    "@nestjs/microservices": "^8.0.5",
+    "@nestjs/testing": "^8.0.5",
     "get-port": "^5.1.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.2.0",

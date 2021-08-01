@@ -21,6 +21,7 @@ export class TypesenseModule {
     const providers = createTypesenseProvider()
 
     return {
+      global: true,
       module: TypesenseModule,
       providers: [...optionsProviders, ...providers, ...exportsProviders],
       exports: exportsProviders,
@@ -32,6 +33,7 @@ export class TypesenseModule {
     const providers = createTypesenseProvider()
 
     return {
+      global: true,
       module: TypesenseModule,
       imports: options.imports || [],
       providers: [...this.createAsyncProviders(options), ...providers, ...exportsProviders],

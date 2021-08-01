@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/nestjs-typesense": patch
+  "@monstrs/nestjs-typesense-typeorm": patch

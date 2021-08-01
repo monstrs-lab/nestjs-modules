@@ -22,4 +22,8 @@ export class TypesenseMetadataRegistry {
   getSchemaByTarget(target: Constructor) {
     return this.schemas.get(target)
   }
+
+  getTargets() {
+    return this.schemas.keys()
+  }
 }

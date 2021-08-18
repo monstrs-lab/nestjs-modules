@@ -139,7 +139,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:14.14.37"],
             ["husky", "npm:7.0.1"],
-            ["jest-environment-node-single-context", "npm:26.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
           "linkType": "SOFT",
@@ -2132,17 +2131,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@jest/environment", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/@jest-environment-npm-26.6.2-bc869bb23e-7748081b2a.zip/node_modules/@jest/environment/",
-          "packageDependencies": [
-            ["@jest/environment", "npm:26.6.2"],
-            ["@jest/fake-timers", "npm:26.6.2"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:14.14.37"],
-            ["jest-mock", "npm:26.6.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/@jest-environment-npm-27.0.6-b6dab96022-9332223c1f.zip/node_modules/@jest/environment/",
           "packageDependencies": [
@@ -2156,19 +2144,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@jest/fake-timers", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/@jest-fake-timers-npm-26.6.2-511850bedc-c732658fac.zip/node_modules/@jest/fake-timers/",
-          "packageDependencies": [
-            ["@jest/fake-timers", "npm:26.6.2"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@sinonjs/fake-timers", "npm:6.0.1"],
-            ["@types/node", "npm:14.14.37"],
-            ["jest-message-util", "npm:26.6.2"],
-            ["jest-mock", "npm:26.6.2"],
-            ["jest-util", "npm:26.6.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/@jest-fake-timers-npm-27.0.6-a7c549abca-95de7a744c.zip/node_modules/@jest/fake-timers/",
           "packageDependencies": [
@@ -5968,14 +5943,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@sinonjs/fake-timers", [
-        ["npm:6.0.1", {
-          "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-6.0.1-cebf4d0bfb-8e331aa141.zip/node_modules/@sinonjs/fake-timers/",
-          "packageDependencies": [
-            ["@sinonjs/fake-timers", "npm:6.0.1"],
-            ["@sinonjs/commons", "npm:1.8.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.1.2", {
           "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-7.1.2-2a6b119ac7-c84773d797.zip/node_modules/@sinonjs/fake-timers/",
           "packageDependencies": [
@@ -13646,19 +13613,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["jest-environment-node", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/jest-environment-node-npm-26.6.2-9030128a2f-0b69b481e6.zip/node_modules/jest-environment-node/",
-          "packageDependencies": [
-            ["jest-environment-node", "npm:26.6.2"],
-            ["@jest/environment", "npm:26.6.2"],
-            ["@jest/fake-timers", "npm:26.6.2"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:14.14.37"],
-            ["jest-mock", "npm:26.6.2"],
-            ["jest-util", "npm:26.6.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/jest-environment-node-npm-27.0.6-8c9e8d8d93-910ced7555.zip/node_modules/jest-environment-node/",
           "packageDependencies": [
@@ -13669,16 +13623,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.37"],
             ["jest-mock", "npm:27.0.6"],
             ["jest-util", "npm:27.0.6"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["jest-environment-node-single-context", [
-        ["npm:26.2.0", {
-          "packageLocation": "./.yarn/cache/jest-environment-node-single-context-npm-26.2.0-b9aaf9ce2d-cb9e7fb707.zip/node_modules/jest-environment-node-single-context/",
-          "packageDependencies": [
-            ["jest-environment-node-single-context", "npm:26.2.0"],
-            ["jest-environment-node", "npm:26.6.2"]
           ],
           "linkType": "HARD",
         }]
@@ -13773,22 +13717,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["jest-message-util", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/jest-message-util-npm-26.6.2-2dd6f71234-ffe5a71559.zip/node_modules/jest-message-util/",
-          "packageDependencies": [
-            ["jest-message-util", "npm:26.6.2"],
-            ["@babel/code-frame", "npm:7.14.5"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@types/stack-utils", "npm:2.0.0"],
-            ["chalk", "npm:4.1.1"],
-            ["graceful-fs", "npm:4.2.4"],
-            ["micromatch", "npm:4.0.4"],
-            ["pretty-format", "npm:26.6.2"],
-            ["slash", "npm:3.0.0"],
-            ["stack-utils", "npm:2.0.3"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/jest-message-util-npm-27.0.6-dac67511bd-ef35619ea7.zip/node_modules/jest-message-util/",
           "packageDependencies": [
@@ -13807,15 +13735,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["jest-mock", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/jest-mock-npm-26.6.2-87f47530a8-6c0fe028ff.zip/node_modules/jest-mock/",
-          "packageDependencies": [
-            ["jest-mock", "npm:26.6.2"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:14.14.37"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/jest-mock-npm-27.0.6-77a6de172a-2a8b56abf4.zip/node_modules/jest-mock/",
           "packageDependencies": [
@@ -14007,19 +13926,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["jest-util", [
-        ["npm:26.6.2", {
-          "packageLocation": "./.yarn/cache/jest-util-npm-26.6.2-28a10c2acf-3c6a5fba05.zip/node_modules/jest-util/",
-          "packageDependencies": [
-            ["jest-util", "npm:26.6.2"],
-            ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:14.14.37"],
-            ["chalk", "npm:4.1.1"],
-            ["graceful-fs", "npm:4.2.4"],
-            ["is-ci", "npm:2.0.0"],
-            ["micromatch", "npm:4.0.4"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.0.6", {
           "packageLocation": "./.yarn/cache/jest-util-npm-27.0.6-0de2b54aa3-db1131e8b0.zip/node_modules/jest-util/",
           "packageDependencies": [
@@ -15360,7 +15266,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.24"],
             ["@types/node", "npm:14.14.37"],
             ["husky", "npm:7.0.1"],
-            ["jest-environment-node-single-context", "npm:26.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
           "linkType": "SOFT",

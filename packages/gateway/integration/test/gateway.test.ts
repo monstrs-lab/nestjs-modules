@@ -1,7 +1,3 @@
-/**
- * @jest-environment jest-environment-node-single-context
- */
-
 import getPort                      from 'get-port'
 import request                      from 'supertest'
 import { Transport }                from '@nestjs/microservices'

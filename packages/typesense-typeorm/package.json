@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-typesense-typeorm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -16,7 +16,7 @@
     "typeorm": "^0.2"
   },
   "devDependencies": {
-    "@monstrs/nestjs-typesense": "workspace:0.0.1",
+    "@monstrs/nestjs-typesense": "workspace:0.0.2",
     "@nestjs/common": "^8.0.5",
     "@nestjs/core": "^8.0.5",
     "@nestjs/testing": "^8.0.5",

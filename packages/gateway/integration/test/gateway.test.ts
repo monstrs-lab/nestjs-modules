@@ -1,13 +1,12 @@
-/**
- * @jest-environment jest-environment-node-single-context
- */
-
 import getPort                      from 'get-port'
 import request                      from 'supertest'
 import { Transport }                from '@nestjs/microservices'
 import { INestApplication }         from '@nestjs/common'
 import { INestMicroservice }        from '@nestjs/common'
 import { Test }                     from '@nestjs/testing'
+import { buildClientSchema }        from 'graphql'
+import { printSchema }              from 'graphql'
+import { getIntrospectionQuery }    from 'graphql'
 import path                         from 'path'
 
 import { GatewaySourceType }        from '../../src'
@@ -28,6 +27,7 @@ describe('gateway', () => {
     })
       .overrideProvider(GATEWAY_MODULE_OPTIONS)
       .useValue({
+        playground: true,
         sources: [
           {
             name: 'Movies',
@@ -50,13 +50,36 @@ describe('gateway', () => {
                 renames: [
                   {
                     from: {
+                      type: 'tech_monstrs_(.*)',
+                    },
+                    to: {
+                      type: '$1',
+                    },
+                    useRegExpForTypes: true,
+                  },
+                  {
+                    from: {
+                      type: 'Mutation',
+                      field: 'tech_monstrs_ExampleService_(.*)',
+                    },
+                    to: {
+                      type: 'Mutation',
+                      field: '$1',
+                    },
+                    useRegExpForTypes: true,
+                    useRegExpForFields: true,
+                  },
+                  {
+                    from: {
                       type: 'Query',
-                      field: 'GetMustRename',
+                      field: 'tech_monstrs_ExampleService_(.*)',
                     },
                     to: {
                       type: 'Query',
-                      field: 'Renamed',
+                      field: '$1',
                     },
+                    useRegExpForTypes: true,
+                    useRegExpForFields: true,
                   },
                 ],
               },
@@ -98,6 +121,23 @@ describe('gateway', () => {
     await app.close()
   })
 
+  it('check schema', async () => {
+    const res = await request(url).post('/').set('Accept', 'application/json').send({
+      operationName: 'IntrospectionQuery',
+      variables: {},
+      query: getIntrospectionQuery(),
+    })
+
+    const schema = printSchema(buildClientSchema(res.body.data))
+
+    expect(schema).toContain('getMovies(input: MovieRequest_Input): MoviesResult')
+    expect(schema).toContain('GetMetadata(input: GetMetadataRequest_Input): GetMetadataResponse')
+    expect(schema).toContain('GetError(input: GetErrorRequest_Input): GetErrorResponse')
+    expect(schema).toContain(
+      'GetMustRename(input: GetMustRenameRequest_Input): GetMustRenameResponse'
+    )
+  })
+
   it(`get movies`, async () => {
     await request(url)
       .post('/')
@@ -105,7 +145,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Movies',
         variables: {},
-        query: 'query Movies {\n  getMovies {\n    result {\n      name\n    }\n  }\n}\n',
+        query: 'mutation Movies {\n  getMovies {\n    result {\n      name\n    }\n  }\n}\n',
       })
       .expect(200, {
         data: {
@@ -120,7 +160,7 @@ describe('gateway', () => {
       })
   })
 
-  it(`get movies`, async () => {
+  it(`get metadata`, async () => {
     await request(url)
       .post('/')
       .set('Accept', 'application/json')
@@ -128,7 +168,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Metadata',
         variables: {},
-        query: 'query Metadata {\n  GetMetadata {\n    authorization  }\n}\n',
+        query: 'mutation Metadata {\n  GetMetadata {\n    authorization  }\n}\n',
       })
       .expect(200, {
         data: {
@@ -147,7 +187,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Error',
         variables: {},
-        query: 'query Error {\n  GetError {\n    result  }\n}\n',
+        query: 'mutation Error {\n  GetError {\n    result  }\n}\n',
       })
 
     expect(response.body.errors[0].extensions.exception).toEqual(
@@ -157,24 +197,5 @@ describe('gateway', () => {
         message: 'Test',
       })
     )
-  })
-
-  it(`rename transform`, async () => {
-    await request(url)
-      .post('/')
-      .set('Accept', 'application/json')
-      .set('Authorization', 'test')
-      .send({
-        operationName: 'Rename',
-        variables: {},
-        query: 'query Rename {\n  Renamed {\n  result }\n}\n',
-      })
-      .expect(200, {
-        data: {
-          Renamed: {
-            result: 'success',
-          },
-        },
-      })
   })
 })

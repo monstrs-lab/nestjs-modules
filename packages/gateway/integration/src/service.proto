@@ -16,7 +16,6 @@ message Movie {
 }
 
 message MovieRequest {
-  Movie movie = 1;
 }
 
 message MoviesResult {

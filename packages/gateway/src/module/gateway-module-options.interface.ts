@@ -2,7 +2,7 @@ import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
 import { PlaygroundConfig }     from 'apollo-server-express'
 import { MeshPubSub }           from '@graphql-mesh/types'
 import { KeyValueCache }        from '@graphql-mesh/types'
-import { MergerFn }             from '@graphql-mesh/types'
+import { MeshMerger }           from '@graphql-mesh/types'
 import { YamlConfig }           from '@graphql-mesh/types'
 
 import { GatewaySourceType }    from '../enums'
@@ -33,7 +33,7 @@ export interface GatewayModuleOptions {
   cors?: any | boolean
   pubsub?: MeshPubSub
   cache?: KeyValueCache
-  merger?: MergerFn
+  merger?: MeshMerger
   sources?: SourceOptions[]
   transforms?: SourceTransformsOptions
 }

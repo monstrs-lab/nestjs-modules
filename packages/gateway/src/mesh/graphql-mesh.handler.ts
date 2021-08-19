@@ -4,6 +4,8 @@ import { OnModuleDestroy }        from '@nestjs/common'
 import { Injectable }             from '@nestjs/common'
 import { HttpAdapterHost }        from '@nestjs/core'
 import { ApolloServer }           from 'apollo-server-express'
+import { useServer }              from 'graphql-ws/lib/use/ws'
+import { Server }                 from 'ws'
 
 import { GATEWAY_MODULE_OPTIONS } from '../module'
 import { GatewayModuleOptions }   from '../module'
@@ -14,6 +16,8 @@ import { formatError }            from './format.error'
 export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
   private apolloServer!: ApolloServer
 
+  private wss?: Server
+
   constructor(
     private readonly adapterHost: HttpAdapterHost,
     private readonly mesh: GraphQLMesh,
@@ -22,7 +26,7 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
   ) {}
 
   async onModuleInit() {
-    const { schema, contextBuilder } = await this.mesh.getInstance()
+    const { schema, contextBuilder, subscribe, execute } = await this.mesh.getInstance()
 
     if (this.adapterHost.httpAdapter.getType() === 'express') {
       const app = this.adapterHost.httpAdapter.getInstance()
@@ -44,6 +48,44 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
       })
 
       this.apolloServer = apolloServer
+
+      if (schema.getSubscriptionType()) {
+        this.wss = new Server({
+          noServer: true,
+          path,
+        })
+
+        // eslint-disable-next-line
+        useServer(
+          {
+            schema,
+            execute: (args) =>
+              execute(args.document, args.variableValues, args.contextValue, args.rootValue),
+            subscribe: (args) =>
+              subscribe(args.document, args.variableValues, args.contextValue, args.rootValue),
+            context: async ({ connectionParams = {}, extra: { request } }) => {
+              // eslint-disable-next-line no-restricted-syntax
+              for (const [key, value] of Object.entries(
+                (connectionParams.headers ?? {}) as { [s: string]: unknown }
+              )) {
+                if (!(key.toLowerCase() in request.headers)) {
+                  // @ts-ignore
+                  request.headers[key.toLowerCase()] = value
+                }
+              }
+
+              return contextBuilder(request)
+            },
+          },
+          this.wss
+        )
+
+        this.adapterHost.httpAdapter.getHttpServer().on('upgrade', (req, socket, head) => {
+          this.wss.handleUpgrade(req, socket, head, (ws) => {
+            this.wss.emit('connection', ws, req)
+          })
+        })
+      }
     } else {
       throw new Error('Only express engine available')
     }
@@ -51,5 +93,12 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
 
   async onModuleDestroy() {
     await this.apolloServer?.stop()
+
+    if (this.wss) {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const client of this.wss.clients) {
+        client.close(1001, 'Going away')
+      }
+    }
   }
 }

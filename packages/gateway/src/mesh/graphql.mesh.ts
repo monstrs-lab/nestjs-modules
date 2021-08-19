@@ -12,7 +12,7 @@ export class GraphQLMesh {
 
   async getInstance() {
     if (!this.mesh) {
-      this.mesh = await getMesh(this.config.create())
+      this.mesh = await getMesh(await this.config.create())
     }
 
     return this.mesh

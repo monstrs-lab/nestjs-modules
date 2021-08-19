@@ -1,9 +1,12 @@
+import { WebSocket }                from 'ws'
 import getPort                      from 'get-port'
 import request                      from 'supertest'
 import { Transport }                from '@nestjs/microservices'
 import { INestApplication }         from '@nestjs/common'
 import { INestMicroservice }        from '@nestjs/common'
 import { Test }                     from '@nestjs/testing'
+import { PubSub }                   from 'graphql-subscriptions'
+import { createClient }             from 'graphql-ws'
 import { buildClientSchema }        from 'graphql'
 import { printSchema }              from 'graphql'
 import { getIntrospectionQuery }    from 'graphql'
@@ -16,6 +19,7 @@ import { GatewayIntegrationModule } from '../src'
 describe('gateway', () => {
   let service: INestMicroservice
   let app: INestApplication
+  let pubsub: PubSub
   let url: string
 
   beforeAll(async () => {
@@ -86,6 +90,26 @@ describe('gateway', () => {
             },
           },
         ],
+        additionalTypeDefs: `
+          extend schema {
+            subscription: Subscription
+          }
+
+          type Event {
+            id: String!
+          }
+
+          type Subscription {
+            eventTriggered: Event
+          }
+        `,
+        additionalResolvers: [
+          {
+            targetTypeName: 'Subscription',
+            targetFieldName: 'eventTriggered',
+            pubsubTopic: 'eventTriggered',
+          },
+        ],
       })
       .compile()
 
@@ -113,6 +137,7 @@ describe('gateway', () => {
     await app.listen(appPort, '0.0.0.0')
     await service.listenAsync()
 
+    pubsub = app.get(PubSub)
     url = await app.getUrl()
   })
 
@@ -197,5 +222,36 @@ describe('gateway', () => {
         message: 'Test',
       })
     )
+  })
+
+  it('check subscriptions', async () => {
+    const client = createClient({
+      url: url.replace('http:', 'ws:'),
+      webSocketImpl: WebSocket,
+    })
+
+    const event = new Promise((resolve, reject) => {
+      let result
+
+      client.subscribe(
+        {
+          query: `subscription onEventTriggered {
+              eventTriggered {
+                  id
+              }
+          }`,
+        },
+        {
+          // eslint-disable-next-line
+          next: (data) => (result = data),
+          error: reject,
+          complete: () => resolve(result),
+        }
+      )
+
+      pubsub.publish('eventTriggered', { id: 'test' })
+    })
+
+    expect(event).resolves.toEqual({ id: 'test' })
   })
 })

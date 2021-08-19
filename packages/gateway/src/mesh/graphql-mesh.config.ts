@@ -15,13 +15,13 @@ import NamingConventionTransform       from '@graphql-mesh/transform-naming-conv
 import FilterTransform                 from '@graphql-mesh/transform-filter-schema'
 import { InMemoryStoreStorageAdapter } from '@graphql-mesh/store'
 import { MeshStore }                   from '@graphql-mesh/store'
-import { MeshPubSub }                  from '@graphql-mesh/types'
 import { GetMeshOptions }              from '@graphql-mesh/runtime'
 import GrpcHandler                     from '@graphql-mesh/grpc'
 import { MeshTransform }               from '@graphql-mesh/types'
 import { getDefaultSyncImport }        from '@graphql-mesh/utils'
+import { resolveAdditionalResolvers }  from '@graphql-mesh/utils'
+import { resolveAdditionalTypeDefs }   from '@graphql-mesh/config'
 import { PubSub }                      from 'graphql-subscriptions'
-import { EventEmitter }                from 'events'
 import { join }                        from 'path'
 
 import { GATEWAY_MODULE_OPTIONS }      from '../module'
@@ -39,8 +39,6 @@ export class GraphQLMeshConfig {
 
   private merger
 
-  private pubsub
-
   private store
 
   private baseDir
@@ -51,7 +49,8 @@ export class GraphQLMeshConfig {
 
   constructor(
     @Inject(GATEWAY_MODULE_OPTIONS)
-    private readonly options: GatewayModuleOptions
+    private readonly options: GatewayModuleOptions,
+    private readonly pubsub: PubSub
   ) {
     this.logger = new GraphQLMeshLogger('Mesh')
     this.baseDir = process.cwd()
@@ -72,27 +71,28 @@ export class GraphQLMeshConfig {
         store: this.store.child(`StitchingMerger`),
         logger: this.logger,
       })
-
-    if (options.pubsub) {
-      this.pubsub = options.pubsub
-    } else {
-      const eventEmitter = new EventEmitter({ captureRejections: true })
-
-      eventEmitter.setMaxListeners(Infinity)
-
-      this.pubsub = new PubSub({ eventEmitter }) as MeshPubSub
-    }
   }
 
-  create(): GetMeshOptions {
+  async create(): Promise<GetMeshOptions> {
+    const additionalTypeDefs = await resolveAdditionalTypeDefs(
+      this.baseDir,
+      this.options.additionalTypeDefs
+    )
+    const additionalResolvers = await resolveAdditionalResolvers(
+      this.baseDir,
+      this.options.additionalResolvers || [],
+      this.syncImportFn,
+      this.pubsub
+    )
+
     return {
       sources: this.createSources(),
       cache: this.cache,
       pubsub: this.pubsub,
       merger: this.merger,
       transforms: this.transforms,
-      additionalTypeDefs: undefined,
-      additionalResolvers: {},
+      additionalTypeDefs,
+      additionalResolvers,
     }
   }
 

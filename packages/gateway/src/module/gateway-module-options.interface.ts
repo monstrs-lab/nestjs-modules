@@ -36,6 +36,13 @@ export interface GatewayModuleOptions {
   merger?: MeshMerger
   sources?: SourceOptions[]
   transforms?: SourceTransformsOptions
+  additionalTypeDefs?: any
+  additionalResolvers?: (
+    | string
+    | YamlConfig.AdditionalStitchingResolverObject
+    | YamlConfig.AdditionalStitchingBatchResolverObject
+    | YamlConfig.AdditionalSubscriptionObject
+  )[]
 }
 
 export interface GatewayOptionsFactory {

@@ -170,7 +170,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Movies',
         variables: {},
-        query: 'mutation Movies {\n  getMovies {\n    result {\n      name\n    }\n  }\n}\n',
+        query: 'query Movies {\n  getMovies {\n    result {\n      name\n    }\n  }\n}\n',
       })
       .expect(200, {
         data: {
@@ -193,7 +193,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Metadata',
         variables: {},
-        query: 'mutation Metadata {\n  GetMetadata {\n    authorization  }\n}\n',
+        query: 'query Metadata {\n  GetMetadata {\n    authorization  }\n}\n',
       })
       .expect(200, {
         data: {
@@ -212,7 +212,7 @@ describe('gateway', () => {
       .send({
         operationName: 'Error',
         variables: {},
-        query: 'mutation Error {\n  GetError {\n    result  }\n}\n',
+        query: 'query Error {\n  GetError {\n    result  }\n}\n',
       })
 
     expect(response.body.errors[0].extensions.exception).toEqual(

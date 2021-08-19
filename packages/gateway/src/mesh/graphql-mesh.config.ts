@@ -16,7 +16,6 @@ import FilterTransform                 from '@graphql-mesh/transform-filter-sche
 import { InMemoryStoreStorageAdapter } from '@graphql-mesh/store'
 import { MeshStore }                   from '@graphql-mesh/store'
 import { GetMeshOptions }              from '@graphql-mesh/runtime'
-import GrpcHandler                     from '@graphql-mesh/grpc'
 import { MeshTransform }               from '@graphql-mesh/types'
 import { getDefaultSyncImport }        from '@graphql-mesh/utils'
 import { resolveAdditionalResolvers }  from '@graphql-mesh/utils'
@@ -30,6 +29,7 @@ import { SourceOptions }               from '../module'
 import { SourceTransformsOptions }     from '../module'
 import { GatewaySourceType }           from '../enums'
 import { GraphQLMeshLogger }           from './graphql-mesh.logger'
+import GrpcHandler                     from './handlers/grpc/grpc.handler'
 
 @Injectable()
 export class GraphQLMeshConfig {
@@ -127,7 +127,7 @@ export class GraphQLMeshConfig {
 
     if (config.rename) {
       transforms.push(
-        RenameTransform({
+        new RenameTransform({
           apiName,
           syncImportFn: this.syncImportFn,
           baseDir: this.baseDir,

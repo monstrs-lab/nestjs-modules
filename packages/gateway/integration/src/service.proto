@@ -7,6 +7,7 @@ service ExampleService {
   rpc GetMetadata (GetMetadataRequest) returns (GetMetadataResponse) {}
   rpc GetError (GetErrorRequest) returns (GetErrorResponse) {}
   rpc GetMustRename (GetMustRenameRequest) returns (GetMustRenameResponse) {}
+  rpc SendMovies (MovieRequest) returns (MoviesResult) {}
 }
 
 message Movie {

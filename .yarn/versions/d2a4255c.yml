@@ -1,0 +1,7 @@
+releases:
+  "@monstrs/nestjs-gateway": patch
+  "@monstrs/nestjs-grpc-errors": patch
+  "@monstrs/nestjs-grpc-http-proxy": patch
+  "@monstrs/nestjs-grpc-identity": patch
+  "@monstrs/nestjs-grpc-playground": patch
+  "@monstrs/nestjs-grpc-reflection": patch

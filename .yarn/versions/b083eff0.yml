@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/nestjs-gateway": patch
+  "@monstrs/nestjs-typeorm-seeding": patch

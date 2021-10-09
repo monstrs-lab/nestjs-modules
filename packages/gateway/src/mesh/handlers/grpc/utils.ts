@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { jsonFlatStringify }              from '@graphql-mesh/utils'
 import { ClientReadableStream }           from '@grpc/grpc-js'
 import { ClientUnaryCall }                from '@grpc/grpc-js'

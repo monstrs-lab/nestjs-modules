@@ -405,7 +405,12 @@ module.exports = {
                   [rootFieldName]: {
                     ...fieldConfig,
                     resolve: (_, args: Record<string, unknown>, context: Record<string, unknown>) =>
-                      addMetaDataToCall(clientMethod, args.input, context, this.config.metaData!),
+                      addMetaDataToCall(
+                        clientMethod,
+                        args.input || {},
+                        context,
+                        this.config.metaData!
+                      ),
                   },
                 })
               } else {
@@ -413,7 +418,12 @@ module.exports = {
                   [rootFieldName]: {
                     ...fieldConfig,
                     resolve: (_, args: Record<string, unknown>, context: Record<string, unknown>) =>
-                      addMetaDataToCall(clientMethod, args.input, context, this.config.metaData!),
+                      addMetaDataToCall(
+                        clientMethod,
+                        args.input || {},
+                        context,
+                        this.config.metaData!
+                      ),
                   },
                 })
               }

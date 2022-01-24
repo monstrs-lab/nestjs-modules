@@ -1,13 +1,15 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common'
-import { DiscoveryModule }                 from '@nestjs/core'
+import { DynamicModule }                  from '@nestjs/common'
+import { Module }                         from '@nestjs/common'
+import { Provider }                       from '@nestjs/common'
+import { DiscoveryModule }                from '@nestjs/core'
 
-import { GitHubAppModuleAsyncOptions }     from './github-app-module-options.interface'
-import { GitHubAppModuleOptions }          from './github-app-module-options.interface'
-import { GitHubAppOptionsFactory }         from './github-app-module-options.interface'
-import { GITHUB_APP_MODULE_OPTIONS }       from './github-app.constants'
-import { createGitHubAppExportsProvider }  from './github-app.providers'
-import { createGitHubAppProvider }         from './github-app.providers'
-import { createGitHubAppOptionsProvider }  from './github-app.providers'
+import { GitHubAppModuleAsyncOptions }    from './github-app-module-options.interface'
+import { GitHubAppModuleOptions }         from './github-app-module-options.interface'
+import { GitHubAppOptionsFactory }        from './github-app-module-options.interface'
+import { GITHUB_APP_MODULE_OPTIONS }      from './github-app.constants'
+import { createGitHubAppExportsProvider } from './github-app.providers'
+import { createGitHubAppProvider }        from './github-app.providers'
+import { createGitHubAppOptionsProvider } from './github-app.providers'
 
 @Module({
   imports: [DiscoveryModule],

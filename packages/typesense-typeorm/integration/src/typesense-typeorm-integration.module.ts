@@ -1,5 +1,6 @@
 import { Module }                 from '@nestjs/common'
 import { TypeOrmModule }          from '@nestjs/typeorm'
+
 import { TypesenseModule }        from '@monstrs/nestjs-typesense'
 
 import { TypesenseTypeOrmModule } from '../../src'

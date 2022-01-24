@@ -1,4 +1,5 @@
-import { Inject, Injectable }       from '@nestjs/common'
+import { Inject }                   from '@nestjs/common'
+import { Injectable }               from '@nestjs/common'
 
 import { MetricsOptionsFactory }    from '@monstrs/nestjs-metrics'
 import { MetricsModuleOptions }     from '@monstrs/nestjs-metrics'

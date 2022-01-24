@@ -1,3 +1,5 @@
+import { ServiceError }          from '@grpc/grpc-js'
+import { ErrorStatus }           from '@monstrs/grpc-error-status'
 import { Controller }            from '@nestjs/common'
 import { Body }                  from '@nestjs/common'
 import { Post }                  from '@nestjs/common'
@@ -6,7 +8,7 @@ import { Param }                 from '@nestjs/common'
 import { Header }                from '@nestjs/common'
 import { Req }                   from '@nestjs/common'
 import { Res }                   from '@nestjs/common'
-import { ErrorStatus }           from '@monstrs/grpc-error-status'
+
 import BJSON                     from 'buffer-json'
 
 import { AuthenticationService } from '../authenticators'
@@ -36,7 +38,7 @@ export class GrpcHttpProxyController {
 
       res.send(BJSON.stringify(data))
     } catch (error) {
-      res.send(BJSON.stringify(ErrorStatus.fromServiceError(error).toObject()))
+      res.send(BJSON.stringify(ErrorStatus.fromServiceError(error as ServiceError).toObject()))
     }
   }
 }

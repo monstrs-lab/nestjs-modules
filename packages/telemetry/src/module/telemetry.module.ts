@@ -1,13 +1,15 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common'
+import { DynamicModule }               from '@nestjs/common'
+import { Module }                      from '@nestjs/common'
+import { Provider }                    from '@nestjs/common'
 
-import { MetricsModule }                   from '@monstrs/nestjs-metrics'
-import { TracingModule }                   from '@monstrs/nestjs-tracing'
+import { MetricsModule }               from '@monstrs/nestjs-metrics'
+import { TracingModule }               from '@monstrs/nestjs-tracing'
 
-import { ChildrenModulesConfig }           from './children-modules.config'
-import { TelemetryModuleAsyncOptions }     from './telemetry-module-options.interface'
-import { TelemetryModuleOptions }          from './telemetry-module-options.interface'
-import { TelemetryOptionsFactory }         from './telemetry-module-options.interface'
-import { TELEMETRY_MODULE_OPTIONS }        from './telemetry.constants'
+import { ChildrenModulesConfig }       from './children-modules.config'
+import { TelemetryModuleAsyncOptions } from './telemetry-module-options.interface'
+import { TelemetryModuleOptions }      from './telemetry-module-options.interface'
+import { TelemetryOptionsFactory }     from './telemetry-module-options.interface'
+import { TELEMETRY_MODULE_OPTIONS }    from './telemetry.constants'
 
 @Module({})
 export class TelemetryModule {

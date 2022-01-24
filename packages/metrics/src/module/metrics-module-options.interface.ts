@@ -1,5 +1,6 @@
-import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
-import { MeterProvider }        from '@opentelemetry/metrics'
+import { ModuleMetadata } from '@nestjs/common/interfaces'
+import { Type }           from '@nestjs/common/interfaces'
+import { MeterProvider }  from '@opentelemetry/metrics'
 
 export interface MetricsModuleOptions {
   provider?: MeterProvider

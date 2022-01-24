@@ -1,10 +1,10 @@
 import { Module }               from '@nestjs/common'
 
-import { GrpcReflectionModule } from '@monstrs/nestjs-grpc-reflection'
 import { GrpcHttpProxyModule }  from '@monstrs/nestjs-grpc-http-proxy'
+import { GrpcReflectionModule } from '@monstrs/nestjs-grpc-reflection'
 
-import { serverOptions }        from './server.options'
 import { EchoModule }           from './echo'
+import { serverOptions }        from './server.options'
 
 @Module({
   imports: [

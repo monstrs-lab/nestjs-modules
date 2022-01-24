@@ -1,8 +1,8 @@
+import { Logger }                                           from '@monstrs/logger'
 import { Inject }                                           from '@nestjs/common'
 import { OnModuleInit }                                     from '@nestjs/common'
 import { Injectable }                                       from '@nestjs/common'
 import { HttpAdapterHost }                                  from '@nestjs/core'
-import { Logger }                                           from '@monstrs/logger'
 import { App }                                              from '@octokit/app'
 import { createNodeMiddleware as createWebhooksMiddleware } from '@octokit/webhooks'
 

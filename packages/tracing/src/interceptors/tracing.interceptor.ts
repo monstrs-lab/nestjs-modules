@@ -1,13 +1,14 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-else-return */
+import { CallHandler }      from '@nestjs/common'
+import { ExecutionContext } from '@nestjs/common'
+import { Injectable }       from '@nestjs/common'
+import { NestInterceptor }  from '@nestjs/common'
+import { Attributes }       from '@opentelemetry/api'
+import { Tracer }           from '@opentelemetry/tracing'
 
-import { CallHandler, ExecutionContext } from '@nestjs/common'
-import { Injectable, NestInterceptor }   from '@nestjs/common'
-import { Observable, throwError }        from 'rxjs'
-import { catchError }                    from 'rxjs/operators'
-import { tap }                           from 'rxjs/operators'
-import { Tracer }                        from '@opentelemetry/tracing'
-import { Attributes }                    from '@opentelemetry/api'
+import { Observable }       from 'rxjs'
+import { throwError }       from 'rxjs'
+import { catchError }       from 'rxjs/operators'
+import { tap }              from 'rxjs/operators'
 
 @Injectable()
 export class TracingInterceptor implements NestInterceptor {

@@ -1,12 +1,14 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common'
+import { DynamicModule }                from '@nestjs/common'
+import { Module }                       from '@nestjs/common'
+import { Provider }                     from '@nestjs/common'
 
-import { MetricsModuleAsyncOptions }       from './metrics-module-options.interface'
-import { MetricsModuleOptions }            from './metrics-module-options.interface'
-import { MetricsOptionsFactory }           from './metrics-module-options.interface'
-import { METRICS_MODULE_OPTIONS }          from './metrics.constants'
-import { createMetricsExportsProvider }    from './metrics.providers'
-import { createMetricsProvider }           from './metrics.providers'
-import { createMetricsOptionsProvider }    from './metrics.providers'
+import { MetricsModuleAsyncOptions }    from './metrics-module-options.interface'
+import { MetricsModuleOptions }         from './metrics-module-options.interface'
+import { MetricsOptionsFactory }        from './metrics-module-options.interface'
+import { METRICS_MODULE_OPTIONS }       from './metrics.constants'
+import { createMetricsExportsProvider } from './metrics.providers'
+import { createMetricsProvider }        from './metrics.providers'
+import { createMetricsOptionsProvider } from './metrics.providers'
 
 @Module({})
 export class MetricsModule {

@@ -14,8 +14,7 @@ export class WebhooksRegistrator implements OnApplicationBootstrap {
   async onApplicationBootstrap() {
     this.metadataRegistry.getWebhookHandlers().forEach((handlers, name) => {
       this.app.webhooks.on(name, ({ octokit, payload }) =>
-        Promise.all(handlers.map((handler) => handler(octokit, payload)))
-      )
+        Promise.all(handlers.map((handler) => handler(octokit, payload))))
     })
   }
 }

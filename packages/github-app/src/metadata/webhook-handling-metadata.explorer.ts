@@ -1,4 +1,5 @@
-import { Injectable, OnModuleInit }        from '@nestjs/common'
+import { Injectable }                      from '@nestjs/common'
+import { OnModuleInit }                    from '@nestjs/common'
 import { DiscoveryService }                from '@nestjs/core'
 import { ExternalContextCreator }          from '@nestjs/core/helpers/external-context-creator'
 import { ParamMetadata }                   from '@nestjs/core/helpers/interfaces/params-metadata.interface'
@@ -36,11 +37,9 @@ export class WebhookHandlingMetadataExplorer implements OnModuleInit {
         return
       }
 
-      this.metadataScanner.scanFromPrototype(
-        instance,
-        Object.getPrototypeOf(instance),
-        (key: string) => this.lookupWebhookHandlers(instance, key)
-      )
+      this.metadataScanner.scanFromPrototype(instance, Object.getPrototypeOf(instance), (
+        key: string
+      ) => this.lookupWebhookHandlers(instance, key))
     })
   }
 

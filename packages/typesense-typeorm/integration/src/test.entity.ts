@@ -1,6 +1,7 @@
 import { PrimaryGeneratedColumn } from 'typeorm'
 import { Entity }                 from 'typeorm'
 import { Column }                 from 'typeorm'
+
 import { Schema }                 from '@monstrs/nestjs-typesense'
 import { Field }                  from '@monstrs/nestjs-typesense'
 

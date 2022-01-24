@@ -1,5 +1,6 @@
-import { ModuleMetadata, Type } from '@nestjs/common/interfaces'
-import { NodeTracerProvider }   from '@opentelemetry/node'
+import { ModuleMetadata }     from '@nestjs/common/interfaces'
+import { Type }               from '@nestjs/common/interfaces'
+import { NodeTracerProvider } from '@opentelemetry/node'
 
 export interface TracingModuleOptions {
   provider?: NodeTracerProvider

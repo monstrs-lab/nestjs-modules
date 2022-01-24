@@ -1,12 +1,14 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common'
+import { DynamicModule }                from '@nestjs/common'
+import { Module }                       from '@nestjs/common'
+import { Provider }                     from '@nestjs/common'
 
-import { TracingModuleAsyncOptions }       from './tracing-module-options.interface'
-import { TracingModuleOptions }            from './tracing-module-options.interface'
-import { TracingOptionsFactory }           from './tracing-module-options.interface'
-import { TRACING_MODULE_OPTIONS }          from './tracing.constants'
-import { createTracingExportsProvider }    from './tracing.providers'
-import { createTracingProvider }           from './tracing.providers'
-import { createTracingOptionsProvider }    from './tracing.providers'
+import { TracingModuleAsyncOptions }    from './tracing-module-options.interface'
+import { TracingModuleOptions }         from './tracing-module-options.interface'
+import { TracingOptionsFactory }        from './tracing-module-options.interface'
+import { TRACING_MODULE_OPTIONS }       from './tracing.constants'
+import { createTracingExportsProvider } from './tracing.providers'
+import { createTracingProvider }        from './tracing.providers'
+import { createTracingOptionsProvider } from './tracing.providers'
 
 @Module({})
 export class TracingModule {

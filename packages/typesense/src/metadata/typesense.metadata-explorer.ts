@@ -1,7 +1,8 @@
-import { Injectable, OnModuleInit }  from '@nestjs/common'
+import { Logger }                    from '@monstrs/logger'
+import { Injectable }                from '@nestjs/common'
+import { OnModuleInit }              from '@nestjs/common'
 import { DiscoveryService }          from '@nestjs/core'
 import { InstanceWrapper }           from '@nestjs/core/injector/instance-wrapper'
-import { Logger }                    from '@monstrs/logger'
 
 import { TypesenseMetadataAccessor } from './typesense.metadata-accessor'
 import { TypesenseMetadataRegistry } from './typesense.metadata-registry'

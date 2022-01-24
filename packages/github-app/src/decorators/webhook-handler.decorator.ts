@@ -1,14 +1,16 @@
-import { SetMetadata, applyDecorators } from '@nestjs/common'
-import { EmitterWebhookEventName }      from '@octokit/webhooks/dist-types/types'
+import { SetMetadata }             from '@nestjs/common'
+import { EmitterWebhookEventName } from '@octokit/webhooks/dist-types/types'
+import { applyDecorators }         from '@nestjs/common'
 
-import { WebhookHandlerParamType }      from './webhook-handler-param.type'
-import { assignMetadata }               from './param.utils'
+import { WebhookHandlerParamType } from './webhook-handler-param.type'
+import { assignMetadata }          from './param.utils'
 
 export const WEBHOOK_HANDLER_ARGS_METADATA = '__webhookHandlerArguments__'
 export const WEBHOOK_HANDLER_METADATA = '__webhookHandler__'
 
-export const createWebhookHandlerParamDecorator =
-  (paramtype: WebhookHandlerParamType): ParameterDecorator =>
+export const createWebhookHandlerParamDecorator = (
+    paramtype: WebhookHandlerParamType
+  ): ParameterDecorator =>
   (target, key, index) => {
     const args = Reflect.getMetadata(WEBHOOK_HANDLER_ARGS_METADATA, target.constructor, key) || {}
 

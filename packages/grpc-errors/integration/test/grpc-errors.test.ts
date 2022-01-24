@@ -2,12 +2,14 @@
  * @jest-environment node
  */
 
-import getPort                         from 'get-port'
+import { ServiceError }                from '@grpc/grpc-js'
+import { ErrorStatus }                 from '@monstrs/grpc-error-status'
+import { INestMicroservice }           from '@nestjs/common'
 import { ClientsModule }               from '@nestjs/microservices'
 import { Transport }                   from '@nestjs/microservices'
-import { INestMicroservice }           from '@nestjs/common'
 import { Test }                        from '@nestjs/testing'
-import { ErrorStatus }                 from '@monstrs/grpc-error-status'
+
+import getPort                         from 'get-port'
 import { join }                        from 'path'
 
 import { GrpcErrorsIntegrationModule } from '../src'
@@ -69,7 +71,7 @@ describe('grpc error', () => {
     try {
       await testClient.testValidation({ id: 'test', child: { id: 'test' } }).toPromise()
     } catch (error) {
-      expect(ErrorStatus.fromServiceError(error).toObject()).toEqual(
+      expect(ErrorStatus.fromServiceError(error as ServiceError).toObject()).toEqual(
         expect.objectContaining({
           details: expect.arrayContaining([
             expect.objectContaining({

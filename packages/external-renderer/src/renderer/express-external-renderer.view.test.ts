@@ -1,8 +1,7 @@
-/* eslint-disable import/first */
-
 jest.mock('node-fetch')
 
-import fetch, { Response }             from 'node-fetch'
+import fetch                           from 'node-fetch'
+import { Response }                    from 'node-fetch'
 
 import { ExpressExternalRendererView } from './express-external-renderer.view'
 
@@ -14,7 +13,10 @@ describe('ExpressExternalRendererView', () => {
       root: 'http://localhost:3000',
     })
 
-    render = (params = {}) => new Promise((resolve) => view.render(params, resolve))
+    render = (params = {}) =>
+      new Promise((resolve) => {
+        view.render(params, resolve)
+      })
   })
 
   afterEach(() => {

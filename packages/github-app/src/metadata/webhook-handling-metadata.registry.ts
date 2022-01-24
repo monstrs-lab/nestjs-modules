@@ -1,7 +1,7 @@
 import { Injectable }              from '@nestjs/common'
+import { Octokit }                 from '@octokit/core'
 import { EmitterWebhookEventName } from '@octokit/webhooks/dist-types/types'
 import { EmitterWebhookEvent }     from '@octokit/webhooks/dist-types/types'
-import { Octokit }                 from '@octokit/core'
 
 type HandlerFunction = (octokit: Octokit, payload: EmitterWebhookEvent['payload']) => Promise<void>
 

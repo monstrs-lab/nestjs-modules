@@ -137,7 +137,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@jest/core", "virtual:371015ddcff70c480ce0819023bdce12201863ac3766ba4076edfd41781e86f99172819c71437d4457722058c3942e26f174c204f9fe55ecfc3235414326d5d9#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:14.14.37"],
@@ -3667,28 +3667,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@monstrs/schematics", [
-        ["npm:0.0.15", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.15-6df713e677-7aed01309f.zip/node_modules/@monstrs/schematics/",
+        ["npm:0.0.19", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.19-69e5247643-3801570a64.zip/node_modules/@monstrs/schematics/",
           "packageDependencies": [
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
             ["@monstrs/config-typescript", "npm:0.0.10"],
-            ["@monstrs/schematics-utils", "npm:0.1.9"]
+            ["@monstrs/schematics-utils", "npm:0.1.11"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@monstrs/schematics-utils", [
-        ["npm:0.1.9", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.9-d1e5b13068-f811984e30.zip/node_modules/@monstrs/schematics-utils/",
+        ["npm:0.1.11", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.11-3e36c80c95-6d4fc709b0.zip/node_modules/@monstrs/schematics-utils/",
           "packageDependencies": [
-            ["@monstrs/schematics-utils", "npm:0.1.9"],
+            ["@monstrs/schematics-utils", "npm:0.1.11"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
+            ["js-yaml", "npm:4.1.0"],
             ["semver", "npm:6.3.0"],
-            ["strip-json-comments", "npm:3.0.1"],
-            ["yaml", "npm:1.10.2"]
+            ["strip-json-comments", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -12437,7 +12437,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nestjs-modules", "workspace:."],
             ["@jest/core", "virtual:371015ddcff70c480ce0819023bdce12201863ac3766ba4076edfd41781e86f99172819c71437d4457722058c3942e26f174c204f9fe55ecfc3235414326d5d9#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:14.14.37"],

@@ -18,7 +18,7 @@
   "devDependencies": {
     "@jest/core": "^27.4.7",
     "@monstrs/config-jest": "^0.0.10",
-    "@monstrs/schematics": "^0.0.15",
+    "@monstrs/schematics": "^0.0.19",
     "@types/eslint": "^8.4.1",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.10",
@@ -37,7 +37,7 @@
       "collection": "@monstrs/schematics",
       "schematic": "project",
       "type": "libraries",
-      "migration": 1643020629040
+      "migration": "1643131477515"
     }
   }
 }

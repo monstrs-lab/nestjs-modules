@@ -27,7 +27,7 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
   ) {}
 
   async onModuleInit() {
-    const { schema, contextBuilder, subscribe, execute } = await this.mesh.getInstance()
+    const { schema, subscribe, execute } = await this.mesh.getInstance()
 
     if (this.adapterHost.httpAdapter.getType() === 'express') {
       const app = this.adapterHost.httpAdapter.getInstance()
@@ -37,7 +37,7 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
       const apolloServer = new ApolloServer({
         schema,
         introspection: introspection === undefined ? Boolean(playground) : introspection,
-        context: contextBuilder,
+        context: async ctx => ctx || {},
         playground,
         formatError,
       })
@@ -74,7 +74,7 @@ export class GraphQLMeshHandler implements OnModuleInit, OnModuleDestroy {
                 }
               }
 
-              return contextBuilder(request)
+              return async () => request
             },
           },
           this.wss

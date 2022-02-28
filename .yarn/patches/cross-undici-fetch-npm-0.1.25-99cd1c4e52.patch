@@ -1,0 +1,23 @@
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index e651c4a04018782f4b6467b1bf8fa4e8e3f6ae72..ad16602c5021657d700be4cf8024d0d2d5481d48 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -9,8 +9,6 @@ declare const _AbortController: typeof AbortController;
+ declare const _ReadableStream: typeof ReadableStream;
+ declare const _WritableStream: typeof WritableStream;
+ declare const _TransformStream: typeof TransformStream;
+-declare const _Blob = Blob;
+-declare const _File = File;
+ 
+ declare module "cross-undici-fetch" {
+   export const fetch: typeof _fetch;
+@@ -22,7 +20,7 @@ declare module "cross-undici-fetch" {
+   export const ReadableStream: typeof _ReadableStream;
+   export const WritableStream: typeof _WritableStream;
+   export const TransformStream: typeof _ReadableStream;
+-  export const Blob: typeof _Blob;
+-  export const File: typeof _File;
++  export const Blob;
++  export const File;
+ }
+ 

@@ -368,7 +368,7 @@ module.exports = {
               },
             }
             if (method.responseStream) {
-              const clientMethod: ClientMethod = (input: unknown = {}, metaData?: Metadata) => {
+              const clientMethod: any = (input: unknown = {}, metaData?: Metadata) => {
                 const responseStream = client[methodName](
                   input,
                   metaData

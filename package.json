@@ -13,7 +13,9 @@
     "@octokit/request-error": "^2.0.5",
     "@octokit/types": "^6.13.0",
     "@octokit/webhooks": "^8.12.0",
-    "@types/node": "^14.14.37"
+    "@types/node": "^14.14.37",
+    "cross-undici-fetch@0.1.25": "patch:cross-undici-fetch@npm:0.1.25#.yarn/patches/cross-undici-fetch-npm-0.1.25-99cd1c4e52.patch",
+    "@graphql-mesh/utils@0.27.6": "patch:@graphql-mesh/utils@npm:0.27.6#.yarn/patches/@graphql-mesh-utils-npm-0.27.6-b93892f79e.patch"
   },
   "devDependencies": {
     "@jest/core": "^27.4.7",

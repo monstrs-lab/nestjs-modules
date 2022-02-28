@@ -15,10 +15,11 @@ import { GetMeshOptions }              from '@graphql-mesh/runtime'
 import { InMemoryStoreStorageAdapter } from '@graphql-mesh/store'
 import { MeshStore }                   from '@graphql-mesh/store'
 import { MeshTransform }               from '@graphql-mesh/types'
+import { MeshPubSub } from '@graphql-mesh/types'
 import { Inject }                      from '@nestjs/common'
 import { Injectable }                  from '@nestjs/common'
 import { resolveAdditionalTypeDefs }   from '@graphql-mesh/config'
-import { getDefaultSyncImport }        from '@graphql-mesh/utils'
+import { defaultImportFn }        from '@graphql-mesh/utils'
 import { resolveAdditionalResolvers }  from '@graphql-mesh/utils'
 
 import { PubSub }                      from 'graphql-subscriptions'
@@ -34,7 +35,7 @@ import { GraphQLMeshLogger }           from './graphql-mesh.logger'
 
 @Injectable()
 export class GraphQLMeshConfig {
-  private syncImportFn
+  private importFn
 
   private cache
 
@@ -51,7 +52,7 @@ export class GraphQLMeshConfig {
   constructor(
     @Inject(GATEWAY_MODULE_OPTIONS)
     private readonly options: GatewayModuleOptions,
-    private readonly pubsub: PubSub
+    @Inject(PubSub) private readonly pubsub: MeshPubSub
   ) {
     this.logger = new GraphQLMeshLogger('Mesh')
     this.baseDir = process.cwd()
@@ -61,7 +62,7 @@ export class GraphQLMeshConfig {
       validate: false,
     })
 
-    this.syncImportFn = getDefaultSyncImport(this.baseDir)
+    this.importFn = defaultImportFn
     this.transforms = this.createTransforms('root', options.transforms)
 
     this.merger =
@@ -82,7 +83,7 @@ export class GraphQLMeshConfig {
     const additionalResolvers = await resolveAdditionalResolvers(
       this.baseDir,
       this.options.additionalResolvers || [],
-      this.syncImportFn,
+      this.importFn,
       this.pubsub
     )
 
@@ -130,7 +131,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new RenameTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.rename,
           cache: this.cache,
@@ -143,7 +144,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         FilterTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.filterSchema,
           cache: this.cache,
@@ -156,7 +157,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new EncapsulateTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.encapsulate,
           cache: this.cache,
@@ -169,7 +170,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new PrefixTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.prefix,
           cache: this.cache,
@@ -182,7 +183,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new CacheTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.cache,
           cache: this.cache,
@@ -195,7 +196,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new SnapshotTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.snapshot,
           cache: this.cache,
@@ -208,7 +209,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new MockingTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.mock,
           cache: this.cache,
@@ -221,7 +222,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new ResolversCompositionTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.resolversComposition,
           cache: this.cache,
@@ -234,7 +235,7 @@ export class GraphQLMeshConfig {
       transforms.push(
         new NamingConventionTransform({
           apiName,
-          syncImportFn: this.syncImportFn,
+          importFn: this.importFn,
           baseDir: this.baseDir,
           config: config.namingConvention,
           cache: this.cache,

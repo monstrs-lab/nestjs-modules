@@ -1,0 +1,8 @@
+diff --git a/global-lru-cache.d.ts b/global-lru-cache.d.ts
+index f0f81a4b12b0a94185210c334c70a8a886b27598..d78ff4c2190d7ce38759eeb09fe10f7b442e29ed 100644
+--- a/global-lru-cache.d.ts
++++ b/global-lru-cache.d.ts
+@@ -1,2 +1,2 @@
+-/// <reference types="packages/utils/node_modules/tiny-lru/tiny-lru" />
++/// <reference types="tiny-lru" />
+ export declare const globalLruCache: import("tiny-lru").Lru<any>;

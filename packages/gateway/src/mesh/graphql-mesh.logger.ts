@@ -1,4 +1,5 @@
 import { Logger as MeshLogger } from '@graphql-mesh/types'
+import { LazyLoggerMessage } from '@graphql-mesh/types'
 import { Logger }               from '@monstrs/logger'
 
 export class GraphQLMeshLogger implements MeshLogger {
@@ -24,7 +25,7 @@ export class GraphQLMeshLogger implements MeshLogger {
     this.logger.error(message)
   }
 
-  debug(message: string) {
+  debug(message: LazyLoggerMessage) {
     this.logger.debug(message)
   }
 

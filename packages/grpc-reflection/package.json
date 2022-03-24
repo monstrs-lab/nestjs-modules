@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn app library build",
+    "build": "yarn library build",
     "prepack": "yarn run build",
     "postpack": "rm -rf dist",
     "proto:generate": "PATH=$PATH:$(yarn bin ts-proto) buf generate",

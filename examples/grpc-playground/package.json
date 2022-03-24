@@ -11,7 +11,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.3.7",
     "@grpc/proto-loader": "^0.6.4",
-    "@monstrs/nestjs-grpc-playground": "workspace:0.0.19",
+    "@monstrs/nestjs-grpc-playground": "workspace:0.0.20",
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.10",
     "@nestjs/common": "^8.0.5",
     "@nestjs/core": "^8.0.5",

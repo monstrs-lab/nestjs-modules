@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 import { ServiceError }                from '@grpc/grpc-js'
 import { ErrorStatus }                 from '@monstrs/grpc-error-status'
 import { INestMicroservice }           from '@nestjs/common'
@@ -56,7 +52,7 @@ describe('grpc error', () => {
 
     await service.init()
 
-    await service.listenAsync()
+    await service.listen()
 
     testClient = service.get('client').getService('TestService')
   })

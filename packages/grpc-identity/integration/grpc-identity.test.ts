@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 import { Metadata }                      from '@grpc/grpc-js'
 import { INestMicroservice }             from '@nestjs/common'
 import { ClientsModule }                 from '@nestjs/microservices'
@@ -57,7 +53,7 @@ describe('grpc identity', () => {
     })
 
     await service.init()
-    await service.listenAsync()
+    await service.listen()
 
     client = service.get('client').getService('TestService')
   })

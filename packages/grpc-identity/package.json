@@ -14,8 +14,8 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.8.11",
     "@monstrs/grpc-error-status": "^0.0.4",
-    "jsonwebtoken": "^8.5.1",
-    "jwks-rsa": "^2.1.5"
+    "jsonwebtoken": "^9.0.0",
+    "jwks-rsa": "^3.0.1"
   },
   "devDependencies": {
     "@nestjs/common": "^9.3.9",
@@ -24,8 +24,8 @@
     "@nestjs/testing": "^9.3.9",
     "@types/jsonwebtoken": "^9.0.1",
     "@types/jwk-to-pem": "^2.0.1",
-    "get-port": "^5.1.1",
-    "protobufjs": "^6.11.3",
+    "get-port": "^6.1.2",
+    "protobufjs": "^7.2.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.8.0"
   },

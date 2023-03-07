@@ -14,14 +14,14 @@
   "dependencies": {
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.30",
     "@monstrs/nestjs-grpc-reflection": "workspace:0.0.10",
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "@nestjs/common": "^9.3.9",
     "@nestjs/core": "^9.3.9",
     "@nestjs/microservices": "^9.3.9",
     "@nestjs/testing": "^9.3.9",
-    "get-port": "^5.1.1",
+    "get-port": "^6.1.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.8.0",
     "supertest": "^6.3.3"

@@ -26,5 +26,5 @@
     "jsx": "react",
     "outDir": "./dist"
   },
-  "include": ["packages/**/*", "examples/**/*"]
+  "include": ["packages/**/*"]
 }

@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 import { INestMicroservice }               from '@nestjs/common'
 import { ClientsModule }                   from '@nestjs/microservices'
 import { Transport }                       from '@nestjs/microservices'
@@ -60,8 +56,7 @@ describe('grpc reflection', () => {
     })
 
     await service.init()
-
-    await service.listenAsync()
+    await service.listen()
 
     serverReflection = service.get('client').getService('ServerReflection')
   })

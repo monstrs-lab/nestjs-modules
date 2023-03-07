@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 import { INestApplication }               from '@nestjs/common'
 import { INestMicroservice }              from '@nestjs/common'
 import { Test }                           from '@nestjs/testing'
@@ -50,7 +46,7 @@ describe('grpc http proxy', () => {
     await app.init()
 
     await app.listen(appPort, '0.0.0.0')
-    await service.listenAsync()
+    await service.listen()
 
     url = await app.getUrl()
   })

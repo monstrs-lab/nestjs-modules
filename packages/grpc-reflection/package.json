@@ -19,20 +19,20 @@
     "@grpc/proto-loader": "^0.7.5",
     "@monstrs/types-import-proto": "^0.0.1",
     "google-protobuf": "^3.17.3",
-    "protobufjs": "^6.11.2"
+    "protobufjs": "^6.11.3"
   },
   "devDependencies": {
     "@nestjs/common": "^9.3.9",
     "@nestjs/core": "^9.3.9",
     "@nestjs/microservices": "^9.3.9",
     "@nestjs/testing": "^9.3.9",
-    "@types/long": "^4.0.1",
+    "@types/long": "^5.0.0",
     "get-port": "^5.1.1",
     "long": "^4.0.0",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.5.2",
-    "supertest": "^6.2.2",
-    "ts-proto": "^1.82.2"
+    "rxjs": "7.8.0",
+    "supertest": "^6.3.3",
+    "ts-proto": "^1.140.0"
   },
   "peerDependencies": {
     "@nestjs/common": "^9.0.0",

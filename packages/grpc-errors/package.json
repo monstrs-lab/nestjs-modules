@@ -24,8 +24,8 @@
     "class-validator": "^0.13.2",
     "get-port": "^5.1.1",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.5.2",
-    "supertest": "^6.2.2"
+    "rxjs": "7.8.0",
+    "supertest": "^6.3.3"
   },
   "peerDependencies": {
     "@nestjs/common": "^9.0.0",

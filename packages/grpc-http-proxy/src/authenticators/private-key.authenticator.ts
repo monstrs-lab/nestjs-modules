@@ -1,6 +1,7 @@
+import type { Request }   from 'express'
+import type { Response }  from 'express'
+
 import cookie             from 'cookie'
-import { Request }        from 'express'
-import { Response }       from 'express'
 import { promises as fs } from 'fs'
 import { sign }           from 'jsonwebtoken'
 import { v4 as uuid }     from 'uuid'

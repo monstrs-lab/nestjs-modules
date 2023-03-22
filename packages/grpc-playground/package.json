@@ -27,11 +27,13 @@
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
+    "@grpc/grpc-js": "^1.5.4",
+    "@grpc/proto-loader": "^0.6.9",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/microservices": "^9.0.0",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.3.3"
+    "rxjs": "^7.0.0"
   },
   "publishConfig": {
     "main": "dist/index.js",

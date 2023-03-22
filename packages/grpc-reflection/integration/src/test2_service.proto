@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package test;
-
-import "test.proto";
-
-service Test2Service {
-  rpc GetTest(Test) returns (Test) {}
-}

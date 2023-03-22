@@ -1,8 +1,10 @@
 import { DynamicModule }                  from '@nestjs/common'
 import { Module }                         from '@nestjs/common'
+import { Transport }                      from '@nestjs/microservices'
+
+import { GrpcReflectionModule }           from 'nestjs-grpc-reflection'
 
 import { GrpcHttpProxyModule }            from '@monstrs/nestjs-grpc-http-proxy'
-import { GrpcReflectionModule }           from '@monstrs/nestjs-grpc-reflection'
 
 import { GrpcPlaygroundController }       from '../controllers'
 import { GrpcPlaygroundModuleOptions }    from './grpc-playground-module-options.interface'
@@ -14,7 +16,10 @@ export class GrpcPlaygroundModule {
     return {
       module: GrpcPlaygroundModule,
       imports: [
-        GrpcReflectionModule.register(options.options),
+        GrpcReflectionModule.register({
+          transport: Transport.GRPC,
+          options: options.options,
+        }),
         GrpcHttpProxyModule.register({
           authenticator: options.authenticator,
           options: options.options,

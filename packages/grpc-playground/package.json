@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@monstrs/nestjs-grpc-http-proxy": "workspace:0.0.32",
-    "@monstrs/nestjs-grpc-reflection": "workspace:0.0.11",
+    "nestjs-grpc-reflection": "^0.0.21",
     "node-fetch": "^3.3.0"
   },
   "devDependencies": {

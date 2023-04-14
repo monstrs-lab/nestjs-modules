@@ -1,5 +1,0 @@
-releases:
-  "@monstrs/nestjs-buf-errors": patch
-  "@monstrs/nestjs-dataloader": minor
-  "@monstrs/nestjs-logger": minor
-  "@monstrs/nestjs-typeorm-seeding": minor

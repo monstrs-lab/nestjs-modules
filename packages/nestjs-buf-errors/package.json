@@ -1,0 +1,63 @@
+{
+  "name": "@monstrs/nestjs-buf-errors",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist",
+    "proto:generate": "buf generate integration/proto"
+  },
+  "dependencies": {
+    "@bufbuild/connect": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
+    "@bufbuild/protobuf": "^1.2.0",
+    "@monstrs/protobuf-rpc": "^0.0.3"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.15.0-1",
+    "@bufbuild/connect-node": "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch",
+    "@bufbuild/protoc-gen-connect-es": "^0.8.6",
+    "@bufbuild/protoc-gen-es": "^1.2.0",
+    "@jest/globals": "^29.5.0",
+    "@nestjs/common": "^9.4.0",
+    "@nestjs/core": "^9.4.0",
+    "@nestjs/microservices": "^9.4.0",
+    "@nestjs/testing": "^9.4.0",
+    "@wolfcoded/nestjs-bufconnect": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "get-port": "^6.1.2",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "7.8.0",
+    "supertest": "^6.3.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/microservices": "^9.0.0",
+    "class-validator": "^0.13",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.3"
+  },
+  "publishConfig": {
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "import": "./dist/index.js",
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    },
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

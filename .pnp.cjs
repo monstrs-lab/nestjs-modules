@@ -1781,7 +1781,7 @@ const RAW_RUNTIME_STATE =
           ["@bufbuild/protoc-gen-connect-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protoc-gen-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:1.2.0"],\
           ["@jest/globals", "npm:29.5.0"],\
-          ["@monstrs/protobuf-rpc", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.3"],\
+          ["@monstrs/protobuf-rpc", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.4"],\
           ["@nestjs/common", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:9.4.0"],\
           ["@nestjs/core", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:9.4.0"],\
           ["@nestjs/microservices", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:9.4.0"],\
@@ -1807,7 +1807,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/graphql", "virtual:5c19a72ca723c23976cfe6939cc6a9a681b9df518513f178f11446a8dc61783c24825c7f44fe0973064ca4c7e884d0682b5ead1acc0435ae9b3f6a3348a7bddb#npm:11.0.5"],\
           ["@nestjs/microservices", "virtual:5c19a72ca723c23976cfe6939cc6a9a681b9df518513f178f11446a8dc61783c24825c7f44fe0973064ca4c7e884d0682b5ead1acc0435ae9b3f6a3348a7bddb#npm:9.4.0"],\
           ["@nestjs/testing", "virtual:5c19a72ca723c23976cfe6939cc6a9a681b9df518513f178f11446a8dc61783c24825c7f44fe0973064ca4c7e884d0682b5ead1acc0435ae9b3f6a3348a7bddb#npm:9.4.0"],\
-          ["@types/lodash", "npm:4.14.192"],\
+          ["@types/lodash", "npm:4.14.194"],\
           ["@types/node", "npm:18.15.11"],\
           ["dataloader", "npm:2.2.2"],\
           ["get-port", "npm:6.1.2"],\
@@ -1862,17 +1862,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/protobuf-rpc", [\
-      ["npm:0.0.3", {\
-        "packageLocation": "./.yarn/cache/@monstrs-protobuf-rpc-npm-0.0.3-6f33261dea-186436b89d.zip/node_modules/@monstrs/protobuf-rpc/",\
+      ["npm:0.0.4", {\
+        "packageLocation": "./.yarn/cache/@monstrs-protobuf-rpc-npm-0.0.4-b1c6916cc8-f956d2bd50.zip/node_modules/@monstrs/protobuf-rpc/",\
         "packageDependencies": [\
-          ["@monstrs/protobuf-rpc", "npm:0.0.3"]\
+          ["@monstrs/protobuf-rpc", "npm:0.0.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.3", {\
-        "packageLocation": "./.yarn/__virtual__/@monstrs-protobuf-rpc-virtual-71dd8fb90f/0/cache/@monstrs-protobuf-rpc-npm-0.0.3-6f33261dea-186436b89d.zip/node_modules/@monstrs/protobuf-rpc/",\
+      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.4", {\
+        "packageLocation": "./.yarn/__virtual__/@monstrs-protobuf-rpc-virtual-e0a8e2668f/0/cache/@monstrs-protobuf-rpc-npm-0.0.4-b1c6916cc8-f956d2bd50.zip/node_modules/@monstrs/protobuf-rpc/",\
         "packageDependencies": [\
-          ["@monstrs/protobuf-rpc", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.3"],\
+          ["@monstrs/protobuf-rpc", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.4"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@types/bufbuild__protobuf", null]\
         ],\
@@ -2879,10 +2879,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/lodash", [\
-      ["npm:4.14.192", {\
-        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.192-07db4ce649-b04e16a4ba.zip/node_modules/@types/lodash/",\
+      ["npm:4.14.194", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.194-f099c0742e-64473e6735.zip/node_modules/@types/lodash/",\
         "packageDependencies": [\
-          ["@types/lodash", "npm:4.14.192"]\
+          ["@types/lodash", "npm:4.14.194"]\
         ],\
         "linkType": "HARD"\
       }]\

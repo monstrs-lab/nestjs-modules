@@ -1,0 +1,81 @@
+diff --git a/dist/cjs/protocol-grpc/handler-factory.js b/dist/cjs/protocol-grpc/handler-factory.js
+index 83fe8bcbdfca7e15666cea8263eba48cfc81bcfe..dcd82449efc49b9fb51bf55f60dbc2d5fbd52275 100644
+--- a/dist/cjs/protocol-grpc/handler-factory.js
++++ b/dist/cjs/protocol-grpc/handler-factory.js
+@@ -70,7 +70,7 @@ function createHandler(opt, spec) {
+                 throw compression.error;
+             return undefined;
+         }), (0, index_js_1.transformSplitEnvelope)(opt.readMaxBytes), (0, index_js_1.transformDecompressEnvelope)(compression.request, opt.readMaxBytes), (0, index_js_1.transformParseEnvelope)(serialization.getI(type.binary)), (0, index_js_1.transformInvokeImplementation)(spec, context), (0, index_js_1.transformSerializeEnvelope)(serialization.getO(type.binary)), (0, index_js_1.transformCompressEnvelope)(compression.response, opt.compressMinBytes), (0, index_js_1.transformJoinEnvelopes)(), (0, index_js_1.transformCatch)((e) => {
+-            if (e instanceof connect_error_js_1.ConnectError) {
++            if (e instanceof connect_error_js_1.ConnectError || e.name === connect_error_js_1.ConnectError.name) {
+                 (0, trailer_status_js_1.setTrailerStatus)(context.responseTrailer, e);
+             }
+             else {
+diff --git a/dist/esm/protocol-grpc/handler-factory.js b/dist/esm/protocol-grpc/handler-factory.js
+index 8a0762630a4c0829527ad59c3120f0b2ba806185..5571934dbb3046c6b75485a5af99ec854d254687 100644
+--- a/dist/esm/protocol-grpc/handler-factory.js
++++ b/dist/esm/protocol-grpc/handler-factory.js
+@@ -66,7 +66,7 @@ function createHandler(opt, spec) {
+                 throw compression.error;
+             return undefined;
+         }), transformSplitEnvelope(opt.readMaxBytes), transformDecompressEnvelope(compression.request, opt.readMaxBytes), transformParseEnvelope(serialization.getI(type.binary)), transformInvokeImplementation(spec, context), transformSerializeEnvelope(serialization.getO(type.binary)), transformCompressEnvelope(compression.response, opt.compressMinBytes), transformJoinEnvelopes(), transformCatch((e) => {
+-            if (e instanceof ConnectError) {
++            if (e instanceof ConnectError || e.name === ConnectError.name) {
+                 setTrailerStatus(context.responseTrailer, e);
+             }
+             else {
+diff --git a/package.json b/package.json
+index 4304ec7bd60bc4e2f009876fb2436dcf3db58ec3..2ca6185a81eba566aa561a146c03e20a9ee9281e 100644
+--- a/package.json
++++ b/package.json
+@@ -17,33 +17,34 @@
+     "build:esm+types": "tsc --project tsconfig.json --module ES2015 --verbatimModuleSyntax --outDir ./dist/esm --declaration --declarationDir ./dist/types && echo >./dist/esm/package.json '{\"type\":\"module\", \"sideEffects\":false}'",
+     "jasmine": "jasmine --config=jasmine.json"
+   },
+-  "main": "./dist/cjs/index.js",
++  "type": "module",
++  "main": "./dist/esm/index.js",
+   "types": "./dist/types/index.d.ts",
+   "exports": {
+     ".": {
+       "types": "./dist/types/index.d.ts",
+       "import": "./dist/esm/index.js",
+-      "require": "./dist/cjs/index.js"
++      "require": "./dist/esm/index.js"
+     },
+     "./protocol": {
+       "types": "./dist/types/protocol/index.d.ts",
+       "import": "./dist/esm/protocol/index.js",
+-      "require": "./dist/cjs/protocol/index.js"
++      "require": "./dist/esm/protocol/index.js"
+     },
+     "./protocol-connect": {
+       "types": "./dist/types/protocol-connect/index.d.ts",
+       "import": "./dist/esm/protocol-connect/index.js",
+-      "require": "./dist/cjs/protocol-connect/index.js"
++      "require": "./dist/esm/protocol-connect/index.js"
+     },
+     "./protocol-grpc": {
+       "types": "./dist/types/protocol-grpc/index.d.ts",
+       "import": "./dist/esm/protocol-grpc/index.js",
+-      "require": "./dist/cjs/protocol-grpc/index.js"
++      "require": "./dist/esm/protocol-grpc/index.js"
+     },
+     "./protocol-grpc-web": {
+       "types": "./dist/types/protocol-grpc-web/index.d.ts",
+       "import": "./dist/esm/protocol-grpc-web/index.js",
+-      "require": "./dist/cjs/protocol-grpc-web/index.js"
++      "require": "./dist/esm/protocol-grpc-web/index.js"
+     }
+   },
+   "typesVersions": {
+diff --git a/protocol-grpc.js b/protocol-grpc.js
+index 19d949e526a0913d410e5086319c64c79304cf78..f00f3d648238a36af7f10db6519064b70f68d291 100644
+--- a/protocol-grpc.js
++++ b/protocol-grpc.js
+@@ -13,4 +13,4 @@
+ // limitations under the License.
+ 
+ // workaround for bundlers that do not support subpath exports.
+-module.exports = require("./dist/cjs/protocol-grpc/index.js");
++export * from "./dist/cjs/protocol-grpc/index.js"

@@ -8,6 +8,7 @@
     "@bufbuild/connect-node@npm:^0.8.4": "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch",
     "@bufbuild/connect@npm:0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
     "@bufbuild/connect@npm:^0.8.4": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
+    "@bufbuild/connect@npm:^0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
     "@types/estree": "1.0.0",
     "@wolfcoded/nestjs-bufconnect@^1.0.0-beta.3": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#./.yarn/patches/wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch"
   },
@@ -16,11 +17,6 @@
     "@types/node": "^18.15.11",
     "husky": "8.0.3",
     "typescript": "^5.0.4"
-  },
-  "dependenciesMeta": {
-    "@monstrs/config-jest@0.1.2": {
-      "unplugged": true
-    }
   },
   "packageManager": "yarn@3.5.0",
   "tools": {

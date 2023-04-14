@@ -1183,7 +1183,7 @@ __metadata:
   resolution: "@monstrs/nestjs-buf-errors@workspace:packages/nestjs-buf-errors"
   dependencies:
     "@bufbuild/buf": "npm:^1.15.0-1"
-    "@bufbuild/connect": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch"
+    "@bufbuild/connect": "npm:^0.8.6"
     "@bufbuild/connect-node": "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch"
     "@bufbuild/protobuf": "npm:^1.2.0"
     "@bufbuild/protoc-gen-connect-es": "npm:^0.8.6"
@@ -6167,9 +6167,6 @@ __metadata:
     "@types/node": "npm:^18.15.11"
     husky: "npm:8.0.3"
     typescript: "npm:^5.0.4"
-  dependenciesMeta:
-    "@monstrs/config-jest@0.1.2":
-      unplugged: true
   languageName: unknown
   linkType: soft
 

@@ -1718,7 +1718,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@monstrs/config-jest", [\
       ["npm:0.1.2", {\
-        "packageLocation": "./.yarn/unplugged/@monstrs-config-jest-npm-0.1.2-5ce15244cd/node_modules/@monstrs/config-jest/",\
+        "packageLocation": "./.yarn/cache/@monstrs-config-jest-npm-0.1.2-5ce15244cd-5ed660ba61.zip/node_modules/@monstrs/config-jest/",\
         "packageDependencies": [\
           ["@monstrs/config-jest", "npm:0.1.2"],\
           ["@emotion/jest", "virtual:5ce15244cd830da272d1c6d4dd341cc5cbebe4924690db6bfc7e44db8749793358a573c99eb31dadba1cd12f83965bb2f16b113482063230272fc6040fb2b8bd#npm:11.10.5"],\

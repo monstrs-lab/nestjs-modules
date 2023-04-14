@@ -18,7 +18,7 @@
     "proto:generate": "buf generate integration/proto"
   },
   "dependencies": {
-    "@bufbuild/connect": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
+    "@bufbuild/connect": "^0.8.6",
     "@bufbuild/protobuf": "^1.2.0",
     "@monstrs/protobuf-rpc": "^0.0.3"
   },

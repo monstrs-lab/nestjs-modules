@@ -1,4 +1,5 @@
-import type { INestApplication } from '@nestjs/common'
+import type { INestApplication }             from '@nestjs/common'
+import type { NestHybridApplicationOptions } from '@nestjs/common'
 
 export class MicroservisesRegistry {
   static #instances: Set<any> = new Set()
@@ -7,7 +8,10 @@ export class MicroservisesRegistry {
     this.#instances.add(options)
   }
 
-  public static connect(app: INestApplication) {
-    this.#instances.forEach((options) => app.connectMicroservice(options))
+  public static connect(
+    app: INestApplication,
+    hybridAppOptions: NestHybridApplicationOptions = {}
+  ) {
+    this.#instances.forEach((options) => app.connectMicroservice(options, hybridAppOptions))
   }
 }

@@ -1,0 +1,2 @@
+releases:
+  "@monstrs/nestjs-mikro-orm-request-context": patch

@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@monstrs/code-runtime": "^0.1.5",
-    "@types/node": "^18.15.13",
+    "@types/node": "^18.16.1",
     "husky": "8.0.3",
     "typescript": "^5.0.4"
   },

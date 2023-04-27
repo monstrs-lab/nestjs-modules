@@ -1,1 +1,1 @@
-export * from './logger/index.js'
+export * from './nest.logger.js'

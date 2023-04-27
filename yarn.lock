@@ -1163,16 +1163,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@monstrs/logger@npm:0.0.8"
+"@monstrs/logger@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@monstrs/logger@npm:0.0.9"
   dependencies:
     "@opentelemetry/api-logs": "npm:^0.38.0"
     "@opentelemetry/core": "npm:*"
     "@opentelemetry/sdk-logs": "npm:^0.37.0"
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
-  checksum: 86c4dfed227f2b0c10486f164fe0c11c6e6f4509de350500393d3c4574a323c99813c3b5c4b584f9ec812eaa4404453ebe9c4697466eeba6eacf1f3fdbb700f2
+  checksum: 020611121fe8bc6b273acaa7abadac27566bc4ff2a58847279fd82630463b347353d0ab7b4be9ac156fab4e83adca83641b4ce3fbb923647cb21b7917cd0444f
   languageName: node
   linkType: hard
 
@@ -1213,14 +1213,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-logger@workspace:packages/nestjs-logger"
   dependencies:
-    "@monstrs/logger": "npm:^0.0.8"
+    "@monstrs/logger": "npm:^0.0.9"
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
     "@nestjs/testing": "npm:^9.4.0"
     "@types/node": "npm:^18.16.1"
     get-port: "npm:^6.1.2"
     reflect-metadata: "npm:0.1.13"
-    rxjs: "npm:7.8.0"
+    rxjs: "npm:^7.8.0"
     supertest: "npm:^6.3.3"
   peerDependencies:
     "@nestjs/common": ^9.0.0
@@ -6531,7 +6531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.8.0, rxjs@npm:^7.8.0":
+"rxjs@npm:^7.8.0":
   version: 7.8.0
   resolution: "rxjs@npm:7.8.0"
   dependencies:

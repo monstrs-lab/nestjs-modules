@@ -5,7 +5,6 @@ import type { CallHandler }      from '@nestjs/common'
 import { RequestContext }        from '@mikro-orm/core'
 import { MikroORM }              from '@mikro-orm/core'
 import { Injectable }            from '@nestjs/common'
-
 import { Observable }            from 'rxjs'
 
 @Injectable()

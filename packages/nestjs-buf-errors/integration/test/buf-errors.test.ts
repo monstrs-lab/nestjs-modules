@@ -11,7 +11,6 @@ import { beforeAll }                  from '@jest/globals'
 import { describe }                   from '@jest/globals'
 import { expect }                     from '@jest/globals'
 import { it }                         from '@jest/globals'
-
 import getPort                        from 'get-port'
 
 import { TestService }                from '../gen/test_connect.js'

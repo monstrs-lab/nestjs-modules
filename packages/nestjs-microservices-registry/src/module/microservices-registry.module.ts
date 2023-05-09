@@ -1,7 +1,6 @@
 import type { DynamicModule }    from '@nestjs/common'
 
 import { Module }                from '@nestjs/common'
-
 import hash                      from 'hash-string'
 
 import { MicroservisesRegistry } from '../registry/index.js'

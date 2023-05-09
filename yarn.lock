@@ -1084,6 +1084,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mikro-orm/nestjs@npm:^5.1.8":
+  version: 5.1.8
+  resolution: "@mikro-orm/nestjs@npm:5.1.8"
+  peerDependencies:
+    "@mikro-orm/core": ^5.0.0 || ^6.0.0-dev.0
+    "@nestjs/common": ^8.0.0 || ^9.0.0
+    "@nestjs/core": ^8.0.0 || ^9.0.0
+  checksum: a34319c6dbbaf6f3799aa1f7eb822ac1406fd6f70bfa9ef0e687312f1ce7806cda5615e8d6007296bd6721df902c9533ede10419e3ac4b303de36676db93a396
+  languageName: node
+  linkType: hard
+
 "@monstrs/code-runtime@npm:^0.1.5":
   version: 0.1.5
   resolution: "@monstrs/code-runtime@npm:0.1.5"
@@ -1163,6 +1174,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/logger@npm:0.0.11, @monstrs/logger@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@monstrs/logger@npm:0.0.11"
+  dependencies:
+    "@opentelemetry/api": "npm:*"
+    "@opentelemetry/api-logs": "npm:^0.38.0"
+    "@opentelemetry/core": "npm:*"
+    "@opentelemetry/sdk-logs": "npm:^0.37.0"
+    on-exit-leak-free: "npm:^2.1.0"
+    sonic-boom: "npm:^3.3.0"
+  checksum: 8d7a1d6698a1a2d41ce1431481fb83ba7f44f97761ea30a6a65f64c507c77d0b9e97c4359e705369347c93885198ed1026956061a273e5dde9d6a2870cbba525
+  languageName: node
+  linkType: hard
+
 "@monstrs/logger@npm:^0.0.9":
   version: 0.0.9
   resolution: "@monstrs/logger@npm:0.0.9"
@@ -1173,6 +1198,17 @@ __metadata:
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
   checksum: 020611121fe8bc6b273acaa7abadac27566bc4ff2a58847279fd82630463b347353d0ab7b4be9ac156fab4e83adca83641b4ce3fbb923647cb21b7917cd0444f
+  languageName: node
+  linkType: hard
+
+"@monstrs/mikro-orm-logger@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@monstrs/mikro-orm-logger@npm:0.0.6"
+  dependencies:
+    "@monstrs/logger": "npm:0.0.11"
+  peerDependencies:
+    "@mikro-orm/core": ^5
+  checksum: 403c04862ddbdc0cd6b5c0471eb87d85a0801f137634b1acaacd55288a6d103114519c23ee9542ba3efdbd388332e2d28c91877218aae87bd8c29e200d556476
   languageName: node
   linkType: hard
 
@@ -1242,6 +1278,28 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@monstrs/nestjs-mikro-orm-config@workspace:packages/nestjs-mikro-orm-config":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-mikro-orm-config@workspace:packages/nestjs-mikro-orm-config"
+  dependencies:
+    "@mikro-orm/core": "npm:^5.7.1"
+    "@mikro-orm/nestjs": "npm:^5.1.8"
+    "@monstrs/logger": "npm:^0.0.11"
+    "@monstrs/mikro-orm-logger": "npm:^0.0.6"
+    "@nestjs/common": "npm:^9.4.0"
+    "@nestjs/core": "npm:^9.4.0"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.0"
+  peerDependencies:
+    "@mikro-orm/core": ^5
+    "@mikro-orm/nestjs": ^5
+    "@nestjs/common": ^9
+    "@nestjs/core": ^9
     reflect-metadata: ^0.1
     rxjs: ^7
   languageName: unknown

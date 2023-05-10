@@ -17,23 +17,23 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.9"
+    "@monstrs/logger": "^0.0.11"
   },
   "devDependencies": {
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
     "@nestjs/testing": "^9.4.0",
-    "@types/node": "^18.16.1",
+    "@types/node": "^20.1.2",
     "get-port": "^6.1.2",
     "reflect-metadata": "0.1.13",
-    "rxjs": "^7.8.0",
+    "rxjs": "^7.8.1",
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.3.3"
+    "@nestjs/common": "^9",
+    "@nestjs/core": "^9",
+    "reflect-metadata": "^0.1",
+    "rxjs": "^7"
   },
   "publishConfig": {
     "exports": {

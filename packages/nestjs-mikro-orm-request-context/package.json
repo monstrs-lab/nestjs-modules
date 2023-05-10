@@ -17,11 +17,11 @@
     "postpack": "rm -rf dist"
   },
   "devDependencies": {
-    "@mikro-orm/core": "^5.7.1",
+    "@mikro-orm/core": "^5.7.5",
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.0"
+    "rxjs": "^7.8.1"
   },
   "peerDependencies": {
     "@mikro-orm/core": "^5",

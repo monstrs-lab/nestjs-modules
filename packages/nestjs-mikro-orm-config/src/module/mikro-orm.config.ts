@@ -29,6 +29,7 @@ export class MikroORMConfig implements MikroOrmOptionsFactory {
       dbName: this.options?.database,
       user: this.options?.username,
       password: this.options?.password,
+      debug: this.options?.debug,
       entities: Array.isArray(this.options.entities)
         ? this.options.entities
         : Object.values(this.options.entities!),

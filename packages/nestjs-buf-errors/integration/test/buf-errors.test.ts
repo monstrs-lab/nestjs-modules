@@ -1,6 +1,7 @@
-import { PromiseClient }              from '@bufbuild/connect'
+import type { PromiseClient }         from '@bufbuild/connect'
+import type { INestMicroservice }     from '@nestjs/common'
+
 import { ValidationError }            from '@monstrs/protobuf-rpc'
-import { INestMicroservice }          from '@nestjs/common'
 import { Test }                       from '@nestjs/testing'
 import { ServerBufConnect }           from '@wolfcoded/nestjs-bufconnect'
 import { ServerProtocol }             from '@wolfcoded/nestjs-bufconnect'
@@ -23,11 +24,11 @@ describe('grpc error', () => {
   beforeAll(async () => {
     const port = await getPort()
 
-    const module = await Test.createTestingModule({
+    const testingModule = await Test.createTestingModule({
       imports: [BufErrorsIntegrationModule],
     }).compile()
 
-    service = module.createNestMicroservice({
+    service = testingModule.createNestMicroservice({
       strategy: new ServerBufConnect({
         protocol: ServerProtocol.HTTP2_INSECURE,
         port,

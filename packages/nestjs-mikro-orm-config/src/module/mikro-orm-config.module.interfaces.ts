@@ -12,9 +12,11 @@ export interface MikroORMConfigOptions {
   username?: string
   password?: string
 
-  entities?: Array<EntityName<AnyEntity>> | { [key: string]: EntityName<AnyEntity> }
+  entities?: Array<EntityName<AnyEntity>> | Record<string, EntityName<AnyEntity>>
 
-  migrationsList?: Array<MigrationObject> | { [key: string]: MigrationObject['class'] }
+  migrationsList?: Array<MigrationObject> | Record<string, MigrationObject['class']>
 
   migrationsTableName?: string
+
+  debug?: boolean
 }

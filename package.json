@@ -13,7 +13,7 @@
     "@wolfcoded/nestjs-bufconnect@^1.0.0-beta.3": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#./.yarn/patches/wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch"
   },
   "devDependencies": {
-    "@monstrs/code-runtime": "^0.1.12",
+    "@monstrs/tools-runtime": "^0.0.5",
     "@types/node": "^20.1.2",
     "husky": "8.0.3",
     "typescript": "^5.0.4"

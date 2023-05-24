@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+
 import type { ValidationError as ValError } from '@nestjs/common'
 
 import { Code }                             from '@bufbuild/connect'
@@ -8,8 +10,8 @@ import { RpcException }                     from '@nestjs/microservices'
 
 const traverseErrors = (
   errors: Array<ValError> = [],
-  callback: (error: ValError, id: string, property: string) => void,
-  path: string[] = []
+  callback: (error: ValError, id: string, property: string) => void = () => {},
+  path: Array<string> = []
 ) => {
   errors.forEach((error) => {
     const currentPath = [...path, error.property]

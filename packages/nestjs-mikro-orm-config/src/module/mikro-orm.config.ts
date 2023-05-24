@@ -1,10 +1,10 @@
-import type { MikroORMConfigOptions }           from './mikro-orm-config.module.interfaces.js'
+import type { MikroOrmOptionsFactory }          from '@mikro-orm/nestjs'
+import type { MikroOrmModuleOptions }           from '@mikro-orm/nestjs'
 
 import { Inject }                               from '@nestjs/common'
 import { Injectable }                           from '@nestjs/common'
-import { MikroOrmOptionsFactory }               from '@mikro-orm/nestjs'
-import { MikroOrmModuleOptions }                from '@mikro-orm/nestjs'
 
+import { MikroORMConfigOptions }                from './mikro-orm-config.module.interfaces.js'
 import { MikroORMConfigBuilder }                from './mikro-orm.config-builder.js'
 import { MIKRO_ORM_CONFIG_MODULE_OPTIONS }      from './mikro-orm-config.module.constants.js'
 import { MIKRO_ORM_CONFIG_MODULE_OPTIONS_HOST } from './mikro-orm-config.module.constants.js'

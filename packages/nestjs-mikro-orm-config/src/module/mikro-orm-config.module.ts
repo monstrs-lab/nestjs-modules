@@ -1,4 +1,5 @@
 import type { DynamicModule }                   from '@nestjs/common'
+
 import type { MikroORMConfigOptions }           from './mikro-orm-config.module.interfaces.js'
 
 import { Module }                               from '@nestjs/common'

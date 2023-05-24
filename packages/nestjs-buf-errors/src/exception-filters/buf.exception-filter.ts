@@ -1,7 +1,8 @@
+import type { ArgumentsHost }        from '@nestjs/common'
+
 import { AssertionError }            from 'node:assert'
 
 import { Catch }                     from '@nestjs/common'
-import { ArgumentsHost }             from '@nestjs/common'
 import { BaseRpcExceptionFilter }    from '@nestjs/microservices'
 
 import { assertionExceptionFactory } from '../exception-factories/index.js'

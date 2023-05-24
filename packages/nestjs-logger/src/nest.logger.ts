@@ -1,5 +1,6 @@
-import { Logger }        from '@monstrs/logger'
-import { LoggerService } from '@nestjs/common'
+import type { LoggerService } from '@nestjs/common'
+
+import { Logger }             from '@monstrs/logger'
 
 export class NestLogger implements LoggerService {
   private logger = new Logger('nestjs')

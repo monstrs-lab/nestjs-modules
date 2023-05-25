@@ -12,9 +12,9 @@ export class MikroORMConfigBuilder {
       dbName: options.dbName || process.env.DB_DATABASE || 'db',
       user: options.user || process.env.DB_USERNAME || 'postgres',
       password: options.password || process.env.DB_PASSWORD || 'password',
+      debug: options.debug || Boolean(process.env.DB_DEBUG) || false,
       migrations: options.migrations,
       entities: options.entities,
-      debug: options.debug,
 
       loggerFactory: (opts) => new MikroORMLogger(opts),
       logger: (message) => {

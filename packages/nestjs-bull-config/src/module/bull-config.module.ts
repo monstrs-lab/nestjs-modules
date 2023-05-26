@@ -10,10 +10,10 @@ import { BULL_CONFIG_MODULE_OPTIONS_REDIS_PORT } from './bull-config.module.cons
 import { BullConfigFactory }                     from './bull.config-factory.js'
 
 @Module({})
-export class MikroORMConfigModule {
+export class BullConfigModule {
   static register(options: BullConfigOptions): DynamicModule {
     return {
-      module: MikroORMConfigModule,
+      module: BullConfigModule,
       providers: [
         BullConfigFactory,
         {

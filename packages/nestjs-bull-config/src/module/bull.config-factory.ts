@@ -29,4 +29,8 @@ export class BullConfigFactory implements BullOptionsFactory {
       },
     }
   }
+
+  createSharedConfiguration(): BullModuleOptions {
+    return this.createBullOptions()
+  }
 }

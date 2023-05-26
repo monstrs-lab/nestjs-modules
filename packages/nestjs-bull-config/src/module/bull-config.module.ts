@@ -11,7 +11,7 @@ import { BullConfigFactory }                     from './bull.config-factory.js'
 
 @Module({})
 export class BullConfigModule {
-  static register(options: BullConfigOptions): DynamicModule {
+  static register(options: BullConfigOptions = {}): DynamicModule {
     return {
       module: BullConfigModule,
       providers: [

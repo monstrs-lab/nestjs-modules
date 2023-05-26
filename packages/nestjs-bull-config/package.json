@@ -30,7 +30,6 @@
     "@nestjs/common": "^9",
     "@nestjs/core": "^9",
     "bull": "^4",
-    "ioredis": "^5",
     "reflect-metadata": "^0.1",
     "rxjs": "^7"
   },

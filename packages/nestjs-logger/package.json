@@ -17,13 +17,13 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.11"
+    "@monstrs/logger": "^0.0.16"
   },
   "devDependencies": {
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
     "@nestjs/testing": "^9.4.0",
-    "@types/node": "^20.1.2",
+    "@types/node": "^20.2.4",
     "get-port": "^6.1.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "^7.8.1",

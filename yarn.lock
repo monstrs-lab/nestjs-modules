@@ -1166,9 +1166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@npm:0.0.11, @monstrs/logger@npm:^0.0.11":
-  version: 0.0.11
-  resolution: "@monstrs/logger@npm:0.0.11"
+"@monstrs/logger@npm:^0.0.16":
+  version: 0.0.16
+  resolution: "@monstrs/logger@npm:0.0.16"
   dependencies:
     "@opentelemetry/api": "npm:*"
     "@opentelemetry/api-logs": "npm:^0.38.0"
@@ -1176,18 +1176,18 @@ __metadata:
     "@opentelemetry/sdk-logs": "npm:^0.37.0"
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
-  checksum: 8d7a1d6698a1a2d41ce1431481fb83ba7f44f97761ea30a6a65f64c507c77d0b9e97c4359e705369347c93885198ed1026956061a273e5dde9d6a2870cbba525
+  checksum: 269e19bde351687591c21d20f075372990d80a9224de62563392a8e9d288447c30b48716768a840c7f46d721d394a7d30be91eac09ff2afbeb3e17f83a85c464
   languageName: node
   linkType: hard
 
-"@monstrs/mikro-orm-logger@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@monstrs/mikro-orm-logger@npm:0.0.6"
+"@monstrs/mikro-orm-logger@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@monstrs/mikro-orm-logger@npm:0.0.10"
   dependencies:
-    "@monstrs/logger": "npm:0.0.11"
+    "@monstrs/logger": "npm:^0.0.16"
   peerDependencies:
     "@mikro-orm/core": ^5
-  checksum: 403c04862ddbdc0cd6b5c0471eb87d85a0801f137634b1acaacd55288a6d103114519c23ee9542ba3efdbd388332e2d28c91877218aae87bd8c29e200d556476
+  checksum: 38ba476300e8f830ffde9e85fa93aa13f7735e56f1fc4f479c18c6858ee321096e374868dbcdd60da2586d059fafef9a7bf51be671e3de1ef1a322efc49a8b3b
   languageName: node
   linkType: hard
 
@@ -1240,7 +1240,6 @@ __metadata:
     "@nestjs/common": ^9
     "@nestjs/core": ^9
     bull: ^4
-    ioredis: ^5
     reflect-metadata: ^0.1
     rxjs: ^7
   languageName: unknown
@@ -1250,11 +1249,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-logger@workspace:packages/nestjs-logger"
   dependencies:
-    "@monstrs/logger": "npm:^0.0.11"
+    "@monstrs/logger": "npm:^0.0.16"
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
     "@nestjs/testing": "npm:^9.4.0"
-    "@types/node": "npm:^20.1.2"
+    "@types/node": "npm:^20.2.4"
     get-port: "npm:^6.1.2"
     reflect-metadata: "npm:0.1.13"
     rxjs: "npm:^7.8.1"
@@ -1290,8 +1289,8 @@ __metadata:
   dependencies:
     "@mikro-orm/core": "npm:^5.7.5"
     "@mikro-orm/nestjs": "npm:^5.1.8"
-    "@monstrs/logger": "npm:^0.0.11"
-    "@monstrs/mikro-orm-logger": "npm:^0.0.6"
+    "@monstrs/logger": "npm:^0.0.16"
+    "@monstrs/mikro-orm-logger": "npm:^0.0.10"
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
     reflect-metadata: "npm:^0.1.13"
@@ -2005,10 +2004,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0, @types/node@npm:^20.1.2":
+"@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
   version: 20.1.2
   resolution: "@types/node@npm:20.1.2"
   checksum: 01c562f1b84810f9aa780afee5024ffd9cd021d5fe4cad09b753a81408d028e39a21aff8a99c4fb3683e07ae1141973645284ef7d567a3a2fcfc74d5a952969a
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.2.4":
+  version: 20.2.4
+  resolution: "@types/node@npm:20.2.4"
+  checksum: 9b2e7c04e11453c87ba17871833529b3a29c312074fa2164e8b74bef1ac01ee3f083603b61aabcd7aef1c4f7d94f90846f22e59319d70e175443961c2fd25646
   languageName: node
   linkType: hard
 
@@ -6291,7 +6297,7 @@ __metadata:
   resolution: "nestjs-modules@workspace:."
   dependencies:
     "@monstrs/tools-runtime": "npm:^0.0.5"
-    "@types/node": "npm:^20.1.2"
+    "@types/node": "npm:^20.2.4"
     husky: "npm:8.0.3"
     typescript: "npm:^5.0.4"
   languageName: unknown

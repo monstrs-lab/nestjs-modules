@@ -1,4 +1,0 @@
-releases:
-  "@monstrs/nestjs-bull-config": patch
-  "@monstrs/nestjs-logger": patch
-  "@monstrs/nestjs-mikro-orm-config": patch

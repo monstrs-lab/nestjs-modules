@@ -1,0 +1,49 @@
+{
+  "name": "@monstrs/nestjs-graphql-redis-subscriptions",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "@monstrs/nestjs-redis": "workspace:0.0.4",
+    "graphql-redis-subscriptions": "^2.6.0",
+    "graphql-subscriptions": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^9.4.0",
+    "@nestjs/core": "^9.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1"
+  },
+  "peerDependencies": {
+    "@nestjs/bull": "^0.6",
+    "@nestjs/common": "^9",
+    "@nestjs/core": "^9",
+    "reflect-metadata": "^0.1",
+    "rxjs": "^7"
+  },
+  "publishConfig": {
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

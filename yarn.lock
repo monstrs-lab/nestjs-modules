@@ -1228,7 +1228,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-graphql-redis-subscriptions@workspace:packages/nestjs-graphql-redis-subscriptions"
   dependencies:
-    "@monstrs/nestjs-redis": "workspace:0.0.4"
+    "@monstrs/nestjs-redis": "workspace:0.0.5"
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
     graphql-redis-subscriptions: "npm:^2.6.0"
@@ -1322,7 +1322,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-redis@workspace:0.0.4, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
+"@monstrs/nestjs-redis@workspace:0.0.5, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis"
   dependencies:

@@ -1224,28 +1224,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-bull-config@workspace:packages/nestjs-bull-config":
-  version: 0.0.0-use.local
-  resolution: "@monstrs/nestjs-bull-config@workspace:packages/nestjs-bull-config"
-  dependencies:
-    "@nestjs/bull": "npm:^0.6.3"
-    "@nestjs/common": "npm:^9.4.0"
-    "@nestjs/core": "npm:^9.4.0"
-    bull: "npm:^4.10.4"
-    ioredis: "npm:^5.3.2"
-    reflect-metadata: "npm:^0.1.13"
-    rxjs: "npm:^7.8.1"
-  peerDependencies:
-    "@nestjs/bull": ^0.6
-    "@nestjs/common": ^9
-    "@nestjs/core": ^9
-    bull: ^4
-    ioredis: ^5
-    reflect-metadata: ^0.1
-    rxjs: ^7
-  languageName: unknown
-  linkType: soft
-
 "@monstrs/nestjs-logger@workspace:packages/nestjs-logger":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-logger@workspace:packages/nestjs-logger"
@@ -1324,6 +1302,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-redis@workspace:packages/nestjs-redis-options":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis-options"
+  dependencies:
+    "@nestjs/common": "npm:^9.4.0"
+    "@nestjs/core": "npm:^9.4.0"
+    ioredis: "npm:^5.3.2"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/bull": ^0.6
+    "@nestjs/common": ^9
+    "@nestjs/core": ^9
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/protobuf-rpc@npm:^0.0.4":
   version: 0.0.4
   resolution: "@monstrs/protobuf-rpc@npm:0.0.4"
@@ -1348,74 +1344,6 @@ __metadata:
     typescript: "npm:^5.0.4"
     webpack: "npm:^5.82.0"
   checksum: e5e48b67e59aed7d1145c8029211c41ad74cb54077b05c50a69072a426cd2d3ec7051a5a51d1fc2930f5de7c219beea70a60dbf5a6873b4500584e2f53acf6bc
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-darwin-arm64@npm:3.0.2"
-  conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-darwin-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-darwin-x64@npm:3.0.2"
-  conditions: os=darwin & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-arm64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-arm64@npm:3.0.2"
-  conditions: os=linux & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-arm@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-arm@npm:3.0.2"
-  conditions: os=linux & cpu=arm
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-linux-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-linux-x64@npm:3.0.2"
-  conditions: os=linux & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@msgpackr-extract/msgpackr-extract-win32-x64@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@msgpackr-extract/msgpackr-extract-win32-x64@npm:3.0.2"
-  conditions: os=win32 & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@nestjs/bull-shared@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "@nestjs/bull-shared@npm:0.1.3"
-  dependencies:
-    tslib: "npm:2.5.0"
-  peerDependencies:
-    "@nestjs/common": ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0
-    "@nestjs/core": ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: a0406e498ce984c9ba9c094a3f29de281283795e7cac621f7f3095ba39bc73da20a12cc4f545f80f41b46493a3c8154735bff15234822456022a1716848fbaef
-  languageName: node
-  linkType: hard
-
-"@nestjs/bull@npm:^0.6.3":
-  version: 0.6.3
-  resolution: "@nestjs/bull@npm:0.6.3"
-  dependencies:
-    "@nestjs/bull-shared": "npm:^0.1.3"
-    tslib: "npm:2.5.0"
-  peerDependencies:
-    "@nestjs/common": ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0
-    "@nestjs/core": ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0
-    bull: ^3.3 || ^4.0.0
-  checksum: 536e3d566aa5b932f0fee3f88d5da068232ff56d96497085508ad3dd8ac88a14573289b6ade28cb2def1e88f6a45562552148bb7288098f11317fe70789749a3
   languageName: node
   linkType: hard
 
@@ -2928,22 +2856,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bull@npm:^4.10.4":
-  version: 4.10.4
-  resolution: "bull@npm:4.10.4"
-  dependencies:
-    cron-parser: "npm:^4.2.1"
-    debuglog: "npm:^1.0.0"
-    get-port: "npm:^5.1.1"
-    ioredis: "npm:^5.0.0"
-    lodash: "npm:^4.17.21"
-    msgpackr: "npm:^1.5.2"
-    semver: "npm:^7.3.2"
-    uuid: "npm:^8.3.0"
-  checksum: bc3cfed3deb28262a2072c1af828e28ab2c2501a66ea50718ab5d7f6500f25b27b0882dcc1e7db7d84eb8e8af613c71569e93d564bc875e94da64eb37ca5ffa8
-  languageName: node
-  linkType: hard
-
 "busboy@npm:^0.2.11":
   version: 0.2.14
   resolution: "busboy@npm:0.2.14"
@@ -3289,15 +3201,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cron-parser@npm:^4.2.1":
-  version: 4.8.1
-  resolution: "cron-parser@npm:4.8.1"
-  dependencies:
-    luxon: "npm:^3.2.1"
-  checksum: 2d41e95742f2b14045a128fe424e1e8f42753d48f30a45f6f86b0477ba0af10a9bb803a1d0de5098bf84f51d85feb935d0910dcfe0d0e93e8318363cb1a7a9b5
-  languageName: node
-  linkType: hard
-
 "cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -3352,13 +3255,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: ab50d98b6f2a0e803379e8f789017f4215efd0e085774623e462c691e9f99bfd359a35f7424ff401da3ea58b31f89ceebc9ea35779b4a94f78b0ee3e235b6640
-  languageName: node
-  linkType: hard
-
-"debuglog@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "debuglog@npm:1.0.1"
-  checksum: 1e11ed980ba9ebcb0f030aa88ce74bb65a80b0735acceb14ef75baa1fbb45e8e3d074c781f9a2276c44d71aa65b40047a183f668811d9872b4d7e81ff621a722
   languageName: node
   linkType: hard
 
@@ -4518,13 +4414,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-port@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "get-port@npm:5.1.1"
-  checksum: 93afec66950abbe4a7a004543c5d94dbf22c2649598482c8064acfceae7663cae62c7aaef448f7ec6744b37286e89eed2bada01726a6ca4e09e3809d92e4fccc
-  languageName: node
-  linkType: hard
-
 "get-port@npm:^6.1.2":
   version: 6.1.2
   resolution: "get-port@npm:6.1.2"
@@ -4894,7 +4783,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^5.0.0, ioredis@npm:^5.3.2":
+"ioredis@npm:^5.3.2":
   version: 5.3.2
   resolution: "ioredis@npm:5.3.2"
   dependencies:
@@ -5939,13 +5828,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: 3ac18e92108d68f88429fcddee609e42cf2b653583d9bac22308815a4cd6b185b89a0ad0d9b0c670c371d9d6b61571a98fee6b36e1db14e52766ca253ed9cba0
-  languageName: node
-  linkType: hard
-
 "long@npm:^4.0.0":
   version: 4.0.0
   resolution: "long@npm:4.0.0"
@@ -5995,13 +5877,6 @@ __metadata:
   dependencies:
     yallist: "npm:^4.0.0"
   checksum: b2d72088dd27df27189607554990b0fd31d3fbd4037df909ef66f48a14122baf8ffce7f33edc17e6543ea7cd71fa561136518355dde2ad57676fa0b2ea53b85f
-  languageName: node
-  linkType: hard
-
-"luxon@npm:^3.2.1":
-  version: 3.3.0
-  resolution: "luxon@npm:3.3.0"
-  checksum: 2c028c47f829c934708b8bb90b28aa126e65389e70431cab4347bf01bc4a8361a7e6f46df00c89a4f4a4a3e8d5f99e9eb30300ec3011759eb86001cf6e47ebd7
   languageName: node
   linkType: hard
 
@@ -6206,49 +6081,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msgpackr-extract@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "msgpackr-extract@npm:3.0.2"
-  dependencies:
-    "@msgpackr-extract/msgpackr-extract-darwin-arm64": "npm:3.0.2"
-    "@msgpackr-extract/msgpackr-extract-darwin-x64": "npm:3.0.2"
-    "@msgpackr-extract/msgpackr-extract-linux-arm": "npm:3.0.2"
-    "@msgpackr-extract/msgpackr-extract-linux-arm64": "npm:3.0.2"
-    "@msgpackr-extract/msgpackr-extract-linux-x64": "npm:3.0.2"
-    "@msgpackr-extract/msgpackr-extract-win32-x64": "npm:3.0.2"
-    node-gyp: "npm:latest"
-    node-gyp-build-optional-packages: "npm:5.0.7"
-  dependenciesMeta:
-    "@msgpackr-extract/msgpackr-extract-darwin-arm64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-darwin-x64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-arm":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-arm64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-linux-x64":
-      optional: true
-    "@msgpackr-extract/msgpackr-extract-win32-x64":
-      optional: true
-  bin:
-    download-msgpackr-prebuilds: bin/download-prebuilds.js
-  checksum: 63c5a30495178ec75c208e57cafd78408cbe13d7ecadf606241c9285dcd82b90bc28b80177f4286c514fc02a9b4c2c4dbbe0ad8ab39352f90b948055cc4ae567
-  languageName: node
-  linkType: hard
-
-"msgpackr@npm:^1.5.2":
-  version: 1.9.2
-  resolution: "msgpackr@npm:1.9.2"
-  dependencies:
-    msgpackr-extract: "npm:^3.0.2"
-  dependenciesMeta:
-    msgpackr-extract:
-      optional: true
-  checksum: 0eabacc906dfb9af0f9e5dd17718f876913afa46719202aa74ca6b91e3813487e9236681e4988052a254f86f2f7ee04514992c65901426f0338099cab6cb1d53
-  languageName: node
-  linkType: hard
-
 "multer@npm:1.4.2":
   version: 1.4.2
   resolution: "multer@npm:1.4.2"
@@ -6325,17 +6157,6 @@ __metadata:
     encoding:
       optional: true
   checksum: 8457cf62f599e9d55b01d58f87ed2110c65f83c4fcce8be0e350909995384e96a55e2b810d0e1a67a1fbe7f9930cd0998146d2dcce4843f9ed3ac0b479bd5c64
-  languageName: node
-  linkType: hard
-
-"node-gyp-build-optional-packages@npm:5.0.7":
-  version: 5.0.7
-  resolution: "node-gyp-build-optional-packages@npm:5.0.7"
-  bin:
-    node-gyp-build-optional-packages: bin.js
-    node-gyp-build-optional-packages-optional: optional.js
-    node-gyp-build-optional-packages-test: build-test.js
-  checksum: 67cfa60ca1e760fa1c43ead1b81cb611cdb7c3983368180c4ec48bf2c55d2f4d4cbc34fad819721cd3ed6811d9135d33d6e1e9fbb146a930ee09d9e31001bbd5
   languageName: node
   linkType: hard
 
@@ -8084,15 +7905,6 @@ __metadata:
   bin:
     uuid: ./bin/uuid
   checksum: c84dbfcb94389fea5a09020802df2a1227d183ceabaa5256658194dfad045c83fe72366b64b165b6445a480fac8a75d0e982033f3cb393713674b3cd938063fa
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.0":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 236a12282c6fa32f326aa1b6d5699a843572e9ab7de84a1507a6b7c315fdcf55bf6ed333fd37d35c5c656f4cb96af998844e1c8cae281c442a1ec3b66df62962
   languageName: node
   linkType: hard
 

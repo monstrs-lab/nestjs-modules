@@ -11,7 +11,7 @@ import { REDIS_MODULE_OPTIONS_USERNAME } from './redis.module.constants.js'
 import { RedisConfigFactory }            from './redis.config-factory.js'
 
 @Module({})
-export class BullConfigModule {
+export class RedisModule {
   static register(options: RedisOptions = {}): DynamicModule {
     const provider = {
       provide: Redis,
@@ -20,7 +20,7 @@ export class BullConfigModule {
     }
 
     return {
-      module: BullConfigModule,
+      module: RedisModule,
       providers: [
         provider,
         RedisConfigFactory,

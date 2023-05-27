@@ -1224,6 +1224,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-graphql-redis-subscriptions@workspace:packages/nestjs-graphql-redis-subscriptions":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-graphql-redis-subscriptions@workspace:packages/nestjs-graphql-redis-subscriptions"
+  dependencies:
+    "@monstrs/nestjs-redis": "workspace:0.0.4"
+    "@nestjs/common": "npm:^9.4.0"
+    "@nestjs/core": "npm:^9.4.0"
+    graphql-redis-subscriptions: "npm:^2.6.0"
+    graphql-subscriptions: "npm:^2.0.0"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/bull": ^0.6
+    "@nestjs/common": ^9
+    "@nestjs/core": ^9
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/nestjs-logger@workspace:packages/nestjs-logger":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-logger@workspace:packages/nestjs-logger"
@@ -1302,9 +1322,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-redis@workspace:packages/nestjs-redis-options":
+"@monstrs/nestjs-redis@workspace:0.0.4, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
   version: 0.0.0-use.local
-  resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis-options"
+  resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis"
   dependencies:
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
@@ -4548,6 +4568,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graphql-redis-subscriptions@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "graphql-redis-subscriptions@npm:2.6.0"
+  dependencies:
+    ioredis: "npm:^5.2.4"
+  peerDependencies:
+    graphql-subscriptions: ^1.0.0 || ^2.0.0
+  dependenciesMeta:
+    ioredis:
+      optional: true
+  checksum: fb99464c13b71775b2a807d65d63e4f35059133be8e86a1125b578ecc46c2aed761e27b191ea1cd9ed105ae7c354d518ebb45d0a9393a1a6f425a3144322be49
+  languageName: node
+  linkType: hard
+
+"graphql-subscriptions@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "graphql-subscriptions@npm:2.0.0"
+  dependencies:
+    iterall: "npm:^1.3.0"
+  peerDependencies:
+    graphql: ^15.7.2 || ^16.0.0
+  checksum: 2d01d9c60333e84b2ce5b429dbf901281f372b82dc43ae9ec31e9d917d28da37793b1d1779664f37e34e3c8eb71cd5ca35df93a9268f677575590c52520a9f10
+  languageName: node
+  linkType: hard
+
 "har-schema@npm:^2.0.0":
   version: 2.0.0
   resolution: "har-schema@npm:2.0.0"
@@ -4783,7 +4828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^5.3.2":
+"ioredis@npm:^5.2.4, ioredis@npm:^5.3.2":
   version: 5.3.2
   resolution: "ioredis@npm:5.3.2"
   dependencies:
@@ -5143,6 +5188,13 @@ __metadata:
     html-escaper: "npm:^2.0.0"
     istanbul-lib-report: "npm:^3.0.0"
   checksum: 66c3db4053f59667bc23da5a6c78595ce88cbed4fd9890343e45f560c15b552a7f68c69aeb1a4b0174157fb0b40a1f82c408429895c5a3d8fee3a43a91c1a843
+  languageName: node
+  linkType: hard
+
+"iterall@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "iterall@npm:1.3.0"
+  checksum: 4e49cae82d50a04258b50080aa85b9e590704b420c1aa529a7eb492264b1550e1a06ece4faecae995719b72b511651692a9f38b2950fcdd23320e703c61cc345
   languageName: node
   linkType: hard
 

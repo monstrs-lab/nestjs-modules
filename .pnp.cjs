@@ -1835,7 +1835,8 @@ const RAW_RUNTIME_STATE =
           ["graphql-redis-subscriptions", "virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#npm:2.6.0"],\
           ["graphql-subscriptions", "virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#npm:2.0.0"],\
           ["reflect-metadata", "npm:0.1.13"],\
-          ["rxjs", "npm:7.8.1"]\
+          ["rxjs", "npm:7.8.1"],\
+          ["telejson", "npm:7.1.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7872,11 +7873,30 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["map-or-similar", [\
+      ["npm:1.5.0", {\
+        "packageLocation": "./.yarn/cache/map-or-similar-npm-1.5.0-d3659cc111-d37258b613.zip/node_modules/map-or-similar/",\
+        "packageDependencies": [\
+          ["map-or-similar", "npm:1.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["media-typer", [\
       ["npm:0.3.0", {\
         "packageLocation": "./.yarn/cache/media-typer-npm-0.3.0-8674f8f0f5-21806e1526.zip/node_modules/media-typer/",\
         "packageDependencies": [\
           ["media-typer", "npm:0.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["memoizerific", [\
+      ["npm:1.11.3", {\
+        "packageLocation": "./.yarn/cache/memoizerific-npm-1.11.3-3cd7adb7ec-5c4f30a381.zip/node_modules/memoizerific/",\
+        "packageDependencies": [\
+          ["memoizerific", "npm:1.11.3"],\
+          ["map-or-similar", "npm:1.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9637,6 +9657,16 @@ const RAW_RUNTIME_STATE =
           ["minizlib", "npm:2.1.2"],\
           ["mkdirp", "npm:1.0.4"],\
           ["yallist", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["telejson", [\
+      ["npm:7.1.0", {\
+        "packageLocation": "./.yarn/cache/telejson-npm-7.1.0-d2cebb9d45-491c3bcf33.zip/node_modules/telejson/",\
+        "packageDependencies": [\
+          ["telejson", "npm:7.1.0"],\
+          ["memoizerific", "npm:1.11.3"]\
         ],\
         "linkType": "HARD"\
       }]\

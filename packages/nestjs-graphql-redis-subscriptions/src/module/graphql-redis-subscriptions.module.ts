@@ -5,6 +5,8 @@ import type { GraphQLRedisSubscriptionsModuleOptions } from './graphql-redis-sub
 import { Module }                                      from '@nestjs/common'
 import { RedisPubSub }                                 from 'graphql-redis-subscriptions'
 import { PubSub }                                      from 'graphql-subscriptions'
+import { stringify }                                   from 'telejson'
+import { parse }                                       from 'telejson'
 
 import { RedisModule }                                 from '@monstrs/nestjs-redis'
 import { RedisFactory }                                from '@monstrs/nestjs-redis'
@@ -16,9 +18,11 @@ export class GraphQLRedisSubscriptionsModule {
       provide: PubSub,
       useFactory: (redisFactory: RedisFactory) =>
         new RedisPubSub({
-          ...options,
+          serializer: (data) => stringify(data),
+          deserializer: (data) => parse(data instanceof Buffer ? data.toString() : data),
           publisher: redisFactory.create(),
           subscriber: redisFactory.create(),
+          ...options,
         }),
       inject: [RedisFactory],
     }

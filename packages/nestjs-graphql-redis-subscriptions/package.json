@@ -19,7 +19,8 @@
   "dependencies": {
     "@monstrs/nestjs-redis": "workspace:0.0.5",
     "graphql-redis-subscriptions": "^2.6.0",
-    "graphql-subscriptions": "^2.0.0"
+    "graphql-subscriptions": "^2.0.0",
+    "telejson": "^7.1.0"
   },
   "devDependencies": {
     "@nestjs/common": "^9.4.0",

@@ -1235,6 +1235,7 @@ __metadata:
     graphql-subscriptions: "npm:^2.0.0"
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.8.1"
+    telejson: "npm:^7.1.0"
   peerDependencies:
     "@nestjs/bull": ^0.6
     "@nestjs/common": ^9
@@ -5957,10 +5958,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"map-or-similar@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "map-or-similar@npm:1.5.0"
+  checksum: d37258b613b94ba7e3d4a4f8166f60b3818209ba70e4a997e05355c173a1bc5d1471090162b11d2aaa69601e00fca9546e6fb15c345630c36caba0472ff7173d
+  languageName: node
+  linkType: hard
+
 "media-typer@npm:0.3.0":
   version: 0.3.0
   resolution: "media-typer@npm:0.3.0"
   checksum: 21806e15268f71b2bbf35a57b5eb9a42e14be638b8b855e210fb90282744e622f9d232f34f1cf566dc487819ce66bbb8aa6568e3267f48b12e92e2ba679838ae
+  languageName: node
+  linkType: hard
+
+"memoizerific@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "memoizerific@npm:1.11.3"
+  dependencies:
+    map-or-similar: "npm:^1.5.0"
+  checksum: 5c4f30a3810f3ceffdf0df2ef28989e3535eb4c05a614b791b57d92c662ad6d0f08d971b21991e2d9931d6c9efe7fd560899d9718a713947d5489855c8d29a1f
   languageName: node
   linkType: hard
 
@@ -7553,6 +7570,15 @@ __metadata:
     mkdirp: "npm:^1.0.3"
     yallist: "npm:^4.0.0"
   checksum: 09ca03494d7c6fb38d9eb8147c2a3cd1f42ba67d7cf52f14b382598cb2752ec73c410cf176cbd3590b45793784c58b25c2cbefe7456fa3a601f00d67021dd27f
+  languageName: node
+  linkType: hard
+
+"telejson@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "telejson@npm:7.1.0"
+  dependencies:
+    memoizerific: "npm:^1.11.3"
+  checksum: 491c3bcf33a0fa8bf5bfc4423e1a7447f99dc8ed8a03a591dc0022a0bba4f5be40bee4a70dd96bdf71b959fdea8ba8bc88a60805ef9c05bcdd39bfa164708f3e
   languageName: node
   linkType: hard
 

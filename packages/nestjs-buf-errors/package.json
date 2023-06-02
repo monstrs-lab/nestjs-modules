@@ -31,6 +31,7 @@
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
     "@nestjs/microservices": "^9.4.0",
+    "@nestjs/platform-express": "^9.4.0",
     "@nestjs/testing": "^9.4.0",
     "@wolfcoded/nestjs-bufconnect": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch",
     "class-transformer": "^0.5.1",
@@ -41,9 +42,9 @@
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0",
-    "@nestjs/microservices": "^9.0.0",
+    "@nestjs/common": "^9",
+    "@nestjs/core": "^9",
+    "@nestjs/microservices": "^9",
     "class-validator": "^0.14",
     "reflect-metadata": "^0.1",
     "rxjs": "^7"

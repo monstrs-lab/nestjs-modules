@@ -35,6 +35,11 @@
     "reflect-metadata": "^0.1",
     "rxjs": "^7"
   },
+  "peerDependenciesMeta": {
+    "graphql": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "exports": {
       "./package.json": "./package.json",

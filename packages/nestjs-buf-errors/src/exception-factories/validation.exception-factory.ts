@@ -10,9 +10,9 @@ import { RpcException }                     from '@nestjs/microservices'
 
 const traverseErrors = (
   errors: Array<ValError> = [],
-  callback: (error: ValError, id: string, property: string) => void = () => {},
+  callback: (error: ValError, id: string, property: string) => void = (): void => {},
   path: Array<string> = []
-) => {
+): void => {
   errors.forEach((error) => {
     const currentPath = [...path, error.property]
 
@@ -24,7 +24,7 @@ const traverseErrors = (
   })
 }
 
-export const validationExceptionFactory = (errors: Array<ValError>) => {
+export const validationExceptionFactory = (errors: Array<ValError>): RpcException => {
   const validationErrors: Array<ValidationError> = []
 
   traverseErrors(errors, (error, id, property) => {

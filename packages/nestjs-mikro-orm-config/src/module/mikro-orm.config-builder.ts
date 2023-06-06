@@ -1,4 +1,5 @@
 import type { MikroOrmModuleOptions } from '@mikro-orm/nestjs'
+import type { LoggerOptions }         from '@mikro-orm/core'
 
 import { MikroORMLogger }             from '@monstrs/mikro-orm-logger'
 import { Logger }                     from '@monstrs/logger'
@@ -16,8 +17,8 @@ export class MikroORMConfigBuilder {
       migrations: options.migrations,
       entities: options.entities,
 
-      loggerFactory: (opts) => new MikroORMLogger(opts),
-      logger: (message) => {
+      loggerFactory: (opts: LoggerOptions): MikroORMLogger => new MikroORMLogger(opts),
+      logger: (message: string): void => {
         new Logger('mikro-orm:migrations').info(message)
       },
     }

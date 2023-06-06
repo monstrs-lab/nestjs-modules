@@ -1,4 +1,5 @@
 import type { ArgumentsHost }        from '@nestjs/common'
+import type { Observable }           from 'rxjs'
 
 import { AssertionError }            from 'node:assert'
 
@@ -9,7 +10,7 @@ import { assertionExceptionFactory } from '../exception-factories/index.js'
 
 @Catch()
 export class BufExceptionsFilter extends BaseRpcExceptionFilter {
-  catch(exception: unknown, host: ArgumentsHost) {
+  catch(exception: unknown, host: ArgumentsHost): Observable<any> {
     if (exception instanceof AssertionError) {
       return super.catch(assertionExceptionFactory(exception), host)
     }

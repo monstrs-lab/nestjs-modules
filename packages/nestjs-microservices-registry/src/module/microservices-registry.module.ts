@@ -26,13 +26,13 @@ export class MicroservisesRegistryModule {
     }
   }
 
-  static connect(options: any) {
+  static connect(options: any): DynamicModule {
     return {
       module: MicroservisesRegistryModule,
       providers: [
         {
           provide: hash(JSON.stringify(options)),
-          useFactory: (registry) => {
+          useFactory: (registry: typeof MicroservisesRegistry): void => {
             registry.add(options)
           },
           inject: [MicroservisesRegistry],

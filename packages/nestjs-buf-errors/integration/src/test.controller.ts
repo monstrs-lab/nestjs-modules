@@ -13,7 +13,7 @@ import { TestDto }             from './test.dto.js'
 export class TestController {
   @BufMethod()
   @UsePipes(new BufValidationPipe())
-  testValidation({ id }: TestDto) {
+  testValidation({ id }: TestDto): { id: string } {
     return {
       id,
     }

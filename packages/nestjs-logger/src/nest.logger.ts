@@ -5,7 +5,7 @@ import { Logger }             from '@monstrs/logger'
 export class NestLogger implements LoggerService {
   private logger = new Logger('nestjs')
 
-  public log(message: any, context?: string) {
+  public log(message: any, context?: string): void {
     if (context) {
       this.logger.child(context).info(message)
     } else {
@@ -13,7 +13,7 @@ export class NestLogger implements LoggerService {
     }
   }
 
-  public error(message: any, trace?: string, context?: string) {
+  public error(message: any, trace?: string, context?: string): void {
     if (context) {
       this.logger.child(context).error(message)
     } else {
@@ -21,7 +21,7 @@ export class NestLogger implements LoggerService {
     }
   }
 
-  public warn(message: any, context?: string) {
+  public warn(message: any, context?: string): void {
     if (context) {
       this.logger.child(context).warn(message)
     } else {
@@ -29,7 +29,7 @@ export class NestLogger implements LoggerService {
     }
   }
 
-  public debug(message: any, context?: string) {
+  public debug(message: any, context?: string): void {
     if (context) {
       this.logger.child(context).debug(message)
     } else {
@@ -37,7 +37,7 @@ export class NestLogger implements LoggerService {
     }
   }
 
-  public verbose?(message: any, context?: string) {
+  public verbose?(message: any, context?: string): void {
     if (context) {
       this.logger.child(context).trace(message)
     } else {

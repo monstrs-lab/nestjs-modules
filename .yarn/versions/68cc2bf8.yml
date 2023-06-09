@@ -1,0 +1,4 @@
+releases:
+  "@monstrs/nestjs-buf-errors": patch
+  "@monstrs/nestjs-logger": patch
+  "@monstrs/nestjs-microservices-registry": patch

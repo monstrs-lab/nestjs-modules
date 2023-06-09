@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 import type { INestApplication }             from '@nestjs/common'
 import type { NestHybridApplicationOptions } from '@nestjs/common'
 

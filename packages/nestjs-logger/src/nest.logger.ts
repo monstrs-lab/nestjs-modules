@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 import type { LoggerService } from '@nestjs/common'
 
 import { Logger }             from '@monstrs/logger'

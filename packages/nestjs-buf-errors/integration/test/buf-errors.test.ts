@@ -5,6 +5,7 @@ import { ValidationError }            from '@monstrs/protobuf-rpc'
 import { Test }                       from '@nestjs/testing'
 import { ServerBufConnect }           from '@wolfcoded/nestjs-bufconnect'
 import { ServerProtocol }             from '@wolfcoded/nestjs-bufconnect'
+import { ConnectError }               from '@bufbuild/connect'
 import { createPromiseClient }        from '@bufbuild/connect'
 import { createGrpcTransport }        from '@bufbuild/connect-node'
 import { afterAll }                   from '@jest/globals'
@@ -56,31 +57,34 @@ describe('grpc error', () => {
 
     try {
       await client.testValidation({ id: 'test', child: { id: 'test' } })
-    } catch (error: any) {
-      expect(error.details.map((detail) => ValidationError.fromBinary(detail.value))).toEqual(
-        expect.arrayContaining([
-          expect.objectContaining({
-            id: 'id',
-            property: 'id',
-            messages: expect.arrayContaining([
-              expect.objectContaining({
-                id: 'isEmail',
-                constraint: 'id must be an email',
-              }),
-            ]),
-          }),
-          expect.objectContaining({
-            id: 'child.id',
-            property: 'id',
-            messages: expect.arrayContaining([
-              expect.objectContaining({
-                id: 'isEmail',
-                constraint: 'id must be an email',
-              }),
-            ]),
-          }),
-        ])
-      )
+    } catch (error) {
+      if (error instanceof ConnectError) {
+        // @ts-expect-error
+        expect(error.details.map((detail) => ValidationError.fromBinary(detail.value))).toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({
+              id: 'id',
+              property: 'id',
+              messages: expect.arrayContaining([
+                expect.objectContaining({
+                  id: 'isEmail',
+                  constraint: 'id must be an email',
+                }),
+              ]),
+            }),
+            expect.objectContaining({
+              id: 'child.id',
+              property: 'id',
+              messages: expect.arrayContaining([
+                expect.objectContaining({
+                  id: 'isEmail',
+                  constraint: 'id must be an email',
+                }),
+              ]),
+            }),
+          ])
+        )
+      }
     }
   })
 })

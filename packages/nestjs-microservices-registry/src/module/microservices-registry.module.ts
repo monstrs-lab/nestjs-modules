@@ -33,7 +33,7 @@ export class MicroservisesRegistryModule {
       module: MicroservisesRegistryModule,
       providers: [
         {
-          provide: hash(JSON.stringify(options)),
+          provide: (hash as (string) => string)(JSON.stringify(options)),
           useFactory: (registry: typeof MicroservisesRegistry): void => {
             registry.add(options)
           },

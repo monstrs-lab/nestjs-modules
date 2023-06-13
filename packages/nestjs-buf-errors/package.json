@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-buf-errors",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -28,7 +28,7 @@
     "@bufbuild/protoc-gen-connect-es": "^0.8.6",
     "@bufbuild/protoc-gen-es": "^1.2.0",
     "@jest/globals": "^29.5.0",
-    "@monstrs/nestjs-validation": "workspace:0.0.8",
+    "@monstrs/nestjs-validation": "workspace:0.0.9",
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
     "@nestjs/microservices": "^9.4.0",
@@ -43,7 +43,7 @@
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
-    "@monstrs/nestjs-validation": "workspace:0.0.8",
+    "@monstrs/nestjs-validation": "workspace:0.0.9",
     "@nestjs/common": "^9",
     "@nestjs/core": "^9",
     "@nestjs/microservices": "^9",

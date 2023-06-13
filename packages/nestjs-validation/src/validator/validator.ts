@@ -1,21 +1,30 @@
 import type { ClassConstructor } from 'class-transformer'
+import type { ValidationError }  from 'class-validator'
 
 import { ValidationPipe }        from '@nestjs/common'
 import { plainToInstance }       from 'class-transformer'
 import { validate }              from 'class-validator'
 
 export class Validator {
-  async transform<T>(metatype: ClassConstructor<unknown>, value: object): Promise<T> {
-    return plainToInstance(metatype, value) as T
+  async transform(metatype: ClassConstructor<unknown>, value: object): Promise<typeof metatype> {
+    return plainToInstance(metatype, value) as typeof metatype
   }
 
-  async validate<T>(value: object, metatype: ClassConstructor<unknown>): Promise<T> {
-    const transformed = await this.transform<T>(metatype, value)
+  async validate(
+    value: object,
+    metatype: ClassConstructor<unknown>,
+    exceptionFactory?: (validationErrors?: Array<ValidationError> | undefined) => unknown
+  ): Promise<typeof metatype> {
+    const transformed = await this.transform(metatype, value)
 
     const errors = await validate(transformed as object)
 
     if (errors.length > 0) {
-      throw await new ValidationPipe().createExceptionFactory()(errors)
+      if (exceptionFactory) {
+        throw exceptionFactory(errors)
+      } else {
+        throw await new ValidationPipe().createExceptionFactory()(errors)
+      }
     }
 
     return transformed

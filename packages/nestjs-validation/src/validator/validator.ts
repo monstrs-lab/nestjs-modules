@@ -5,14 +5,14 @@ import { plainToInstance }       from 'class-transformer'
 import { validate }              from 'class-validator'
 
 export class Validator {
-  async transform<T extends ClassConstructor<T>>(metatype: T, value: object): Promise<T> {
-    return plainToInstance(metatype, value)
+  async transform<T>(metatype: T, value: object): Promise<T> {
+    return plainToInstance(metatype as ClassConstructor<T>, value)
   }
 
-  async validate<T extends ClassConstructor<T>>(value: object, metatype: T): Promise<T> {
+  async validate<T>(value: object, metatype: T): Promise<T> {
     const transformed = await this.transform(metatype, value)
 
-    const errors = await validate(transformed)
+    const errors = await validate(transformed as object)
 
     if (errors.length > 0) {
       throw await new ValidationPipe().createExceptionFactory()(errors)

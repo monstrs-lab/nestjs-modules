@@ -1036,6 +1036,22 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@aws-sdk/s3-request-presigner", [\
+      ["npm:3.350.0", {\
+        "packageLocation": "./.yarn/cache/@aws-sdk-s3-request-presigner-npm-3.350.0-f928a44836-6d1fd860de.zip/node_modules/@aws-sdk/s3-request-presigner/",\
+        "packageDependencies": [\
+          ["@aws-sdk/s3-request-presigner", "npm:3.350.0"],\
+          ["@aws-sdk/middleware-endpoint", "npm:3.347.0"],\
+          ["@aws-sdk/protocol-http", "npm:3.347.0"],\
+          ["@aws-sdk/signature-v4-multi-region", "virtual:54b92dadfd6d50a388a5c218ec326451d40b67144062364e1010f38ebbc2d86bf6f0c96c0e212e75bc94f938f74aa28db0ef9b6e903f3ba24c8267d52d064348#npm:3.347.0"],\
+          ["@aws-sdk/smithy-client", "npm:3.347.0"],\
+          ["@aws-sdk/types", "npm:3.347.0"],\
+          ["@aws-sdk/util-format-url", "npm:3.347.0"],\
+          ["tslib", "npm:2.5.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@aws-sdk/service-error-classification", [\
       ["npm:3.347.0", {\
         "packageLocation": "./.yarn/cache/@aws-sdk-service-error-classification-npm-3.347.0-621b60d279-f7d41ccc7c.zip/node_modules/@aws-sdk/service-error-classification/",\
@@ -1242,6 +1258,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@aws-sdk-util-endpoints-npm-3.347.0-6944249639-760fd0d20b.zip/node_modules/@aws-sdk/util-endpoints/",\
         "packageDependencies": [\
           ["@aws-sdk/util-endpoints", "npm:3.347.0"],\
+          ["@aws-sdk/types", "npm:3.347.0"],\
+          ["tslib", "npm:2.5.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@aws-sdk/util-format-url", [\
+      ["npm:3.347.0", {\
+        "packageLocation": "./.yarn/cache/@aws-sdk-util-format-url-npm-3.347.0-1385993c06-3c2bea0175.zip/node_modules/@aws-sdk/util-format-url/",\
+        "packageDependencies": [\
+          ["@aws-sdk/util-format-url", "npm:3.347.0"],\
+          ["@aws-sdk/querystring-builder", "npm:3.347.0"],\
           ["@aws-sdk/types", "npm:3.347.0"],\
           ["tslib", "npm:2.5.3"]\
         ],\
@@ -3301,6 +3329,7 @@ const RAW_RUNTIME_STATE =
           ["@monstrs/nestjs-s3-client", "workspace:packages/nestjs-s3-client"],\
           ["@aws-sdk/client-s3", "npm:3.350.0"],\
           ["@aws-sdk/credential-providers", "npm:3.351.0"],\
+          ["@aws-sdk/s3-request-presigner", "npm:3.350.0"],\
           ["@aws-sdk/types", "npm:3.347.0"],\
           ["@nestjs/common", "virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#npm:9.4.0"],\
           ["@nestjs/core", "virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#npm:9.4.0"],\

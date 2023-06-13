@@ -1350,6 +1350,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-validation@workspace:packages/nestjs-validation":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-validation@workspace:packages/nestjs-validation"
+  dependencies:
+    "@nestjs/common": "npm:^9.4.0"
+    "@nestjs/core": "npm:^9.4.0"
+    class-transformer: "npm:0.5.1"
+    class-validator: "npm:^0.14.0"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/common": ^9
+    "@nestjs/core": ^9
+    class-transformer: 0.5
+    class-validator: ^0.14
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/protobuf-rpc@npm:^0.0.4":
   version: 0.0.4
   resolution: "@monstrs/protobuf-rpc@npm:0.0.4"
@@ -3018,7 +3038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-transformer@npm:^0.5.1":
+"class-transformer@npm:0.5.1, class-transformer@npm:^0.5.1":
   version: 0.5.1
   resolution: "class-transformer@npm:0.5.1"
   checksum: 08f2a0eaf5e674ef8b8839bd63c9b917fcc811a8d7044702dee933b1ba88d8906f5141c616173c22568d8b3e95cdf4e3afd25dcbd0f878b138a0b6e550b11d0c

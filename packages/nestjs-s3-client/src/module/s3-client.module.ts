@@ -10,10 +10,10 @@ import { S3ClientConfigFactory }      from './s3-client.config-factory.js'
 import { S3ClientFactory }            from './s3-client.factory.js'
 
 @Module({})
-export class RedisModule {
+export class S3ClientModule {
   static register(options: S3ClientModuleOptions = {}): DynamicModule {
     return {
-      module: RedisModule,
+      module: S3ClientModule,
       providers: [
         S3ClientConfigFactory,
         S3ClientFactory,

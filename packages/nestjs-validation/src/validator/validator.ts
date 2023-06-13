@@ -13,7 +13,7 @@ export class Validator {
   async validate<T>(
     value: object,
     metatype: ClassConstructor<unknown>,
-    exceptionFactory?: (validationErrors?: Array<ValidationError>) => unknown
+    exceptionFactory?: (errors: Array<ValidationError>) => Error
   ): Promise<T> {
     const transformed = await this.transform<T>(metatype, value)
 

@@ -2288,17 +2288,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/connect", [\
-      ["patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-connect-patch-e9ff844d74-54cb8f4f6e.zip/node_modules/@bufbuild/connect/",\
+      ["npm:0.8.6", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-connect-npm-0.8.6-465da06876-7b2901cadb.zip/node_modules/@bufbuild/connect/",\
         "packageDependencies": [\
-          ["@bufbuild/connect", "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"]\
+          ["@bufbuild/connect", "npm:0.8.6"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b", {\
-        "packageLocation": "./.yarn/__virtual__/@bufbuild-connect-virtual-d2118c299e/0/cache/@bufbuild-connect-patch-e9ff844d74-54cb8f4f6e.zip/node_modules/@bufbuild/connect/",\
+      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6", {\
+        "packageLocation": "./.yarn/__virtual__/@bufbuild-connect-virtual-4c638f67d6/0/cache/@bufbuild-connect-npm-0.8.6-465da06876-7b2901cadb.zip/node_modules/@bufbuild/connect/",\
         "packageDependencies": [\
-          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"],\
+          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@types/bufbuild__protobuf", null]\
         ],\
@@ -2310,18 +2310,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/connect-node", [\
-      ["patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-connect-node-patch-c12dc8eab5-2d5bdf3591.zip/node_modules/@bufbuild/connect-node/",\
+      ["npm:0.8.6", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba-287d634bf4.zip/node_modules/@bufbuild/connect-node/",\
         "packageDependencies": [\
-          ["@bufbuild/connect-node", "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6"]\
+          ["@bufbuild/connect-node", "npm:0.8.6"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6", {\
-        "packageLocation": "./.yarn/__virtual__/@bufbuild-connect-node-virtual-0a9d803948/0/cache/@bufbuild-connect-node-patch-c12dc8eab5-2d5bdf3591.zip/node_modules/@bufbuild/connect-node/",\
+      ["virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6", {\
+        "packageLocation": "./.yarn/__virtual__/@bufbuild-connect-node-virtual-b996f3384a/0/cache/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba-287d634bf4.zip/node_modules/@bufbuild/connect-node/",\
         "packageDependencies": [\
-          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6"],\
-          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"],\
+          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
+          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@types/bufbuild__protobuf", null],\
           ["headers-polyfill", "npm:3.1.2"]\
@@ -2354,7 +2354,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-connect-es-virtual-89a3ed2085/node_modules/@bufbuild/protoc-gen-connect-es/",\
         "packageDependencies": [\
           ["@bufbuild/protoc-gen-connect-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
-          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"],\
+          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@bufbuild/protoc-gen-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:1.2.0"],\
           ["@bufbuild/protoplugin", "npm:1.2.0"],\
@@ -3175,8 +3175,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/nestjs-buf-errors", "workspace:packages/nestjs-buf-errors"],\
           ["@bufbuild/buf", "npm:1.18.0-1"],\
-          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"],\
-          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6"],\
+          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
+          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@bufbuild/protoc-gen-connect-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protoc-gen-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:1.2.0"],\
@@ -5004,8 +5004,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@wolfcoded-nestjs-bufconnect-virtual-a349f8babd/0/cache/@wolfcoded-nestjs-bufconnect-patch-2a7da0f173-614dcefbde.zip/node_modules/@wolfcoded/nestjs-bufconnect/",\
         "packageDependencies": [\
           ["@wolfcoded/nestjs-bufconnect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch::version=1.0.0-beta.3&hash=895416"],\
-          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch::version=0.8.6&hash=17fa9b"],\
-          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch::version=0.8.6&hash=c896a6"],\
+          ["@bufbuild/connect", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
+          ["@bufbuild/connect-node", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@nestjs/common", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:9.4.0"],\
           ["@nestjs/core", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:9.4.0"],\

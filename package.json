@@ -5,11 +5,11 @@
     "packages/*"
   ],
   "resolutions": {
-    "@bufbuild/connect-node@npm:^0.8.4": "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch",
-    "@bufbuild/connect@npm:0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
-    "@bufbuild/connect@npm:^0.8.4": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
+    "@bufbuild/connect": "^0.8.6",
+    "@bufbuild/connect-node": "^0.8.6",
+    "@bufbuild/connect-node@npm:^0.8.6": "patch:@bufbuild/connect-node@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-node-npm-0.8.6-09b0eb3dba.patch",
     "@bufbuild/connect@npm:^0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
-    "@wolfcoded/nestjs-bufconnect@^1.0.0-beta.3": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#./.yarn/patches/wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch"
+    "@wolfcoded/nestjs-bufconnect@npm:^1.0.0-beta.3": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch"
   },
   "devDependencies": {
     "@monstrs/tools-runtime": "^0.2.6",

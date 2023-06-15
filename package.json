@@ -9,7 +9,6 @@
     "@bufbuild/connect@npm:0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
     "@bufbuild/connect@npm:^0.8.4": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
     "@bufbuild/connect@npm:^0.8.6": "patch:@bufbuild/connect@npm%3A0.8.6#~/.yarn/patches/@bufbuild-connect-npm-0.8.6-465da06876.patch",
-    "@types/estree": "1.0.0",
     "@wolfcoded/nestjs-bufconnect@^1.0.0-beta.3": "patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#./.yarn/patches/wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch"
   },
   "devDependencies": {

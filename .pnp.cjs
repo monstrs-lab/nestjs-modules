@@ -4445,7 +4445,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-eslint-npm-8.37.0-1f765f44f3-5a1b547b4f.zip/node_modules/@types/eslint/",\
         "packageDependencies": [\
           ["@types/eslint", "npm:8.37.0"],\
-          ["@types/estree", "npm:1.0.0"],\
+          ["@types/estree", "npm:1.0.1"],\
           ["@types/json-schema", "npm:7.0.11"]\
         ],\
         "linkType": "HARD"\
@@ -4457,16 +4457,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/eslint-scope", "npm:3.7.4"],\
           ["@types/eslint", "npm:8.37.0"],\
-          ["@types/estree", "npm:1.0.0"]\
+          ["@types/estree", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@types/estree", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/@types-estree-npm-1.0.0-eddde5b631-474df434e3.zip/node_modules/@types/estree/",\
+      ["npm:1.0.1", {\
+        "packageLocation": "./.yarn/cache/@types-estree-npm-1.0.1-4c9469c165-76f967f120.zip/node_modules/@types/estree/",\
         "packageDependencies": [\
-          ["@types/estree", "npm:1.0.0"]\
+          ["@types/estree", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11782,7 +11782,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["webpack", "virtual:40279fb41b8d9ab1570307ef1b9ec8abc1b8c8a384ede8effeef61abfef366d5393f1e1d12365ee29f4ec49300cf1f3a7ed5c00e88dbddec90eaece3d980d65e#npm:5.85.0"],\
           ["@types/eslint-scope", "npm:3.7.4"],\
-          ["@types/estree", "npm:1.0.0"],\
+          ["@types/estree", "npm:1.0.1"],\
           ["@types/webpack-cli", null],\
           ["@webassemblyjs/ast", "npm:1.11.5"],\
           ["@webassemblyjs/wasm-edit", "npm:1.11.5"],\

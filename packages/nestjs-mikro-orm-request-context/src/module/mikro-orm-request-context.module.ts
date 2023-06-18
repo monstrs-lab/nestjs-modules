@@ -15,7 +15,7 @@ export class MikroORMRequestContextModule {
       providers: [
         {
           provide: APP_INTERCEPTOR,
-          useFactory: (orm) => new MikroORMRequestContextInterceptor(orm),
+          useFactory: (orm: MikroORM) => new MikroORMRequestContextInterceptor(orm),
           inject: [MikroORM],
         },
       ],

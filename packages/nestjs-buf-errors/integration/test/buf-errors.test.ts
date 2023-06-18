@@ -59,8 +59,11 @@ describe('grpc error', () => {
       await client.testValidation({ id: 'test', child: { id: 'test' } })
     } catch (error) {
       if (error instanceof ConnectError) {
-        // @ts-expect-error
-        expect(error.details.map((detail) => ValidationError.fromBinary(detail.value))).toEqual(
+        expect(
+          // @ts-expect-error
+          error.details.map((detail: { value: Uint8Array }) =>
+            ValidationError.fromBinary(detail.value))
+        ).toEqual(
           expect.arrayContaining([
             expect.objectContaining({
               id: 'id',

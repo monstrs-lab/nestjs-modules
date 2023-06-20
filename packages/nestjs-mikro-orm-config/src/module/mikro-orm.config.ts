@@ -40,7 +40,7 @@ export class MikroORMConfig implements MikroOrmOptionsFactory {
           ? this.options.migrationsList
           : Object.keys(this.options.migrationsList!).map((name) => ({
               name,
-              class: this.options.migrationsList![name],
+              class: (this.options.migrationsList! as any)[name],
             })),
       },
     })

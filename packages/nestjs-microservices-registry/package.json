@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "hash-string": "^1.0.0"
+    "fast-hash-code": "^2.1.0"
   },
   "devDependencies": {
     "@nestjs/common": "^9.4.0",

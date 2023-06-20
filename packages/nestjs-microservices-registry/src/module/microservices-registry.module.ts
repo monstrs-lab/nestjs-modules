@@ -3,7 +3,7 @@
 import type { DynamicModule }    from '@nestjs/common'
 
 import { Module }                from '@nestjs/common'
-import hash                      from 'hash-string'
+import { fastHashCode as hash }  from 'fast-hash-code'
 
 import { MicroservisesRegistry } from '../registry/index.js'
 
@@ -33,7 +33,7 @@ export class MicroservisesRegistryModule {
       module: MicroservisesRegistryModule,
       providers: [
         {
-          provide: (hash as (string) => string)(JSON.stringify(options)),
+          provide: String(hash(JSON.stringify(options))),
           useFactory: (registry: typeof MicroservisesRegistry): void => {
             registry.add(options)
           },

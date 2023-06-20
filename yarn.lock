@@ -2497,7 +2497,7 @@ __metadata:
   dependencies:
     "@nestjs/common": "npm:^9.4.0"
     "@nestjs/core": "npm:^9.4.0"
-    hash-string: "npm:^1.0.0"
+    fast-hash-code: "npm:^2.1.0"
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.8.1"
   peerDependencies:
@@ -5448,6 +5448,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-hash-code@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "fast-hash-code@npm:2.1.0"
+  checksum: bc3bd4448b981e718a05415b64af28d3c39e912458def838000997feacc163ad08fe5e14dc230224d5b0f282b2790b6fb5a99dca4540e898e1610aca5633ba96
+  languageName: node
+  linkType: hard
+
 "fast-json-stable-stringify@npm:2.x, fast-json-stable-stringify@npm:^2.0.0, fast-json-stable-stringify@npm:^2.1.0":
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
@@ -6001,13 +6008,6 @@ __metadata:
   dependencies:
     function-bind: "npm:^1.1.1"
   checksum: 3e8c4d87ccd9c160d61a5db829b5fb647acac79e482476c857d5d1dc580517c6a77cf84337808f28361f6263008ce1ce5aff44407bd9241af93c623ef8d8d4f1
-  languageName: node
-  linkType: hard
-
-"hash-string@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "hash-string@npm:1.0.0"
-  checksum: 5ca88b227fce96cd2070835cbdf5d8da81b31683a76d3531001320612a146f73452115efdfce2bbcf87dec1fa6e37d73c29cda8f7f36b7446f5028e31545c408
   languageName: node
   linkType: hard
 

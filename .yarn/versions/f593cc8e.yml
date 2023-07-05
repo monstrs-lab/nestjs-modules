@@ -1,3 +1,0 @@
-releases:
-  "@monstrs/nestjs-microservices-registry": patch
-  "@monstrs/nestjs-mikro-orm-config": patch

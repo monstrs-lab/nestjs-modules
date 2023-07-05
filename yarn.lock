@@ -2004,7 +2004,7 @@ __metadata:
     "@bufbuild/protoc-gen-connect-es": "npm:^0.8.6"
     "@bufbuild/protoc-gen-es": "npm:^1.2.0"
     "@jest/globals": "npm:^29.6.0"
-    "@monstrs/nestjs-validation": "workspace:0.0.9"
+    "@monstrs/nestjs-validation": "workspace:0.1.0"
     "@monstrs/protobuf-rpc": "npm:^0.0.6"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
@@ -2019,7 +2019,7 @@ __metadata:
     rxjs: "npm:^7.8.1"
     supertest: "npm:^6.3.3"
   peerDependencies:
-    "@monstrs/nestjs-validation": "workspace:0.0.9"
+    "@monstrs/nestjs-validation": "workspace:0.1.0"
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/microservices": ^10
@@ -2034,7 +2034,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-graphql-redis-subscriptions@workspace:packages/nestjs-graphql-redis-subscriptions"
   dependencies:
-    "@monstrs/nestjs-redis": "workspace:0.0.5"
+    "@monstrs/nestjs-redis": "workspace:0.1.0"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     graphql-redis-subscriptions: "npm:^2.6.0"
@@ -2132,7 +2132,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-redis@workspace:0.0.5, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
+"@monstrs/nestjs-redis@workspace:0.1.0, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis"
   dependencies:
@@ -2171,7 +2171,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-validation@workspace:0.0.9, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
+"@monstrs/nestjs-validation@workspace:0.1.0, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-validation@workspace:packages/nestjs-validation"
   dependencies:

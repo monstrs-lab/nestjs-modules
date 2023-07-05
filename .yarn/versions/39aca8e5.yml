@@ -1,0 +1,10 @@
+releases:
+  "@monstrs/nestjs-buf-errors": minor
+  "@monstrs/nestjs-graphql-redis-subscriptions": minor
+  "@monstrs/nestjs-logger": minor
+  "@monstrs/nestjs-microservices-registry": minor
+  "@monstrs/nestjs-mikro-orm-config": minor
+  "@monstrs/nestjs-mikro-orm-request-context": minor
+  "@monstrs/nestjs-redis": minor
+  "@monstrs/nestjs-s3-client": minor
+  "@monstrs/nestjs-validation": minor

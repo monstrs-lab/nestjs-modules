@@ -17,16 +17,16 @@
     "postpack": "rm -rf dist"
   },
   "devDependencies": {
-    "@mikro-orm/core": "^5.7.5",
-    "@nestjs/common": "^9.4.0",
-    "@nestjs/core": "^9.4.0",
+    "@mikro-orm/core": "^5.7.12",
+    "@nestjs/common": "^10.0.5",
+    "@nestjs/core": "^10.0.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
   "peerDependencies": {
     "@mikro-orm/core": "^5",
-    "@nestjs/common": "^9",
-    "@nestjs/core": "^9",
+    "@nestjs/common": "^10",
+    "@nestjs/core": "^10",
     "reflect-metadata": "^0.1",
     "rxjs": "^7"
   },

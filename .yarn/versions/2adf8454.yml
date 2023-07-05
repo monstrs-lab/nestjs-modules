@@ -1,0 +1,10 @@
+releases:
+  "@monstrs/nestjs-buf-errors": patch
+  "@monstrs/nestjs-graphql-redis-subscriptions": patch
+  "@monstrs/nestjs-logger": patch
+  "@monstrs/nestjs-microservices-registry": patch
+  "@monstrs/nestjs-mikro-orm-config": patch
+  "@monstrs/nestjs-mikro-orm-request-context": patch
+  "@monstrs/nestjs-redis": patch
+  "@monstrs/nestjs-s3-client": patch
+  "@monstrs/nestjs-validation": patch

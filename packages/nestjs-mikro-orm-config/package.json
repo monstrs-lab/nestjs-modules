@@ -18,21 +18,21 @@
   },
   "dependencies": {
     "@monstrs/logger": "^0.0.16",
-    "@monstrs/mikro-orm-logger": "^0.0.10"
+    "@monstrs/mikro-orm-logger": "^0.0.11"
   },
   "devDependencies": {
-    "@mikro-orm/core": "^5.7.5",
-    "@mikro-orm/nestjs": "^5.1.8",
-    "@nestjs/common": "^9.4.0",
-    "@nestjs/core": "^9.4.0",
+    "@mikro-orm/core": "^5.7.12",
+    "@mikro-orm/nestjs": "^5.2.0",
+    "@nestjs/common": "^10.0.5",
+    "@nestjs/core": "^10.0.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
   "peerDependencies": {
     "@mikro-orm/core": "^5",
     "@mikro-orm/nestjs": "^5",
-    "@nestjs/common": "^9",
-    "@nestjs/core": "^9",
+    "@nestjs/common": "^10",
+    "@nestjs/core": "^10",
     "reflect-metadata": "^0.1",
     "rxjs": "^7"
   },

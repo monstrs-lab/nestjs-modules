@@ -13,7 +13,7 @@ import { validationExceptionFactory } from '../exception-factories/index.js'
 
 @Catch()
 export class BufExceptionsFilter extends BaseRpcExceptionFilter {
-  catch(exception: unknown, host: ArgumentsHost): Observable<any> {
+  override catch(exception: unknown, host: ArgumentsHost): Observable<any> {
     if (exception instanceof AssertionError) {
       return super.catch(assertionExceptionFactory(exception), host)
     }

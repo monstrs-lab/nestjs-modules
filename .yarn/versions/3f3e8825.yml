@@ -1,0 +1,4 @@
+releases:
+  "@monstrs/nestjs-logger": patch
+  "@monstrs/nestjs-mikro-orm-request-context": patch
+  "@monstrs/nestjs-s3-client": patch

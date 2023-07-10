@@ -11,7 +11,7 @@ import { Observable }            from 'rxjs'
 export class MikroORMRequestContextInterceptor implements NestInterceptor {
   constructor(private readonly orm: MikroORM) {}
 
-  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+  intercept(_: ExecutionContext, next: CallHandler): Observable<any> {
     return new Observable((subscriber) => {
       RequestContext.createAsync(
         this.orm.em,

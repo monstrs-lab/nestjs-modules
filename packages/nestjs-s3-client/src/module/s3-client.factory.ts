@@ -10,6 +10,6 @@ export class S3ClientFactory {
   constructor(private readonly configFactory: S3ClientConfigFactory) {}
 
   create(options: S3ClientModuleOptions = {}): S3Client {
-    return new S3Client(this.configFactory.createS3ClientOptions())
+    return new S3Client(this.configFactory.createS3ClientOptions(options))
   }
 }

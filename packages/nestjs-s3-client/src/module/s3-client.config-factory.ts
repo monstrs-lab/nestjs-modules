@@ -1,13 +1,15 @@
-import type { S3ClientConfig }   from '@aws-sdk/client-s3'
+import type { S3ClientConfig }        from '@aws-sdk/client-s3'
 
-import { AwsCredentialIdentity } from '@aws-sdk/types'
-import { Inject }                from '@nestjs/common'
-import { Injectable }            from '@nestjs/common'
-import { fromEnv }               from '@aws-sdk/credential-providers'
+import type { S3ClientModuleOptions } from './s3-client.module.interfaces.js'
 
-import { S3_CLIENT_ENDPOINT }    from './s3-client.module.constants.js'
-import { S3_CLIENT_REGION }      from './s3-client.module.constants.js'
-import { S3_CLIENT_CREDENTIALS } from './s3-client.module.constants.js'
+import { AwsCredentialIdentity }      from '@aws-sdk/types'
+import { Inject }                     from '@nestjs/common'
+import { Injectable }                 from '@nestjs/common'
+import { fromEnv }                    from '@aws-sdk/credential-providers'
+
+import { S3_CLIENT_ENDPOINT }         from './s3-client.module.constants.js'
+import { S3_CLIENT_REGION }           from './s3-client.module.constants.js'
+import { S3_CLIENT_CREDENTIALS }      from './s3-client.module.constants.js'
 
 @Injectable()
 export class S3ClientConfigFactory {
@@ -20,11 +22,11 @@ export class S3ClientConfigFactory {
     private readonly credentials?: AwsCredentialIdentity
   ) {}
 
-  createS3ClientOptions(): S3ClientConfig {
+  createS3ClientOptions(options: S3ClientModuleOptions = {}): S3ClientConfig {
     return {
-      endpoint: this.endpoint || process.env.S3_ENDPOINT,
-      region: this.region || process.env.S3_REGION,
-      credentials: this.credentials || fromEnv(),
+      endpoint: options.endpoint || this.endpoint || process.env.S3_ENDPOINT,
+      region: options.region || this.region || process.env.S3_REGION,
+      credentials: options.credentials || this.credentials || fromEnv(),
       forcePathStyle: true,
     }
   }

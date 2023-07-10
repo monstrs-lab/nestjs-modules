@@ -18,9 +18,9 @@ export class NestLogger implements LoggerService {
 
   public error(message: any, trace?: string, context?: string): void {
     if (context) {
-      this.logger.child(context).error(message)
+      this.logger.child(context).error(message, { '@stack': trace })
     } else {
-      this.logger.error(message)
+      this.logger.error(message, { '@stack': trace })
     }
   }
 

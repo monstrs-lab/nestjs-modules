@@ -20,6 +20,7 @@
   "dependencies": {
     "@bufbuild/connect": "^0.8.6",
     "@bufbuild/protobuf": "^1.2.0",
+    "@monstrs/guard-clause": "^0.0.3",
     "@monstrs/protobuf-rpc": "^0.0.6"
   },
   "devDependencies": {

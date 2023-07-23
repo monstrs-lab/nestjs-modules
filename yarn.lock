@@ -2060,6 +2060,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/guard-clause@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@monstrs/guard-clause@npm:0.0.3"
+  dependencies:
+    validator: "npm:^13.9.0"
+  checksum: 8f1d32710193e9707647a2a784eb57732925a2db66e2b232149893fc696ef89766661a8037d725ae5205d1e52197903eeaed5cd2c3b3678ce79121bd49b4245d
+  languageName: node
+  linkType: hard
+
 "@monstrs/jest-resolver@npm:0.3.3":
   version: 0.3.3
   resolution: "@monstrs/jest-resolver@npm:0.3.3"
@@ -2105,6 +2114,7 @@ __metadata:
     "@bufbuild/protoc-gen-connect-es": "npm:^0.8.6"
     "@bufbuild/protoc-gen-es": "npm:^1.2.0"
     "@jest/globals": "npm:^29.6.0"
+    "@monstrs/guard-clause": "npm:^0.0.3"
     "@monstrs/nestjs-validation": "workspace:0.1.0"
     "@monstrs/protobuf-rpc": "npm:^0.0.6"
     "@nestjs/common": "npm:^10.0.5"
@@ -9602,6 +9612,13 @@ __metadata:
   version: 13.7.0
   resolution: "validator@npm:13.7.0"
   checksum: 234c9db98001d6f75c04174dd7f67a297728c8cb369db99f21c41ba4a254558bf91427ecdcc9017ddcd44271c9db38e96079cf432a41c92f13d96d6ca0d5c28d
+  languageName: node
+  linkType: hard
+
+"validator@npm:^13.9.0":
+  version: 13.9.0
+  resolution: "validator@npm:13.9.0"
+  checksum: 0a0af4b37779671b53ef790aa9d36f71a605c9d41c6daf198d2a1051ce549bcdca3313fa3b52c8fa24577e1a4968ec9404ad8a928d3607d51bccef6d6e33bee7
   languageName: node
   linkType: hard
 

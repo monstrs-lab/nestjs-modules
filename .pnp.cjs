@@ -2757,6 +2757,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@monstrs/guard-clause", [\
+      ["npm:0.0.3", {\
+        "packageLocation": "./.yarn/cache/@monstrs-guard-clause-npm-0.0.3-7c260993b6-8f1d327101.zip/node_modules/@monstrs/guard-clause/",\
+        "packageDependencies": [\
+          ["@monstrs/guard-clause", "npm:0.0.3"],\
+          ["validator", "npm:13.9.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@monstrs/jest-resolver", [\
       ["npm:0.3.3", {\
         "packageLocation": "./.yarn/cache/@monstrs-jest-resolver-npm-0.3.3-462d504090-67979c5237.zip/node_modules/@monstrs/jest-resolver/",\
@@ -2817,6 +2827,7 @@ const RAW_RUNTIME_STATE =
           ["@bufbuild/protoc-gen-connect-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.8.6"],\
           ["@bufbuild/protoc-gen-es", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:1.2.0"],\
           ["@jest/globals", "npm:29.6.0"],\
+          ["@monstrs/guard-clause", "npm:0.0.3"],\
           ["@monstrs/nestjs-validation", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#workspace:packages/nestjs-validation"],\
           ["@monstrs/protobuf-rpc", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:0.0.6"],\
           ["@nestjs/common", "virtual:4880c962f3f5bcc184caf1cc6ee7cdd6ebde67c96e25fc855fc02b9afd335b6ad0e5213c2e0856ad48204ebb4bcc0b33b3cefc084df69498bca453b9dcad8271#npm:10.0.5"],\
@@ -12015,6 +12026,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/validator-npm-13.7.0-624277e841-234c9db980.zip/node_modules/validator/",\
         "packageDependencies": [\
           ["validator", "npm:13.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.9.0", {\
+        "packageLocation": "./.yarn/cache/validator-npm-13.9.0-54b07e9e81-0a0af4b377.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\

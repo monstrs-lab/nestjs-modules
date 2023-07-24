@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/nestjs-buf-errors": patch
+  "@monstrs/nestjs-validation": patch

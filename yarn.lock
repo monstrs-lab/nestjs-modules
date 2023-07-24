@@ -2115,7 +2115,7 @@ __metadata:
     "@bufbuild/protoc-gen-es": "npm:^1.2.0"
     "@jest/globals": "npm:^29.6.0"
     "@monstrs/guard-clause": "npm:^0.0.3"
-    "@monstrs/nestjs-validation": "workspace:0.1.0"
+    "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@monstrs/protobuf-rpc": "npm:^0.0.6"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
@@ -2130,7 +2130,7 @@ __metadata:
     rxjs: "npm:^7.8.1"
     supertest: "npm:^6.3.3"
   peerDependencies:
-    "@monstrs/nestjs-validation": "workspace:0.1.0"
+    "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/microservices": ^10
@@ -2282,7 +2282,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-validation@workspace:0.1.0, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
+"@monstrs/nestjs-validation@workspace:0.1.1, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-validation@workspace:packages/nestjs-validation"
   dependencies:

@@ -10,8 +10,8 @@ export class Validator {
     return plainToInstance(metatype, value) as T
   }
 
-  async validate<T>(value: object, metatype: ClassConstructor<unknown>): Promise<T> {
-    const transformed = await this.transform<T>(metatype, value)
+  async validate<T>(valueOrObject: object, metatype?: ClassConstructor<unknown>): Promise<T> {
+    const transformed = metatype ? await this.transform<T>(metatype, valueOrObject) : valueOrObject
 
     const errors = await validate(transformed as object)
 
@@ -19,6 +19,6 @@ export class Validator {
       throw new ValidationError(errors)
     }
 
-    return transformed
+    return transformed as T
   }
 }

@@ -16,6 +16,7 @@ export class MikroORMConfigBuilder {
       debug: options.debug || Boolean(process.env.DB_DEBUG) || false,
       migrations: options.migrations,
       entities: options.entities,
+      forceUndefined: true,
 
       loggerFactory: (opts: LoggerOptions): MikroORMLogger => new MikroORMLogger(opts),
       logger: (message: string): void => {

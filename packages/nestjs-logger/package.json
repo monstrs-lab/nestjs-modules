@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.16"
+    "@monstrs/logger": "^0.0.17"
   },
   "devDependencies": {
     "@nestjs/common": "^10.0.5",

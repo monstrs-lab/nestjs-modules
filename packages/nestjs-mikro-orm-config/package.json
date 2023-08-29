@@ -17,8 +17,8 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.16",
-    "@monstrs/mikro-orm-logger": "^0.0.11"
+    "@monstrs/logger": "^0.0.17",
+    "@monstrs/mikro-orm-logger": "^0.0.12"
   },
   "devDependencies": {
     "@mikro-orm/core": "^5.7.12",

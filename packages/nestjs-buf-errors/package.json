@@ -18,13 +18,14 @@
     "proto:generate": "buf generate integration/proto"
   },
   "dependencies": {
-    "@bufbuild/connect": "^0.8.6",
     "@bufbuild/protobuf": "^1.2.0",
-    "@monstrs/guard-clause": "^0.0.3",
+    "@monstrs/core-errors": "^0.0.2",
+    "@monstrs/guard-clause": "^0.0.7",
     "@monstrs/protobuf-rpc": "^0.0.6"
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.23.1",
+    "@bufbuild/connect": "^0.8.6",
     "@bufbuild/connect-node": "^0.8.6",
     "@bufbuild/protoc-gen-connect-es": "^0.8.6",
     "@bufbuild/protoc-gen-es": "^1.2.0",
@@ -44,6 +45,7 @@
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
+    "@bufbuild/connect": "^0.8",
     "@monstrs/nestjs-validation": "workspace:0.1.1",
     "@nestjs/common": "^10",
     "@nestjs/core": "^10",

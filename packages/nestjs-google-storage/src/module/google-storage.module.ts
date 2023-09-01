@@ -6,10 +6,10 @@ import { GoogleStorageConfigFactory } from './google-storage.config-factory.js'
 import { GoogleStorageFactory }       from './google-storage.factory.js'
 
 @Module({})
-export class S3ClientModule {
+export class GoogleStorageModule {
   static register(): DynamicModule {
     return {
-      module: S3ClientModule,
+      module: GoogleStorageModule,
       providers: [GoogleStorageConfigFactory, GoogleStorageFactory],
       exports: [GoogleStorageConfigFactory, GoogleStorageFactory],
     }

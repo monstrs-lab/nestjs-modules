@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/nestjs-google-storage": patch
+  "@monstrs/nestjs-s3-client": patch

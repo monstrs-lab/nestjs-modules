@@ -2214,9 +2214,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-google-storage@workspace:packages/nestjs-google-storage":
+"@monstrs/nestjs-gcs-client@workspace:packages/nestjs-gcs-client":
   version: 0.0.0-use.local
-  resolution: "@monstrs/nestjs-google-storage@workspace:packages/nestjs-google-storage"
+  resolution: "@monstrs/nestjs-gcs-client@workspace:packages/nestjs-gcs-client"
   dependencies:
     "@google-cloud/storage": "npm:^7.0.1"
     "@nestjs/common": "npm:^10.0.5"

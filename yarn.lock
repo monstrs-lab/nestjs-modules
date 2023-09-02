@@ -2187,7 +2187,7 @@ __metadata:
     "@jest/globals": "npm:^29.6.0"
     "@monstrs/core-errors": "npm:^0.0.2"
     "@monstrs/guard-clause": "npm:^0.0.7"
-    "@monstrs/nestjs-connectrpc": "workspace:0.0.1"
+    "@monstrs/nestjs-connectrpc": "workspace:0.0.2"
     "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@monstrs/protobuf-rpc": "npm:^0.0.6"
     "@nestjs/common": "npm:^10.0.5"
@@ -2214,7 +2214,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-connectrpc@workspace:0.0.1, @monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc":
+"@monstrs/nestjs-connectrpc@workspace:0.0.2, @monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc"
   dependencies:

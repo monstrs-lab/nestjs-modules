@@ -1244,58 +1244,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-darwin-arm64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-darwin-arm64@npm:1.23.1"
+"@bufbuild/buf-darwin-arm64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-darwin-arm64@npm:1.26.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-darwin-x64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-darwin-x64@npm:1.23.1"
+"@bufbuild/buf-darwin-x64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-darwin-x64@npm:1.26.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-linux-aarch64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-linux-aarch64@npm:1.23.1"
+"@bufbuild/buf-linux-aarch64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-linux-aarch64@npm:1.26.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-linux-x64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-linux-x64@npm:1.23.1"
+"@bufbuild/buf-linux-x64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-linux-x64@npm:1.26.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-win32-arm64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-win32-arm64@npm:1.23.1"
+"@bufbuild/buf-win32-arm64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-win32-arm64@npm:1.26.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-win32-x64@npm:1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf-win32-x64@npm:1.23.1"
+"@bufbuild/buf-win32-x64@npm:1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf-win32-x64@npm:1.26.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf@npm:^1.23.1":
-  version: 1.23.1
-  resolution: "@bufbuild/buf@npm:1.23.1"
+"@bufbuild/buf@npm:^1.26.1":
+  version: 1.26.1
+  resolution: "@bufbuild/buf@npm:1.26.1"
   dependencies:
-    "@bufbuild/buf-darwin-arm64": "npm:1.23.1"
-    "@bufbuild/buf-darwin-x64": "npm:1.23.1"
-    "@bufbuild/buf-linux-aarch64": "npm:1.23.1"
-    "@bufbuild/buf-linux-x64": "npm:1.23.1"
-    "@bufbuild/buf-win32-arm64": "npm:1.23.1"
-    "@bufbuild/buf-win32-x64": "npm:1.23.1"
+    "@bufbuild/buf-darwin-arm64": "npm:1.26.1"
+    "@bufbuild/buf-darwin-x64": "npm:1.26.1"
+    "@bufbuild/buf-linux-aarch64": "npm:1.26.1"
+    "@bufbuild/buf-linux-x64": "npm:1.26.1"
+    "@bufbuild/buf-win32-arm64": "npm:1.26.1"
+    "@bufbuild/buf-win32-x64": "npm:1.26.1"
   dependenciesMeta:
     "@bufbuild/buf-darwin-arm64":
       optional: true
@@ -1313,82 +1313,82 @@ __metadata:
     buf: bin/buf
     protoc-gen-buf-breaking: bin/protoc-gen-buf-breaking
     protoc-gen-buf-lint: bin/protoc-gen-buf-lint
-  checksum: 3354c37f0cbb9eace76f59ee239c124c9d8151ab2b3c3c919981cf83b13a4045192ef9511cd09aa1533f021bad943a7bcc3ef272072a06fc12ab07cca95dd35c
+  checksum: 90e2ca597e7821a4b6bc58a84fa0583d73a3a7d37e13f2f7db688f566c8d29aba10ab5ce07b217917774d65f62bcc57a2984d7c180e24b6d1b025f16e7c63d69
   languageName: node
   linkType: hard
 
-"@bufbuild/connect-node@npm:^0.8.6":
-  version: 0.8.6
-  resolution: "@bufbuild/connect-node@npm:0.8.6"
+"@bufbuild/protobuf@npm:1.3.1, @bufbuild/protobuf@npm:^1.2.1, @bufbuild/protobuf@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@bufbuild/protobuf@npm:1.3.1"
+  checksum: a3bcdf15aceca55adbeea1180069d9ddd5bea82293f93c906672c2f5bda776b4999cec3b9d7822cd95b24e51d1f6b5cc4fa7c7eb01a6c6edf3f25c833549daf5
+  languageName: node
+  linkType: hard
+
+"@bufbuild/protoc-gen-es@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@bufbuild/protoc-gen-es@npm:1.3.1"
   dependencies:
-    "@bufbuild/connect": "npm:0.8.6"
-    headers-polyfill: "npm:^3.1.2"
+    "@bufbuild/protoplugin": "npm:1.3.1"
   peerDependencies:
-    "@bufbuild/protobuf": ^1.2.0
-  checksum: f6cefa6834377590777bdb3bd370f8a39da3903f20ba6fd1f2a75e4e8d3805e70dfcdc2072fed0ed557f196168ed5fd9638aececfc8b5688a0ccf5a4fca0f78f
-  languageName: node
-  linkType: hard
-
-"@bufbuild/connect@npm:^0.8.6":
-  version: 0.8.6
-  resolution: "@bufbuild/connect@npm:0.8.6"
-  peerDependencies:
-    "@bufbuild/protobuf": ^1.2.0
-  checksum: 82349c3113cd4c32c569f251ec6b60449d707dc1f5b0788e32ca3919746a63b82dd32a8332c19bcb74d4022420d2461ac0e342b034e76ca7481018ae9dcd7af7
-  languageName: node
-  linkType: hard
-
-"@bufbuild/protobuf@npm:1.2.0, @bufbuild/protobuf@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@bufbuild/protobuf@npm:1.2.0"
-  checksum: c2849f84bd28fa0003677f446391fc02981f226152c05f27fd9b55f63551ea86f406ce4c33ee7f75b587d7f83f664d990340419e2118e393a30f3b81e8ceb2f0
-  languageName: node
-  linkType: hard
-
-"@bufbuild/protoc-gen-connect-es@npm:^0.8.6":
-  version: 0.8.6
-  resolution: "@bufbuild/protoc-gen-connect-es@npm:0.8.6"
-  dependencies:
-    "@bufbuild/protobuf": "npm:^1.2.0"
-    "@bufbuild/protoplugin": "npm:^1.2.0"
-  peerDependencies:
-    "@bufbuild/connect": 0.8.6
-    "@bufbuild/protoc-gen-es": ^1.2.0
-  peerDependenciesMeta:
-    "@bufbuild/connect":
-      optional: true
-    "@bufbuild/protoc-gen-es":
-      optional: true
-  bin:
-    protoc-gen-connect-es: bin/protoc-gen-connect-es
-  checksum: 01209110ea5a24af2c3b4798541f828d27b78be1fb57e5c4e1ed3150b0c7aaf692767fd0c63123b2db77d61a451c921b4c05f716c3af70cd5813a0956d59bf88
-  languageName: node
-  linkType: hard
-
-"@bufbuild/protoc-gen-es@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@bufbuild/protoc-gen-es@npm:1.2.0"
-  dependencies:
-    "@bufbuild/protoplugin": "npm:1.2.0"
-  peerDependencies:
-    "@bufbuild/protobuf": 1.2.0
+    "@bufbuild/protobuf": 1.3.1
   peerDependenciesMeta:
     "@bufbuild/protobuf":
       optional: true
   bin:
     protoc-gen-es: bin/protoc-gen-es
-  checksum: 623a377cc5e8add18cac57c1f33458630e1fa6a50b503fc2b31638b5208d95d380cee55674693ce79b6a4a3794cd0264024fb1347dbf4e5cb59bae1af63b91ef
+  checksum: 32ab8dd3c781b8e590f1c586e5b3704afd51f2172b1520af45667cddd68a63b09524bd9571ae4f7c883fec887bea05807bb5e2a6294a8900e079213a213117bd
   languageName: node
   linkType: hard
 
-"@bufbuild/protoplugin@npm:1.2.0, @bufbuild/protoplugin@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@bufbuild/protoplugin@npm:1.2.0"
+"@bufbuild/protoplugin@npm:1.3.1, @bufbuild/protoplugin@npm:^1.2.1":
+  version: 1.3.1
+  resolution: "@bufbuild/protoplugin@npm:1.3.1"
   dependencies:
-    "@bufbuild/protobuf": "npm:1.2.0"
+    "@bufbuild/protobuf": "npm:1.3.1"
     "@typescript/vfs": "npm:^1.4.0"
     typescript: "npm:4.5.2"
-  checksum: 551d7c829d6a9b8ff0327aca45fb8395db532a1ec823ca8f0d473b612a9ae9869d5ec9741e38aa225e5161484097b9c7325c8517aa8ae2e93b320ee6c8bcc03f
+  checksum: 6358c72c4f96ab3f1a8e32598b534ddc8798fe36e73c5d68fc4eb342e1e09d8a7409a7eb04b35b4468da1d1bd9726a331332bcc78957c95216db9986cc236789
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect-node@npm:^0.13.2":
+  version: 0.13.2
+  resolution: "@connectrpc/connect-node@npm:0.13.2"
+  dependencies:
+    "@connectrpc/connect": "npm:0.13.2"
+    undici: "npm:^5.23.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.2.1
+  checksum: cfa3fc0e38649e36aadfbfaabac8d95d2632c674206854bb9fac36e3711494661d560f616e9f93f37bf35be0a3a6e9a1cacd539585a1533ecd072471ec7bdf8e
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect@npm:0.13.2, @connectrpc/connect@npm:^0.13.2":
+  version: 0.13.2
+  resolution: "@connectrpc/connect@npm:0.13.2"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.2.1
+  checksum: e53516bcf1e7167aa1c2ed3dce53ac799516bbddb7da801a673850f79874689ebd530bed05ebabe65ede907f0570c683df9765d37d9000246cee38706221c19c
+  languageName: node
+  linkType: hard
+
+"@connectrpc/protoc-gen-connect-es@npm:^0.13.2":
+  version: 0.13.2
+  resolution: "@connectrpc/protoc-gen-connect-es@npm:0.13.2"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.2.1"
+    "@bufbuild/protoplugin": "npm:^1.2.1"
+  peerDependencies:
+    "@bufbuild/protoc-gen-es": ^1.2.1
+    "@connectrpc/connect": 0.13.2
+  peerDependenciesMeta:
+    "@bufbuild/protoc-gen-es":
+      optional: true
+    "@connectrpc/connect":
+      optional: true
+  bin:
+    protoc-gen-connect-es: bin/protoc-gen-connect-es
+  checksum: a2f99ad26d6a12401ec38058f8ff24db2ea19179e0085f1778334a5725d145d7af2011ccb522f238c6492d28380d705bf71cb5ba8de98d2518fe7338475833a7
   languageName: node
   linkType: hard
 
@@ -2174,19 +2174,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/nestjs-buf-errors@workspace:packages/nestjs-buf-errors":
+"@monstrs/nestjs-connectrpc-errors@workspace:packages/nestjs-connectrpc-errors":
   version: 0.0.0-use.local
-  resolution: "@monstrs/nestjs-buf-errors@workspace:packages/nestjs-buf-errors"
+  resolution: "@monstrs/nestjs-connectrpc-errors@workspace:packages/nestjs-connectrpc-errors"
   dependencies:
-    "@bufbuild/buf": "npm:^1.23.1"
-    "@bufbuild/connect": "npm:^0.8.6"
-    "@bufbuild/connect-node": "npm:^0.8.6"
-    "@bufbuild/protobuf": "npm:^1.2.0"
-    "@bufbuild/protoc-gen-connect-es": "npm:^0.8.6"
-    "@bufbuild/protoc-gen-es": "npm:^1.2.0"
+    "@bufbuild/buf": "npm:^1.26.1"
+    "@bufbuild/protobuf": "npm:^1.3.1"
+    "@bufbuild/protoc-gen-es": "npm:^1.3.1"
+    "@connectrpc/connect": "npm:^0.13.2"
+    "@connectrpc/connect-node": "npm:^0.13.2"
+    "@connectrpc/protoc-gen-connect-es": "npm:^0.13.2"
     "@jest/globals": "npm:^29.6.0"
     "@monstrs/core-errors": "npm:^0.0.2"
     "@monstrs/guard-clause": "npm:^0.0.7"
+    "@monstrs/nestjs-connectrpc": "workspace:0.0.1"
     "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@monstrs/protobuf-rpc": "npm:^0.0.6"
     "@nestjs/common": "npm:^10.0.5"
@@ -2194,7 +2195,6 @@ __metadata:
     "@nestjs/microservices": "npm:^10.0.5"
     "@nestjs/platform-express": "npm:^10.0.5"
     "@nestjs/testing": "npm:^10.0.5"
-    "@wolfcoded/nestjs-bufconnect": "npm:^1.0.0-beta.3"
     class-transformer: "npm:^0.5.1"
     class-validator: "npm:^0.14.0"
     get-port: "npm:^7.0.0"
@@ -2202,13 +2202,39 @@ __metadata:
     rxjs: "npm:^7.8.1"
     supertest: "npm:^6.3.3"
   peerDependencies:
-    "@bufbuild/connect": ^0.8
+    "@connectrpc/connect": ^0.13
     "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/microservices": ^10
     class-transformer: ^0.5
     class-validator: ^0.14
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@monstrs/nestjs-connectrpc@workspace:0.0.1, @monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.3.1"
+    "@connectrpc/connect": "npm:^0.13.2"
+    "@connectrpc/connect-node": "npm:^0.13.2"
+    "@nestjs/common": "npm:^10.0.5"
+    "@nestjs/core": "npm:^10.0.5"
+    "@nestjs/microservices": "npm:^10.2.4"
+    "@nestjs/platform-express": "npm:^10.2.4"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1
+    "@connectrpc/connect": ^0.13
+    "@connectrpc/connect-node": ^0.13
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/microservices": ^10
+    "@nestjs/platform-express": ^10
     reflect-metadata: ^0.1
     rxjs: ^7
   languageName: unknown
@@ -2510,6 +2536,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nestjs/microservices@npm:^10.2.4":
+  version: 10.2.4
+  resolution: "@nestjs/microservices@npm:10.2.4"
+  dependencies:
+    iterare: "npm:1.2.1"
+    tslib: "npm:2.6.2"
+  peerDependencies:
+    "@grpc/grpc-js": "*"
+    "@nestjs/common": ^10.0.0
+    "@nestjs/core": ^10.0.0
+    "@nestjs/websockets": ^10.0.0
+    amqp-connection-manager: "*"
+    amqplib: "*"
+    cache-manager: "*"
+    ioredis: "*"
+    kafkajs: "*"
+    mqtt: "*"
+    nats: "*"
+    reflect-metadata: ^0.1.12
+    rxjs: ^7.1.0
+  peerDependenciesMeta:
+    "@grpc/grpc-js":
+      optional: true
+    "@nestjs/websockets":
+      optional: true
+    amqp-connection-manager:
+      optional: true
+    amqplib:
+      optional: true
+    cache-manager:
+      optional: true
+    ioredis:
+      optional: true
+    kafkajs:
+      optional: true
+    mqtt:
+      optional: true
+    nats:
+      optional: true
+  checksum: ef25bace3239d5afa6e19976794aadb5f8f0ee9a3eb1ebd2ddf670b385bacd81d707465086e18d134d1dad9042baef157482efa5645d6cff202ec998a75793c3
+  languageName: node
+  linkType: hard
+
 "@nestjs/platform-express@npm:*, @nestjs/platform-express@npm:^10.0.5":
   version: 10.0.5
   resolution: "@nestjs/platform-express@npm:10.0.5"
@@ -2523,6 +2592,22 @@ __metadata:
     "@nestjs/common": ^10.0.0
     "@nestjs/core": ^10.0.0
   checksum: fd1c01bfd4b87e7e0ed9c41c2b5a6614edf3e726a45dbd8574e476fc024afe19643f163172b40afc43cc7b7757cda102552d8af529594d3509c46de803997bff
+  languageName: node
+  linkType: hard
+
+"@nestjs/platform-express@npm:^10.2.4":
+  version: 10.2.4
+  resolution: "@nestjs/platform-express@npm:10.2.4"
+  dependencies:
+    body-parser: "npm:1.20.2"
+    cors: "npm:2.8.5"
+    express: "npm:4.18.2"
+    multer: "npm:1.4.4-lts.1"
+    tslib: "npm:2.6.2"
+  peerDependencies:
+    "@nestjs/common": ^10.0.0
+    "@nestjs/core": ^10.0.0
+  checksum: b94a6e0899d80e506aa93d4ea9b80501a5888269d418308c9212efa65901257abec696b0c80cef941e77fff80a005843f28c6ec75d7a7bd3951811e91d7e91c8
   languageName: node
   linkType: hard
 
@@ -3862,42 +3947,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wolfcoded/nestjs-bufconnect@npm:1.0.0-beta.3":
-  version: 1.0.0-beta.3
-  resolution: "@wolfcoded/nestjs-bufconnect@npm:1.0.0-beta.3"
-  dependencies:
-    "@bufbuild/connect": "npm:^0.8.4"
-    "@bufbuild/connect-node": "npm:^0.8.4"
-    "@bufbuild/protobuf": "npm:^1.2.0"
-  peerDependencies:
-    "@nestjs/common": ^9.0.0
-    "@nestjs/core": ^9.0.0
-    "@nestjs/microservices": ^9.0.0
-    "@nestjs/platform-express": ^9.0.0
-    reflect-metadata: ^0.1.13
-    rxjs: ^7.2.0
-  checksum: e9765b391d207cd2e8cedb1899c9bd28caa89bd98c90188f7c45d91477df40190b3f857e0fbff1f4491b927e97d4f0827afedf6aab30e284e5e3cf1f44823941
-  languageName: node
-  linkType: hard
-
-"@wolfcoded/nestjs-bufconnect@patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch":
-  version: 1.0.0-beta.3
-  resolution: "@wolfcoded/nestjs-bufconnect@patch:@wolfcoded/nestjs-bufconnect@npm%3A1.0.0-beta.3#~/.yarn/patches/@wolfcoded-nestjs-bufconnect-npm-1.0.0-beta.3-23836c45da.patch::version=1.0.0-beta.3&hash=895416"
-  dependencies:
-    "@bufbuild/connect": "npm:^0.8.4"
-    "@bufbuild/connect-node": "npm:^0.8.4"
-    "@bufbuild/protobuf": "npm:^1.2.0"
-  peerDependencies:
-    "@nestjs/common": ^9.0.0
-    "@nestjs/core": ^9.0.0
-    "@nestjs/microservices": ^9.0.0
-    "@nestjs/platform-express": ^9.0.0
-    reflect-metadata: ^0.1.13
-    rxjs: ^7.2.0
-  checksum: 076a3cfd36c95d1aa1e1250faccf47fbb7661f75c5117f5ac4178cdea5a32e8d8ff3a50c651ae5d4901b7ec426fb7ec16c6415602fe127e267ed570e01769591
-  languageName: node
-  linkType: hard
-
 "@xtuc/ieee754@npm:^1.2.0":
   version: 1.2.0
   resolution: "@xtuc/ieee754@npm:1.2.0"
@@ -4560,7 +4609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"busboy@npm:^1.0.0":
+"busboy@npm:^1.0.0, busboy@npm:^1.6.0":
   version: 1.6.0
   resolution: "busboy@npm:1.6.0"
   dependencies:
@@ -6506,13 +6555,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"headers-polyfill@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "headers-polyfill@npm:3.1.2"
-  checksum: 147b2a7012cee01f8d5c6b94c184468204c9fa68b279b9784097cc1826cad7b0457332b7d5c3ad74c1cbe14daddd8009332382c3fdd3025d8a326633b3458968
-  languageName: node
-  linkType: hard
-
 "hexoid@npm:^1.0.0":
   version: 1.0.0
   resolution: "hexoid@npm:1.0.0"
@@ -6586,15 +6628,6 @@ __metadata:
   version: 2.1.0
   resolution: "human-signals@npm:2.1.0"
   checksum: 695edb3edfcfe9c8b52a76926cd31b36978782062c0ed9b1192b36bebc75c4c87c82e178dfcb0ed0fc27ca59d434198aac0bd0be18f5781ded775604db22304a
-  languageName: node
-  linkType: hard
-
-"husky@npm:8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
-  bin:
-    husky: lib/bin.js
-  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 
@@ -8213,7 +8246,6 @@ __metadata:
   dependencies:
     "@monstrs/tools-runtime": "npm:^0.2.15"
     "@types/node": "npm:^20.3.3"
-    husky: "npm:8.0.3"
     typescript: "npm:^5.1.6"
   languageName: unknown
   linkType: soft
@@ -9881,6 +9913,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.6.2":
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.11.1, tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -10031,6 +10070,15 @@ __metadata:
     has-symbols: "npm:^1.0.3"
     which-boxed-primitive: "npm:^1.0.2"
   checksum: 81ca2e81134167cc8f75fa79fbcc8a94379d6c61de67090986a2273850989dd3bae8440c163121b77434b68263e34787a675cbdcb34bb2f764c6b9c843a11b66
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.23.0":
+  version: 5.23.0
+  resolution: "undici@npm:5.23.0"
+  dependencies:
+    busboy: "npm:^1.6.0"
+  checksum: 43a6ecddb30733adc33bc7a922fa7609c3e75f6555beab05e26c50f4be20ed893d7e9ac4332b332320961252dbc89c865955a5b5dbc3bcd2197ca4f015e7ad97
   languageName: node
   linkType: hard
 

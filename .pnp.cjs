@@ -34,6 +34,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/nestjs-graphql-redis-subscriptions"\
     },\
     {\
+      "name": "@monstrs/nestjs-kafka",\
+      "reference": "workspace:packages/nestjs-kafka"\
+    },\
+    {\
       "name": "@monstrs/nestjs-logger",\
       "reference": "workspace:packages/nestjs-logger"\
     },\
@@ -70,6 +74,7 @@ const RAW_RUNTIME_STATE =
     ["@monstrs/nestjs-cqrs", ["workspace:packages/nestjs-cqrs"]],\
     ["@monstrs/nestjs-gcs-client", ["workspace:packages/nestjs-gcs-client"]],\
     ["@monstrs/nestjs-graphql-redis-subscriptions", ["workspace:packages/nestjs-graphql-redis-subscriptions"]],\
+    ["@monstrs/nestjs-kafka", ["workspace:packages/nestjs-kafka"]],\
     ["@monstrs/nestjs-logger", ["workspace:packages/nestjs-logger"]],\
     ["@monstrs/nestjs-microservices-registry", ["workspace:packages/nestjs-microservices-registry"]],\
     ["@monstrs/nestjs-mikro-orm-config", ["workspace:packages/nestjs-mikro-orm-config"]],\
@@ -3043,6 +3048,20 @@ const RAW_RUNTIME_STATE =
           ["reflect-metadata", "npm:0.1.13"],\
           ["rxjs", "npm:7.8.1"],\
           ["telejson", "npm:7.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@monstrs/nestjs-kafka", [\
+      ["workspace:packages/nestjs-kafka", {\
+        "packageLocation": "./packages/nestjs-kafka/",\
+        "packageDependencies": [\
+          ["@monstrs/nestjs-kafka", "workspace:packages/nestjs-kafka"],\
+          ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
+          ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
+          ["kafkajs", "npm:2.2.4"],\
+          ["reflect-metadata", "npm:0.1.13"],\
+          ["rxjs", "npm:7.8.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -10144,6 +10163,15 @@ const RAW_RUNTIME_STATE =
           ["jws", "npm:4.0.0"],\
           ["jwa", "npm:2.0.0"],\
           ["safe-buffer", "npm:5.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["kafkajs", [\
+      ["npm:2.2.4", {\
+        "packageLocation": "./.yarn/cache/kafkajs-npm-2.2.4-8837bee290-6eece1f682.zip/node_modules/kafkajs/",\
+        "packageDependencies": [\
+          ["kafkajs", "npm:2.2.4"]\
         ],\
         "linkType": "HARD"\
       }]\

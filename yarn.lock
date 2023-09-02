@@ -2240,6 +2240,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/nestjs-cqrs@workspace:packages/nestjs-cqrs":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/nestjs-cqrs@workspace:packages/nestjs-cqrs"
+  dependencies:
+    "@nestjs/common": "npm:^10.0.5"
+    "@nestjs/core": "npm:^10.0.5"
+    "@nestjs/cqrs": "npm:^10.2.5"
+    reflect-metadata: "npm:^0.1.13"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/cqrs": ^10
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/nestjs-gcs-client@workspace:packages/nestjs-gcs-client":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-gcs-client@workspace:packages/nestjs-gcs-client"
@@ -2490,6 +2508,20 @@ __metadata:
     "@nestjs/websockets":
       optional: true
   checksum: be62a36c157143c130eace61b2069fb6731025be6c3a2a2b401ebb9c8264fc413b9c96ce99b7c205a9177279f90f04c11972f66e9778c8d6bf1c1607706a9aee
+  languageName: node
+  linkType: hard
+
+"@nestjs/cqrs@npm:^10.2.5":
+  version: 10.2.5
+  resolution: "@nestjs/cqrs@npm:10.2.5"
+  dependencies:
+    uuid: "npm:9.0.0"
+  peerDependencies:
+    "@nestjs/common": ^9.0.0 || ^10.0.0
+    "@nestjs/core": ^9.0.0 || ^10.0.0
+    reflect-metadata: 0.1.13
+    rxjs: ^7.2.0
+  checksum: 24a5dcb2191708724eb3c963066f0c62a3e94111919d8f7e622c8b61521c99655b829c337b0b6dc5a9f723128ca64bf5300f00452d25c4bc464ad52242186d55
   languageName: node
   linkType: hard
 
@@ -10133,6 +10165,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uuid@npm:9.0.0, uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 8867e438990d1d33ac61093e2e4e3477a2148b844e4fa9e3c2360fa4399292429c4b6ec64537eb1659c97b2d10db349c673ad58b50e2824a11e0d3630de3c056
+  languageName: node
+  linkType: hard
+
 "uuid@npm:^3.3.2":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
@@ -10148,15 +10189,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: bcbb807a917d374a49f475fae2e87fdca7da5e5530820ef53f65ba1d12131bd81a92ecf259cc7ce317cbe0f289e7d79fdfebcef9bfa3087c8c8a2fa304c9be54
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "uuid@npm:9.0.0"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 8867e438990d1d33ac61093e2e4e3477a2148b844e4fa9e3c2360fa4399292429c4b6ec64537eb1659c97b2d10db349c673ad58b50e2824a11e0d3630de3c056
   languageName: node
   linkType: hard
 

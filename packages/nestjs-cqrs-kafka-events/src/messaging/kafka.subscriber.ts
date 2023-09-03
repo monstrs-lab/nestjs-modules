@@ -1,0 +1,49 @@
+import type { OnModuleDestroy } from '@nestjs/common'
+import type { IEvent }          from '@nestjs/cqrs'
+import type { IMessageSource }  from '@nestjs/cqrs'
+import type { Consumer }        from '@monstrs/nestjs-kafka'
+import type { Kafka }           from '@monstrs/nestjs-kafka'
+import type { Subject }         from 'rxjs'
+
+import { parse }                from 'telejson'
+
+export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
+  private readonly kafkaConsumer: Consumer
+
+  private bridge!: Subject<any>
+
+  constructor(kafka: Kafka, groupId: string) {
+    this.kafkaConsumer = kafka.consumer({ groupId })
+  }
+
+  async onModuleDestroy(): Promise<void> {
+    await this.kafkaConsumer.disconnect()
+  }
+
+  async connect(events: Array<FunctionConstructor>): Promise<void> {
+    await this.kafkaConsumer.connect()
+
+    for await (const event of events) {
+      await this.kafkaConsumer.subscribe({ topic: event.name, fromBeginning: false })
+    }
+
+    await this.kafkaConsumer.run({
+      eachMessage: async ({ topic, message }) => {
+        if (this.bridge) {
+          for (const Event of events) {
+            if (Event.name === topic) {
+              const parsedJson = parse(message.value!.toString())
+              const receivedEvent: IEvent = Object.assign(new Event(), parsedJson)
+
+              this.bridge.next(receivedEvent)
+            }
+          }
+        }
+      },
+    })
+  }
+
+  bridgeEventsTo<T extends IEvent>(subject: Subject<T>): any {
+    this.bridge = subject
+  }
+}

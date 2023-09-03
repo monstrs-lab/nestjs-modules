@@ -26,6 +26,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/nestjs-cqrs"\
     },\
     {\
+      "name": "@monstrs/nestjs-cqrs-kafka-events",\
+      "reference": "workspace:packages/nestjs-cqrs-kafka-events"\
+    },\
+    {\
       "name": "@monstrs/nestjs-gcs-client",\
       "reference": "workspace:packages/nestjs-gcs-client"\
     },\
@@ -72,9 +76,10 @@ const RAW_RUNTIME_STATE =
     ["@monstrs/nestjs-connectrpc", ["virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#workspace:packages/nestjs-connectrpc", "workspace:packages/nestjs-connectrpc"]],\
     ["@monstrs/nestjs-connectrpc-errors", ["workspace:packages/nestjs-connectrpc-errors"]],\
     ["@monstrs/nestjs-cqrs", ["workspace:packages/nestjs-cqrs"]],\
+    ["@monstrs/nestjs-cqrs-kafka-events", ["workspace:packages/nestjs-cqrs-kafka-events"]],\
     ["@monstrs/nestjs-gcs-client", ["workspace:packages/nestjs-gcs-client"]],\
     ["@monstrs/nestjs-graphql-redis-subscriptions", ["workspace:packages/nestjs-graphql-redis-subscriptions"]],\
-    ["@monstrs/nestjs-kafka", ["workspace:packages/nestjs-kafka"]],\
+    ["@monstrs/nestjs-kafka", ["virtual:45fcb8203f3901e7d4712f27957128f397bd54ea6f4d4ef483fe935a8db116db6b9df5e5b9c9b463c16e36c1f1a87e21dc540ab107f93a8f25c6c5dddcceb2f1#workspace:packages/nestjs-kafka", "workspace:packages/nestjs-kafka"]],\
     ["@monstrs/nestjs-logger", ["workspace:packages/nestjs-logger"]],\
     ["@monstrs/nestjs-microservices-registry", ["workspace:packages/nestjs-microservices-registry"]],\
     ["@monstrs/nestjs-mikro-orm-config", ["workspace:packages/nestjs-mikro-orm-config"]],\
@@ -3021,6 +3026,22 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
+    ["@monstrs/nestjs-cqrs-kafka-events", [\
+      ["workspace:packages/nestjs-cqrs-kafka-events", {\
+        "packageLocation": "./packages/nestjs-cqrs-kafka-events/",\
+        "packageDependencies": [\
+          ["@monstrs/nestjs-cqrs-kafka-events", "workspace:packages/nestjs-cqrs-kafka-events"],\
+          ["@monstrs/nestjs-kafka", "virtual:45fcb8203f3901e7d4712f27957128f397bd54ea6f4d4ef483fe935a8db116db6b9df5e5b9c9b463c16e36c1f1a87e21dc540ab107f93a8f25c6c5dddcceb2f1#workspace:packages/nestjs-kafka"],\
+          ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
+          ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
+          ["@nestjs/cqrs", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.2.5"],\
+          ["reflect-metadata", "npm:0.1.13"],\
+          ["rxjs", "npm:7.8.1"],\
+          ["telejson", "npm:7.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@monstrs/nestjs-gcs-client", [\
       ["workspace:packages/nestjs-gcs-client", {\
         "packageLocation": "./packages/nestjs-gcs-client/",\
@@ -3053,6 +3074,32 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/nestjs-kafka", [\
+      ["virtual:45fcb8203f3901e7d4712f27957128f397bd54ea6f4d4ef483fe935a8db116db6b9df5e5b9c9b463c16e36c1f1a87e21dc540ab107f93a8f25c6c5dddcceb2f1#workspace:packages/nestjs-kafka", {\
+        "packageLocation": "./.yarn/__virtual__/@monstrs-nestjs-kafka-virtual-6c09cb9f30/1/packages/nestjs-kafka/",\
+        "packageDependencies": [\
+          ["@monstrs/nestjs-kafka", "virtual:45fcb8203f3901e7d4712f27957128f397bd54ea6f4d4ef483fe935a8db116db6b9df5e5b9c9b463c16e36c1f1a87e21dc540ab107f93a8f25c6c5dddcceb2f1#workspace:packages/nestjs-kafka"],\
+          ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
+          ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
+          ["@types/nestjs__common", null],\
+          ["@types/nestjs__core", null],\
+          ["@types/reflect-metadata", null],\
+          ["@types/rxjs", null],\
+          ["kafkajs", "npm:2.2.4"],\
+          ["reflect-metadata", "npm:0.1.13"],\
+          ["rxjs", "npm:7.8.1"]\
+        ],\
+        "packagePeers": [\
+          "@nestjs/common",\
+          "@nestjs/core",\
+          "@types/nestjs__common",\
+          "@types/nestjs__core",\
+          "@types/reflect-metadata",\
+          "@types/rxjs",\
+          "reflect-metadata",\
+          "rxjs"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:packages/nestjs-kafka", {\
         "packageLocation": "./packages/nestjs-kafka/",\
         "packageDependencies": [\
@@ -12316,6 +12363,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/telejson-npm-7.1.0-d2cebb9d45-dc9a185d0e.zip/node_modules/telejson/",\
         "packageDependencies": [\
           ["telejson", "npm:7.1.0"],\
+          ["memoizerific", "npm:1.11.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.2.0", {\
+        "packageLocation": "./.yarn/cache/telejson-npm-7.2.0-055e0072e4-d26e6cc93e.zip/node_modules/telejson/",\
+        "packageDependencies": [\
+          ["telejson", "npm:7.2.0"],\
           ["memoizerific", "npm:1.11.3"]\
         ],\
         "linkType": "HARD"\

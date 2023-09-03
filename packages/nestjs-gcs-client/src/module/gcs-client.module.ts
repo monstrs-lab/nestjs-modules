@@ -1,13 +1,15 @@
-import type { DynamicModule }          from '@nestjs/common'
+import type { DynamicModule }               from '@nestjs/common'
+import type { Provider }                    from '@nestjs/common'
 
-import type { GcsClientModuleOptions } from './gcs-client.module.interfaces.js'
+import type { GcsClientModuleOptions }      from './gcs-client.module.interfaces.js'
+import type { GcsClientModuleAsyncOptions } from './gcs-client.module.interfaces.js'
+import type { GcsClientOptionsFactory }     from './gcs-client.module.interfaces.js'
 
-import { Module }                      from '@nestjs/common'
+import { Module }                           from '@nestjs/common'
 
-import { GcsClientConfigFactory }      from './gcs-client.config-factory.js'
-import { GcsClientFactory }            from './gcs-client.factory.js'
-import { GCS_CLIENT_API_ENDPOINT }     from './gcs-client.module.constants.js'
-import { GCS_CLIENT_KEY_FILENAME }     from './gcs-client.module.constants.js'
+import { GCS_CLIENT_MODULE_OPTIONS }        from './gcs-client.module.constants.js'
+import { GcsClientConfigFactory }           from './gcs-client.config-factory.js'
+import { GcsClientFactory }                 from './gcs-client.factory.js'
 
 @Module({})
 export class GcsClientModule {
@@ -18,15 +20,53 @@ export class GcsClientModule {
         GcsClientConfigFactory,
         GcsClientFactory,
         {
-          provide: GCS_CLIENT_API_ENDPOINT,
-          useValue: options.apiEndpoint,
-        },
-        {
-          provide: GCS_CLIENT_KEY_FILENAME,
-          useValue: options.keyFilename,
+          provide: GCS_CLIENT_MODULE_OPTIONS,
+          useValue: options,
         },
       ],
       exports: [GcsClientConfigFactory, GcsClientFactory],
+    }
+  }
+
+  static registerAsync(options: GcsClientModuleAsyncOptions): DynamicModule {
+    return {
+      module: GcsClientModule,
+      imports: options.imports || [],
+      providers: [...this.createAsyncProviders(options), GcsClientConfigFactory, GcsClientFactory],
+      exports: [GcsClientConfigFactory, GcsClientFactory],
+    }
+  }
+
+  private static createAsyncProviders(options: GcsClientModuleAsyncOptions): Array<Provider> {
+    if (options.useExisting || options.useFactory) {
+      return [this.createAsyncOptionsProvider(options)]
+    }
+
+    return [
+      this.createAsyncOptionsProvider(options),
+      {
+        provide: options.useClass!,
+        useClass: options.useClass!,
+      },
+    ]
+  }
+
+  private static createAsyncOptionsProvider(options: GcsClientModuleAsyncOptions): Provider {
+    if (options.useFactory) {
+      return {
+        provide: GCS_CLIENT_MODULE_OPTIONS,
+        useFactory: options.useFactory,
+        inject: options.inject || [],
+      }
+    }
+
+    return {
+      provide: GCS_CLIENT_MODULE_OPTIONS,
+      useFactory: (
+        optionsFactory: GcsClientOptionsFactory
+      ): GcsClientModuleOptions | Promise<GcsClientModuleOptions> =>
+        optionsFactory.createGcsClientOptions(),
+      inject: [options.useExisting! || options.useClass!],
     }
   }
 }

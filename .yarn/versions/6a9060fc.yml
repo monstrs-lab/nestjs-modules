@@ -1,0 +1,2 @@
+releases:
+  "@monstrs/nestjs-gcs-client": patch

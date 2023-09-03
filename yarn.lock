@@ -2244,7 +2244,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-cqrs-kafka-events@workspace:packages/nestjs-cqrs-kafka-events"
   dependencies:
-    "@monstrs/nestjs-kafka": "workspace:0.0.2"
+    "@monstrs/nestjs-kafka": "workspace:0.0.3"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/cqrs": "npm:^10.2.5"
@@ -2319,7 +2319,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-kafka@workspace:0.0.2, @monstrs/nestjs-kafka@workspace:packages/nestjs-kafka":
+"@monstrs/nestjs-kafka@workspace:0.0.3, @monstrs/nestjs-kafka@workspace:packages/nestjs-kafka":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kafka@workspace:packages/nestjs-kafka"
   dependencies:

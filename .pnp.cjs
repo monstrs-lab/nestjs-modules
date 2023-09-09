@@ -58,6 +58,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/nestjs-mikro-orm-request-context"\
     },\
     {\
+      "name": "@monstrs/nestjs-pipes",\
+      "reference": "workspace:packages/nestjs-pipes"\
+    },\
+    {\
       "name": "@monstrs/nestjs-redis",\
       "reference": "workspace:packages/nestjs-redis"\
     },\
@@ -84,6 +88,7 @@ const RAW_RUNTIME_STATE =
     ["@monstrs/nestjs-microservices-registry", ["workspace:packages/nestjs-microservices-registry"]],\
     ["@monstrs/nestjs-mikro-orm-config", ["workspace:packages/nestjs-mikro-orm-config"]],\
     ["@monstrs/nestjs-mikro-orm-request-context", ["workspace:packages/nestjs-mikro-orm-request-context"]],\
+    ["@monstrs/nestjs-pipes", ["workspace:packages/nestjs-pipes"]],\
     ["@monstrs/nestjs-redis", ["virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#workspace:packages/nestjs-redis", "workspace:packages/nestjs-redis"]],\
     ["@monstrs/nestjs-s3-client", ["workspace:packages/nestjs-s3-client"]],\
     ["@monstrs/nestjs-validation", ["virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#workspace:packages/nestjs-validation", "workspace:packages/nestjs-validation"]],\
@@ -3168,6 +3173,19 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@monstrs/nestjs-mikro-orm-request-context", "workspace:packages/nestjs-mikro-orm-request-context"],\
           ["@mikro-orm/core", "virtual:772124a4019391d0a8d54526fe5a0a08afa5cd7945aeca193f564ab19b9691d2a1b01144eefdde549bfac6809c43777b840f5239d5c3f33f6f34501e92c439ff#npm:5.7.12"],\
+          ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
+          ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
+          ["reflect-metadata", "npm:0.1.13"],\
+          ["rxjs", "npm:7.8.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@monstrs/nestjs-pipes", [\
+      ["workspace:packages/nestjs-pipes", {\
+        "packageLocation": "./packages/nestjs-pipes/",\
+        "packageDependencies": [\
+          ["@monstrs/nestjs-pipes", "workspace:packages/nestjs-pipes"],\
           ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
           ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
           ["reflect-metadata", "npm:0.1.13"],\

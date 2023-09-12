@@ -32,7 +32,7 @@ export async function* observableToAsyncGenerator<T>(observable: Observable<T>):
           yield item
         }
       } else {
-        // eslint-disable-next-line no-await-in-loop, no-promise-executor-return, no-loop-func
+        // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
         await new Promise((resolve) => setTimeout(resolve, 10))
       }
     }

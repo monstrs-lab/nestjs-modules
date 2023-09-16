@@ -1,8 +1,8 @@
+import type { Consumer }        from '@monstrs/nestjs-kafka'
+import type { Kafka }           from '@monstrs/nestjs-kafka'
 import type { OnModuleDestroy } from '@nestjs/common'
 import type { IEvent }          from '@nestjs/cqrs'
 import type { IMessageSource }  from '@nestjs/cqrs'
-import type { Consumer }        from '@monstrs/nestjs-kafka'
-import type { Kafka }           from '@monstrs/nestjs-kafka'
 import type { Subject }         from 'rxjs'
 
 import { parse }                from 'telejson'

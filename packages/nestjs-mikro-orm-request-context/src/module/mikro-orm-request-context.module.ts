@@ -1,8 +1,8 @@
 import type { DynamicModule }                from '@nestjs/common'
 
+import { MikroORM }                          from '@mikro-orm/core'
 import { Module }                            from '@nestjs/common'
 import { APP_INTERCEPTOR }                   from '@nestjs/core'
-import { MikroORM }                          from '@mikro-orm/core'
 
 import { MikroORMRequestContextInterceptor } from '../interceptors/index.js'
 

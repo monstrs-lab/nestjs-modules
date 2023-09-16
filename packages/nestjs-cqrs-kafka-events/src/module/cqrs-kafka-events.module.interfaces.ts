@@ -1,6 +1,6 @@
+import type { KafkaConfig }    from '@monstrs/nestjs-kafka'
 import type { ModuleMetadata } from '@nestjs/common/interfaces'
 import type { Type }           from '@nestjs/common/interfaces'
-import type { KafkaConfig }    from '@monstrs/nestjs-kafka'
 
 export interface CqrsKafkaEventsModuleOptions extends Partial<KafkaConfig> {
   groupId?: string

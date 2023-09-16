@@ -1,6 +1,6 @@
+import type { ServiceType }         from '@bufbuild/protobuf'
 import type { ConnectRouter }       from '@connectrpc/connect'
 import type { ServiceImpl }         from '@connectrpc/connect'
-import type { ServiceType }         from '@bufbuild/protobuf'
 import type { MessageHandler }      from '@nestjs/microservices'
 import type { Observable }          from 'rxjs'
 

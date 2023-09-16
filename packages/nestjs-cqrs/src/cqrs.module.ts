@@ -1,6 +1,6 @@
-import type { IEvent }                 from '@nestjs/cqrs'
 import type { DynamicModule }          from '@nestjs/common'
 import type { OnApplicationBootstrap } from '@nestjs/common'
+import type { IEvent }                 from '@nestjs/cqrs'
 
 import { Module }                      from '@nestjs/common'
 import { CommandBus }                  from '@nestjs/cqrs'

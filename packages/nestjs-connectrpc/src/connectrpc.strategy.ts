@@ -7,8 +7,8 @@ import type { ServerTypeOptions }       from './connectrpc.interfaces.js'
 import { Server }                       from '@nestjs/microservices'
 import { isString }                     from '@nestjs/common/utils/shared.utils.js'
 
-import { CustomMetadataStore }          from './custom-metadata.storage.js'
 import { HTTPServer }                   from './connectrpc.server.js'
+import { CustomMetadataStore }          from './custom-metadata.storage.js'
 import { addServicesToRouter }          from './router.utils.js'
 import { createServiceHandlersMap }     from './router.utils.js'
 

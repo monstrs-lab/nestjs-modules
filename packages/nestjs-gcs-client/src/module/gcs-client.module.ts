@@ -7,9 +7,9 @@ import type { GcsClientOptionsFactory }     from './gcs-client.module.interfaces
 
 import { Module }                           from '@nestjs/common'
 
-import { GCS_CLIENT_MODULE_OPTIONS }        from './gcs-client.module.constants.js'
 import { GcsClientConfigFactory }           from './gcs-client.config-factory.js'
 import { GcsClientFactory }                 from './gcs-client.factory.js'
+import { GCS_CLIENT_MODULE_OPTIONS }        from './gcs-client.module.constants.js'
 
 @Module({})
 export class GcsClientModule {

@@ -1,7 +1,7 @@
+import type { KafkaConfig }                       from '@monstrs/nestjs-kafka'
 import type { DynamicModule }                     from '@nestjs/common'
 import type { OnModuleInit }                      from '@nestjs/common'
 import type { Provider }                          from '@nestjs/common'
-import type { KafkaConfig }                       from '@monstrs/nestjs-kafka'
 
 import type { CqrsKafkaEventsModuleOptions }      from './cqrs-kafka-events.module.interfaces.js'
 import type { CqrsKafkaEventsModuleAsyncOptions } from './cqrs-kafka-events.module.interfaces.js'

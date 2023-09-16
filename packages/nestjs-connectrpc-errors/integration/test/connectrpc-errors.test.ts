@@ -1,9 +1,9 @@
 import type { PromiseClient }                from '@connectrpc/connect'
 import type { INestMicroservice }            from '@nestjs/common'
 
+import { ConnectError }                      from '@connectrpc/connect'
 import { ValidationError }                   from '@monstrs/protobuf-rpc'
 import { Test }                              from '@nestjs/testing'
-import { ConnectError }                      from '@connectrpc/connect'
 import { createPromiseClient }               from '@connectrpc/connect'
 import { createGrpcTransport }               from '@connectrpc/connect-node'
 import { afterAll }                          from '@jest/globals'

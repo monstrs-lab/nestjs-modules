@@ -1,8 +1,8 @@
-import type { MikroOrmModuleOptions } from '@mikro-orm/nestjs'
 import type { LoggerOptions }         from '@mikro-orm/core'
+import type { MikroOrmModuleOptions } from '@mikro-orm/nestjs'
 
-import { MikroORMLogger }             from '@monstrs/mikro-orm-logger'
 import { Logger }                     from '@monstrs/logger'
+import { MikroORMLogger }             from '@monstrs/mikro-orm-logger'
 
 export class MikroORMConfigBuilder {
   static build(options: Partial<MikroOrmModuleOptions>): MikroOrmModuleOptions {

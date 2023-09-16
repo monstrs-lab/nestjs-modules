@@ -1,9 +1,9 @@
-import type { OnModuleDestroy } from '@nestjs/common'
-import type { IEventPublisher } from '@nestjs/cqrs'
-import type { IEvent }          from '@nestjs/cqrs'
 import type { Kafka }           from '@monstrs/nestjs-kafka'
 import type { Producer }        from '@monstrs/nestjs-kafka'
 import type { RecordMetadata }  from '@monstrs/nestjs-kafka'
+import type { OnModuleDestroy } from '@nestjs/common'
+import type { IEventPublisher } from '@nestjs/cqrs'
+import type { IEvent }          from '@nestjs/cqrs'
 
 import { stringify }            from 'telejson'
 

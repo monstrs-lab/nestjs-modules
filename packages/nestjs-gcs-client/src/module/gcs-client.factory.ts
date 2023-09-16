@@ -1,7 +1,7 @@
 import type { GcsClientModuleOptions } from './gcs-client.module.interfaces.js'
 
-import { Injectable }                  from '@nestjs/common'
 import { Storage }                     from '@google-cloud/storage'
+import { Injectable }                  from '@nestjs/common'
 
 import { GcsClientConfigFactory }      from './gcs-client.config-factory.js'
 

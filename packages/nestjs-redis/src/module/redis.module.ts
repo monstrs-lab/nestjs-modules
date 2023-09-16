@@ -3,12 +3,12 @@ import type { RedisOptions }             from 'ioredis'
 
 import { Module }                        from '@nestjs/common'
 
+import { RedisConfigFactory }            from './redis.config-factory.js'
+import { RedisFactory }                  from './redis.factory.js'
 import { REDIS_MODULE_OPTIONS_HOST }     from './redis.module.constants.js'
 import { REDIS_MODULE_OPTIONS_PORT }     from './redis.module.constants.js'
 import { REDIS_MODULE_OPTIONS_PASSWORD } from './redis.module.constants.js'
 import { REDIS_MODULE_OPTIONS_USERNAME } from './redis.module.constants.js'
-import { RedisConfigFactory }            from './redis.config-factory.js'
-import { RedisFactory }                  from './redis.factory.js'
 
 @Module({})
 export class RedisModule {

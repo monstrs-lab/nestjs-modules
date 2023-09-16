@@ -7,9 +7,9 @@ import type { S3ClientOptionsFactory }     from './s3-client.module.interfaces.j
 
 import { Module }                          from '@nestjs/common'
 
-import { S3_CLIENT_MODULE_OPTIONS }        from './s3-client.module.constants.js'
 import { S3ClientConfigFactory }           from './s3-client.config-factory.js'
 import { S3ClientFactory }                 from './s3-client.factory.js'
+import { S3_CLIENT_MODULE_OPTIONS }        from './s3-client.module.constants.js'
 
 @Module({})
 export class S3ClientModule {

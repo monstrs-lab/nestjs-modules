@@ -9,8 +9,8 @@ import type { ServerInstance }       from './connectrpc.interfaces.js'
 
 import { connectNodeAdapter }        from '@connectrpc/connect-node'
 import * as http                     from 'http'
-import * as https                    from 'https'
 import * as http2                    from 'http2'
+import * as https                    from 'https'
 
 import { ServerProtocol }            from './connectrpc.interfaces.js'
 

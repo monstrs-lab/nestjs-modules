@@ -3,10 +3,10 @@ import type { Observable }            from 'rxjs'
 
 import { AssertionError }             from 'node:assert'
 
+import { DomainError }                from '@monstrs/core-errors'
+import { GuardErrors }                from '@monstrs/guard-clause'
 import { Catch }                      from '@nestjs/common'
 import { BaseRpcExceptionFilter }     from '@nestjs/microservices'
-import { GuardErrors }                from '@monstrs/guard-clause'
-import { DomainError }                from '@monstrs/core-errors'
 
 import { ValidationError }            from '@monstrs/nestjs-validation'
 

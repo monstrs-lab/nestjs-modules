@@ -2172,6 +2172,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/logger@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@monstrs/logger@npm:0.0.19"
+  dependencies:
+    "@opentelemetry/api": "npm:*"
+    "@opentelemetry/api-logs": "npm:^0.42.0"
+    "@opentelemetry/core": "npm:*"
+    "@opentelemetry/sdk-logs": "npm:^0.42.0"
+    on-exit-leak-free: "npm:^2.1.0"
+    sonic-boom: "npm:^3.3.0"
+  checksum: ee09b5638765e76c2ebfdfd78c9f6b6cf9b32b04110d73449d9a3107a19f5543e4103a82d2db2899670c40218b8308ff1ca527391e0089f02ea0f971bdd7a463
+  languageName: node
+  linkType: hard
+
 "@monstrs/mikro-orm-logger@npm:^0.0.12":
   version: 0.0.12
   resolution: "@monstrs/mikro-orm-logger@npm:0.0.12"
@@ -2332,8 +2346,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kafka@workspace:packages/nestjs-kafka"
   dependencies:
+    "@monstrs/logger": "npm:^0.0.19"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
+    camelcase: "npm:^8.0.0"
     kafkajs: "npm:^2.2.4"
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.8.1"
@@ -2791,6 +2807,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@opentelemetry/api-logs@npm:^0.42.0":
+  version: 0.42.0
+  resolution: "@opentelemetry/api-logs@npm:0.42.0"
+  dependencies:
+    "@opentelemetry/api": "npm:^1.0.0"
+  checksum: 935b322843c93c0698844717f6b97831e29b2951fb48a2e262448867042a53193ae8b8c7d0790e22619423a4faddc6aae8cd946311ca1d1e5f59235c85d77a5c
+  languageName: node
+  linkType: hard
+
 "@opentelemetry/api@npm:*, @opentelemetry/api@npm:^1.0.0":
   version: 1.4.1
   resolution: "@opentelemetry/api@npm:1.4.1"
@@ -2820,6 +2845,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@opentelemetry/core@npm:1.16.0":
+  version: 1.16.0
+  resolution: "@opentelemetry/core@npm:1.16.0"
+  dependencies:
+    "@opentelemetry/semantic-conventions": "npm:1.16.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.6.0"
+  checksum: cf885fd17ed2fbd9ffcbb840c215942bf56630d8362a10695d1528543a68d256916732c0216f3b7236e2a16e0dd2718b7cd119279199cb97712f5807c70f8667
+  languageName: node
+  linkType: hard
+
 "@opentelemetry/resources@npm:1.15.2":
   version: 1.15.2
   resolution: "@opentelemetry/resources@npm:1.15.2"
@@ -2829,6 +2865,18 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.5.0"
   checksum: 137a20a5cc2a71039919fc8a38b44c424c3fc4d7b413e2c8fd8db503244387f67cc971f4018bfc7b04fb9df6da2dea683ff9fb2775673f15bd63bca62cf92015
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/resources@npm:1.16.0":
+  version: 1.16.0
+  resolution: "@opentelemetry/resources@npm:1.16.0"
+  dependencies:
+    "@opentelemetry/core": "npm:1.16.0"
+    "@opentelemetry/semantic-conventions": "npm:1.16.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.6.0"
+  checksum: 688c04159cc143de98c0c268110661519b1b4ae691b2a402e963d72333f9dc12f6970892935077c0c29e984b7983302750e1d6510b4dfdfc978c5ec68dd6ad1c
   languageName: node
   linkType: hard
 
@@ -2870,6 +2918,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@opentelemetry/sdk-logs@npm:^0.42.0":
+  version: 0.42.0
+  resolution: "@opentelemetry/sdk-logs@npm:0.42.0"
+  dependencies:
+    "@opentelemetry/core": "npm:1.16.0"
+    "@opentelemetry/resources": "npm:1.16.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.4.0 <1.6.0"
+    "@opentelemetry/api-logs": ">=0.39.1"
+  checksum: 2cf3dfec067418914ab6d0dca54cf649f7e891fb907081520bf08283e0332fd60e7a2601e88de35199762b8e663f3824e7488b4b43cddc6c62f399e183ed8814
+  languageName: node
+  linkType: hard
+
 "@opentelemetry/semantic-conventions@npm:1.12.0":
   version: 1.12.0
   resolution: "@opentelemetry/semantic-conventions@npm:1.12.0"
@@ -2881,6 +2942,13 @@ __metadata:
   version: 1.15.2
   resolution: "@opentelemetry/semantic-conventions@npm:1.15.2"
   checksum: 84428c3703e5bd0fb8e3f99cad0a48feb2ac03fec025f3a5691745486a89e446ea8fdf701c334d9dbb70a0c9f7053af777105f4ebc58fb1c602edb9aef918b28
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/semantic-conventions@npm:1.16.0":
+  version: 1.16.0
+  resolution: "@opentelemetry/semantic-conventions@npm:1.16.0"
+  checksum: 5e4d205d534ec29358574ba601e9b875703b0cd34b95242584cc146deb70adc594a45d0355447973bcf6f14cecb7cd38b522d927486fdf7b3b982e917010efd7
   languageName: node
   linkType: hard
 
@@ -4831,6 +4899,13 @@ __metadata:
   version: 6.2.0
   resolution: "camelcase@npm:6.2.0"
   checksum: d9f403a6153394c5bc68ec9c2672df1d04f00a7847708be12641b483b936cbfaaf14d891f92bb0026184e03923be24acd15a0476761e1286eec484d68f615fe5
+  languageName: node
+  linkType: hard
+
+"camelcase@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "camelcase@npm:8.0.0"
+  checksum: 56c5fe072f0523c9908cdaac21d4a3b3fb0f608fb2e9ba90a60e792b95dd3bb3d1f3523873ab17d86d146e94171305f73ef619e2f538bd759675bc4a14b4bff3
   languageName: node
   linkType: hard
 

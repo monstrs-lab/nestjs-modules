@@ -12,8 +12,9 @@ import { REDIS_MODULE_OPTIONS_USERNAME } from './redis.module.constants.js'
 
 @Module({})
 export class RedisModule {
-  static register(options: RedisOptions = {}): DynamicModule {
+  static register(options: RedisOptions = {}, global: boolean = false): DynamicModule {
     return {
+      global,
       module: RedisModule,
       providers: [
         RedisConfigFactory,

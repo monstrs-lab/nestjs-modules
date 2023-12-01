@@ -3224,10 +3224,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@monstrs-nestjs-redis-virtual-8b047ba2e0/1/packages/nestjs-redis/",\
         "packageDependencies": [\
           ["@monstrs/nestjs-redis", "virtual:2d6ae1d72e1b78113537c175edcc591c5b6931335b984b698ebfea1762682a2d16c292f37a5b002d7cb05ae4e74b39f2992174189e5ba0a5170d7d3d05b329c2#workspace:packages/nestjs-redis"],\
-          ["@nestjs/bull", null],\
           ["@nestjs/common", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:10.0.5"],\
           ["@nestjs/core", "virtual:2d5f4724f46c2b0fd9d4a9d129d16fc5628195e2ef66544d3e92c76590ec064b2cc513c804107abf9a8b3b0e112e305f5959eeece2b705fa232d87b7fdc8a08f#npm:10.0.5"],\
-          ["@types/nestjs__bull", null],\
           ["@types/nestjs__common", null],\
           ["@types/nestjs__core", null],\
           ["@types/reflect-metadata", null],\
@@ -3237,10 +3235,8 @@ const RAW_RUNTIME_STATE =
           ["rxjs", "npm:7.8.1"]\
         ],\
         "packagePeers": [\
-          "@nestjs/bull",\
           "@nestjs/common",\
           "@nestjs/core",\
-          "@types/nestjs__bull",\
           "@types/nestjs__common",\
           "@types/nestjs__core",\
           "@types/reflect-metadata",\

@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.18",
+    "@monstrs/tools-runtime": "^0.2.19",
     "@types/node": "^20.3.3",
     "typescript": "^5.3.3"
   },

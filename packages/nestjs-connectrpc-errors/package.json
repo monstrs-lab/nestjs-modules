@@ -53,7 +53,7 @@
     "@nestjs/microservices": "^10",
     "class-transformer": "^0.5",
     "class-validator": "^0.14",
-    "reflect-metadata": "^0.1",
+    "reflect-metadata": "^0.2",
     "rxjs": "^7"
   },
   "publishConfig": {

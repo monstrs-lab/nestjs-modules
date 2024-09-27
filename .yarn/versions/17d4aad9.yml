@@ -1,0 +1,15 @@
+releases:
+  "@monstrs/nestjs-connectrpc-errors": patch
+  "@monstrs/nestjs-cqrs": patch
+  "@monstrs/nestjs-cqrs-kafka-events": patch
+  "@monstrs/nestjs-gcs-client": patch
+  "@monstrs/nestjs-graphql-redis-subscriptions": patch
+  "@monstrs/nestjs-kafka": patch
+  "@monstrs/nestjs-logger": patch
+  "@monstrs/nestjs-microservices-registry": patch
+  "@monstrs/nestjs-mikro-orm-config": patch
+  "@monstrs/nestjs-mikro-orm-request-context": patch
+  "@monstrs/nestjs-pipes": patch
+  "@monstrs/nestjs-redis": patch
+  "@monstrs/nestjs-s3-client": patch
+  "@monstrs/nestjs-validation": patch

@@ -2268,7 +2268,7 @@ __metadata:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/cqrs": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2286,7 +2286,7 @@ __metadata:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/cqrs": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2303,7 +2303,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2324,7 +2324,7 @@ __metadata:
     "@nestjs/bull": ^0.6
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   peerDependenciesMeta:
     graphql:
@@ -2346,7 +2346,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2367,7 +2367,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2384,7 +2384,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2406,7 +2406,7 @@ __metadata:
     "@mikro-orm/nestjs": ^5
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2424,7 +2424,7 @@ __metadata:
     "@mikro-orm/core": ^5
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2440,7 +2440,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2457,7 +2457,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2477,7 +2477,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10
     "@nestjs/core": ^10
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft
@@ -2497,7 +2497,7 @@ __metadata:
     "@nestjs/core": ^10
     class-transformer: 0.5
     class-validator: ^0.14
-    reflect-metadata: ^0.1
+    reflect-metadata: ^0.2
     rxjs: ^7
   languageName: unknown
   linkType: soft

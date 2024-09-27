@@ -2199,8 +2199,8 @@ __metadata:
     "@jest/globals": "npm:^29.6.0"
     "@monstrs/core-errors": "npm:^0.1.1"
     "@monstrs/guard-clause": "npm:^0.0.8"
-    "@monstrs/nestjs-connectrpc": "workspace:0.0.8"
-    "@monstrs/nestjs-validation": "workspace:0.1.4"
+    "@monstrs/nestjs-connectrpc": "workspace:0.0.9"
+    "@monstrs/nestjs-validation": "workspace:0.1.5"
     "@monstrs/protobuf-rpc": "npm:^0.0.8"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
@@ -2216,7 +2216,7 @@ __metadata:
   peerDependencies:
     "@bufbuild/protobuf": ^1
     "@connectrpc/connect": ^1
-    "@monstrs/nestjs-validation": "workspace:0.1.4"
+    "@monstrs/nestjs-validation": "workspace:0.1.5"
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/microservices": ^10
@@ -2227,7 +2227,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-connectrpc@workspace:0.0.8, @monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc":
+"@monstrs/nestjs-connectrpc@workspace:0.0.9, @monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc"
   dependencies:
@@ -2257,7 +2257,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-cqrs-kafka-events@workspace:packages/nestjs-cqrs-kafka-events"
   dependencies:
-    "@monstrs/nestjs-kafka": "workspace:0.0.7"
+    "@monstrs/nestjs-kafka": "workspace:0.0.8"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/cqrs": "npm:^10.2.5"
@@ -2312,7 +2312,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-graphql-redis-subscriptions@workspace:packages/nestjs-graphql-redis-subscriptions"
   dependencies:
-    "@monstrs/nestjs-redis": "workspace:0.1.6"
+    "@monstrs/nestjs-redis": "workspace:0.1.7"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     graphql-redis-subscriptions: "npm:^2.6.0"
@@ -2332,7 +2332,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-kafka@workspace:0.0.7, @monstrs/nestjs-kafka@workspace:packages/nestjs-kafka":
+"@monstrs/nestjs-kafka@workspace:0.0.8, @monstrs/nestjs-kafka@workspace:packages/nestjs-kafka":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kafka@workspace:packages/nestjs-kafka"
   dependencies:
@@ -2445,7 +2445,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-redis@workspace:0.1.6, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
+"@monstrs/nestjs-redis@workspace:0.1.7, @monstrs/nestjs-redis@workspace:packages/nestjs-redis":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-redis@workspace:packages/nestjs-redis"
   dependencies:
@@ -2482,7 +2482,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/nestjs-validation@workspace:0.1.4, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
+"@monstrs/nestjs-validation@workspace:0.1.5, @monstrs/nestjs-validation@workspace:packages/nestjs-validation":
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-validation@workspace:packages/nestjs-validation"
   dependencies:

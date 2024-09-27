@@ -17,15 +17,15 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "^0.0.17",
-    "@monstrs/mikro-orm-logger": "^0.0.12"
+    "@monstrs/logger": "^0.0.20",
+    "@monstrs/mikro-orm-logger": "^0.0.16"
   },
   "devDependencies": {
     "@mikro-orm/core": "^5.7.12",
     "@mikro-orm/nestjs": "^5.2.0",
     "@nestjs/common": "^10.0.5",
     "@nestjs/core": "^10.0.5",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
   "peerDependencies": {

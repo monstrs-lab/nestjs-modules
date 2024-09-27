@@ -1253,58 +1253,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-darwin-arm64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-darwin-arm64@npm:1.26.1"
+"@bufbuild/buf-darwin-arm64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-darwin-arm64@npm:1.42.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-darwin-x64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-darwin-x64@npm:1.26.1"
+"@bufbuild/buf-darwin-x64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-darwin-x64@npm:1.42.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-linux-aarch64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-linux-aarch64@npm:1.26.1"
+"@bufbuild/buf-linux-aarch64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-linux-aarch64@npm:1.42.0"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-linux-x64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-linux-x64@npm:1.26.1"
+"@bufbuild/buf-linux-x64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-linux-x64@npm:1.42.0"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-win32-arm64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-win32-arm64@npm:1.26.1"
+"@bufbuild/buf-win32-arm64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-win32-arm64@npm:1.42.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf-win32-x64@npm:1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf-win32-x64@npm:1.26.1"
+"@bufbuild/buf-win32-x64@npm:1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf-win32-x64@npm:1.42.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@bufbuild/buf@npm:^1.26.1":
-  version: 1.26.1
-  resolution: "@bufbuild/buf@npm:1.26.1"
+"@bufbuild/buf@npm:^1.42.0":
+  version: 1.42.0
+  resolution: "@bufbuild/buf@npm:1.42.0"
   dependencies:
-    "@bufbuild/buf-darwin-arm64": "npm:1.26.1"
-    "@bufbuild/buf-darwin-x64": "npm:1.26.1"
-    "@bufbuild/buf-linux-aarch64": "npm:1.26.1"
-    "@bufbuild/buf-linux-x64": "npm:1.26.1"
-    "@bufbuild/buf-win32-arm64": "npm:1.26.1"
-    "@bufbuild/buf-win32-x64": "npm:1.26.1"
+    "@bufbuild/buf-darwin-arm64": "npm:1.42.0"
+    "@bufbuild/buf-darwin-x64": "npm:1.42.0"
+    "@bufbuild/buf-linux-aarch64": "npm:1.42.0"
+    "@bufbuild/buf-linux-x64": "npm:1.42.0"
+    "@bufbuild/buf-win32-arm64": "npm:1.42.0"
+    "@bufbuild/buf-win32-x64": "npm:1.42.0"
   dependenciesMeta:
     "@bufbuild/buf-darwin-arm64":
       optional: true
@@ -1322,74 +1322,75 @@ __metadata:
     buf: bin/buf
     protoc-gen-buf-breaking: bin/protoc-gen-buf-breaking
     protoc-gen-buf-lint: bin/protoc-gen-buf-lint
-  checksum: 90e2ca597e7821a4b6bc58a84fa0583d73a3a7d37e13f2f7db688f566c8d29aba10ab5ce07b217917774d65f62bcc57a2984d7c180e24b6d1b025f16e7c63d69
+  checksum: 436f567acca04934fd24e9a3593f72869b16b518fa827b80d3ef26518cd9f74063dbdf4bbc00829597f324898d8c7801aac2ca2e0559440ab7d78b6f511d60b6
   languageName: node
   linkType: hard
 
-"@bufbuild/protobuf@npm:1.3.1, @bufbuild/protobuf@npm:^1.2.1, @bufbuild/protobuf@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@bufbuild/protobuf@npm:1.3.1"
-  checksum: a3bcdf15aceca55adbeea1180069d9ddd5bea82293f93c906672c2f5bda776b4999cec3b9d7822cd95b24e51d1f6b5cc4fa7c7eb01a6c6edf3f25c833549daf5
+"@bufbuild/protobuf@npm:1.10.0, @bufbuild/protobuf@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protobuf@npm:1.10.0"
+  checksum: 5487b9c2e63846d0e3bde4d025cc77ae44a22166a5d6c184df0da5581e1ab6d66dd115af0ccad814576dcd011bb1b93989fb0ac1eb4ae452979bb8b186693ba0
   languageName: node
   linkType: hard
 
-"@bufbuild/protoc-gen-es@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@bufbuild/protoc-gen-es@npm:1.3.1"
+"@bufbuild/protoc-gen-es@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protoc-gen-es@npm:1.10.0"
   dependencies:
-    "@bufbuild/protoplugin": "npm:1.3.1"
+    "@bufbuild/protobuf": "npm:^1.10.0"
+    "@bufbuild/protoplugin": "npm:1.10.0"
   peerDependencies:
-    "@bufbuild/protobuf": 1.3.1
+    "@bufbuild/protobuf": 1.10.0
   peerDependenciesMeta:
     "@bufbuild/protobuf":
       optional: true
   bin:
     protoc-gen-es: bin/protoc-gen-es
-  checksum: 32ab8dd3c781b8e590f1c586e5b3704afd51f2172b1520af45667cddd68a63b09524bd9571ae4f7c883fec887bea05807bb5e2a6294a8900e079213a213117bd
+  checksum: d5f53df70a6fc4d13b47ff56244318313de1a24a61aa5a7dd82efc4b5baa031c6bf1aface6a3f5b28a935ab5802de28fbe5c8bbc4d16d7d245fb4918cfe263df
   languageName: node
   linkType: hard
 
-"@bufbuild/protoplugin@npm:1.3.1, @bufbuild/protoplugin@npm:^1.2.1":
-  version: 1.3.1
-  resolution: "@bufbuild/protoplugin@npm:1.3.1"
+"@bufbuild/protoplugin@npm:1.10.0, @bufbuild/protoplugin@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protoplugin@npm:1.10.0"
   dependencies:
-    "@bufbuild/protobuf": "npm:1.3.1"
+    "@bufbuild/protobuf": "npm:1.10.0"
     "@typescript/vfs": "npm:^1.4.0"
     typescript: "npm:4.5.2"
-  checksum: 6358c72c4f96ab3f1a8e32598b534ddc8798fe36e73c5d68fc4eb342e1e09d8a7409a7eb04b35b4468da1d1bd9726a331332bcc78957c95216db9986cc236789
+  checksum: 8080e75d3c2b122f763ea4b1f039c40d7ea9a5e9054c3b3c55cabe4d2949eb18b6ebb45fcc23d2463a3ea22dfaeda8c91e82cac700a957ca75cf002f231f3d43
   languageName: node
   linkType: hard
 
-"@connectrpc/connect-node@npm:^0.13.2":
-  version: 0.13.2
-  resolution: "@connectrpc/connect-node@npm:0.13.2"
+"@connectrpc/connect-node@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/connect-node@npm:1.5.0"
   dependencies:
-    "@connectrpc/connect": "npm:0.13.2"
-    undici: "npm:^5.23.0"
+    undici: "npm:^5.28.4"
   peerDependencies:
-    "@bufbuild/protobuf": ^1.2.1
-  checksum: cfa3fc0e38649e36aadfbfaabac8d95d2632c674206854bb9fac36e3711494661d560f616e9f93f37bf35be0a3a6e9a1cacd539585a1533ecd072471ec7bdf8e
+    "@bufbuild/protobuf": ^1.10.0
+    "@connectrpc/connect": 1.5.0
+  checksum: 4124a8ece0fcb26290d5f0fe7e39cdabde19efe091d843528b7439c412ff313dda718762cbbd93043783f7c6ee4ea8b0c2afc0e2813e5bd69c518ba1ee0ea9f0
   languageName: node
   linkType: hard
 
-"@connectrpc/connect@npm:0.13.2, @connectrpc/connect@npm:^0.13.2":
-  version: 0.13.2
-  resolution: "@connectrpc/connect@npm:0.13.2"
+"@connectrpc/connect@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/connect@npm:1.5.0"
   peerDependencies:
-    "@bufbuild/protobuf": ^1.2.1
-  checksum: e53516bcf1e7167aa1c2ed3dce53ac799516bbddb7da801a673850f79874689ebd530bed05ebabe65ede907f0570c683df9765d37d9000246cee38706221c19c
+    "@bufbuild/protobuf": ^1.10.0
+  checksum: 8a9a37366b7c5373d689e43cf30c059960daf601a7aade4262b2a6eec35763ea972c5350a609126e69c138e9559796cea7795cd1a276bee7fb342588339864f0
   languageName: node
   linkType: hard
 
-"@connectrpc/protoc-gen-connect-es@npm:^0.13.2":
-  version: 0.13.2
-  resolution: "@connectrpc/protoc-gen-connect-es@npm:0.13.2"
+"@connectrpc/protoc-gen-connect-es@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@connectrpc/protoc-gen-connect-es@npm:1.5.0"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.2.1"
-    "@bufbuild/protoplugin": "npm:^1.2.1"
+    "@bufbuild/protobuf": "npm:^1.10.0"
+    "@bufbuild/protoplugin": "npm:^1.10.0"
   peerDependencies:
-    "@bufbuild/protoc-gen-es": ^1.2.1
-    "@connectrpc/connect": 0.13.2
+    "@bufbuild/protoc-gen-es": ^1.10.0
+    "@connectrpc/connect": 1.5.0
   peerDependenciesMeta:
     "@bufbuild/protoc-gen-es":
       optional: true
@@ -1397,7 +1398,7 @@ __metadata:
       optional: true
   bin:
     protoc-gen-connect-es: bin/protoc-gen-connect-es
-  checksum: a2f99ad26d6a12401ec38058f8ff24db2ea19179e0085f1778334a5725d145d7af2011ccb522f238c6492d28380d705bf71cb5ba8de98d2518fe7338475833a7
+  checksum: 6a6921296fac857697fffe0e3adef3a739a69c1ef0457967d9cc5851ec24ca3525bcb088ea6c717f756e389731e1691948564e7c9979958d05720249e6b97849
   languageName: node
   linkType: hard
 
@@ -1478,6 +1479,13 @@ __metadata:
   version: 8.56.0
   resolution: "@eslint/js@npm:8.56.0"
   checksum: 60b3a1cf240e2479cec9742424224465dc50e46d781da1b7f5ef240501b2d1202c225bd456207faac4b34a64f4765833345bc4ddffd00395e1db40fa8c426f5a
+  languageName: node
+  linkType: hard
+
+"@fastify/busboy@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "@fastify/busboy@npm:2.1.1"
+  checksum: 6f8027a8cba7f8f7b736718b013f5a38c0476eea67034c94a0d3c375e2b114366ad4419e6a6fa7ffc2ef9c6d3e0435d76dd584a7a1cbac23962fda7650b579e3
   languageName: node
   linkType: hard
 
@@ -2127,20 +2135,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/core-errors@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@monstrs/core-errors@npm:0.0.2"
-  checksum: a1fb9b8388b5b90d8f80ee0bf8ace2e4d655320070af43d541466afef3705768ff985ebbedfc4caa281d589e865fb164792a49d7a0568e731856b5f8614d0a67
+"@monstrs/core-errors@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@monstrs/core-errors@npm:0.1.1"
+  checksum: a38ede88143272326f42726f062e9796734371e23a0a6173d01fdb6acb2b6a6655e547c649aebd585499397fd9bfd5f254308487b7322694a3d34e3c2b91f947
   languageName: node
   linkType: hard
 
-"@monstrs/guard-clause@npm:^0.0.7":
-  version: 0.0.7
-  resolution: "@monstrs/guard-clause@npm:0.0.7"
+"@monstrs/guard-clause@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "@monstrs/guard-clause@npm:0.0.8"
   dependencies:
     ajv: "npm:^8.12.0"
     validator: "npm:^13.9.0"
-  checksum: fa66ef508da461b8923ba4ba4247fad39bd5153c4e029c443116c2ce4b3d0d9d053250568858381078d0dd7650ad9868f6c6bd5aecff894b2f61c224118a85cf
+  checksum: 42cfec61c7d301da20781c6cbb87bbf68d887e287fc75b7f494ac018f297837a7074eafdd340d5f422a44c30a4eb0ab24c67058ba6b6aa02aee4ab7f2bd305f3
   languageName: node
   linkType: hard
 
@@ -2153,37 +2161,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "@monstrs/logger@npm:0.0.16"
-  dependencies:
-    "@opentelemetry/api": "npm:*"
-    "@opentelemetry/api-logs": "npm:^0.38.0"
-    "@opentelemetry/core": "npm:*"
-    "@opentelemetry/sdk-logs": "npm:^0.37.0"
-    on-exit-leak-free: "npm:^2.1.0"
-    sonic-boom: "npm:^3.3.0"
-  checksum: 86718fb8b7363464b542d67d7cbaef229d5f55e30e28d862dca483dd79f13e57c1263f392850e93faddc967099242cb8ecaa5ea01bee53b66785d95f9844adf4
-  languageName: node
-  linkType: hard
-
-"@monstrs/logger@npm:^0.0.17":
-  version: 0.0.17
-  resolution: "@monstrs/logger@npm:0.0.17"
-  dependencies:
-    "@opentelemetry/api": "npm:*"
-    "@opentelemetry/api-logs": "npm:^0.41.0"
-    "@opentelemetry/core": "npm:*"
-    "@opentelemetry/sdk-logs": "npm:^0.41.0"
-    on-exit-leak-free: "npm:^2.1.0"
-    sonic-boom: "npm:^3.3.0"
-  checksum: c570924728f2376ebc5dd29bfa311f1b8a4ea64f80d4893f80471f7d3a112d78148921bdf202f1a7598ebecb98939ff3c3b8a87ae75092c82bb05a652e5f9ccd
-  languageName: node
-  linkType: hard
-
-"@monstrs/logger@npm:^0.0.19":
-  version: 0.0.19
-  resolution: "@monstrs/logger@npm:0.0.19"
+"@monstrs/logger@npm:^0.0.20":
+  version: 0.0.20
+  resolution: "@monstrs/logger@npm:0.0.20"
   dependencies:
     "@opentelemetry/api": "npm:*"
     "@opentelemetry/api-logs": "npm:^0.42.0"
@@ -2191,18 +2171,18 @@ __metadata:
     "@opentelemetry/sdk-logs": "npm:^0.42.0"
     on-exit-leak-free: "npm:^2.1.0"
     sonic-boom: "npm:^3.3.0"
-  checksum: ee09b5638765e76c2ebfdfd78c9f6b6cf9b32b04110d73449d9a3107a19f5543e4103a82d2db2899670c40218b8308ff1ca527391e0089f02ea0f971bdd7a463
+  checksum: 327c9e03f6534c9a698cd50ad16e784c52ec70655a62c072ff718174472c096796c652bc35fd74ece3dbb40142c9bac4a65f664d04391397cd86f2a2b9336875
   languageName: node
   linkType: hard
 
-"@monstrs/mikro-orm-logger@npm:^0.0.12":
-  version: 0.0.12
-  resolution: "@monstrs/mikro-orm-logger@npm:0.0.12"
+"@monstrs/mikro-orm-logger@npm:^0.0.16":
+  version: 0.0.16
+  resolution: "@monstrs/mikro-orm-logger@npm:0.0.16"
   dependencies:
-    "@monstrs/logger": "npm:^0.0.16"
+    "@monstrs/logger": "npm:^0.0.20"
   peerDependencies:
     "@mikro-orm/core": ^5
-  checksum: bc05beab25b251de6625f6f46a8592bedeed37d3c5cca3bca27d99dfaaedd8c508e05d26b4eb6dace7ffa42f7e598485c8fd0dc7024f00c4fcae889c1363ae6c
+  checksum: 03b67b89b05e9e9ab9e52a2149c388f5fac1561dcf9fede66d94be6b29aa0c5d78271b7cfa02dd6b4dc40c008ea9256e4c88c05e370f1f260ee974ff07c83236
   languageName: node
   linkType: hard
 
@@ -2210,30 +2190,31 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-connectrpc-errors@workspace:packages/nestjs-connectrpc-errors"
   dependencies:
-    "@bufbuild/buf": "npm:^1.26.1"
-    "@bufbuild/protobuf": "npm:^1.3.1"
-    "@bufbuild/protoc-gen-es": "npm:^1.3.1"
-    "@connectrpc/connect": "npm:^0.13.2"
-    "@connectrpc/connect-node": "npm:^0.13.2"
-    "@connectrpc/protoc-gen-connect-es": "npm:^0.13.2"
+    "@bufbuild/buf": "npm:^1.42.0"
+    "@bufbuild/protobuf": "npm:^1.10.0"
+    "@bufbuild/protoc-gen-es": "npm:^1.10.0"
+    "@connectrpc/connect": "npm:^1.5.0"
+    "@connectrpc/connect-node": "npm:^1.5.0"
+    "@connectrpc/protoc-gen-connect-es": "npm:^1.5.0"
     "@jest/globals": "npm:^29.6.0"
-    "@monstrs/core-errors": "npm:^0.0.2"
-    "@monstrs/guard-clause": "npm:^0.0.7"
+    "@monstrs/core-errors": "npm:^0.1.1"
+    "@monstrs/guard-clause": "npm:^0.0.8"
     "@monstrs/nestjs-connectrpc": "workspace:0.0.3"
     "@monstrs/nestjs-validation": "workspace:0.1.1"
-    "@monstrs/protobuf-rpc": "npm:^0.0.6"
+    "@monstrs/protobuf-rpc": "npm:^0.0.8"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/microservices": "npm:^10.0.5"
     "@nestjs/platform-express": "npm:^10.0.5"
     "@nestjs/testing": "npm:^10.0.5"
     class-transformer: "npm:^0.5.1"
-    class-validator: "npm:^0.14.0"
-    get-port: "npm:^7.0.0"
-    reflect-metadata: "npm:^0.1.13"
+    class-validator: "npm:^0.14.1"
+    get-port: "npm:^7.1.0"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
     supertest: "npm:^6.3.3"
   peerDependencies:
+    "@bufbuild/protobuf": ^1
     "@connectrpc/connect": ^0.13
     "@monstrs/nestjs-validation": "workspace:0.1.1"
     "@nestjs/common": ^10
@@ -2250,19 +2231,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-connectrpc@workspace:packages/nestjs-connectrpc"
   dependencies:
-    "@bufbuild/protobuf": "npm:^1.3.1"
-    "@connectrpc/connect": "npm:^0.13.2"
-    "@connectrpc/connect-node": "npm:^0.13.2"
+    "@bufbuild/protobuf": "npm:^1.10.0"
+    "@connectrpc/connect": "npm:^1.5.0"
+    "@connectrpc/connect-node": "npm:^1.5.0"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/microservices": "npm:^10.2.4"
     "@nestjs/platform-express": "npm:^10.2.4"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@bufbuild/protobuf": ^1
-    "@connectrpc/connect": ^0.13
-    "@connectrpc/connect-node": ^0.13
+    "@connectrpc/connect": ^1
+    "@connectrpc/connect-node": ^1
     "@nestjs/common": ^10
     "@nestjs/core": ^10
     "@nestjs/microservices": ^10
@@ -2280,7 +2261,7 @@ __metadata:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/cqrs": "npm:^10.2.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
     telejson: "npm:^7.2.0"
   peerDependencies:
@@ -2299,7 +2280,7 @@ __metadata:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/cqrs": "npm:^10.2.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2317,7 +2298,7 @@ __metadata:
     "@google-cloud/storage": "npm:^7.0.1"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2336,7 +2317,7 @@ __metadata:
     "@nestjs/core": "npm:^10.0.5"
     graphql-redis-subscriptions: "npm:^2.6.0"
     graphql-subscriptions: "npm:^2.0.0"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
     telejson: "npm:^7.1.0"
   peerDependencies:
@@ -2355,12 +2336,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-kafka@workspace:packages/nestjs-kafka"
   dependencies:
-    "@monstrs/logger": "npm:^0.0.19"
+    "@monstrs/logger": "npm:^0.0.20"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     camelcase: "npm:^8.0.0"
     kafkajs: "npm:^2.2.4"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2374,13 +2355,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/nestjs-logger@workspace:packages/nestjs-logger"
   dependencies:
-    "@monstrs/logger": "npm:^0.0.17"
+    "@monstrs/logger": "npm:^0.0.20"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/testing": "npm:^10.0.5"
     "@types/node": "npm:^20.3.3"
-    get-port: "npm:^7.0.0"
-    reflect-metadata: "npm:0.1.13"
+    get-port: "npm:^7.1.0"
+    reflect-metadata: "npm:0.2.2"
     rxjs: "npm:^7.8.1"
     supertest: "npm:^6.3.3"
   peerDependencies:
@@ -2398,7 +2379,7 @@ __metadata:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     fast-hash-code: "npm:^2.1.0"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2414,11 +2395,11 @@ __metadata:
   dependencies:
     "@mikro-orm/core": "npm:^5.7.12"
     "@mikro-orm/nestjs": "npm:^5.2.0"
-    "@monstrs/logger": "npm:^0.0.17"
-    "@monstrs/mikro-orm-logger": "npm:^0.0.12"
+    "@monstrs/logger": "npm:^0.0.20"
+    "@monstrs/mikro-orm-logger": "npm:^0.0.16"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@mikro-orm/core": ^5
@@ -2437,7 +2418,7 @@ __metadata:
     "@mikro-orm/core": "npm:^5.7.12"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@mikro-orm/core": ^5
@@ -2454,7 +2435,7 @@ __metadata:
   dependencies:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2471,7 +2452,7 @@ __metadata:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     ioredis: "npm:^5.3.2"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2491,7 +2472,7 @@ __metadata:
     "@aws-sdk/types": "npm:^3.357.0"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
-    reflect-metadata: "npm:^0.1.13"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2508,8 +2489,8 @@ __metadata:
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     class-transformer: "npm:0.5.1"
-    class-validator: "npm:^0.14.0"
-    reflect-metadata: "npm:^0.1.13"
+    class-validator: "npm:^0.14.1"
+    reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
   peerDependencies:
     "@nestjs/common": ^10
@@ -2521,12 +2502,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/protobuf-rpc@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@monstrs/protobuf-rpc@npm:0.0.6"
+"@monstrs/protobuf-rpc@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "@monstrs/protobuf-rpc@npm:0.0.8"
   peerDependencies:
     "@bufbuild/protobuf": "*"
-  checksum: fe03f9063078af53b9254b574f02634709df37dfaf08b3937acccf8fc72fc1498b1e21b07ce6366cb3fb098427feaa2b228966de4729a9d30850bdc39546278e
+  checksum: 32f7092f5da3b092537abb11b165aea81045782793c303d2c1840f5c0623befd10fe6a781f14e119f6be59197167cf6957150e7a1c64b3fdb454ad33b0cf4709
   languageName: node
   linkType: hard
 
@@ -2797,24 +2778,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api-logs@npm:^0.38.0":
-  version: 0.38.0
-  resolution: "@opentelemetry/api-logs@npm:0.38.0"
-  dependencies:
-    "@opentelemetry/api": "npm:^1.0.0"
-  checksum: 7afae2502e3f3fafdff153c9650240d00320608a89cba967b07f9135ea40e5d401b3ca8fa6ab262bd5b15e4ef55c4ad0376b79ef94c75b5d5e17d9618921d49f
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/api-logs@npm:^0.41.0":
-  version: 0.41.2
-  resolution: "@opentelemetry/api-logs@npm:0.41.2"
-  dependencies:
-    "@opentelemetry/api": "npm:^1.0.0"
-  checksum: 582f9ad3f55f5a8167c70f6388ef857727dea2c4b1b287ab803586832cb2e5717b7ea05d54118a05203de80dc79550710edbebc59bfda4e5b5901dbf8f9daaaf
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/api-logs@npm:^0.42.0":
   version: 0.42.0
   resolution: "@opentelemetry/api-logs@npm:0.42.0"
@@ -2831,7 +2794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/core@npm:*, @opentelemetry/core@npm:1.12.0, @opentelemetry/core@npm:^1.11.0":
+"@opentelemetry/core@npm:*":
   version: 1.12.0
   resolution: "@opentelemetry/core@npm:1.12.0"
   dependencies:
@@ -2839,17 +2802,6 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.5.0"
   checksum: 2fa217d4aaa6c31be4b672c814fe25d4e14eff6429a78c28190f87ecf2d2c47c3b0b3e20e53f3f2724c068dbb6c7e87deb4008bb3855d7e2687f78d12247cee7
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/core@npm:1.15.2":
-  version: 1.15.2
-  resolution: "@opentelemetry/core@npm:1.15.2"
-  dependencies:
-    "@opentelemetry/semantic-conventions": "npm:1.15.2"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.5.0"
-  checksum: 330f5905edec32f965151f2b314ae73344ac28672ea2c41ac41687413ac91dcd5c7ab99590dac9870ce189bb3d2a73a780c98e7bf1c8826c4c197a5698db96a4
   languageName: node
   linkType: hard
 
@@ -2864,18 +2816,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/resources@npm:1.15.2":
-  version: 1.15.2
-  resolution: "@opentelemetry/resources@npm:1.15.2"
-  dependencies:
-    "@opentelemetry/core": "npm:1.15.2"
-    "@opentelemetry/semantic-conventions": "npm:1.15.2"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.5.0"
-  checksum: 137a20a5cc2a71039919fc8a38b44c424c3fc4d7b413e2c8fd8db503244387f67cc971f4018bfc7b04fb9df6da2dea683ff9fb2775673f15bd63bca62cf92015
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/resources@npm:1.16.0":
   version: 1.16.0
   resolution: "@opentelemetry/resources@npm:1.16.0"
@@ -2885,44 +2825,6 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.6.0"
   checksum: 688c04159cc143de98c0c268110661519b1b4ae691b2a402e963d72333f9dc12f6970892935077c0c29e984b7983302750e1d6510b4dfdfc978c5ec68dd6ad1c
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/resources@npm:^1.11.0":
-  version: 1.12.0
-  resolution: "@opentelemetry/resources@npm:1.12.0"
-  dependencies:
-    "@opentelemetry/core": "npm:1.12.0"
-    "@opentelemetry/semantic-conventions": "npm:1.12.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.5.0"
-  checksum: a2fca297798297f649fa71534bb16001145c957ab4733fb186bb6a2d60b3741a436e1b11327448f7338ed75ed8abbcf89509ddfcdaf37fbe782814a78818a3e1
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/sdk-logs@npm:^0.37.0":
-  version: 0.37.0
-  resolution: "@opentelemetry/sdk-logs@npm:0.37.0"
-  dependencies:
-    "@opentelemetry/core": "npm:^1.11.0"
-    "@opentelemetry/resources": "npm:^1.11.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.4.0 <1.5.0"
-    "@opentelemetry/api-logs": ">=0.37.0"
-  checksum: 6759f9bed712c1ad3227e943bcdb02b3138809fedee95f447fa5410b9317306dc937a83a1f169e47e399ee0321bee2740a28a6f790c9b7f7160cf6c2f25185cb
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/sdk-logs@npm:^0.41.0":
-  version: 0.41.2
-  resolution: "@opentelemetry/sdk-logs@npm:0.41.2"
-  dependencies:
-    "@opentelemetry/core": "npm:1.15.2"
-    "@opentelemetry/resources": "npm:1.15.2"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.4.0 <1.5.0"
-    "@opentelemetry/api-logs": ">=0.39.1"
-  checksum: aeb1aa2b7f848b5ac237cd195be064a281118cfedc995157df833fd1b0f2da94315b5d3a45a3f1fdcb75bbe2f032c42bdf144a52fd340f61b0a8a70ab4a97794
   languageName: node
   linkType: hard
 
@@ -2943,13 +2845,6 @@ __metadata:
   version: 1.12.0
   resolution: "@opentelemetry/semantic-conventions@npm:1.12.0"
   checksum: d1fa8361b347ee8cf66da7caea3e0feb52ebdb02cfae294c5d4e0e5caedb56abd384706d51317f768b828cfab46b6dde66623ce2a6602c2720abda317d6b144d
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/semantic-conventions@npm:1.15.2":
-  version: 1.15.2
-  resolution: "@opentelemetry/semantic-conventions@npm:1.15.2"
-  checksum: 84428c3703e5bd0fb8e3f99cad0a48feb2ac03fec025f3a5691745486a89e446ea8fdf701c334d9dbb70a0c9f7053af777105f4ebc58fb1c602edb9aef918b28
   languageName: node
   linkType: hard
 
@@ -3834,10 +3729,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/validator@npm:^13.7.10":
-  version: 13.7.13
-  resolution: "@types/validator@npm:13.7.13"
-  checksum: feeba7d47da1c1a7ce0c9d31f77a033f13b91aa7b806558964773e4e912e0de813e04b814d22ccfc5969042376e6d7a2b4d33296b928cf9e4fade28c0f15c3a8
+"@types/validator@npm:^13.11.8":
+  version: 13.12.2
+  resolution: "@types/validator@npm:13.12.2"
+  checksum: 64f1326c768947d756ab5bcd73f3f11a6f07dc76292aea83890d0390a9b9acb374f8df6b24af2c783271f276d3d613b78fc79491fe87edee62108d54be2e3c31
   languageName: node
   linkType: hard
 
@@ -4914,7 +4809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"busboy@npm:^1.0.0, busboy@npm:^1.6.0":
+"busboy@npm:^1.0.0":
   version: 1.6.0
   resolution: "busboy@npm:1.6.0"
   dependencies:
@@ -5045,14 +4940,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-validator@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "class-validator@npm:0.14.0"
+"class-validator@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "class-validator@npm:0.14.1"
   dependencies:
-    "@types/validator": "npm:^13.7.10"
-    libphonenumber-js: "npm:^1.10.14"
-    validator: "npm:^13.7.0"
-  checksum: 1f7c34052f0c342b1d27c5aec7c42b646bb77a56874acc0d8003e2ad8f0294e7da18b43e9caaac8e8817cbb309cf9f14bcebe4611994390ca4818f3b393783dc
+    "@types/validator": "npm:^13.11.8"
+    libphonenumber-js: "npm:^1.10.53"
+    validator: "npm:^13.9.0"
+  checksum: 946e914e47548b5081449c720ea6a4877bac63dc960e14fca4b990b56e64efe3802d12f07ec22d6420c290245b72ea2d646939239f2a3b597794e6c4c2a4f2ae
   languageName: node
   linkType: hard
 
@@ -6777,10 +6672,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-port@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "get-port@npm:7.0.0"
-  checksum: 8d6ba2a45ed0171dcacf67c69faf315f4fddf09cdb6596648951746430103415b7a79feb35e78fba71e8bcbe0c3dbf64fea384963302c689dcae2359bea3b369
+"get-port@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "get-port@npm:7.1.0"
+  checksum: 896051fea0fd3df58c050566754ab91f46406e898ce0c708414739d908a5ac03ffef3eca7a494ea9cc1914439e8caccd2218010d1eeabdde914b9ff920fa28fc
   languageName: node
   linkType: hard
 
@@ -8525,10 +8420,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"libphonenumber-js@npm:^1.10.14":
-  version: 1.10.21
-  resolution: "libphonenumber-js@npm:1.10.21"
-  checksum: e3b16d07e43987c6881c048b7faaff83f705e29aa95086eacf86c940ca9be3354a95f4d3d4233de38731099f22ff7981a452a0290595df22477e3375e680d957
+"libphonenumber-js@npm:^1.10.53":
+  version: 1.11.9
+  resolution: "libphonenumber-js@npm:1.11.9"
+  checksum: 7aeed9c37ca32e4c0b2ffea0d945964b5ecf09e1c2419e1fa47638654c9098670877bee4deff0b7a1a77546e2580e0c0255dba5b459e19da78b9e8f7af21aea0
   languageName: node
   linkType: hard
 
@@ -9670,10 +9565,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:0.1.13, reflect-metadata@npm:^0.1.13":
+"reflect-metadata@npm:0.1.13":
   version: 0.1.13
   resolution: "reflect-metadata@npm:0.1.13"
   checksum: 728bff0b376b05639fd11ed80c648b61f7fe653c5b506d7ca118e58b6752b9b00810fe0c86227ecf02bd88da6251ab3eb19fd403aaf2e9ff5ef36a2fda643026
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:0.2.2, reflect-metadata@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "reflect-metadata@npm:0.2.2"
+  checksum: 1cd93a15ea291e420204955544637c264c216e7aac527470e393d54b4bb075f10a17e60d8168ec96600c7e0b9fcc0cb0bb6e91c3fbf5b0d8c9056f04e6ac1ec2
   languageName: node
   linkType: hard
 
@@ -11005,12 +10907,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.23.0":
-  version: 5.23.0
-  resolution: "undici@npm:5.23.0"
+"undici@npm:^5.28.4":
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
   dependencies:
-    busboy: "npm:^1.6.0"
-  checksum: 43a6ecddb30733adc33bc7a922fa7609c3e75f6555beab05e26c50f4be20ed893d7e9ac4332b332320961252dbc89c865955a5b5dbc3bcd2197ca4f015e7ad97
+    "@fastify/busboy": "npm:^2.0.0"
+  checksum: 08d0f2596553aa0a54ca6e8e9c7f45aef7d042c60918564e3a142d449eda165a80196f6ef19ea2ef2e6446959e293095d8e40af1236f0d67223b06afac5ecad7
   languageName: node
   linkType: hard
 
@@ -11107,13 +11009,6 @@ __metadata:
     "@types/istanbul-lib-coverage": "npm:^2.0.1"
     convert-source-map: "npm:^1.6.0"
   checksum: 657ef7c52a514c1a0769663f96dd6f2cd11d2d3f6c8272d1035f4a543dca0b52c84b005beb7f0ca215eb98425c8bc4aa92a62826b1fc76abc1f7228d33ccbc60
-  languageName: node
-  linkType: hard
-
-"validator@npm:^13.7.0":
-  version: 13.7.0
-  resolution: "validator@npm:13.7.0"
-  checksum: 234c9db98001d6f75c04174dd7f67a297728c8cb369db99f21c41ba4a254558bf91427ecdcc9017ddcd44271c9db38e96079cf432a41c92f13d96d6ca0d5c28d
   languageName: node
   linkType: hard
 

@@ -2215,7 +2215,7 @@ __metadata:
     supertest: "npm:^6.3.3"
   peerDependencies:
     "@bufbuild/protobuf": ^1
-    "@connectrpc/connect": ^0.13
+    "@connectrpc/connect": ^1
     "@monstrs/nestjs-validation": "workspace:0.1.2"
     "@nestjs/common": ^10
     "@nestjs/core": ^10

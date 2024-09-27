@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/nestjs-graphql-redis-subscriptions",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/nestjs-redis": "workspace:0.1.3",
+    "@monstrs/nestjs-redis": "workspace:0.1.4",
     "graphql-redis-subscriptions": "^2.6.0",
     "graphql-subscriptions": "^2.0.0",
     "telejson": "^7.1.0"

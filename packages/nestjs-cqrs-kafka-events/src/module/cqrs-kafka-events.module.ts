@@ -134,12 +134,17 @@ export class CqrsKafkaEventsModule implements OnModuleInit {
   async onModuleInit(): Promise<void> {
     await this.kafkaPublisher.connect()
     await this.kafkaSubscriber.connect(
-      this.explorerService
-        .explore()
-        .events!.map(
-          (handler) => Reflect.getMetadata(EVENTS_HANDLER_METADATA, handler) as FunctionConstructor
+      Array.from(
+        new Set(
+          this.explorerService
+            .explore()
+            .events!.map(
+              (handler) =>
+                Reflect.getMetadata(EVENTS_HANDLER_METADATA, handler) as FunctionConstructor
+            )
+            .flat()
         )
-        .flat()
+      )
     )
 
     this.eventBus.publisher = this.kafkaPublisher

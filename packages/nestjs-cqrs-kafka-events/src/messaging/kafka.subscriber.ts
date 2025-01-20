@@ -32,7 +32,10 @@ export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
         if (this.bridge) {
           for (const Event of events) {
             if (Event.name === topic) {
-              const parsedJson = plainToInstance(Event, message.value!.toString())
+              const parsedJson = plainToInstance(
+                Event,
+                JSON.parse(message.value!.toString()) as unknown
+              )
               const receivedEvent: IEvent = Object.assign(new Event(), parsedJson)
 
               this.bridge.next(receivedEvent)

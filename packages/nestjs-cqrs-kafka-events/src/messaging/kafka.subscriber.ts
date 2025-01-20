@@ -5,7 +5,7 @@ import type { IEvent }          from '@nestjs/cqrs'
 import type { IMessageSource }  from '@nestjs/cqrs'
 import type { Subject }         from 'rxjs'
 
-import { parse }                from 'telejson'
+import { plainToInstance }      from 'class-transformer'
 
 export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
   private readonly kafkaConsumer: Consumer
@@ -32,7 +32,7 @@ export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
         if (this.bridge) {
           for (const Event of events) {
             if (Event.name === topic) {
-              const parsedJson = parse(message.value!.toString())
+              const parsedJson = plainToInstance(Event, message.value!.toString())
               const receivedEvent: IEvent = Object.assign(new Event(), parsedJson)
 
               this.bridge.next(receivedEvent)

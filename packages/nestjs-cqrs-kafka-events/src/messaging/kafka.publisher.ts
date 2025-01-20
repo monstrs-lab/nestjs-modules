@@ -5,7 +5,7 @@ import type { OnModuleDestroy } from '@nestjs/common'
 import type { IEventPublisher } from '@nestjs/cqrs'
 import type { IEvent }          from '@nestjs/cqrs'
 
-import { stringify }            from 'telejson'
+import { instanceToPlain }      from 'class-transformer'
 
 export class KafkaPublisher implements IEventPublisher, OnModuleDestroy {
   private readonly kafkaProducer: Producer
@@ -25,7 +25,7 @@ export class KafkaPublisher implements IEventPublisher, OnModuleDestroy {
   async publish(event: IEvent): Promise<Array<RecordMetadata>> {
     return this.kafkaProducer.send({
       topic: event.constructor.name,
-      messages: [{ value: stringify(event) }],
+      messages: [{ value: JSON.stringify(instanceToPlain(event)) }],
     })
   }
 
@@ -33,7 +33,7 @@ export class KafkaPublisher implements IEventPublisher, OnModuleDestroy {
     return this.kafkaProducer.sendBatch({
       topicMessages: events.map((event) => ({
         topic: event.constructor.name,
-        messages: [{ value: stringify(event) }],
+        messages: [{ value: JSON.stringify(instanceToPlain(event)) }],
       })),
     })
   }

@@ -1,13 +1,12 @@
-import type { Consumer }        from '@monstrs/nestjs-kafka'
-import type { Kafka }           from '@monstrs/nestjs-kafka'
-import type { OnModuleDestroy } from '@nestjs/common'
-import type { IEvent }          from '@nestjs/cqrs'
-import type { IMessageSource }  from '@nestjs/cqrs'
-import type { Subject }         from 'rxjs'
+import type { Consumer }       from '@monstrs/nestjs-kafka'
+import type { Kafka }          from '@monstrs/nestjs-kafka'
+import type { IEvent }         from '@nestjs/cqrs'
+import type { IMessageSource } from '@nestjs/cqrs'
+import type { Subject }        from 'rxjs'
 
-import { plainToInstance }      from 'class-transformer'
+import { plainToInstance }     from 'class-transformer'
 
-export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
+export class KafkaSubscriber implements IMessageSource {
   private readonly kafkaConsumer: Consumer
 
   private bridge!: Subject<any>
@@ -16,8 +15,8 @@ export class KafkaSubscriber implements IMessageSource, OnModuleDestroy {
     this.kafkaConsumer = kafka.consumer({ groupId })
   }
 
-  async onModuleDestroy(): Promise<void> {
-    await this.kafkaConsumer.disconnect()
+  async disconnect(): Promise<void> {
+    return this.kafkaConsumer.disconnect()
   }
 
   async connect(events: Array<FunctionConstructor>): Promise<void> {

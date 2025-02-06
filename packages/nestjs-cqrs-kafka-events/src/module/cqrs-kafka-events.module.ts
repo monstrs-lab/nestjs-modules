@@ -1,11 +1,14 @@
 import type { KafkaConfig }                       from '@monstrs/nestjs-kafka'
 import type { DynamicModule }                     from '@nestjs/common'
 import type { OnModuleInit }                      from '@nestjs/common'
+import type { OnModuleDestroy }                   from '@nestjs/common'
 import type { Provider }                          from '@nestjs/common'
 
 import type { CqrsKafkaEventsModuleOptions }      from './cqrs-kafka-events.module.interfaces.js'
 import type { CqrsKafkaEventsModuleAsyncOptions } from './cqrs-kafka-events.module.interfaces.js'
 import type { CqrsKafkaEventsOptionsFactory }     from './cqrs-kafka-events.module.interfaces.js'
+
+import { setTimeout }                             from 'node:timers/promises'
 
 import { Module }                                 from '@nestjs/common'
 import { EventBus }                               from '@nestjs/cqrs'
@@ -21,7 +24,7 @@ import { KafkaSubscriber }                        from '../messaging/index.js'
 import { CQRS_KAFKA_EVENTS_MODULE_OPTIONS }       from './cqrs-kafka-events.module.constants.js'
 
 @Module({})
-export class CqrsKafkaEventsModule implements OnModuleInit {
+export class CqrsKafkaEventsModule implements OnModuleInit, OnModuleDestroy {
   constructor(
     private readonly eventBus: EventBus,
     private readonly kafkaPublisher: KafkaPublisher,
@@ -149,5 +152,11 @@ export class CqrsKafkaEventsModule implements OnModuleInit {
 
     this.eventBus.publisher = this.kafkaPublisher
     this.kafkaSubscriber.bridgeEventsTo(this.eventBus.subject$)
+  }
+
+  async onModuleDestroy(): Promise<void> {
+    await Promise.all([this.kafkaPublisher.disconnect(), this.kafkaSubscriber.disconnect()])
+
+    await setTimeout(1000)
   }
 }

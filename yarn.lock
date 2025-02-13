@@ -2135,10 +2135,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/core-errors@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "@monstrs/core-errors@npm:0.1.1"
-  checksum: a38ede88143272326f42726f062e9796734371e23a0a6173d01fdb6acb2b6a6655e547c649aebd585499397fd9bfd5f254308487b7322694a3d34e3c2b91f947
+"@monstrs/core-errors@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@monstrs/core-errors@npm:0.1.2"
+  checksum: 08cf8ac541eeae94be3fa2b719aee98379ce6c717f1a0fb1145abf77be0fe1dad4ce2d46387ae959be4ceed4be4b1761318ba0e7861f7a7528a2220eeb07f0ca
   languageName: node
   linkType: hard
 
@@ -2197,11 +2197,11 @@ __metadata:
     "@connectrpc/connect-node": "npm:^1.5.0"
     "@connectrpc/protoc-gen-connect-es": "npm:^1.5.0"
     "@jest/globals": "npm:^29.6.0"
-    "@monstrs/core-errors": "npm:^0.1.1"
+    "@monstrs/core-errors": "npm:^0.1.2"
     "@monstrs/guard-clause": "npm:^0.0.8"
     "@monstrs/nestjs-connectrpc": "workspace:0.0.9"
     "@monstrs/nestjs-validation": "workspace:0.1.5"
-    "@monstrs/protobuf-rpc": "npm:^0.0.8"
+    "@monstrs/protobuf-rpc": "npm:^0.0.9"
     "@nestjs/common": "npm:^10.0.5"
     "@nestjs/core": "npm:^10.0.5"
     "@nestjs/microservices": "npm:^10.0.5"
@@ -2503,12 +2503,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/protobuf-rpc@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@monstrs/protobuf-rpc@npm:0.0.8"
+"@monstrs/protobuf-rpc@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@monstrs/protobuf-rpc@npm:0.0.9"
   peerDependencies:
     "@bufbuild/protobuf": "*"
-  checksum: 32f7092f5da3b092537abb11b165aea81045782793c303d2c1840f5c0623befd10fe6a781f14e119f6be59197167cf6957150e7a1c64b3fdb454ad33b0cf4709
+  checksum: f48ae2161934d3c50dade608d55733613211287162147a2f3b3d04031ab78d03c155e65d05b23a178e0cad1246bbe589faf02916761609d38a3b383614fc3db2
   languageName: node
   linkType: hard
 

@@ -2870,10 +2870,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/core-errors", [\
-      ["npm:0.1.1", {\
-        "packageLocation": "./.yarn/cache/@monstrs-core-errors-npm-0.1.1-342c37c09e-a38ede8814.zip/node_modules/@monstrs/core-errors/",\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/cache/@monstrs-core-errors-npm-0.1.2-372ceeb271-08cf8ac541.zip/node_modules/@monstrs/core-errors/",\
         "packageDependencies": [\
-          ["@monstrs/core-errors", "npm:0.1.1"]\
+          ["@monstrs/core-errors", "npm:0.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3012,11 +3012,11 @@ const RAW_RUNTIME_STATE =
           ["@connectrpc/connect-node", "virtual:546fcab0030cc06c2e7eaeb60926622140d2acde1188d115e56a2b958bc8c0365912e9fb847a0cec0175dd23618837020f38b6db51bf813c226848c439b3f782#npm:1.5.0"],\
           ["@connectrpc/protoc-gen-connect-es", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:1.5.0"],\
           ["@jest/globals", "npm:29.6.0"],\
-          ["@monstrs/core-errors", "npm:0.1.1"],\
+          ["@monstrs/core-errors", "npm:0.1.2"],\
           ["@monstrs/guard-clause", "npm:0.0.8"],\
           ["@monstrs/nestjs-connectrpc", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#workspace:packages/nestjs-connectrpc"],\
           ["@monstrs/nestjs-validation", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#workspace:packages/nestjs-validation"],\
-          ["@monstrs/protobuf-rpc", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.8"],\
+          ["@monstrs/protobuf-rpc", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.9"],\
           ["@nestjs/common", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:10.0.5"],\
           ["@nestjs/core", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:10.0.5"],\
           ["@nestjs/microservices", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:10.0.5"],\
@@ -3319,17 +3319,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@monstrs/protobuf-rpc", [\
-      ["npm:0.0.8", {\
-        "packageLocation": "./.yarn/cache/@monstrs-protobuf-rpc-npm-0.0.8-754be207df-32f7092f5d.zip/node_modules/@monstrs/protobuf-rpc/",\
+      ["npm:0.0.9", {\
+        "packageLocation": "./.yarn/cache/@monstrs-protobuf-rpc-npm-0.0.9-2f6120d857-f48ae21619.zip/node_modules/@monstrs/protobuf-rpc/",\
         "packageDependencies": [\
-          ["@monstrs/protobuf-rpc", "npm:0.0.8"]\
+          ["@monstrs/protobuf-rpc", "npm:0.0.9"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.8", {\
-        "packageLocation": "./.yarn/__virtual__/@monstrs-protobuf-rpc-virtual-d4ae0eaf45/0/cache/@monstrs-protobuf-rpc-npm-0.0.8-754be207df-32f7092f5d.zip/node_modules/@monstrs/protobuf-rpc/",\
+      ["virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.9", {\
+        "packageLocation": "./.yarn/__virtual__/@monstrs-protobuf-rpc-virtual-6fa19bce0c/0/cache/@monstrs-protobuf-rpc-npm-0.0.9-2f6120d857-f48ae21619.zip/node_modules/@monstrs/protobuf-rpc/",\
         "packageDependencies": [\
-          ["@monstrs/protobuf-rpc", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.8"],\
+          ["@monstrs/protobuf-rpc", "virtual:990bd0af81cbf138e46135bdbe336993fed96d7112a904d8dc97c0c941cea3470cf2317372bced16caa924aa5c7b34882b4d3ec109977239fb961a92739a7746#npm:0.0.9"],\
           ["@bufbuild/protobuf", "npm:1.10.0"],\
           ["@types/bufbuild__protobuf", null]\
         ],\

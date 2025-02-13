@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/nestjs-connectrpc": patch
+  "@monstrs/nestjs-connectrpc-errors": patch

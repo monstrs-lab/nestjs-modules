@@ -9,6 +9,7 @@ export const domainExceptionFactory = (error: DomainError): RpcException => {
   const logicalError = new LogicalError({
     id: error.id,
     message: error.message,
+    metadata: error.metadata || {},
   })
 
   return new RpcException(

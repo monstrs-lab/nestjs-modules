@@ -18,9 +18,9 @@
     "proto:generate": "buf generate integration/proto"
   },
   "dependencies": {
-    "@monstrs/core-errors": "^0.1.1",
+    "@monstrs/core-errors": "^0.1.2",
     "@monstrs/guard-clause": "^0.0.8",
-    "@monstrs/protobuf-rpc": "^0.0.8"
+    "@monstrs/protobuf-rpc": "^0.0.9"
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.42.0",
